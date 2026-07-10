@@ -116,10 +116,12 @@
   .deep { margin-top: 14px; border-top: 1px dashed var(--line); padding-top: 12px; }
   .deep-body { position: relative; transition: none; }
   .deep[data-collapsed="1"] .deep-body {
-    max-height: 7em; overflow: hidden;
-    -webkit-mask-image: linear-gradient(to bottom, #000 58%, transparent 100%);
-            mask-image: linear-gradient(to bottom, #000 58%, transparent 100%);
+    max-height: 10.5em; overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, #000 62%, transparent 100%);
+            mask-image: linear-gradient(to bottom, #000 62%, transparent 100%);
   }
+  .deep[data-fits="1"] .deep-body { max-height: none; -webkit-mask-image: none; mask-image: none; }
+  .deep[data-fits="1"] .deep-toggle { display: none; }
   .deep-toggle {
     margin-top: 8px; cursor: pointer; color: var(--ink-faint); font-weight: 600;
     font-size: .85rem; background: none; border: none; padding: 4px 0; font-family: inherit;
@@ -230,10 +232,9 @@ function cardHtml(a) {
       <span class="journal">${esc(a.journal||"")}</span>
     </div>
     <h3 class="title">${esc(a.title)}</h3>
-    <p class="summary">${esc(a.summary)}</p>
     ${who}
-    ${curric}
     ${deep}
+    ${curric}
     <div class="talk"><b>💬</b> ${esc(a.talk)}</div>
     <div class="foot">
       <div class="tags">${tags}</div>
@@ -259,6 +260,12 @@ function render() {
     </section>`;
   });
   feed.innerHTML = html || `<p class="empty">이 분야의 기사가 아직 없습니다.</p>`;
+  // 본문이 짧아 클램프 안에 다 들어가면 페이드·버튼을 없앤다.
+  // 반드시 레이아웃(클램프 적용) 이후에 측정해야 한다 — rAF로 다음 프레임에 실행.
+  requestAnimationFrame(() => feed.querySelectorAll(".deep").forEach(deep => {
+    const body = deep.querySelector(".deep-body");
+    if (body.scrollHeight <= body.clientHeight + 4) deep.setAttribute("data-fits", "1");
+  }));
 }
 
 document.getElementById("chips").innerHTML = chipsHtml();
