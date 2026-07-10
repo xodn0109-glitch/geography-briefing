@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>지리 브리핑 아카이브 — 깊이 읽기</title>
+<style>
+  :root {
+    --bg: #f7f6f2;
+    --surface: #ffffff;
+    --surface-2: #f0efe9;
+    --ink: #1c2118;
+    --ink-soft: #4a5347;
+    --ink-faint: #7a8375;
+    --line: #e2e0d6;
+    --accent: #1f7a5a;
+    --accent-soft: #e3f1ea;
+    --accent-ink: #12563d;
+    --talk-bg: #fbf3e4;
+    --talk-line: #e8c98a;
+    --talk-ink: #6b4f1d;
+    --shadow: 0 1px 2px rgba(20,30,15,.05), 0 6px 20px rgba(20,30,15,.05);
+    --maxw: 780px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14160f;
+      --surface: #1e211a;
+      --surface-2: #262a20;
+      --ink: #eef0e6;
+      --ink-soft: #b8bfad;
+      --ink-faint: #8a9280;
+      --line: #333829;
+      --accent: #5bc79b;
+      --accent-soft: #1c3329;
+      --accent-ink: #8fe3c0;
+      --talk-bg: #2b2617;
+      --talk-line: #6b5a2e;
+      --talk-ink: #e4cf9a;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.28);
+    }
+  }
+  :root[data-theme="light"] {
+    --bg:#f7f6f2; --surface:#fff; --surface-2:#f0efe9; --ink:#1c2118; --ink-soft:#4a5347;
+    --ink-faint:#7a8375; --line:#e2e0d6; --accent:#1f7a5a; --accent-soft:#e3f1ea; --accent-ink:#12563d;
+    --talk-bg:#fbf3e4; --talk-line:#e8c98a; --talk-ink:#6b4f1d;
+  }
+  :root[data-theme="dark"] {
+    --bg:#14160f; --surface:#1e211a; --surface-2:#262a20; --ink:#eef0e6; --ink-soft:#b8bfad;
+    --ink-faint:#8a9280; --line:#333829; --accent:#5bc79b; --accent-soft:#1c3329; --accent-ink:#8fe3c0;
+    --talk-bg:#2b2617; --talk-line:#6b5a2e; --talk-ink:#e4cf9a;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",
+                 "Noto Sans KR", "Malgun Gothic", sans-serif;
+    line-height: 1.72;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+
+  header.top {
+    border-bottom: 1px solid var(--line);
+    background: linear-gradient(180deg, var(--surface), var(--bg));
+  }
+  header.top .wrap { padding-top: 40px; padding-bottom: 26px; }
+  .brand { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  h1 { font-size: 1.7rem; letter-spacing: -.02em; margin: 0; font-weight: 800; }
+  .pin { color: var(--accent); }
+  .tagline { margin: 12px 0 0; color: var(--ink-soft); font-size: .98rem; max-width: 60ch; }
+  .stat { margin-top: 16px; font-size: .82rem; color: var(--ink-faint); letter-spacing: .01em; }
+  .stat b { color: var(--accent-ink); font-weight: 700; }
+
+  .filters { position: sticky; top: 0; z-index: 5; background: var(--bg);
+             border-bottom: 1px solid var(--line); }
+  .filters .wrap { display: flex; gap: 8px; flex-wrap: wrap; padding-top: 12px; padding-bottom: 12px; }
+  .chip {
+    font: inherit; font-size: .84rem; cursor: pointer;
+    border: 1px solid var(--line); background: var(--surface); color: var(--ink-soft);
+    padding: 6px 13px; border-radius: 999px; transition: .15s; white-space: nowrap;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--ink); }
+  .chip.on { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  @media (prefers-color-scheme: dark){ .chip.on { color: #0f130c; } }
+  :root[data-theme="dark"] .chip.on { color:#0f130c; }
+  .chip .n { opacity: .6; margin-left: 5px; font-variant-numeric: tabular-nums; }
+
+  main .wrap { padding-top: 8px; padding-bottom: 60px; }
+
+  .day { margin-top: 34px; }
+  .day-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+  .day-date { font-size: 1.28rem; font-weight: 800; letter-spacing: -.01em; }
+  .day-wd { color: var(--ink-faint); font-size: .95rem; }
+  .day-intro { color: var(--ink-soft); margin: 6px 0 20px; font-size: .96rem; }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+    padding: 22px 22px 18px; margin-bottom: 16px; box-shadow: var(--shadow);
+  }
+  .card.hidden { display: none; }
+  .meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+  .badge { font-size: .74rem; font-weight: 700; padding: 3px 9px; border-radius: 7px;
+           background: var(--accent-soft); color: var(--accent-ink); letter-spacing: .02em; }
+  .badge.region { background: var(--surface-2); color: var(--ink-faint); font-weight: 600; }
+  .journal { font-size: .76rem; color: var(--ink-faint); margin-left: auto; text-align: right;
+             font-variant-numeric: tabular-nums; }
+  h3.title { font-size: 1.24rem; line-height: 1.4; margin: 2px 0 10px; letter-spacing: -.01em; }
+  .summary { margin: 0; color: var(--ink); font-size: 1.0rem; }
+  .who { margin: 12px 0 0; font-size: .82rem; color: var(--ink-faint); }
+
+  details.more { margin-top: 14px; border-top: 1px dashed var(--line); padding-top: 6px; }
+  details.more > summary {
+    list-style: none; cursor: pointer; color: var(--accent-ink); font-weight: 600;
+    font-size: .9rem; padding: 8px 0 4px; display: inline-flex; align-items: center; gap: 6px;
+  }
+  details.more > summary::-webkit-details-marker { display: none; }
+  details.more > summary .tw { transition: transform .2s; }
+  details.more[open] > summary .tw { transform: rotate(90deg); }
+  .section { margin: 14px 0 0; }
+  .section h4 { margin: 0 0 3px; font-size: .82rem; color: var(--accent); letter-spacing: .03em;
+                text-transform: none; font-weight: 700; }
+  .section p { margin: 0; color: var(--ink-soft); font-size: .97rem; }
+
+  .talk { margin-top: 16px; background: var(--talk-bg); border-left: 3px solid var(--talk-line);
+          border-radius: 0 10px 10px 0; padding: 11px 14px; color: var(--talk-ink); font-size: .93rem; }
+  .talk b { font-weight: 700; }
+
+  .foot { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-size: .74rem; color: var(--ink-faint); background: var(--surface-2);
+         padding: 2px 8px; border-radius: 6px; }
+  a.src { margin-left: auto; font-size: .84rem; font-weight: 600; color: var(--accent-ink);
+          text-decoration: none; border: 1px solid var(--line); padding: 6px 12px; border-radius: 8px;
+          transition: .15s; white-space: nowrap; }
+  a.src:hover { border-color: var(--accent); background: var(--accent-soft); }
+
+  .empty { text-align: center; color: var(--ink-faint); padding: 60px 0; }
+
+  footer.bot { border-top: 1px solid var(--line); color: var(--ink-faint); font-size: .8rem; }
+  footer.bot .wrap { padding: 24px 20px 48px; }
+  footer.bot p { margin: 4px 0; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <h1><span class="pin">📍</span> 지리 브리핑 아카이브</h1>
+    </div>
+    <p class="tagline">매일 아침 텔레그램으로 나가는 지리 브리핑의 <b>깊이 읽기</b> 판. 짧은 요약에서 잘려나간
+      방법론·수치·배경을 원문에서 다시 살려, 분야별로 정리했습니다.</p>
+    <p class="stat"><b>6</b>건 · <b>1</b>일치 · <b>3</b>개 분야 · 최신 2026. 7. 10.</p>
+  </div>
+</header>
+
+<nav class="filters">
+  <div class="wrap" id="chips"></div>
+</nav>
+
+<main>
+  <div class="wrap" id="feed"></div>
+</main>
+
+<footer class="bot">
+  <div class="wrap">
+    <p>이 사이트는 매일 아침 브리핑 봇이 생성합니다. 본문의 사실 진술은 각 기사 원문에서 확인한 것이며, 💬 이야깃거리는 편집자의 해석입니다.</p>
+    <p>기사 제목을 누르면 각 항목이 펼쳐지고, ‘원문 →’으로 매체 원본을 열 수 있습니다.</p>
+  </div>
+</footer>
+
+<script>
+const DATA = {"days": [{"date": "2026-07-10", "weekday": "금", "intro": "교과서 한 줄을 고쳐 써야 할지도 모르는 소식이 여럿입니다. 대도시가 계속 커진다는 전제, 지진 규모가 곧 피해라는 설명, 해안 절벽은 예고 없이 무너진다는 통념 — 오늘 기사들은 모두 그 자리를 건드립니다.", "articles": [{"id": "2026-07-10-city-growth", "region": "해외", "category": "인문지리", "title": "대도시의 성장 우위는 도시화가 끝나면 사라진다", "journal": "PNAS · 2026.6.25 · DOI 10.1073/pnas.2529430123", "researchers": "복잡성과학허브(CSH)·ETH 취리히 — Andrea Musso, Frank Neffke 등", "source": {"name": "EurekAlert (PNAS 보도자료)", "url": "https://www.eurekalert.org/news-releases/1133791"}, "summary": "위성영상과 99개국 센서스를 행정경계 대신 1km² 격자로 다시 그려 추적했더니, 도시화 초기엔 대도시가 평균보다 7.3% 빨리 크지만 도시화가 진전되면 그 우위가 사실상 사라졌다. 2100년 100만 이상 도시 거주 인구는 세계 인구의 38%로, 기존 추세 예측보다 4억 5,000만 명 적을 전망이다.", "body": [{"h": "핵심 발견", "p": "대도시의 빠른 성장은 '항상 그런 것'이 아니라 '도시화의 한 국면'이었다. 도시화가 덜 진행된 나라에서는 인구 100만 이상 도시가 평균적인 도시보다 약 7.3% 빠르게 성장했지만, 이미 도시화가 진전된 나라에서는 대도시가 전국 평균과 거의 같은 속도로만 자랐다. 연구진은 이를 '도시 성장의 생애주기(life cycle of urban growth)'라 불렀다 — 지역이 달라도 도시화 수준을 맞춰 보면 같은 단계를 밟더라는 것이다."}, {"h": "어떻게 밝혔나", "p": "두 개의 대형 데이터셋을 썼다. 하나는 2025년 세계 인구의 94%를 담는 99개국의 1975~2025년 위성영상으로 도시의 물리적 확장을 추적한 것, 다른 하나는 5억 건이 넘는 미국 센서스 기록(1850~2020년)을 약 4만 개 지명에 연결해 재구성한 것이다. 핵심은 경계 설정 방식이다. 행정경계 대신 약 1km²짜리 격자를 인구·건축밀도로 도시/농촌으로 분류하고 그 덩어리를 시계열로 추적해, 행정경계가 만들어내는 왜곡을 걷어냈다."}, {"h": "무엇을 뒤집나", "p": "현재 추세를 그대로 늘려 잡은 예측은 대도시 인구를 과대평가한다. 2100년 100만 이상 도시에 사는 인구는 세계 인구의 38%로 전망되는데(현재 24%, 1975년 11%), 이는 단순 외삽보다 4억 5,000만 명이 적은 수치다. 인프라·주택·기후적응 계획이 깔고 있던 '대도시는 계속 커진다'는 전제 자체가 바뀐다."}, {"h": "덤 — 대도시의 명암", "p": "같은 연구는 대도시의 초선형 효과도 정리했다. 인구 100만 도시 주민은 인구 1만 소도시 주민보다 교통에 쓰는 시간이 두 배 넘고 특정 질병에 걸릴 확률이 약 세 배 높지만, 동시에 세 배 넘게 혁신적이고 거의 두 배 생산적이다. 규모의 이득과 부담이 함께 커진다는 점은 그대로다."}], "talk": "종주도시화 단원은 \"대도시는 계속 커진다\"를 깔고 서 있죠. 도시화율 90%를 넘긴 한국은 이 곡선의 어디쯤 있을까요.", "tags": ["도시화", "종주도시", "인구예측", "위성영상", "경제지리"]}, {"id": "2026-07-10-japan-trench", "region": "해외", "category": "자연지리", "title": "8km 시추가 찾아낸 30m 점토층, 2011년 쓰나미의 범인이었다", "journal": "Science · 2026 · 391(6784):489 · DOI 10.1126/science.ady0234", "researchers": "북애리조나대(NAU) 주도 — Christine Regalla, Patrick Fulton(코넬대) 등 10여 개국 과학자", "source": {"name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/06/260625060220.htm"}, "summary": "시추선 지큐(Chikyu)가 일본 해구에서 약 8km(2만 6,000피트) 깊이의 사상 최심 과학 시추를 수행해, 단단한 암층 사이에 낀 두께 약 30m의 부드러운 원양성 점토층을 확인했다. 이 층이 '절취선'처럼 작동해 규모 9.1 지진의 파열이 해저면까지 그대로 도달했고, 해저는 단 6분 만에 40~60m 움직였다.", "body": [{"h": "핵심 발견", "p": "일본 시추선 지큐가 해저 아래로 약 2만 6,000피트(약 8km)를 뚫어, 기네스 세계기록이 인정한 '역대 최심 과학 해양 시추'를 달성했다. 그 결과 일본 해구 아래에서 두께 약 100피트(약 30m)의 원양성 점토층을 발견했다 — 수백만 년에 걸쳐 쌓인, 극도로 부드럽고 미끄러운 퇴적층이며, 해구를 따라 수백 마일에 걸쳐 이어져 있었다."}, {"h": "메커니즘 — 왜 그렇게 치명적이었나", "p": "이 점토층은 일종의 자연 '절취선'으로 작동했다. 극도로 집중되고 약한 면을 만들어, 파열이 해저면까지 그대로 전파되기 쉽게 한 것이다. 2011년 규모 9.1 지진에서 파열은 해저 약 15마일 아래에서 시작됐지만, 이 약한 층을 타고 표면까지 도달했다. 그 결과 해저면이 단 6분 만에 130~200피트(약 40~60m) 이동했고, 이 거대한 변위가 쓰나미를 키웠다."}, {"h": "의미", "p": "이 쓰나미로 약 2만 명이 목숨을 잃고 2,000억 달러 넘는 피해가 났다. 이런 약한 지층이 '어디에' 분포하는지 알아내면, 어느 섭입대가 거대한 해저 변위와 쓰나미를 일으킬 수 있는지 미리 가려낼 수 있다. 판 경계의 위치뿐 아니라 그 경계가 '무엇으로 되어 있는가'가 피해 규모를 가른다는 점을 보여준 연구다."}], "talk": "판 경계가 '무엇인가'보다 '무엇으로 되어 있는가'가 피해를 갈랐습니다. 규모와 피해를 곧장 잇는 설명, 다시 볼 대목입니다.", "tags": ["지진", "쓰나미", "섭입대", "해저시추", "판구조론"]}, {"id": "2026-07-10-cliff-sensors", "region": "해외", "category": "자연지리", "title": "절벽은 무너지기 며칠 전부터 신호를 보낸다", "journal": "JGR: Earth Surface · 2026 · DOI 10.1029/2025JF008562", "researchers": "스크립스 해양연구소(UC 샌디에이고) — Adam Young(해안지형학), Mark Zumberge(지구물리학)", "source": {"name": "Phys.org", "url": "https://phys.org/news/2026-07-sensors-california-cliff-collapses-hours.html"}, "summary": "캘리포니아 해안 절벽 세 곳에 경사계·신축계·라이다·GPS를 4년간 설치했더니, 그사이 일어난 붕괴 5건 모두에서 몇 시간~며칠 전 전조 변형이 잡혔다. 2024년 델마의 200톤 붕괴 직전 균열은 하루 0.4mm씩 벌어졌는데, 육안으로는 전혀 보이지 않았다.", "body": [{"h": "핵심 발견", "p": "스크립스 해양연구소가 4년간 관측한 결과, 기록된 붕괴 5건 모두에서 붕괴 몇 시간~며칠 전에 지반 변형이 센서에 포착됐다. 붕괴 규모는 수 세제곱야드에서 수백 세제곱야드까지 다양했다. 사용한 장비는 정밀했다 — 경사계는 1m 기준선에서 10마이크로미터(사람 머리카락 굵기의 약 8분의 1) 정확도, 광섬유 신축계는 나노미터(10억분의 1m) 수준의 변형까지 감지했고, 여기에 지진계·GPS·파압 센서와 매주 라이다 측량(2022~2025년)이 더해졌다."}, {"h": "사례 — 2024년 4월 델마", "p": "2024년 4월 21일 델마 철도 회랑에서 약 200톤이 무너졌다. 센서는 0.1인치(약 2.5mm) 길이의 균열이 하루 0.4mm씩 벌어지는 것을 추적했는데, 이는 육안으로는 감지할 수 없는 속도였다. 붕괴 이틀 전인 4월 19일 경사 측정값이 가속되면서 해안 관리자에게 임박한 붕괴를 알렸다."}, {"h": "의미", "p": "캘리포니아 해안의 약 70%가 침식성 절벽이다. 2019년 8월 엔시니타스 붕괴로 세 여성이 숨진 사건이 이 연구(주 법안 AB66)를 낳았다. 연구진은 강우량과 산사태 활동을 잇는 예비 임계값을 도출해 '확률형 해안 산사태 경보 체계'의 토대를 제시했고, 해변 폐쇄·절벽 상단 접근 제한·주민 교육 프로토콜을 권고했다."}], "talk": "캘리포니아 해안의 70%가 침식 절벽입니다. 동해안 해식애에도 같은 센서를 붙일 만할까요, 아니면 그 예산은 다른 곳이 먼저일까요.", "tags": ["해안침식", "지형재해", "조기경보", "라이다", "원격탐사"]}, {"id": "2026-07-10-mcb-enso", "region": "해외", "category": "자연지리", "title": "구름을 밝히면 엘니뇨가 61% 약해진다", "journal": "Earth's Future · 2025 · 13(8) · DOI 10.1029/2025EF006522", "researchers": "UC 샌타바버라 브렌 스쿨 — Chen Xing, Cali Pfleger, Samantha Stevenson", "source": {"name": "ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/06/260626030448.htm"}, "summary": "동태평양에 '해양 구름 밝히기(MCB)'를 적용하면 엘니뇨-남방진동(ENSO) 진폭이 약 61% 줄어드는 반면, 성층권 에어로졸 주입(SAI)은 ENSO를 거의 건드리지 않았다. 같은 온난화 목표에 도달해도 지역 기후에 남기는 흔적은 전혀 달랐다는 뜻이다.", "body": [{"h": "핵심 발견", "p": "아열대 동태평양에 해양 구름 밝히기(MCB)를 적용하는 시뮬레이션에서 ENSO 진폭이 약 61% 감소했다. 구름을 인위적으로 밝게 만드는 개입이 엘니뇨/라니냐의 진동 폭 자체를 크게 눌러버린 것이다."}, {"h": "메커니즘", "p": "연구진이 짚은 인과 사슬은 이렇다. 밝아진 구름이 아래 해수면을 식히는 동시에 강수를 줄이고(작아진 물방울이 잘 뭉치지 않는다), 차고 건조해진 공기가 중태평양으로 퍼진다. 그러면 증발이 줄고 대기 순환이 약해지며 적도풍이 강해지고, 이것이 찬물 용승을 늘려 해수면을 더 식힌다 — 스스로를 강화하는 고리다."}, {"h": "비교와 함의", "p": "또 다른 기후공학 기법인 성층권 에어로졸 주입(SAI)은 ENSO에 거의 영향이 없었다. 황산염 입자가 전 지구에 고르게 퍼지는 반면 MCB는 특정 해역에 국지적으로 작용하기 때문으로 보인다. 스티븐슨 교수는 \"두 개입이 전 지구적으로 같은 온난화 목표에 도달하고도 지역 기후에는 전혀 다른 영향을 남길 수 있다\"고 말했다."}], "talk": "10년 만의 61% 변화는 자연 변동에 없던 속도입니다. 엘니뇨는 '고쳐도' 되는 것일까요.", "tags": ["기후공학", "엘니뇨", "ENSO", "대기순환", "해양"]}, {"id": "2026-07-10-hyejeong-map", "region": "국내", "category": "지리교육", "title": "경희대 혜정박물관, 여름방학 '지도로 보는 조선' 체험", "journal": "중부일보 · 2026.7.10", "researchers": "경희대학교 혜정박물관", "source": {"name": "중부일보", "url": "https://www.joongboo.com/news/articleView.html?idxno=363731116"}, "summary": "지도 기초 이론부터 고지도 실물 관람까지 아우르는 여름방학 체험 프로그램. 8월 4~7일 개인, 8월 10~13일 단체 대상으로 운영된다.", "body": [{"h": "무엇인가", "p": "경희대 혜정박물관이 여름방학을 맞아 '지도로 보는 조선' 체험 프로그램을 연다. 지도의 기초 이론부터 조선 시대 고지도 실물 관람까지 이어지는 구성으로, 8월 4~7일은 개인, 8월 10~13일은 단체를 대상으로 진행된다. 지도 투영·기호·제작 원리를 수업에서 다룰 때 연결 지을 만한 현장 자료다."}], "talk": "고지도 실물은 '지도는 세계의 축소가 아니라 해석'이라는 걸 학생들이 눈으로 확인하기 좋은 자료죠.", "tags": ["지리교육", "고지도", "답사", "지도학"]}, {"id": "2026-07-10-seoul-urban-politics", "region": "국내", "category": "인문지리", "title": "\"서울은 시장의 전유물이 아니다\" — 도시공간의 정치적 생산 연구", "journal": "교수신문 · 2026.7.7", "researchers": "서울대학교 지리학과 (2026년 2월 박사학위)", "source": {"name": "교수신문", "url": "https://www.kyosu.net/news/articleView.html?idxno=207160"}, "summary": "시장이 바뀔 때마다 뒤바뀌는 도시공간을 다룬 「도시공간의 정치적 생산과 정치자산화 과정 연구」로 올해 2월 서울대 지리학과에서 박사학위가 나왔다.", "body": [{"h": "무엇인가", "p": "「도시공간의 정치적 생산과 정치자산화 과정 연구」는 시장(市長)이 바뀔 때마다 방향이 뒤바뀌는 서울의 도시공간을 정치적 생산물로 읽어낸다. 올해 2월 서울대 지리학과 박사학위 논문으로, 앙리 르페브르 계열의 '공간의 (사회적) 생산' 논의를 한국 대도시 정책의 구체적 사례에 붙여 볼 수 있는 국내 연구다."}], "talk": "'공간은 만들어진다'는 명제를 서울 지도 위에서 확인할 수 있는 국내 사례입니다.", "tags": ["도시지리", "공간의생산", "정치지리", "서울"]}]}]};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// 분야별 카운트
+const catCount = {};
+DATA.days.forEach(d => d.articles.forEach(a => { catCount[a.category] = (catCount[a.category]||0)+1; }));
+const cats = Object.keys(catCount);
+let active = "전체";
+
+function chipsHtml() {
+  const all = `<button class="chip on" data-cat="전체">전체<span class="n">${DATA.days.reduce((s,d)=>s+d.articles.length,0)}</span></button>`;
+  return all + cats.map(c =>
+    `<button class="chip" data-cat="${esc(c)}">${esc(c)}<span class="n">${catCount[c]}</span></button>`
+  ).join("");
+}
+
+function cardHtml(a) {
+  const sections = (a.body||[]).map(s =>
+    `<div class="section"><h4>${esc(s.h)}</h4><p>${esc(s.p)}</p></div>`).join("");
+  const tags = (a.tags||[]).map(t => `<span class="tag">#${esc(t)}</span>`).join("");
+  const who = a.researchers ? `<p class="who">${esc(a.researchers)}</p>` : "";
+  return `<article class="card" data-cat="${esc(a.category)}">
+    <div class="meta">
+      <span class="badge">${esc(a.category)}</span>
+      <span class="badge region">${esc(a.region)}</span>
+      <span class="journal">${esc(a.journal||"")}</span>
+    </div>
+    <h3 class="title">${esc(a.title)}</h3>
+    <p class="summary">${esc(a.summary)}</p>
+    ${who}
+    <details class="more">
+      <summary><span class="tw">▸</span> 깊이 읽기</summary>
+      ${sections}
+    </details>
+    <div class="talk"><b>💬</b> ${esc(a.talk)}</div>
+    <div class="foot">
+      <div class="tags">${tags}</div>
+      <a class="src" href="${esc(a.source.url)}" target="_blank" rel="noopener">${esc(a.source.name)} →</a>
+    </div>
+  </article>`;
+}
+
+function render() {
+  const feed = document.getElementById("feed");
+  let html = "";
+  DATA.days.forEach(d => {
+    const shown = d.articles.filter(a => active==="전체" || a.category===active);
+    if (!shown.length) return;
+    const [y,m,dd] = d.date.split("-");
+    html += `<section class="day">
+      <div class="day-head">
+        <span class="day-date">${y}. ${+m}. ${+dd}.</span>
+        <span class="day-wd">(${esc(d.weekday||"")})</span>
+      </div>
+      <p class="day-intro">${esc(d.intro||"")}</p>
+      ${shown.map(cardHtml).join("")}
+    </section>`;
+  });
+  feed.innerHTML = html || `<p class="empty">이 분야의 기사가 아직 없습니다.</p>`;
+}
+
+document.getElementById("chips").innerHTML = chipsHtml();
+document.getElementById("chips").addEventListener("click", e => {
+  const b = e.target.closest(".chip"); if (!b) return;
+  active = b.dataset.cat;
+  document.querySelectorAll(".chip").forEach(c => c.classList.toggle("on", c===b));
+  render();
+});
+render();
+</script>
+</body>
+</html>
