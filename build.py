@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-지리 브리핑 아카이브 사이트 빌더.
+지리 뉴스 브리핑 아카이브 사이트 빌더.
 
 site/data/*.json (하루 한 파일)을 모두 읽어 자기완결형 index.html 한 장을 생성한다.
 매일 봇이 그날치 JSON을 data/에 떨궈 놓고 이 스크립트를 실행하면 사이트가 갱신된다.
@@ -67,7 +67,7 @@ HTML_TEMPLATE = r"""<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>지리 브리핑 아카이브 — 깊이 읽기</title>
+<title>지리 뉴스 브리핑 아카이브 — 깊이 읽기</title>
 <style>
   :root {
     --bg: #f7f6f2;
@@ -234,7 +234,7 @@ HTML_TEMPLATE = r"""<!doctype html>
 <header class="top">
   <div class="wrap">
     <div class="brand">
-      <h1><span class="pin">📍</span> 지리 브리핑 아카이브</h1>
+      <h1><span class="pin">📍</span> 지리 뉴스 브리핑 아카이브</h1>
     </div>
     <p class="tagline">매일 아침 텔레그램으로 나가는 지리 브리핑의 <b>깊이 읽기</b> 판. 짧은 요약에서 잘려나간
       방법론·수치·배경을 원문에서 다시 살려, 분야별로 정리했습니다.</p>
