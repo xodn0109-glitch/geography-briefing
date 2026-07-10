@@ -157,9 +157,10 @@ HTML_TEMPLATE = r"""<!doctype html>
   main .wrap { padding-top: 8px; padding-bottom: 60px; }
 
   .day { margin-top: 34px; }
-  .day-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 18px; }
-  .day-date { font-size: 1.28rem; font-weight: 800; letter-spacing: -.01em; }
-  .day-wd { color: var(--ink-faint); font-size: .95rem; }
+  .theme { margin-bottom: 40px; }
+  .theme-head { font-size: 1.18rem; font-weight: 800; letter-spacing: -.01em; margin: 0 0 18px;
+                padding-bottom: 9px; border-bottom: 2px solid var(--accent); }
+  .theme-n { font-size: .82rem; color: var(--ink-faint); font-weight: 600; margin-left: 9px; }
 
   .card {
     background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
@@ -170,6 +171,7 @@ HTML_TEMPLATE = r"""<!doctype html>
   .badge { font-size: .74rem; font-weight: 700; padding: 3px 9px; border-radius: 7px;
            background: var(--accent-soft); color: var(--accent-ink); letter-spacing: .02em; }
   .badge.region { background: var(--surface-2); color: var(--ink-faint); font-weight: 600; }
+  .badge.date { background: var(--accent-soft); color: var(--accent-ink); font-weight: 700; font-variant-numeric: tabular-nums; }
   .journal { font-size: .76rem; color: var(--ink-faint); margin-left: auto; text-align: right;
              font-variant-numeric: tabular-nums; }
   h3.title { font-size: 1.24rem; line-height: 1.4; margin: 2px 0 10px; letter-spacing: -.01em; }
@@ -264,6 +266,8 @@ const catCount = {};
 DATA.days.forEach(d => d.articles.forEach(a => { catCount[a.category] = (catCount[a.category]||0)+1; }));
 const cats = Object.keys(catCount);
 let active = "전체";
+// 분야 표시 순서(교과 단원 흐름). 목록에 없는 분야는 뒤에 자동 추가.
+const CAT_ORDER = ["기후·기상","지형·지질·재해","인구·도시","경제·산업","지도·GIS","지정학·국제","지리교육"];
 
 function chipsHtml() {
   const all = `<button class="chip on" data-cat="전체">전체<span class="n">${DATA.days.reduce((s,d)=>s+d.articles.length,0)}</span></button>`;
@@ -288,9 +292,11 @@ function cardHtml(a) {
       a.curriculum.map(c => `<span class="curric-item"><b>${esc(c.code)}</b> ${esc(c.gloss)}</span>`).join("") +
       `</div>`
     : "";
+  const dp = (a._date||"").split("-");
+  const dl = dp.length===3 ? `${+dp[1]}.${+dp[2]}` : "";
   return `<article class="card" data-cat="${esc(a.category)}">
     <div class="meta">
-      <span class="badge">${esc(a.category)}</span>
+      ${dl ? `<span class="badge date">${dl}</span>` : ""}
       <span class="badge region">${esc(a.region)}</span>
       <span class="journal">${esc(a.journal||"")}</span>
     </div>
@@ -308,17 +314,21 @@ function cardHtml(a) {
 
 function render() {
   const feed = document.getElementById("feed");
+  // 모든 기사에 날짜를 붙여 평탄화한 뒤 분야별로 묶는다
+  const all = [];
+  DATA.days.forEach(d => d.articles.forEach(a => all.push(Object.assign({_date: d.date}, a))));
+  const present = Array.from(new Set(all.map(a => a.category)));
+  const order = CAT_ORDER.filter(c => present.includes(c))
+                  .concat(present.filter(c => !CAT_ORDER.includes(c)));
   let html = "";
-  DATA.days.forEach(d => {
-    const shown = d.articles.filter(a => active==="전체" || a.category===active);
-    if (!shown.length) return;
-    const [y,m,dd] = d.date.split("-");
-    html += `<section class="day">
-      <div class="day-head">
-        <span class="day-date">${y}. ${+m}. ${+dd}.</span>
-        <span class="day-wd">(${esc(d.weekday||"")})</span>
-      </div>
-      ${shown.map(cardHtml).join("")}
+  order.forEach(cat => {
+    if (active !== "전체" && active !== cat) return;
+    const arts = all.filter(a => a.category === cat)
+                    .sort((x, y) => y._date.localeCompare(x._date));  // 분야 안에서 최신순
+    if (!arts.length) return;
+    html += `<section class="theme">
+      <h2 class="theme-head">${esc(cat)}<span class="theme-n">${arts.length}건</span></h2>
+      ${arts.map(cardHtml).join("")}
     </section>`;
   });
   feed.innerHTML = html || `<p class="empty">이 분야의 기사가 아직 없습니다.</p>`;
