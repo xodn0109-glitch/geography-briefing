@@ -157,10 +157,9 @@ HTML_TEMPLATE = r"""<!doctype html>
   main .wrap { padding-top: 8px; padding-bottom: 60px; }
 
   .day { margin-top: 34px; }
-  .day-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+  .day-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 18px; }
   .day-date { font-size: 1.28rem; font-weight: 800; letter-spacing: -.01em; }
   .day-wd { color: var(--ink-faint); font-size: .95rem; }
-  .day-intro { color: var(--ink-soft); margin: 6px 0 20px; font-size: .96rem; }
 
   .card {
     background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
@@ -319,7 +318,6 @@ function render() {
         <span class="day-date">${y}. ${+m}. ${+dd}.</span>
         <span class="day-wd">(${esc(d.weekday||"")})</span>
       </div>
-      <p class="day-intro">${esc(d.intro||"")}</p>
       ${shown.map(cardHtml).join("")}
     </section>`;
   });
