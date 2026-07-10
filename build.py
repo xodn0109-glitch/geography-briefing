@@ -194,6 +194,15 @@ HTML_TEMPLATE = r"""<!doctype html>
           border-radius: 0 10px 10px 0; padding: 11px 14px; color: var(--talk-ink); font-size: .93rem; }
   .talk b { font-weight: 700; }
 
+  .curric { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .curric-label { font-size: .74rem; font-weight: 700; color: #fff; background: var(--accent);
+                  padding: 3px 9px; border-radius: 6px; letter-spacing: .02em; }
+  :root[data-theme="dark"] .curric-label { color: #0f130c; }
+  @media (prefers-color-scheme: dark){ .curric-label { color: #0f130c; } }
+  .curric-item { font-size: .8rem; color: var(--ink-soft); background: var(--accent-soft);
+                 padding: 3px 9px; border-radius: 6px; }
+  .curric-item b { color: var(--accent-ink); font-weight: 700; font-variant-numeric: tabular-nums; }
+
   .foot { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
   .tags { display: flex; gap: 6px; flex-wrap: wrap; }
   .tag { font-size: .74rem; color: var(--ink-faint); background: var(--surface-2);
@@ -259,6 +268,11 @@ function cardHtml(a) {
     `<div class="section"><h4>${esc(s.h)}</h4><p>${esc(s.p)}</p></div>`).join("");
   const tags = (a.tags||[]).map(t => `<span class="tag">#${esc(t)}</span>`).join("");
   const who = a.researchers ? `<p class="who">${esc(a.researchers)}</p>` : "";
+  const curric = (a.curriculum||[]).length
+    ? `<div class="curric"><span class="curric-label">🎓 교육과정 연계</span>` +
+      a.curriculum.map(c => `<span class="curric-item"><b>${esc(c.code)}</b> ${esc(c.gloss)}</span>`).join("") +
+      `</div>`
+    : "";
   return `<article class="card" data-cat="${esc(a.category)}">
     <div class="meta">
       <span class="badge">${esc(a.category)}</span>
@@ -268,6 +282,7 @@ function cardHtml(a) {
     <h3 class="title">${esc(a.title)}</h3>
     <p class="summary">${esc(a.summary)}</p>
     ${who}
+    ${curric}
     <details class="more">
       <summary><span class="tw">▸</span> 깊이 읽기</summary>
       ${sections}
