@@ -177,15 +177,21 @@ HTML_TEMPLATE = r"""<!doctype html>
   .summary { margin: 0; color: var(--ink); font-size: 1.0rem; }
   .who { margin: 12px 0 0; font-size: .82rem; color: var(--ink-faint); }
 
-  details.more { margin-top: 14px; border-top: 1px dashed var(--line); padding-top: 6px; }
-  details.more > summary {
-    list-style: none; cursor: pointer; color: var(--accent-ink); font-weight: 600;
-    font-size: .9rem; padding: 8px 0 4px; display: inline-flex; align-items: center; gap: 6px;
+  .deep { margin-top: 14px; border-top: 1px dashed var(--line); padding-top: 12px; }
+  .deep-body { position: relative; transition: none; }
+  .deep[data-collapsed="1"] .deep-body {
+    max-height: 7em; overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, #000 58%, transparent 100%);
+            mask-image: linear-gradient(to bottom, #000 58%, transparent 100%);
   }
-  details.more > summary::-webkit-details-marker { display: none; }
-  details.more > summary .tw { transition: transform .2s; }
-  details.more[open] > summary .tw { transform: rotate(90deg); }
+  .deep-toggle {
+    margin-top: 6px; cursor: pointer; color: var(--accent-ink); font-weight: 600;
+    font-size: .9rem; background: none; border: none; padding: 4px 0; font-family: inherit;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .deep-toggle:hover { text-decoration: underline; }
   .section { margin: 14px 0 0; }
+  .section:first-child { margin-top: 0; }
   .section h4 { margin: 0 0 3px; font-size: .82rem; color: var(--accent); letter-spacing: .03em;
                 text-transform: none; font-weight: 700; }
   .section p { margin: 0; color: var(--ink-soft); font-size: .97rem; }
@@ -266,6 +272,10 @@ function chipsHtml() {
 function cardHtml(a) {
   const sections = (a.body||[]).map(s =>
     `<div class="section"><h4>${esc(s.h)}</h4><p>${esc(s.p)}</p></div>`).join("");
+  const deep = sections
+    ? `<div class="deep" data-collapsed="1"><div class="deep-body">${sections}</div>` +
+      `<button class="deep-toggle" type="button">⌄ 이어서 깊이 읽기</button></div>`
+    : "";
   const tags = (a.tags||[]).map(t => `<span class="tag">#${esc(t)}</span>`).join("");
   const who = a.researchers ? `<p class="who">${esc(a.researchers)}</p>` : "";
   const curric = (a.curriculum||[]).length
@@ -283,10 +293,7 @@ function cardHtml(a) {
     <p class="summary">${esc(a.summary)}</p>
     ${who}
     ${curric}
-    <details class="more">
-      <summary><span class="tw">▸</span> 깊이 읽기</summary>
-      ${sections}
-    </details>
+    ${deep}
     <div class="talk"><b>💬</b> ${esc(a.talk)}</div>
     <div class="foot">
       <div class="tags">${tags}</div>
@@ -320,6 +327,13 @@ document.getElementById("chips").addEventListener("click", e => {
   active = b.dataset.cat;
   document.querySelectorAll(".chip").forEach(c => c.classList.toggle("on", c===b));
   render();
+});
+document.getElementById("feed").addEventListener("click", e => {
+  const btn = e.target.closest(".deep-toggle"); if (!btn) return;
+  const deep = btn.closest(".deep");
+  const collapsed = deep.getAttribute("data-collapsed") === "1";
+  deep.setAttribute("data-collapsed", collapsed ? "0" : "1");
+  btn.textContent = collapsed ? "⌃ 접기" : "⌄ 이어서 깊이 읽기";
 });
 render();
 </script>
