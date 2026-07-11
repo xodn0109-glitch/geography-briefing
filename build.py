@@ -182,13 +182,12 @@ HTML_TEMPLATE = r"""<!doctype html>
   .deep[data-fits="1"] .deep-body { max-height: none; -webkit-mask-image: none; mask-image: none; }
   .deep[data-fits="1"] .deep-toggle { display: none; }
   .deep-toggle {
-    margin-top: 8px; cursor: pointer; color: var(--ink-faint); font-weight: 600;
+    margin-top: 8px; cursor: pointer; color: var(--accent-ink); font-weight: 600;
     font-size: .85rem; background: none; border: none; padding: 4px 0; font-family: inherit;
-    text-align: left; line-height: 1.5;
+    line-height: 1.5;
   }
   .deep-toggle .tw { color: var(--accent); font-weight: 700; }
-  .deep-toggle .more-cta { color: var(--accent-ink); }
-  .deep-toggle:hover .more-cta { text-decoration: underline; }
+  .deep-toggle:hover { text-decoration: underline; }
   .section { margin: 14px 0 0; }
   .section:first-child { margin-top: 0; }
   .section h4 { margin: 0 0 3px; font-size: .82rem; color: var(--accent); letter-spacing: .03em;
@@ -275,11 +274,9 @@ function chipsHtml() {
 function cardHtml(a) {
   const sections = (a.body||[]).map(s =>
     `<div class="section"><h4>${esc(s.h)}</h4><p>${esc(s.p)}</p></div>`).join("");
-  const heads = (a.body||[]).map(s => s.h).join(" · ");
   const deep = sections
     ? `<div class="deep" data-collapsed="1"><div class="deep-body">${sections}</div>` +
-      `<button class="deep-toggle" type="button" data-heads="${esc(heads)}">` +
-      `<span class="tw">⌄</span> ${esc(heads)} <span class="more-cta">펼쳐보기</span></button></div>`
+      `<button class="deep-toggle" type="button"><span class="tw">⌄</span> 펼쳐보기</button></div>`
     : "";
   const tags = (a.tags||[]).map(t => `<span class="tag">#${esc(t)}</span>`).join("");
   const who = a.researchers ? `<p class="who">${esc(a.researchers)}</p>` : "";
@@ -347,7 +344,7 @@ document.getElementById("feed").addEventListener("click", e => {
   deep.setAttribute("data-collapsed", collapsed ? "0" : "1");
   btn.innerHTML = collapsed
     ? `<span class="tw">⌃</span> 접기`
-    : `<span class="tw">⌄</span> ${btn.dataset.heads} <span class="more-cta">펼쳐보기</span>`;
+    : `<span class="tw">⌄</span> 펼쳐보기`;
 });
 render();
 </script>
