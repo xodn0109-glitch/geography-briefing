@@ -54,6 +54,14 @@ def build():
     tpl = tpl.replace("__CATCOUNT__", str(len(cats)))
     tpl = tpl.replace("__LATEST__", fmt_date(days[0]["date"]) if days else "")
 
+    # 세계지도 내비게이터 육지 윤곽 (Natural Earth 110m, 퍼블릭 도메인 → SVG path 사전 변환본)
+    wp_file = os.path.join(HERE, "world_land_path.txt")
+    world_path = ""
+    if os.path.exists(wp_file):
+        with open(wp_file, encoding="utf-8") as f:
+            world_path = f.read().strip()
+    tpl = tpl.replace("__WORLDPATH__", world_path)
+
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(tpl)
     print(f"built {OUT}  ({len(days)} days, {total_articles} articles)")
@@ -136,6 +144,17 @@ HTML_TEMPLATE = r"""<!doctype html>
   .tagline { margin: 12px 0 0; color: var(--ink-soft); font-size: .98rem; max-width: 60ch; }
   .stat { margin-top: 16px; font-size: .82rem; color: var(--ink-faint); letter-spacing: .01em; }
   .stat b { color: var(--accent-ink); font-weight: 700; }
+
+  .mapnav { border-bottom: 1px solid var(--line); background: var(--surface); }
+  .mapnav .wrap { padding: 16px 20px 8px; }
+  #navmap { width: 100%; height: auto; display: block; }
+  #navmap .land { fill: var(--surface-2); stroke: var(--line); stroke-width: .6; }
+  .newsdot { fill: var(--accent); stroke: var(--surface); stroke-width: 1.8; pointer-events: none; }
+  .newsdot-hit { fill: transparent; cursor: pointer; }
+  .newsdot-hit:hover { fill: var(--accent); opacity: .18; }
+  .map-hint { margin: 6px 0 0; font-size: .77rem; color: var(--ink-faint); text-align: center; }
+  .card.flash { animation: flashcard 1.8s ease; }
+  @keyframes flashcard { 0% { box-shadow: 0 0 0 3px var(--accent); } 100% { box-shadow: var(--shadow); } }
 
   .filters { position: sticky; top: 0; z-index: 5; background: var(--bg);
              border-bottom: 1px solid var(--line); }
@@ -235,6 +254,15 @@ HTML_TEMPLATE = r"""<!doctype html>
   </div>
 </header>
 
+<section class="mapnav">
+  <div class="wrap">
+    <svg id="navmap" viewBox="0 0 1000 400" role="img" aria-label="기사 위치 세계지도">
+      <path class="land" d="__WORLDPATH__"/>
+    </svg>
+    <p class="map-hint">📍 점을 누르면 해당 기사로 이동합니다 (전 지구 단위 연구는 지도에 표시되지 않습니다)</p>
+  </div>
+</section>
+
 <nav class="filters">
   <div class="wrap" id="chips"></div>
 </nav>
@@ -287,7 +315,7 @@ function cardHtml(a) {
     : "";
   const dp = (a._date||"").split("-");
   const dl = dp.length===3 ? `${+dp[1]}.${+dp[2]}` : "";
-  return `<article class="card" data-cat="${esc(a.category)}">
+  return `<article class="card" id="${esc(a.id||"")}" data-cat="${esc(a.category)}">
     <div class="meta">
       ${dl ? `<span class="badge date">${dl}</span>` : ""}
       <span class="badge region">${esc(a.region)}</span>
@@ -347,6 +375,66 @@ document.getElementById("feed").addEventListener("click", e => {
     : `<span class="tw">⌄</span> 펼쳐보기`;
 });
 render();
+
+// --- 세계지도 내비게이터 ---
+// 기사 geo:{lat,lon,label}를 equirectangular 투영으로 점 찍기.
+// 투영 상수는 world_land_path.txt 생성 스크립트와 반드시 동일해야 한다: lat [-60,84] → 1000×400.
+function goToArticle(id){
+  if (active !== "전체") {
+    active = "전체";
+    document.querySelectorAll(".chip").forEach(c => c.classList.toggle("on", c.dataset.cat === "전체"));
+    render();  // 동기 렌더 — 프레임 대기 불필요
+  }
+  const el = document.getElementById(id);
+  if (!el) return;
+  const before = window.scrollY;
+  el.scrollIntoView({behavior: "smooth", block: "start"});
+  // 백그라운드 탭 등 렌더 프레임이 멈춘 환경에선 smooth가 진행되지 않는다 — 350ms 안에 안 움직였으면 즉시 점프
+  setTimeout(() => {
+    if (Math.abs(window.scrollY - before) < 4) el.scrollIntoView({block: "start"});
+  }, 350);
+  el.classList.add("flash");
+  setTimeout(() => el.classList.remove("flash"), 1800);
+}
+(function(){
+  const svg = document.getElementById("navmap");
+  if (!svg) return;
+  const W = 1000, TOP = 84, BOT = -60, H = 400;
+  const px = lon => (lon + 180) * (W / 360);
+  const py = lat => (TOP - Math.max(BOT, Math.min(TOP, lat))) * (H / (TOP - BOT));
+  const placed = [];
+  DATA.days.forEach(d => d.articles.forEach(a => {
+    const g = a.geo;
+    if (!g || typeof g.lat !== "number" || typeof g.lon !== "number") return;
+    let x = px(g.lon), y = py(g.lat), k = 1;
+    // 겹침 방지: 기존 점과 10px 이내면 나선형으로 밀어낸다
+    while (placed.some(p => (p.x-x)**2 + (p.y-y)**2 < 100) && k <= 12) {
+      const ang = k * 2.4;
+      x = px(g.lon) + Math.cos(ang) * 7 * Math.ceil(k/3);
+      y = py(g.lat) + Math.sin(ang) * 7 * Math.ceil(k/3);
+      k++;
+    }
+    placed.push({x, y});
+    const mk = (r, cls) => {
+      const c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      c.setAttribute("cx", x.toFixed(1)); c.setAttribute("cy", y.toFixed(1));
+      c.setAttribute("r", r); c.setAttribute("class", cls);
+      c.setAttribute("data-id", a.id);
+      const tip = document.createElementNS("http://www.w3.org/2000/svg", "title");
+      tip.textContent = (g.label ? g.label + " — " : "") + a.title;
+      c.appendChild(tip);
+      svg.appendChild(c);
+      return c;
+    };
+    mk(7, "newsdot");        // 보이는 점
+    mk(15, "newsdot-hit");   // 투명 히트 영역(터치·클릭용)
+  }));
+  // 이벤트 위임: svg 하나에만 리스너 (개별 circle 리스너보다 견고)
+  svg.addEventListener("click", e => {
+    const c = e.target.closest("[data-id]");
+    if (c) goToArticle(c.getAttribute("data-id"));
+  });
+})();
 </script>
 </body>
 </html>
