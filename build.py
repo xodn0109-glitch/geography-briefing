@@ -146,7 +146,13 @@ HTML_TEMPLATE = r"""<!doctype html>
   .stat b { color: var(--accent-ink); font-weight: 700; }
 
   .mapnav { border-bottom: 1px solid var(--line); background: var(--surface); }
-  .mapnav .wrap { padding: 16px 20px 8px; }
+  .mapnav .wrap { padding: 14px 20px 8px; }
+  .map-datebar { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 8px; }
+  .map-datebar button { font: inherit; font-size: .82rem; border: 1px solid var(--line); background: var(--surface);
+                        color: var(--ink-soft); border-radius: 8px; padding: 3px 11px; cursor: pointer; transition: .15s; }
+  .map-datebar button:hover:not(:disabled) { border-color: var(--accent); color: var(--ink); }
+  .map-datebar button:disabled { opacity: .3; cursor: default; }
+  #map-date { font-weight: 700; font-size: .95rem; font-variant-numeric: tabular-nums; min-width: 11ch; text-align: center; }
   #navmap { width: 100%; height: auto; display: block; }
   #navmap .land { fill: var(--surface-2); stroke: var(--line); stroke-width: .6; }
   .newsdot { fill: var(--accent); stroke: var(--surface); stroke-width: 1.8; pointer-events: none; }
@@ -256,10 +262,15 @@ HTML_TEMPLATE = r"""<!doctype html>
 
 <section class="mapnav">
   <div class="wrap">
+    <div class="map-datebar">
+      <button id="map-prev" type="button" aria-label="이전 날짜">◀</button>
+      <span id="map-date"></span>
+      <button id="map-next" type="button" aria-label="다음 날짜">▶</button>
+    </div>
     <svg id="navmap" viewBox="0 0 1000 400" role="img" aria-label="기사 위치 세계지도">
       <path class="land" d="__WORLDPATH__"/>
     </svg>
-    <p class="map-hint">📍 점을 누르면 해당 기사로 이동합니다 (전 지구 단위 연구는 지도에 표시되지 않습니다)</p>
+    <p class="map-hint">📍 그날의 뉴스가 일어난 곳 — 점을 누르면 해당 기사로 이동합니다 (전 지구 단위 연구는 표시되지 않음)</p>
   </div>
 </section>
 
@@ -398,42 +409,61 @@ function goToArticle(id){
 }
 (function(){
   const svg = document.getElementById("navmap");
-  if (!svg) return;
+  if (!svg || !DATA.days.length) return;
   const W = 1000, TOP = 84, BOT = -60, H = 400;
   const px = lon => (lon + 180) * (W / 360);
   const py = lat => (TOP - Math.max(BOT, Math.min(TOP, lat))) * (H / (TOP - BOT));
-  const placed = [];
-  DATA.days.forEach(d => d.articles.forEach(a => {
-    const g = a.geo;
-    if (!g || typeof g.lat !== "number" || typeof g.lon !== "number") return;
-    let x = px(g.lon), y = py(g.lat), k = 1;
-    // 겹침 방지: 기존 점과 10px 이내면 나선형으로 밀어낸다
-    while (placed.some(p => (p.x-x)**2 + (p.y-y)**2 < 100) && k <= 12) {
-      const ang = k * 2.4;
-      x = px(g.lon) + Math.cos(ang) * 7 * Math.ceil(k/3);
-      y = py(g.lat) + Math.sin(ang) * 7 * Math.ceil(k/3);
-      k++;
-    }
-    placed.push({x, y});
-    const mk = (r, cls) => {
-      const c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-      c.setAttribute("cx", x.toFixed(1)); c.setAttribute("cy", y.toFixed(1));
-      c.setAttribute("r", r); c.setAttribute("class", cls);
-      c.setAttribute("data-id", a.id);
-      const tip = document.createElementNS("http://www.w3.org/2000/svg", "title");
-      tip.textContent = (g.label ? g.label + " — " : "") + a.title;
-      c.appendChild(tip);
-      svg.appendChild(c);
-      return c;
-    };
-    mk(7, "newsdot");        // 보이는 점
-    mk(15, "newsdot-hit");   // 투명 히트 영역(터치·클릭용)
-  }));
+  const label = document.getElementById("map-date");
+  const btnPrev = document.getElementById("map-prev");   // 과거로
+  const btnNext = document.getElementById("map-next");   // 최신으로
+  let idx = 0;  // DATA.days 인덱스 (0 = 최신 날짜)
+
+  const fmt = iso => { const [y,m,d] = iso.split("-"); return `${y}. ${+m}. ${+d}.`; };
+
+  function draw(){
+    svg.querySelectorAll("circle").forEach(c => c.remove());   // 육지 path는 유지
+    const day = DATA.days[idx];
+    const placed = [];
+    let n = 0;
+    day.articles.forEach(a => {
+      const g = a.geo;
+      if (!g || typeof g.lat !== "number" || typeof g.lon !== "number") return;
+      let x = px(g.lon), y = py(g.lat), k = 1;
+      // 겹침 방지: 기존 점과 10px 이내면 나선형으로 밀어낸다
+      while (placed.some(p => (p.x-x)**2 + (p.y-y)**2 < 100) && k <= 12) {
+        const ang = k * 2.4;
+        x = px(g.lon) + Math.cos(ang) * 7 * Math.ceil(k/3);
+        y = py(g.lat) + Math.sin(ang) * 7 * Math.ceil(k/3);
+        k++;
+      }
+      placed.push({x, y});
+      const mk = (r, cls) => {
+        const c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        c.setAttribute("cx", x.toFixed(1)); c.setAttribute("cy", y.toFixed(1));
+        c.setAttribute("r", r); c.setAttribute("class", cls);
+        c.setAttribute("data-id", a.id);
+        const tip = document.createElementNS("http://www.w3.org/2000/svg", "title");
+        tip.textContent = (g.label ? g.label + " — " : "") + a.title;
+        c.appendChild(tip);
+        svg.appendChild(c);
+      };
+      mk(7, "newsdot");        // 보이는 점
+      mk(15, "newsdot-hit");   // 투명 히트 영역(터치·클릭용)
+      n++;
+    });
+    label.textContent = `${fmt(day.date)} · ${n}곳`;
+    btnPrev.disabled = (idx >= DATA.days.length - 1);
+    btnNext.disabled = (idx <= 0);
+  }
+
+  btnPrev.addEventListener("click", () => { if (idx < DATA.days.length - 1) { idx++; draw(); } });
+  btnNext.addEventListener("click", () => { if (idx > 0) { idx--; draw(); } });
   // 이벤트 위임: svg 하나에만 리스너 (개별 circle 리스너보다 견고)
   svg.addEventListener("click", e => {
     const c = e.target.closest("[data-id]");
     if (c) goToArticle(c.getAttribute("data-id"));
   });
+  draw();
 })();
 </script>
 </body>
