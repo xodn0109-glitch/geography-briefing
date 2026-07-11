@@ -92,7 +92,6 @@
 
   main .wrap { padding-top: 8px; padding-bottom: 60px; }
 
-  .day { margin-top: 34px; }
   .theme { margin-bottom: 40px; }
   .theme-head { font-size: 1.18rem; font-weight: 800; letter-spacing: -.01em; margin: 0 0 18px;
                 padding-bottom: 9px; border-bottom: 2px solid var(--accent); }
@@ -102,7 +101,6 @@
     background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
     padding: 22px 22px 18px; margin-bottom: 16px; box-shadow: var(--shadow);
   }
-  .card.hidden { display: none; }
   .meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
   .badge { font-size: .74rem; font-weight: 700; padding: 3px 9px; border-radius: 7px;
            background: var(--accent-soft); color: var(--accent-ink); letter-spacing: .02em; }
@@ -111,7 +109,6 @@
   .journal { font-size: .76rem; color: var(--ink-faint); margin-left: auto; text-align: right;
              font-variant-numeric: tabular-nums; }
   h3.title { font-size: 1.24rem; line-height: 1.4; margin: 2px 0 10px; letter-spacing: -.01em; }
-  .summary { margin: 0; color: var(--ink); font-size: 1.0rem; }
   .who { margin: 12px 0 0; font-size: .82rem; color: var(--ink-faint); }
 
   .deep { margin-top: 14px; border-top: 1px dashed var(--line); padding-top: 12px; }
@@ -189,7 +186,7 @@
 <footer class="bot">
   <div class="wrap">
     <p>이 사이트는 매일 아침 브리핑 봇이 생성합니다. 본문의 사실 진술은 각 기사 원문에서 확인한 것이며, 💬 이야깃거리는 편집자의 해석입니다.</p>
-    <p>기사 제목을 누르면 각 항목이 펼쳐지고, ‘원문 →’으로 매체 원본을 열 수 있습니다.</p>
+    <p>각 카드의 ‘펼쳐보기’를 누르면 본문 전체가 열리고, 오른쪽 아래 ‘매체명 →’ 버튼으로 원문을 열 수 있습니다.</p>
   </div>
 </footer>
 
@@ -200,10 +197,12 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':
 // 분야별 카운트
 const catCount = {};
 DATA.days.forEach(d => d.articles.forEach(a => { catCount[a.category] = (catCount[a.category]||0)+1; }));
-const cats = Object.keys(catCount);
 let active = "전체";
 // 분야 표시 순서(교과 단원 흐름). 목록에 없는 분야는 뒤에 자동 추가.
+// 필터 칩과 본문 섹션이 반드시 같은 순서를 쓰도록 여기서 한 번만 정한다.
 const CAT_ORDER = ["기후·기상","지형·지질·재해","인구·도시","경제·산업","지도·GIS","지정학·국제","지리교육"];
+const cats = CAT_ORDER.filter(c => c in catCount)
+  .concat(Object.keys(catCount).filter(c => !CAT_ORDER.includes(c)));
 
 function chipsHtml() {
   const all = `<button class="chip on" data-cat="전체">전체<span class="n">${DATA.days.reduce((s,d)=>s+d.articles.length,0)}</span></button>`;
@@ -253,11 +252,8 @@ function render() {
   // 모든 기사에 날짜를 붙여 평탄화한 뒤 분야별로 묶는다
   const all = [];
   DATA.days.forEach(d => d.articles.forEach(a => all.push(Object.assign({_date: d.date}, a))));
-  const present = Array.from(new Set(all.map(a => a.category)));
-  const order = CAT_ORDER.filter(c => present.includes(c))
-                  .concat(present.filter(c => !CAT_ORDER.includes(c)));
   let html = "";
-  order.forEach(cat => {
+  cats.forEach(cat => {
     if (active !== "전체" && active !== cat) return;
     const arts = all.filter(a => a.category === cat)
                     .sort((x, y) => y._date.localeCompare(x._date));  // 분야 안에서 최신순
