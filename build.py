@@ -13,6 +13,7 @@ import json
 import os
 import glob
 import html
+import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "data")
@@ -61,6 +62,31 @@ def build():
         with open(wp_file, encoding="utf-8") as f:
             world_path = f.read().strip()
     tpl = tpl.replace("__WORLDPATH__", world_path)
+
+    # 교육과정 성취기준 전문(빌드 시 ../curriculum_ref.json 참조 — 실제 사용된 코드만 심어 클릭 시 노출).
+    # 참조 파일이 없으면 빈 객체 → 배지는 그대로 보이되 펼침만 비활성(우아한 강등).
+    curr = {}
+    ref_file = os.path.join(HERE, "..", "curriculum_ref.json")
+    if os.path.exists(ref_file):
+        with open(ref_file, encoding="utf-8") as f:
+            ref = json.load(f)
+        flat = {}
+        for stds in ref.get("subjects", {}).values():
+            for s in stds:
+                flat[s["code"]] = s
+        used = set()
+        for d in days:
+            for a in d["articles"]:
+                for c in (a.get("curriculum") or []):
+                    used.add(c["code"])
+        for code in used:
+            s = flat.get(code)
+            if not s:
+                continue
+            # 해설은 원문에서 코드를 떼며 남은 선행 조사(에서는/은/는…)를 제거해 자연스럽게.
+            ex = re.sub(r"^(에서는|에서|은|는|이|가|을|를|와|과)\s+", "", (s.get("explain") or "").strip())
+            curr[code] = {"text": s.get("text", ""), "explain": ex}
+    tpl = tpl.replace("__CURRICULUM__", json.dumps(curr, ensure_ascii=False).replace("</", "<\\/"))
 
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(tpl)
@@ -237,9 +263,21 @@ HTML_TEMPLATE = r"""<!doctype html>
                   padding: 4px 10px; border-radius: 980px; letter-spacing: .02em; }
   :root[data-theme="dark"] .curric-label { color: #0f130c; }
   @media (prefers-color-scheme: dark){ .curric-label { color: #0f130c; } }
-  .curric-item { font-size: .8rem; color: var(--ink-soft); background: var(--accent-soft);
-                 padding: 4px 11px; border-radius: 980px; }
+  .curric-item { font: inherit; font-size: .8rem; color: var(--ink-soft); background: var(--accent-soft);
+                 padding: 4px 12px; border-radius: 980px; border: 1px solid transparent; cursor: pointer;
+                 transition: filter .15s var(--ease-out), border-color .15s var(--ease-out), transform .16s var(--ease-out); }
   .curric-item b { color: var(--accent-ink); font-weight: 700; font-variant-numeric: tabular-nums; }
+  .curric-item:hover { filter: brightness(0.97); }
+  .curric-item:active { transform: scale(0.96); }
+  .curric-item.active { border-color: var(--accent); }
+  .curric-detail { display: none; margin-top: 10px; background: var(--surface-2); border-radius: 14px; padding: 15px 17px; }
+  .curric-detail.open { display: block; }
+  .cd-code { font-size: .72rem; font-weight: 700; color: var(--accent-ink); font-variant-numeric: tabular-nums;
+             letter-spacing: .02em; margin-bottom: 5px; }
+  .cd-text { color: var(--ink); font-size: .95rem; line-height: 1.6; font-weight: 500; }
+  .cd-explain { margin-top: 10px; color: var(--ink-soft); font-size: .87rem; line-height: 1.65; }
+  .cd-label { display: inline-block; font-size: .68rem; font-weight: 700; color: #fff; background: var(--ink-faint);
+              padding: 1px 8px; border-radius: 980px; margin-right: 7px; letter-spacing: .03em; vertical-align: middle; }
 
   .foot { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
   .tags { display: flex; gap: 6px; flex-wrap: wrap; }
@@ -311,6 +349,7 @@ HTML_TEMPLATE = r"""<!doctype html>
 
 <script>
 const DATA = __DATA__;
+const CURR = __CURRICULUM__;   // {code: {text(본문), explain(해설)}} — 실제 사용된 성취기준만
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 // 분야별 카운트
@@ -341,8 +380,8 @@ function cardHtml(a) {
   const who = a.researchers ? `<p class="who">${esc(a.researchers)}</p>` : "";
   const curric = (a.curriculum||[]).length
     ? `<div class="curric"><span class="curric-label">🎓 교육과정 연계</span>` +
-      a.curriculum.map(c => `<span class="curric-item"><b>${esc(c.code)}</b> ${esc(c.gloss)}</span>`).join("") +
-      `</div>`
+      a.curriculum.map(c => `<button class="curric-item" type="button" data-code="${esc(c.code)}"><b>${esc(c.code)}</b> ${esc(c.gloss)}</button>`).join("") +
+      `</div><div class="curric-detail"></div>`
     : "";
   const dp = (a._date||"").split("-");
   const dl = dp.length===3 ? `${+dp[1]}.${+dp[2]}` : "";
@@ -410,6 +449,22 @@ document.getElementById("feed").addEventListener("click", e => {
   btn.innerHTML = collapsed
     ? `<span class="tw">⌃</span> 접기`
     : `<span class="tw">⌄</span> 펼쳐보기`;
+});
+// 교육과정 배지 클릭 → 성취기준 본문+해설 전문 펼치기(같은 배지 다시 누르면 접기).
+document.getElementById("feed").addEventListener("click", e => {
+  const item = e.target.closest(".curric-item"); if (!item) return;
+  const code = item.getAttribute("data-code");
+  const info = CURR[code]; if (!info) return;
+  const row = item.closest(".curric");
+  const detail = row.nextElementSibling;
+  const same = detail.classList.contains("open") && detail.getAttribute("data-code") === code;
+  row.querySelectorAll(".curric-item").forEach(b => b.classList.remove("active"));
+  if (same) { detail.classList.remove("open"); detail.removeAttribute("data-code"); return; }
+  detail.setAttribute("data-code", code);
+  detail.innerHTML = `<div class="cd-code">${esc(code)}</div><div class="cd-text">${esc(info.text)}</div>` +
+    (info.explain ? `<div class="cd-explain"><span class="cd-label">해설</span>${esc(info.explain)}</div>` : "");
+  detail.classList.add("open"); item.classList.add("active");
+  if (detail.animate) detail.animate([{opacity:0},{opacity:1}], {duration:180, easing:"cubic-bezier(0.23,1,0.32,1)"});
 });
 render();
 
