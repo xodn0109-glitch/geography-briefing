@@ -297,9 +297,9 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':
 const catCount = {};
 DATA.days.forEach(d => d.articles.forEach(a => { catCount[a.category] = (catCount[a.category]||0)+1; }));
 let active = "전체";
-// 분야 표시 순서(교과 단원 흐름). 목록에 없는 분야는 뒤에 자동 추가.
+// 분야 표시 순서(지리학 분과 체계: 자연 → 인문 → 정치지리 → 지도·GIS 도구 → 교육). 목록에 없는 분야는 뒤에 자동 추가.
 // 필터 칩과 본문 섹션이 반드시 같은 순서를 쓰도록 여기서 한 번만 정한다.
-const CAT_ORDER = ["기후·기상","지형·지질·재해","인구·도시","경제·산업","지도·GIS","지정학·국제","지리교육"];
+const CAT_ORDER = ["지형학","기후학","도시지리학","경제지리학","지역지리학","문화지리학","역사지리학","인구지리학","지정학·국제","지도학","GIS","지리교육"];
 const cats = CAT_ORDER.filter(c => c in catCount)
   .concat(Object.keys(catCount).filter(c => !CAT_ORDER.includes(c)));
 

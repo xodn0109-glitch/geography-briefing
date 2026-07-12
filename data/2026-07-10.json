@@ -6,7 +6,7 @@
     {
       "id": "2026-07-10-city-growth",
       "region": "해외",
-      "category": "인구·도시",
+      "category": "도시지리학",
       "title": "대도시의 성장 우위는 도시화가 끝나면 사라진다",
       "journal": "PNAS · 2026.6.25 · DOI 10.1073/pnas.2529430123",
       "researchers": "복잡성과학허브(CSH)·ETH 취리히 — Andrea Musso, Frank Neffke 등",
@@ -56,7 +56,7 @@
     {
       "id": "2026-07-10-japan-trench",
       "region": "해외",
-      "category": "지형·지질·재해",
+      "category": "지형학",
       "title": "8km 시추가 찾아낸 30m 점토층, 2011년 쓰나미의 범인이었다",
       "journal": "Science · 2026 · 391(6784):489 · DOI 10.1126/science.ady0234",
       "researchers": "북애리조나대(NAU) 주도 — Christine Regalla, Patrick Fulton(코넬대) 등 10여 개국 과학자",
@@ -102,7 +102,7 @@
     {
       "id": "2026-07-10-cliff-sensors",
       "region": "해외",
-      "category": "지형·지질·재해",
+      "category": "지형학",
       "title": "절벽은 무너지기 며칠 전부터 신호를 보낸다",
       "journal": "JGR: Earth Surface · 2026 · DOI 10.1029/2025JF008562",
       "researchers": "스크립스 해양연구소(UC 샌디에이고) — Adam Young(해안지형학), Mark Zumberge(지구물리학)",
@@ -148,7 +148,7 @@
     {
       "id": "2026-07-10-mcb-enso",
       "region": "해외",
-      "category": "기후·기상",
+      "category": "기후학",
       "title": "구름을 밝히면 엘니뇨가 61% 약해진다",
       "journal": "Earth's Future · 2025 · 13(8) · DOI 10.1029/2025EF006522",
       "researchers": "UC 샌타바버라 브렌 스쿨 — Chen Xing, Cali Pfleger, Samantha Stevenson",
@@ -194,7 +194,7 @@
     {
       "id": "2026-07-10-hyejeong-map",
       "region": "국내",
-      "category": "지도·GIS",
+      "category": "지도학",
       "title": "경희대 혜정박물관, 여름방학 '지도로 보는 조선' 체험",
       "journal": "중부일보 · 2026.7.10",
       "researchers": "경희대학교 혜정박물관",
@@ -226,7 +226,7 @@
     {
       "id": "2026-07-10-seoul-urban-politics",
       "region": "국내",
-      "category": "인구·도시",
+      "category": "도시지리학",
       "title": "\"서울은 시장의 전유물이 아니다\" — 도시공간의 정치적 생산 연구",
       "journal": "교수신문 · 2026.7.7",
       "researchers": "서울대학교 지리학과 (2026년 2월 박사학위)",

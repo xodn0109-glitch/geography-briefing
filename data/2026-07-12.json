@@ -4,7 +4,7 @@
     {
       "id": "2026-07-12-png-new-island",
       "region": "해외",
-      "category": "지형·지질·재해",
+      "category": "지형학",
       "title": "지구의 '새 섬'이 태어난다 — 위성들이 실시간 중계",
       "journal": "NASA 지구관측 보도 · 2026.7",
       "researchers": "NASA 고더드우주비행센터 Jim Garvin 수석과학자 · 미시간공대 화산학자 Simon Carn 등",
@@ -50,7 +50,7 @@
     {
       "id": "2026-07-12-australia-snow",
       "region": "해외",
-      "category": "기후·기상",
+      "category": "기후학",
       "title": "호주의 겨울이 얇아진다 — 50년 새 눈 30% 감소",
       "journal": "The Conversation · 2026.7",
       "researchers": "기후학자 Andrew B. Watkins",
@@ -96,7 +96,7 @@
     {
       "id": "2026-07-12-canada-car-cities",
       "region": "해외",
-      "category": "인구·도시",
+      "category": "도시지리학",
       "title": "유가 한 번 튀자 드러난 '자동차 도시'의 취약함",
       "journal": "The Conversation · 2026.6",
       "researchers": "맥마스터대 박사후연구원 크리스토퍼 그레이슨-가이토(Christopher J. Greyson-Gaito)",
@@ -142,7 +142,7 @@
     {
       "id": "2026-07-12-uk-regeneration",
       "region": "해외",
-      "category": "인구·도시",
+      "category": "도시지리학",
       "title": "'리본 커팅'만으로는 안 된다 — 영국 도시재생이 놓친 것",
       "journal": "The Conversation · 2026.6 (전문가 패널)",
       "researchers": "스테파니아 피오렌티노(케임브리지대)·헬렌 카(사우샘프턴대)·스티븐 밀링턴(맨체스터 메트로폴리탄대)·리처드 불(노팅엄 트렌트대)",
@@ -192,7 +192,7 @@
     {
       "id": "2026-07-12-kr-depopulation-ri",
       "region": "국내",
-      "category": "인구·도시",
+      "category": "인구지리학",
       "title": "법정리 45%가 인구소멸 위험 — '시·군'으로는 안 보였다",
       "journal": "국토연구원 분석 · 머니투데이 보도 2026.7.8",
       "researchers": "국토연구원 · 김문수 의원(법안 발의)",
@@ -234,7 +234,7 @@
     {
       "id": "2026-07-12-kr-wind-corridor",
       "region": "국내",
-      "category": "인구·도시",
+      "category": "도시지리학",
       "title": "도시의 바람은 설계할 수 있다 — 열섬 잡는 '바람길' 모델",
       "journal": "고려대 연구팀 · 한국강사신문 보도 2026.7",
       "researchers": "고려대 건축사회환경공학부 허연숙 교수(교신저자)·세티안토(제1저자)",
