@@ -359,6 +359,7 @@ function cardHtml(a) {
   </article>`;
 }
 
+let firstRender = true;  // 최초 로드는 페이드 없이, 이후 필터 전환만 페이드
 function render() {
   const feed = document.getElementById("feed");
   // 모든 기사에 날짜를 붙여 평탄화한 뒤 분야별로 묶는다
@@ -376,6 +377,11 @@ function render() {
     </section>`;
   });
   feed.innerHTML = html || `<p class="empty">이 분야의 기사가 아직 없습니다.</p>`;
+  // 분야 필터 전환 시 카드가 뚝 바뀌지 않게 옅은 페이드인(불투명도만 — GPU·스크롤 안전·reduced-motion 친화). 최초 로드는 제외.
+  if (!firstRender && feed.animate) {
+    feed.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 200, easing: "cubic-bezier(0.23, 1, 0.32, 1)" });
+  }
+  firstRender = false;
   // 본문이 짧아 클램프 안에 다 들어가면 페이드·버튼을 없앤다.
   // 반드시 레이아웃(클램프 적용) 이후에 측정해야 한다 — rAF로 다음 프레임에 실행.
   requestAnimationFrame(() => feed.querySelectorAll(".deep").forEach(deep => {
