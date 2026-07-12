@@ -145,8 +145,9 @@ HTML_TEMPLATE = r"""<!doctype html>
   .stat { margin-top: 16px; font-size: .82rem; color: var(--ink-faint); letter-spacing: .01em; }
   .stat b { color: var(--accent-ink); font-weight: 700; }
 
-  .mapnav { border-bottom: 1px solid var(--line); background: var(--surface); }
-  .mapnav .wrap { padding: 14px 20px 8px; }
+  .mapnav .wrap { padding: 18px 20px 6px; }
+  .map-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+              padding: 14px 18px 10px; box-shadow: var(--shadow); }
   .map-datebar { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 8px; }
   .map-datebar button { font: inherit; font-size: .82rem; border: 1px solid var(--line); background: var(--surface);
                         color: var(--ink-soft); border-radius: 8px; padding: 3px 11px; cursor: pointer; transition: .15s; }
@@ -262,15 +263,17 @@ HTML_TEMPLATE = r"""<!doctype html>
 
 <section class="mapnav">
   <div class="wrap">
-    <div class="map-datebar">
-      <button id="map-prev" type="button" aria-label="이전 날짜">◀</button>
-      <span id="map-date"></span>
-      <button id="map-next" type="button" aria-label="다음 날짜">▶</button>
+    <div class="map-card">
+      <div class="map-datebar">
+        <button id="map-prev" type="button" aria-label="이전 날짜">◀</button>
+        <span id="map-date"></span>
+        <button id="map-next" type="button" aria-label="다음 날짜">▶</button>
+      </div>
+      <svg id="navmap" viewBox="0 0 1000 400" role="img" aria-label="기사 위치 세계지도">
+        <path class="land" d="__WORLDPATH__"/>
+      </svg>
+      <p class="map-hint">📍 그날의 뉴스가 일어난 곳 — 점을 누르면 해당 기사로 이동합니다 (전 지구 단위 연구는 표시되지 않음)</p>
     </div>
-    <svg id="navmap" viewBox="0 0 1000 400" role="img" aria-label="기사 위치 세계지도">
-      <path class="land" d="__WORLDPATH__"/>
-    </svg>
-    <p class="map-hint">📍 그날의 뉴스가 일어난 곳 — 점을 누르면 해당 기사로 이동합니다 (전 지구 단위 연구는 표시되지 않음)</p>
   </div>
 </section>
 
