@@ -90,6 +90,7 @@ HTML_TEMPLATE = r"""<!doctype html>
     --talk-ink: #6b4f1d;
     --shadow: 0 1px 2px rgba(20,30,15,.05), 0 6px 20px rgba(20,30,15,.05);
     --maxw: 780px;
+    --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -150,7 +151,9 @@ HTML_TEMPLATE = r"""<!doctype html>
               padding: 14px 18px 10px; box-shadow: var(--shadow); }
   .map-datebar { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 8px; }
   .map-datebar button { font: inherit; font-size: .82rem; border: 1px solid var(--line); background: var(--surface);
-                        color: var(--ink-soft); border-radius: 8px; padding: 3px 11px; cursor: pointer; transition: .15s; }
+                        color: var(--ink-soft); border-radius: 8px; padding: 3px 11px; cursor: pointer;
+                        transition: border-color .15s var(--ease-out), color .15s var(--ease-out), transform .16s var(--ease-out); }
+  .map-datebar button:active:not(:disabled) { transform: scale(0.94); }
   .map-datebar button:hover:not(:disabled) { border-color: var(--accent); color: var(--ink); }
   .map-datebar button:disabled { opacity: .3; cursor: default; }
   #map-date { font-weight: 700; font-size: .95rem; font-variant-numeric: tabular-nums; min-width: 11ch; text-align: center; }
@@ -160,7 +163,7 @@ HTML_TEMPLATE = r"""<!doctype html>
   .newsdot-hit { fill: transparent; cursor: pointer; }
   .newsdot-hit:hover { fill: var(--accent); opacity: .18; }
   .map-hint { margin: 6px 0 0; font-size: .77rem; color: var(--ink-faint); text-align: center; }
-  .card.flash { animation: flashcard 1.8s ease; }
+  .card.flash { animation: flashcard 1.2s var(--ease-out); }
   @keyframes flashcard { 0% { box-shadow: 0 0 0 3px var(--accent); } 100% { box-shadow: var(--shadow); } }
 
   .filters { position: sticky; top: 0; z-index: 5; background: var(--bg);
@@ -169,8 +172,11 @@ HTML_TEMPLATE = r"""<!doctype html>
   .chip {
     font: inherit; font-size: .84rem; cursor: pointer;
     border: 1px solid var(--line); background: var(--surface); color: var(--ink-soft);
-    padding: 6px 13px; border-radius: 999px; transition: .15s; white-space: nowrap;
+    padding: 6px 13px; border-radius: 999px; white-space: nowrap;
+    transition: border-color .15s var(--ease-out), background-color .15s var(--ease-out),
+                color .15s var(--ease-out), transform .16s var(--ease-out);
   }
+  .chip:active { transform: scale(0.96); }
   .chip:hover { border-color: var(--accent); color: var(--ink); }
   .chip.on { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
   @media (prefers-color-scheme: dark){ .chip.on { color: #0f130c; } }
@@ -239,10 +245,16 @@ HTML_TEMPLATE = r"""<!doctype html>
          padding: 2px 8px; border-radius: 6px; }
   a.src { margin-left: auto; font-size: .84rem; font-weight: 600; color: var(--accent-ink);
           text-decoration: none; border: 1px solid var(--line); padding: 6px 12px; border-radius: 8px;
-          transition: .15s; white-space: nowrap; }
+          white-space: nowrap;
+          transition: border-color .15s var(--ease-out), background-color .15s var(--ease-out), transform .16s var(--ease-out); }
   a.src:hover { border-color: var(--accent); background: var(--accent-soft); }
+  a.src:active { transform: scale(0.96); }
 
   .empty { text-align: center; color: var(--ink-faint); padding: 60px 0; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .chip:active, a.src:active, .map-datebar button:active:not(:disabled) { transform: none; }
+  }
 
   footer.bot { border-top: 1px solid var(--line); color: var(--ink-faint); font-size: .8rem; }
   footer.bot .wrap { padding: 24px 20px 48px; }
