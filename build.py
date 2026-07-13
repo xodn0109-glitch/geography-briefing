@@ -312,6 +312,7 @@ HTML_TEMPLATE = r"""<!doctype html>
 const DATA = __DATA__;
 const CURR = __CURRICULUM__;   // {code: {text(본문), explain(해설)}} — 실제 사용된 성취기준만
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmtDate = iso => { const p = String(iso).split("-"); return `${p[0]}. ${+p[1]}. ${+p[2]}.`; };
 
 // 분야별 카운트
 const catCount = {};
@@ -372,22 +373,34 @@ function cardHtml(a) {
 let firstRender = true;  // 최초 로드는 페이드 없이, 이후 필터 전환만 페이드
 function render() {
   const feed = document.getElementById("feed");
-  // 모든 기사에 날짜를 붙여 평탄화한 뒤 분야별로 묶는다
-  const all = [];
-  DATA.days.forEach(d => d.articles.forEach(a => all.push(Object.assign({_date: d.date}, a))));
   let out = "";
-  cats.forEach(cat => {
-    if (active !== "전체" && active !== cat) return;
-    const arts = all.filter(a => a.category === cat)
-                    .sort((x, y) => y._date.localeCompare(x._date));  // 분야 안에서 최신순
-    if (!arts.length) return;
-    out += `<section class="theme">
-      <h2 class="theme-head">${esc(cat)}<span class="theme-n">${arts.length}건</span></h2>
-      ${arts.map(cardHtml).join("")}
-    </section>`;
-  });
+  if (active === "전체") {
+    // 기본 뷰: 날짜별 섹션(최신일 먼저). DATA.days는 build에서 이미 최신순.
+    // 하루 안에서는 JSON에 담긴 순서(해외 먼저 → 국내) 그대로 둔다.
+    DATA.days.forEach(d => {
+      if (!d.articles.length) return;
+      const arts = d.articles.map(a => Object.assign({_date: d.date}, a));
+      out += `<section class="theme">
+        <h2 class="theme-head">${esc(fmtDate(d.date))}<span class="theme-n">${arts.length}건</span></h2>
+        ${arts.map(cardHtml).join("")}
+      </section>`;
+    });
+  } else {
+    // 특정 분야 선택: 모든 날짜에서 그 분야만 모아 최신순 평탄 리스트로.
+    const arts = [];
+    DATA.days.forEach(d => d.articles.forEach(a => {
+      if (a.category === active) arts.push(Object.assign({_date: d.date}, a));
+    }));
+    arts.sort((x, y) => y._date.localeCompare(x._date));
+    if (arts.length) {
+      out = `<section class="theme">
+        <h2 class="theme-head">${esc(active)}<span class="theme-n">${arts.length}건</span></h2>
+        ${arts.map(cardHtml).join("")}
+      </section>`;
+    }
+  }
   feed.innerHTML = out || `<p class="empty">이 분야의 기사가 아직 없습니다.</p>`;
-  // 분야 필터 전환 시 카드가 뚝 바뀌지 않게 옅은 페이드인(불투명도만). 최초 로드는 제외.
+  // 필터 전환 시 카드가 뚝 바뀌지 않게 옅은 페이드인(불투명도만). 최초 로드는 제외.
   if (!firstRender && feed.animate) {
     feed.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 200, easing: "cubic-bezier(0.23, 1, 0.32, 1)" });
   }
