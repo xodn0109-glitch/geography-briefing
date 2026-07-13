@@ -2,8 +2,8 @@
 # 지리 뉴스 브리핑 아카이브 — 사이트 발행(빌드→커밋→푸시) 원자적 실행.
 # SKILL.md 9단계에서 호출한다. 매일 브리핑을 보낸 뒤 반드시 실행되어야 한다.
 #
-# 사용법:  bash publish.sh [YYYY-MM-DD]
-#   날짜 인자를 주면 커밋 메시지에 쓰고, 생략하면 오늘 날짜를 쓴다.
+# 사용법:  bash publish.sh [커밋 메시지 접미사]
+#   인자는 "brief: " 뒤에 그대로 붙는 자유 문구다(보통 YYYY-MM-DD). 생략하면 오늘 날짜.
 #
 # 설계 원칙:
 #   - git add -A 로 '밀린 날짜 파일'까지 함께 쓸어 담는다 → 이전 회차가 푸시를
@@ -20,14 +20,23 @@ cd "$(dirname "$0")" || { echo "PUBLISH: 사이트 폴더 진입 실패"; exit 1
 
 DATE="${1:-$(date +%Y-%m-%d)}"
 
+# 0) 데이터 존재 확인 — data/가 비면 빈 아카이브를 발행해 버리므로 중단.
+if ! ls data/*.json >/dev/null 2>&1; then
+  echo "PUBLISH: data/ 비어있음 — 발행 중단"
+  exit 1
+fi
+
 # 1) 빌드 — data/*.json → index.html
 if ! python3 build.py; then
   echo "PUBLISH: build.py 실패"
   exit 1
 fi
 
-# 2) 스테이징. 변경이 없으면 커밋 없이 성공 종료.
-git add -A
+# 2) 스테이징. add 실패(동시 실행 index.lock 등)가 '변경 없음' 오판으로 이어지지 않게 반드시 검사.
+if ! git add -A; then
+  echo "PUBLISH: git add 실패 (동시 실행 충돌 가능성 — 다음 회차가 자동 수습)"
+  exit 1
+fi
 if git diff --cached --quiet; then
   echo "PUBLISH: 변경 없음 (이미 최신, 커밋 생략)"
   exit 0
@@ -41,16 +50,17 @@ fi
 
 # 4) 푸시 (1차 실패 시 gh 자격증명 설정 후 1회 재시도)
 if git push; then
-  echo "PUBLISH: 완료 (${DATE})"
   git log --oneline -1
+  echo "PUBLISH: 완료 (${DATE})"
   exit 0
 fi
 
-echo "PUBLISH: git push 1차 실패 — gh auth setup-git 후 재시도"
+echo "git push 1차 실패 — 원격 동기화(rebase)·인증 재설정 후 재시도"
+git pull --rebase --autostash 2>/dev/null || true
 gh auth setup-git 2>/dev/null || true
 if git push; then
-  echo "PUBLISH: 완료 (${DATE}, 재시도 성공)"
   git log --oneline -1
+  echo "PUBLISH: 완료 (${DATE}, 재시도 성공)"
   exit 0
 fi
 

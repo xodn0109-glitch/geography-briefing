@@ -12,7 +12,6 @@ site/data/*.json (하루 한 파일)을 모두 읽어 자기완결형 index.html
 import json
 import os
 import glob
-import html
 import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -21,11 +20,13 @@ OUT = os.path.join(HERE, "index.html")
 
 def load_days():
     days = []
-    for path in sorted(glob.glob(os.path.join(DATA_DIR, "*.json")), reverse=True):
+    for path in sorted(glob.glob(os.path.join(DATA_DIR, "*.json"))):
         with open(path, encoding="utf-8") as f:
-            days.append(json.load(f))
-    # 날짜 내림차순
-    days.sort(key=lambda d: d.get("date", ""), reverse=True)
+            day = json.load(f)
+        # 렌더에 쓰는 필드만 담는다 — 봇이 남긴 잔여 필드(intro·weekday 등)가 payload에 실리지 않게.
+        days.append({"date": day.get("date", ""), "articles": day.get("articles", [])})
+    # 날짜 내림차순 — 지도 내비게이터의 idx=0=최신 가정이 이 정렬에 의존한다.
+    days.sort(key=lambda d: d["date"], reverse=True)
     return days
 
 
@@ -39,17 +40,12 @@ def build():
 
     # 통계
     total_articles = sum(len(d["articles"]) for d in days)
-    cats = []
-    for d in days:
-        for a in d["articles"]:
-            if a["category"] not in cats:
-                cats.append(a["category"])
+    cats = {a["category"] for d in days for a in d["articles"]}
 
-    payload = json.dumps({"days": days}, ensure_ascii=False)
-    payload = payload.replace("</", "<\\/")  # </script> 방어
+    # < 전체를 이스케이프해 </script>·<!-- 등 파서 이탈을 원천 차단(JSON 문자열 안에서만 등장 가능).
+    payload = json.dumps({"days": days}, ensure_ascii=False).replace("<", "\\u003c")
 
     tpl = HTML_TEMPLATE
-    tpl = tpl.replace("__DATA__", payload)
     tpl = tpl.replace("__TOTAL__", str(total_articles))
     tpl = tpl.replace("__DAYS__", str(len(days)))
     tpl = tpl.replace("__CATCOUNT__", str(len(cats)))
@@ -86,10 +82,15 @@ def build():
             # 해설은 원문에서 코드를 떼며 남은 선행 조사(에서는/은/는…)를 제거해 자연스럽게.
             ex = re.sub(r"^(에서는|에서|은|는|이|가|을|를|와|과)\s+", "", (s.get("explain") or "").strip())
             curr[code] = {"text": s.get("text", ""), "explain": ex}
-    tpl = tpl.replace("__CURRICULUM__", json.dumps(curr, ensure_ascii=False).replace("</", "<\\/"))
+    tpl = tpl.replace("__CURRICULUM__", json.dumps(curr, ensure_ascii=False).replace("<", "\\u003c"))
+    # 기사 본문(payload)은 자유 텍스트라 다른 플레이스홀더 토큰을 담을 수 있다 — 반드시 맨 마지막에 치환.
+    tpl = tpl.replace("__DATA__", payload)
 
-    with open(OUT, "w", encoding="utf-8") as f:
+    # 임시 파일에 쓴 뒤 원자 교체 — 부분 쓰기 상태의 index.html이 남지 않게.
+    tmp_out = OUT + ".tmp"
+    with open(tmp_out, "w", encoding="utf-8") as f:
         f.write(tpl)
+    os.replace(tmp_out, OUT)
     print(f"built {OUT}  ({len(days)} days, {total_articles} articles)")
 
 
@@ -283,7 +284,7 @@ HTML_TEMPLATE = r"""<!doctype html>
   <div class="map-inner">
     <div class="map-datebar">
       <button id="map-prev" type="button" aria-label="이전 날짜">◀</button>
-      <span id="map-date"></span>
+      <span id="map-date" aria-live="polite"></span>
       <button id="map-next" type="button" aria-label="다음 날짜">▶</button>
     </div>
     <svg id="navmap" viewBox="0 0 1000 400" role="img" aria-label="기사 위치 세계지도">
@@ -312,6 +313,7 @@ HTML_TEMPLATE = r"""<!doctype html>
 const DATA = __DATA__;
 const CURR = __CURRICULUM__;   // {code: {text(본문), explain(해설)}} — 실제 사용된 성취기준만
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const safeUrl = u => /^https?:\/\//i.test(String(u)) ? String(u) : "";
 const fmtDate = iso => { const p = String(iso).split("-"); return `${p[0]}. ${+p[1]}. ${+p[2]}.`; };
 
 // 분야별 카운트
@@ -325,7 +327,8 @@ const cats = CAT_ORDER.filter(c => c in catCount)
   .concat(Object.keys(catCount).filter(c => !CAT_ORDER.includes(c)));
 
 function chipsHtml() {
-  const all = `<button class="chip on" data-cat="전체">전체<span class="n">${DATA.days.reduce((s,d)=>s+d.articles.length,0)}</span></button>`;
+  const total = Object.values(catCount).reduce((s,n)=>s+n,0);
+  const all = `<button class="chip on" data-cat="전체">전체<span class="n">${total}</span></button>`;
   return all + cats.map(c =>
     `<button class="chip" data-cat="${esc(c)}">${esc(c)}<span class="n">${catCount[c]}</span></button>`
   ).join("");
@@ -347,12 +350,12 @@ function cardHtml(a) {
     : "";
   const curric = (a.curriculum||[]).length
     ? `<div class="curric-block"><div class="curric-label">교육과정 연계</div><div class="curric">` +
-      a.curriculum.map(c => `<button class="curric-item" type="button" data-code="${esc(c.code)}"><b>${esc(c.code)}</b> ${esc(c.gloss)}</button>`).join("") +
+      a.curriculum.map(c => `<button class="curric-item" type="button" aria-expanded="false" data-code="${esc(c.code)}"><b>${esc(c.code)}</b> ${esc(c.gloss)}</button>`).join("") +
       `</div><div class="curric-detail"></div></div>`
     : "";
   const tags = (a.tags||[]).map(t => `<span class="tag">#${esc(t)}</span>`).join("");
-  const src = a.source
-    ? `<a class="src" href="${esc(a.source.url)}" target="_blank" rel="noopener">${esc(a.source.name)} →</a>`
+  const src = a.source && safeUrl(a.source.url)
+    ? `<a class="src" href="${esc(safeUrl(a.source.url))}" target="_blank" rel="noopener">${esc(a.source.name)} →</a>`
     : "";
   return `<article class="card" id="${esc(a.id||"")}" data-cat="${esc(a.category)}">
     <div class="meta">
@@ -431,12 +434,12 @@ document.getElementById("feed").addEventListener("click", e => {
   const row = item.closest(".curric");
   const detail = row.nextElementSibling;
   const same = detail.classList.contains("open") && detail.getAttribute("data-code") === code;
-  row.querySelectorAll(".curric-item").forEach(b => b.classList.remove("active"));
+  row.querySelectorAll(".curric-item").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-expanded", "false"); });
   if (same) { detail.classList.remove("open"); detail.removeAttribute("data-code"); return; }
   detail.setAttribute("data-code", code);
   detail.innerHTML = `<div class="cd-code">${esc(code)}</div><div class="cd-text">${esc(info.text)}</div>` +
     (info.explain ? `<div class="cd-explain"><span class="cd-label">해설</span>${esc(info.explain)}</div>` : "");
-  detail.classList.add("open"); item.classList.add("active");
+  detail.classList.add("open"); item.classList.add("active"); item.setAttribute("aria-expanded", "true");
   if (detail.animate) detail.animate([{opacity:0},{opacity:1}], {duration:180, easing:"cubic-bezier(0.23,1,0.32,1)"});
 });
 render();
@@ -452,7 +455,10 @@ function goToArticle(id){
   }
   const el = document.getElementById(id);
   if (!el) return;
-  const y = el.getBoundingClientRect().top + window.scrollY - 56;
+  // sticky 스택 = topnav(44px) + 필터바 실측 높이 — 카드 상단이 바 뒤에 숨지 않게 보정.
+  const bar = document.querySelector(".filters");
+  const stick = 44 + (bar ? bar.offsetHeight : 12);
+  const y = el.getBoundingClientRect().top + window.scrollY - (stick + 12);
   window.scrollTo({ top: y, behavior: "smooth" });
   el.classList.add("flash");
   setTimeout(() => el.classList.remove("flash"), 1800);
@@ -467,8 +473,6 @@ function goToArticle(id){
   const btnPrev = document.getElementById("map-prev");   // 과거로
   const btnNext = document.getElementById("map-next");   // 최신으로
   let idx = 0;  // DATA.days 인덱스 (0 = 최신 날짜)
-
-  const fmt = iso => { const [y,m,d] = iso.split("-"); return `${y}. ${+m}. ${+d}.`; };
 
   function draw(){
     svg.querySelectorAll("circle").forEach(c => c.remove());   // 육지 path는 유지
@@ -501,7 +505,7 @@ function goToArticle(id){
       mk(15, "newsdot-hit");   // 투명 히트 영역(터치·클릭용)
       n++;
     });
-    label.textContent = `${fmt(day.date)} · ${n}곳`;
+    label.textContent = `${fmtDate(day.date)} · ${n}곳`;
     btnPrev.disabled = (idx >= DATA.days.length - 1);
     btnNext.disabled = (idx <= 0);
   }
