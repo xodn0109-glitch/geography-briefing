@@ -26,6 +26,16 @@ if ! ls data/*.json >/dev/null 2>&1; then
   exit 1
 fi
 
+# 0.5) 교육과정 매칭 하드 게이트 — 규칙 위반이면 발행 자체를 막는다.
+#      SKILL(프롬프트)의 규칙은 강제력이 없다: '화산→지오투어리즘'을 대표 오판으로 명시해 둔
+#      상태에서도 그 오판이 실제로 발생했다(2026-07-14 감사). 그래서 여기서 코드가 막는다.
+#      --fix 는 판단이 필요 없는 것(gloss 표준화·중복 제거)만 교정하고, 나머지(날조 코드·
+#      기사당 3개 이상·gloss 길이)는 차단한다. 의미 판단은 eval/ 의 몫이다.
+if ! python3 check_curriculum.py --fix; then
+  echo "PUBLISH: 교육과정 검증 실패 — 발행 중단 (위 ✗ 항목을 고친 뒤 다시 실행)"
+  exit 1
+fi
+
 # 1) 빌드 — data/*.json → index.html
 if ! python3 build.py; then
   echo "PUBLISH: build.py 실패"
