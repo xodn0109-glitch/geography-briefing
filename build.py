@@ -167,7 +167,7 @@ HTML_TEMPLATE = r"""<!doctype html>
   #map-date { color: var(--ink); font-size: 15px; font-weight: 600; letter-spacing: -.01em;
               font-variant-numeric: tabular-nums; min-width: 14ch; text-align: center; }
   #navmap { width: 100%; height: auto; display: block; }
-  #navmap .land { fill: #e8e8ed; stroke: #d2d2d7; stroke-width: .6; }
+  #navmap .land, #navmap use { fill: #e8e8ed; stroke: #d2d2d7; stroke-width: .6; }
   .newsdot { fill: var(--accent); stroke: #fff; stroke-width: 1.8; pointer-events: none; }
   .newsdot-hit { fill: transparent; cursor: pointer; }
   .newsdot-hit:hover { fill: var(--accent); opacity: .22; }
@@ -305,8 +305,10 @@ HTML_TEMPLATE = r"""<!doctype html>
       <span id="map-date" aria-live="polite"></span>
       <button id="map-next" type="button" aria-label="다음 날짜">▶</button>
     </div>
-    <svg id="navmap" viewBox="0 0 1000 400" role="img" aria-label="기사 위치 세계지도">
-      <path class="land" d="__WORLDPATH__"/>
+    <svg id="navmap" viewBox="417 0 1000 400" role="img" aria-label="기사 위치 세계지도 (태평양 중심)">
+      <path id="land-path" class="land" d="__WORLDPATH__"/>
+      <use href="#land-path" x="1000"/>
+      <use href="#land-path" x="-1000"/>
     </svg>
     <p class="map-hint">그날의 뉴스가 일어난 곳 — 점을 누르면 해당 기사로 이동합니다 (전 지구 단위 연구는 표시되지 않음)</p>
   </div>
@@ -562,7 +564,11 @@ function goToArticle(id){
   const svg = document.getElementById("navmap");
   if (!svg || !DATA.days.length) return;
   const W = 1000, TOP = 84, BOT = -60, H = 400;
-  const px = lon => (lon + 180) * (W / 360);
+  // 태평양 중심(중심 경도 150°E): 창을 오른쪽으로 옮겨(viewBox minX=417) 한국·아시아·태평양을 가운데로.
+  // 육지 그림은 <use>로 한 벌 더 이어 붙여 뒀고, 점이 창 왼쪽(MINX) 밖이면 지도 폭(W)만큼 감아 복제본 위에 얹는다.
+  // MINX는 SVG viewBox의 minX와 반드시 같은 값이어야 육지와 점이 정렬된다.
+  const MINX = 417;
+  const px = lon => { const x = (lon + 180) * (W / 360); return x < MINX ? x + W : x; };
   const py = lat => (TOP - Math.max(BOT, Math.min(TOP, lat))) * (H / (TOP - BOT));
   const label = document.getElementById("map-date");
   const btnPrev = document.getElementById("map-prev");   // 과거로
