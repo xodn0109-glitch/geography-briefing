@@ -177,7 +177,25 @@ HTML_TEMPLATE = r"""<!doctype html>
   .filters { position: sticky; top: 44px; z-index: 20; background: var(--glass);
              -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
              border-bottom: 1px solid var(--line); }
-  .filters .wrap { display: flex; gap: 8px; flex-wrap: wrap; padding-top: 12px; padding-bottom: 12px; }
+  .filters .wrap { display: flex; flex-direction: column; gap: 10px; padding-top: 12px; padding-bottom: 12px; }
+  .searchbar { position: relative; width: 100%; }
+  .searchbar .s-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+                       width: 16px; height: 16px; color: var(--ink-faint); pointer-events: none; }
+  .searchbar input { width: 100%; font: inherit; font-size: 15px; line-height: 1.2;
+                     padding: 11px 42px 11px 40px; border: 1px solid var(--line); border-radius: 980px;
+                     background: #fff; color: var(--ink); letter-spacing: -.01em;
+                     -webkit-appearance: none; appearance: none; }
+  .searchbar input::-webkit-search-cancel-button { -webkit-appearance: none; display: none; }
+  .searchbar input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(0,102,204,.12); }
+  .searchbar input::placeholder { color: var(--ink-faint); }
+  .s-clear { position: absolute; right: 7px; top: 50%; transform: translateY(-50%); border: none;
+             background: var(--surface-2); cursor: pointer; color: var(--ink-faint); font-size: 17px;
+             line-height: 1; width: 28px; height: 28px; border-radius: 50%; padding: 0;
+             display: none; align-items: center; justify-content: center; }
+  .s-clear:hover { color: var(--ink); }
+  .s-clear.show { display: inline-flex; }
+  .chips { display: flex; gap: 8px; flex-wrap: wrap; }
+  mark { background: #fff3b0; color: inherit; border-radius: 3px; padding: 0 1px; }
   .chip { font: inherit; font-size: 14px; cursor: pointer; border: 1px solid var(--line);
           background: #fff; color: var(--ink-soft); padding: 8px 15px; border-radius: 980px;
           white-space: nowrap; letter-spacing: -.01em;
@@ -295,7 +313,14 @@ HTML_TEMPLATE = r"""<!doctype html>
 </section>
 
 <nav class="filters">
-  <div class="wrap" id="chips"></div>
+  <div class="wrap">
+    <div class="searchbar">
+      <svg class="s-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+      <input id="q" type="search" autocomplete="off" placeholder="키워드로 검색 — 화산, 도시, 인구, 기후…" aria-label="기사 키워드 검색">
+      <button id="q-clear" class="s-clear" type="button" aria-label="검색어 지우기">×</button>
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
 </nav>
 
 <main>
@@ -320,6 +345,7 @@ const fmtDate = iso => { const p = String(iso).split("-"); return `${p[0]}. ${+p
 const catCount = {};
 DATA.days.forEach(d => d.articles.forEach(a => { catCount[a.category] = (catCount[a.category]||0)+1; }));
 let active = "전체";
+let query = "";  // 검색어. 비어 있으면 기존 날짜/분야 뷰, 채워지면 검색 모드.
 // 분야 표시 순서(지리학 분과 체계: 자연 → 인문 → 정치지리 → 지도·GIS 도구 → 교육). 목록에 없는 분야는 뒤에 자동 추가.
 // 필터 칩과 본문 섹션이 반드시 같은 순서를 쓰도록 여기서 한 번만 정한다.
 const CAT_ORDER = ["지형학","기후학","도시지리학","경제지리학","지역지리학","문화지리학","역사지리학","인구지리학","지정학·국제","지도학","GIS","지리교육"];
@@ -334,11 +360,41 @@ function chipsHtml() {
   ).join("");
 }
 
-function cardHtml(a) {
+// 검색 대상 텍스트를 한 번 만들어 원본 기사에 캐시(제목·요약·본문·이야깃거리·태그·지역·연구진·매체·분야·교육과정).
+function searchText(a){
+  if (a._hay !== undefined) return a._hay;
+  const parts = [a.title, a.summary, a.talk, a.region, a.researchers, a.journal, a.category];
+  (a.body||[]).forEach(s => { parts.push(s.h, s.p); });
+  (a.tags||[]).forEach(t => parts.push(t));
+  (a.curriculum||[]).forEach(c => { parts.push(c.code, c.gloss); });
+  a._hay = parts.filter(Boolean).join(" ").toLowerCase();
+  return a._hay;
+}
+function articleMatches(a, tokens){
+  const hay = searchText(a);
+  return tokens.every(t => hay.includes(t));   // 모든 토큰(AND) 포함
+}
+// 검색어 강조: 원문을 매칭 조각 단위로 잘라 각 조각을 개별 esc → HTML 엔티티가 쪼개질 일이 없음.
+function hl(text, tokens){
+  const raw = text == null ? "" : String(text);
+  if (!tokens || !tokens.length) return esc(raw);
+  const pats = tokens.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).filter(Boolean);
+  if (!pats.length) return esc(raw);
+  const re = new RegExp("(" + pats.join("|") + ")", "gi");
+  let out = "", last = 0, m;
+  while ((m = re.exec(raw)) !== null){
+    out += esc(raw.slice(last, m.index)) + "<mark>" + esc(m[0]) + "</mark>";
+    last = m.index + m[0].length;
+    if (m.index === re.lastIndex) re.lastIndex++;
+  }
+  return out + esc(raw.slice(last));
+}
+
+function cardHtml(a, tokens) {
   const dp = (a._date||"").split("-");
   const dl = dp.length===3 ? `${+dp[1]}.${+dp[2]}` : "";
   const who = a.researchers ? `<p class="who">${esc(a.researchers)}</p>` : "";
-  const summary = a.summary ? `<p class="summary">${esc(a.summary)}</p>` : "";
+  const summary = a.summary ? `<p class="summary">${hl(a.summary, tokens)}</p>` : "";
   const sections = (a.body||[]).map(s =>
     `<div class="sec"><div class="sec-h">${esc(s.h)}</div><p class="sec-p">${esc(s.p)}</p></div>`).join("");
   const deep = sections
@@ -363,7 +419,7 @@ function cardHtml(a) {
       <span class="m-region">${esc(a.region)}</span>
       <span class="m-journal">${esc(a.journal||"")}</span>
     </div>
-    <h3 class="title">${esc(a.title)}</h3>
+    <h3 class="title">${hl(a.title, tokens)}</h3>
     ${who}
     ${summary}
     ${deep}
@@ -377,6 +433,30 @@ let firstRender = true;  // 최초 로드는 페이드 없이, 이후 필터 전
 function render() {
   const feed = document.getElementById("feed");
   let out = "";
+  const q = query.trim().toLowerCase();
+  const tokens = q ? q.split(/\s+/) : [];
+  if (tokens.length) {
+    // 검색 모드: (활성 분야가 있으면 그 안에서) 모든 날짜의 매칭 기사를 최신순 평탄 리스트로.
+    const arts = [];
+    DATA.days.forEach(d => d.articles.forEach(a => {
+      if ((active === "전체" || a.category === active) && articleMatches(a, tokens))
+        arts.push(Object.assign({_date: d.date}, a));
+    }));
+    arts.sort((x, y) => y._date.localeCompare(x._date));
+    const head = active === "전체" ? "검색 결과" : `검색 결과 · ${esc(active)}`;
+    if (arts.length) {
+      out = `<section class="theme">
+        <h2 class="theme-head">${head}<span class="theme-n">${arts.length}건</span></h2>
+        ${arts.map(a => cardHtml(a, tokens)).join("")}
+      </section>`;
+    }
+    feed.innerHTML = out || `<p class="empty">‘${esc(query.trim())}’에 대한 결과가 없습니다.</p>`;
+    if (!firstRender && feed.animate) {
+      feed.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 200, easing: "cubic-bezier(0.23, 1, 0.32, 1)" });
+    }
+    firstRender = false;
+    return;
+  }
   if (active === "전체") {
     // 기본 뷰: 날짜별 섹션(최신일 먼저). DATA.days는 build에서 이미 최신순.
     // 하루 안에서는 JSON에 담긴 순서(해외 먼저 → 국내) 그대로 둔다.
@@ -385,7 +465,7 @@ function render() {
       const arts = d.articles.map(a => Object.assign({_date: d.date}, a));
       out += `<section class="theme">
         <h2 class="theme-head">${esc(fmtDate(d.date))}<span class="theme-n">${arts.length}건</span></h2>
-        ${arts.map(cardHtml).join("")}
+        ${arts.map(a => cardHtml(a)).join("")}
       </section>`;
     });
   } else {
@@ -398,7 +478,7 @@ function render() {
     if (arts.length) {
       out = `<section class="theme">
         <h2 class="theme-head">${esc(active)}<span class="theme-n">${arts.length}건</span></h2>
-        ${arts.map(cardHtml).join("")}
+        ${arts.map(a => cardHtml(a)).join("")}
       </section>`;
     }
   }
@@ -417,6 +497,17 @@ document.getElementById("chips").addEventListener("click", e => {
   document.querySelectorAll(".chip").forEach(c => c.classList.toggle("on", c===b));
   render();
 });
+// 검색 입력
+const qInput = document.getElementById("q");
+const qClear = document.getElementById("q-clear");
+function applyQuery(v){
+  query = v;
+  qClear.classList.toggle("show", query.trim().length > 0);
+  render();
+}
+qInput.addEventListener("input", () => applyQuery(qInput.value));
+qInput.addEventListener("keydown", e => { if (e.key === "Escape") { qInput.value = ""; applyQuery(""); } });
+qClear.addEventListener("click", () => { qInput.value = ""; applyQuery(""); qInput.focus(); });
 // 본문 자세히 펼치기/접기
 document.getElementById("feed").addEventListener("click", e => {
   const btn = e.target.closest(".deep-toggle"); if (!btn) return;
@@ -448,11 +539,15 @@ render();
 // 기사 geo:{lat,lon,label}를 equirectangular 투영으로 점 찍기.
 // 투영 상수는 world_land_path.txt 생성 스크립트와 반드시 동일해야 한다: lat [-60,84] → 1000×400.
 function goToArticle(id){
+  // 지도에서 특정 기사로 갈 때는 검색·분야 필터를 풀어 대상 카드가 반드시 존재하게 한다.
+  let needRender = false;
+  if (query) { query = ""; qInput.value = ""; qClear.classList.remove("show"); needRender = true; }
   if (active !== "전체") {
     active = "전체";
     document.querySelectorAll(".chip").forEach(c => c.classList.toggle("on", c.dataset.cat === "전체"));
-    render();  // 동기 렌더 — 프레임 대기 불필요
+    needRender = true;
   }
+  if (needRender) render();  // 동기 렌더 — 프레임 대기 불필요
   const el = document.getElementById(id);
   if (!el) return;
   // sticky 스택 = topnav(44px) + 필터바 실측 높이 — 카드 상단이 바 뒤에 숨지 않게 보정.
