@@ -277,6 +277,13 @@ HTML_TEMPLATE = r"""<!doctype html>
     .chip:active, a.src:active, .curric-item:active, .deep-toggle:active,
     .map-datebar button:active:not(:disabled) { transform: none; }
   }
+
+  /* 모바일: 필터바를 붙박이로 두지 않고 본문과 함께 흘려보낸다.
+     좁은 화면에선 상단바(44px)+검색창+칩이 겹겹이 고정돼 기사가 보일 자리가 없다.
+     정지 상태에선 뒤로 지나갈 내용이 없으므로 backdrop-filter도 끈다(무의미한 합성 비용). */
+  @media (max-width: 640px) {
+    .filters { position: static; -webkit-backdrop-filter: none; backdrop-filter: none; }
+  }
 </style>
 </head>
 <body>
@@ -553,8 +560,10 @@ function goToArticle(id){
   const el = document.getElementById(id);
   if (!el) return;
   // sticky 스택 = topnav(44px) + 필터바 실측 높이 — 카드 상단이 바 뒤에 숨지 않게 보정.
+  // 모바일에선 필터바가 static이라(위 미디어쿼리) 가려지지 않는다 → 실제 position을 보고 더한다.
   const bar = document.querySelector(".filters");
-  const stick = 44 + (bar ? bar.offsetHeight : 12);
+  const barSticks = bar && getComputedStyle(bar).position === "sticky";
+  const stick = 44 + (barSticks ? bar.offsetHeight : 0);
   const y = el.getBoundingClientRect().top + window.scrollY - (stick + 12);
   window.scrollTo({ top: y, behavior: "smooth" });
   el.classList.add("flash");
