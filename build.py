@@ -148,9 +148,10 @@ HTML_TEMPLATE = r"""<!doctype html>
   .frame { width: clamp(29px, 4.7vw, 44px); height: clamp(42px, 6.8vw, 63px);
            border: clamp(4px, 0.65vw, 6px) solid var(--yellow); border-radius: 2px; flex: none; }
   h1 { font-size: clamp(34px, 6vw, 56px); font-weight: 600; line-height: 1.06;
-       letter-spacing: -.03em; color: var(--ink); margin: 0; }
+       letter-spacing: -.03em; color: var(--ink); margin: 0; word-break: keep-all; }
   .tagline { font-size: clamp(19px, 2.6vw, 26px); font-weight: 400; line-height: 1.32;
-             letter-spacing: -.008em; color: var(--ink); margin: 24px auto 0; max-width: 34rem; }
+             letter-spacing: -.008em; color: var(--ink); margin: 24px auto 0; max-width: 34rem;
+             word-break: keep-all; }
   .stat { font-size: 14px; color: var(--ink-faint); letter-spacing: -.01em; margin: 28px 0 0;
           font-variant-numeric: tabular-nums; }
 
@@ -283,6 +284,13 @@ HTML_TEMPLATE = r"""<!doctype html>
      정지 상태에선 뒤로 지나갈 내용이 없으므로 backdrop-filter도 끈다(무의미한 합성 비용). */
   @media (max-width: 640px) {
     .filters { position: static; -webkit-backdrop-filter: none; backdrop-filter: none; }
+
+    /* 제목을 한 줄에 — 좁은 화면에서 '아카이브'의 '브'만 다음 줄로 떨어지는 것을 막는다.
+       실측: 제목 한 줄 폭 = 글자크기 × 9.72(현재 폰트). 가용 폭 = 100vw − 44(히어로 좌우
+       패딩) − 29(로고) − 12(간격) = 100vw − 85. 나눗수 10.2는 폰트 대체(fallback) 시의
+       폭 차이를 흡수할 여유분이다. 화면이 넓으면(약 432px↑) 원래 크기 34px을 그대로 쓴다.
+       그래도 넘칠 경우엔 위 word-break:keep-all이 띄어쓰기에서 끊어 '브' 고아줄을 막는다. */
+    h1 { font-size: min(34px, calc((100vw - 85px) / 10.2)); }
   }
 </style>
 </head>
