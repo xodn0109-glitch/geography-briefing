@@ -155,6 +155,19 @@ HTML_TEMPLATE = r"""<!doctype html>
   .stat { font-size: 14px; color: var(--ink-faint); letter-spacing: -.01em; margin: 28px 0 0;
           font-variant-numeric: tabular-nums; }
 
+  /* 텔레그램 채널 구독 유도 — 히어로(첫 방문자)와 푸터(끝까지 읽은 사람) 두 곳 */
+  .subscribe { display: inline-flex; align-items: center; gap: 8px; margin: 26px 0 0;
+               background: var(--accent); color: #fff; font-size: 15px; font-weight: 600;
+               padding: 12px 22px; border-radius: 980px; text-decoration: none;
+               letter-spacing: -.01em; white-space: nowrap;
+               transition: background-color .15s var(--ease-out), transform .16s var(--ease-out); }
+  .subscribe:hover { background: #0055ad; text-decoration: none; }
+  .subscribe:active { transform: scale(0.97); }
+  .subscribe svg { width: 17px; height: 17px; flex: none; }
+  .sub-note { margin: 11px 0 0; font-size: 13px; color: var(--ink-faint); letter-spacing: -.01em; }
+  .foot-sub { font-size: 13px; margin-top: 14px !important; }
+  .foot-sub a { font-weight: 600; }
+
   /* 지도 */
   .mapnav { background: var(--surface); padding: 8px 22px 56px; }
   .map-inner { max-width: var(--maxw); margin: 0 auto; }
@@ -276,7 +289,7 @@ HTML_TEMPLATE = r"""<!doctype html>
 
   @media (prefers-reduced-motion: reduce) {
     .chip:active, a.src:active, .curric-item:active, .deep-toggle:active,
-    .map-datebar button:active:not(:disabled) { transform: none; }
+    .subscribe:active, .map-datebar button:active:not(:disabled) { transform: none; }
   }
 
   /* 모바일: 필터바를 붙박이로 두지 않고 본문과 함께 흘려보낸다.
@@ -310,6 +323,11 @@ HTML_TEMPLATE = r"""<!doctype html>
     </div>
     <p class="tagline">매일 아침 보내드리는 텔레그램 요약본의 조금 더 긴 내용을 이 사이트에서 확인할 수 있습니다.</p>
     <p class="stat">__TOTAL__건 · __DAYS__일치 · __CATCOUNT__개 분야 · 최신 __LATEST__</p>
+    <a class="subscribe" href="https://t.me/geo_news_brief" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 19 20.1c-.2 1-.8 1.2-1.6.7l-4.4-3.2-2.1 2c-.2.2-.4.4-.9.4l.3-4.5 8.2-7.4c.4-.3-.1-.5-.6-.2L6.8 13.2 2.4 11.8c-1-.3-1-1 .2-1.4l17.1-6.6c.8-.3 1.5.2 1.2 1.5z"/></svg>
+      매일 아침 텔레그램으로 받기
+    </a>
+    <p class="sub-note">공개 채널 · @geo_news_brief</p>
   </div>
 </header>
 
@@ -348,6 +366,7 @@ HTML_TEMPLATE = r"""<!doctype html>
   <div class="wrap">
     <p>이 사이트는 매일 아침 브리핑 봇이 생성합니다. 본문의 사실 진술은 각 기사 원문에서 확인한 것이며, 이야깃거리는 편집자의 해석입니다.</p>
     <p>각 카드의 ‘본문 자세히’를 눌러 전체를 열고, ‘매체명 →’으로 원문을 확인하세요.</p>
+    <p class="foot-sub">매일 아침 짧은 요약으로 받아보시려면 → <a href="https://t.me/geo_news_brief" target="_blank" rel="noopener">텔레그램 채널 구독하기</a></p>
   </div>
 </footer>
 
