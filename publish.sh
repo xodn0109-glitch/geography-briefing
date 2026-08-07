@@ -36,6 +36,16 @@ if ! python3 check_curriculum.py --fix; then
   exit 1
 fi
 
+# 0.6) 제목 단언 하드 게이트 — 제목이 자기 요약문과 모순되면 발행을 막는다.
+#      2026-08-07 실제 사고: 제목 "물이 강에 없다" + 요약 "350만에 그칠 것으로 추정된다".
+#      SKILL의 제목 불변식이 '수치·기간·비율'만 보고 있어 숫자 없는 이 제목은 그냥 통과했다.
+#      차단은 판단이 0%인 것만 한다(과거 164건 전수 오탐 0건 실측). 문장 품질·어감은
+#      경고까지만 — 코드로 판정할 수 없다.
+if ! python3 check_titles.py; then
+  echo "PUBLISH: 제목 검증 실패 — 발행 중단 (제목을 요약에 맞게 낮추고 다시 실행)"
+  exit 1
+fi
+
 # 1) 빌드 — data/*.json → index.html
 if ! python3 build.py; then
   echo "PUBLISH: build.py 실패"
