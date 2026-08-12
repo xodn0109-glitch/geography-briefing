@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""제목 단언 하드 게이트 — publish.sh가 빌드 직전에 호출한다.
+"""제목·💬 단언 하드 게이트 — publish.sh가 빌드 직전에 호출한다.
 
 ■ 왜 있나 (2026-08-07 실제 사고)
     제목 "콜로라도강, 나누기로 한 물이 강에 없다"
@@ -12,17 +12,28 @@
     뿐이었다. 이 제목에는 숫자가 하나도 없어서 게이트를 그냥 통과했다. 문제는
     숫자가 아니라 **서술어**였다. 그래서 서술어까지 코드로 막는다.
 
-■ 차단(BLOCK, exit 1) — 판단이 0%인 것만. 과거 164건 전수 오탐 0건 확인(2026-08-07)
+■ 차단(BLOCK, exit 1) — 판단이 0%인 것만. 과거 전수에 돌려 오탐 0을 확인한 뒤 올렸다.
     · 모순형: 제목이 존재를 부정하는데, 요약·본문에는 '있긴 있고 적다'는 양(量)
       진술("350만에 그칠", "3곳만 남았")이 있다 → 제목이 자기 텍스트와 충돌
     · 연도(4자리)·퍼센트·온도가 제목에 있는데 요약·본문에 없다 → 지어낸 숫자
       (SKILL 제목 재료 불변식의 코드화. 실제 사고 계열: 원문에 없는 기간이 제목에 샌 건)
+    · **💬(talk)의 기간 표현**('N년 뒤/먼저/간/째/만의/앞서/전에')이 기준 문서에
+      직접 없고 연도 산술로도 나오지 않으면 차단 (2026-08-12 신설, 실측: 과거 6건 중
+      4건 차단·전부 정당·오탐 0). SKILL 제목 규칙은 제목·오늘의 한 줄·💬 모두를
+      구속하는데 코드는 제목만 보고 있었고, 그 구멍으로 실제 두 건이 나갔다 —
+      8/02 "8일마다 찍힌 위성 기록이 40년 뒤"(기준 문서는 1984~2013),
+      8/12 "대만은 그 길을 45년 먼저 갔고"(기준 문서는 1980년 출범).
+      💬는 해석이 자유롭지만 **그 안의 숫자는 여전히 사실**이라서 재료가 필요하다.
 
 ■ 경고(WARN, 차단하지 않음) — **오탐률을 실측해서 차단에서 내렸다**
     · 부정 어휘 무근거(오탐 5/6): "국경이 사라졌다" ← 본문 "철거됐다·없어진 것",
       "런던의 사라진 하늘" ← "하늘을 못 보게 됐다". 한국어는 같은 뜻을 다른 낱말로
       쓰므로 '제목 낱말이 본문에 그대로 있어야 한다'는 조건은 정당한 제목을 잡는다.
     · 기간 표현 무근거(오탐 2/3): "한 해 300일"(연간의 뜻), "닷새 전"←"5일 전".
+    · **💬의 기간 아닌 숫자**(오탐 8/10): 수업 활동 제안의 임의 수치("반경 500m 안에
+      몇 개인지 세어보는 활동"), 한국 배경 통계("도시화율 90%", "합계출산율 0.7"),
+      낱말로 쓰인 숫자("기관이 0곳"←"한 곳도 없었다"), 허용된 산술("4년 뒤"←2030-2026).
+      기간 표현만 좁혀 잡으면 오탐이 0이 되므로 차단은 그쪽에만 걸었다.
     · 어감: 긴 관형절(~기로 한/~라고 밝힌) + 물리적 부정형(없다/말랐다)은 층이
       어긋나 덜컹거린다. 이번 사고 제목의 어색함이 여기서 왔다. 문장 품질은
       코드로 판정할 수 없다 — 경고까지가 코드의 몫이다.
@@ -58,6 +69,10 @@ YEAR = re.compile(r"(?<!\d)(?:1[6-9]\d\d|20[0-4]\d)년")
 PCT = re.compile(r"\d[\d\.]*\s*%")
 DEG = re.compile(r"\d[\d\.]*\s*도(?![시로구군민])")
 DURATION = re.compile(r"하루|이틀|사흘|나흘|닷새|엿새|열흘|보름|한 달|두 달|석 달|넉 달|반년")
+# 💬의 기간 표현 — 'N년 뒤/먼저/간/째/만의/앞서/전에'
+TALK_SPAN = re.compile(r"(\d[\d,\.]*)\s*년\s*(뒤|먼저|간|째|만의|앞서|전에)")
+YEAR4 = re.compile(r"(?:19\d\d|20[0-4]\d)년")
+TRANS = os.path.join(HERE, "..", "translations")
 # 'N년치·N년간·N개월' — 자료 기간을 부풀린 제목. 2026-08-02 실제 사고가 이 형태였다.
 SPAN = re.compile(r"(\d[\d,\.]*)\s*(년치|년간|년\s*동안|개월)")
 # 본문의 연도 범위 — 'N년치'의 근거로 산술 대조한다(1984~2013년 → 29~30년)
@@ -70,6 +85,45 @@ CLUNKY = (re.compile(r"기로 한|라고 밝힌|하겠다는|한다는"),
 
 def norm(s):
     return s.replace(",", "").replace(" ", "")
+
+
+def reference_doc(date, idx, a):
+    """그 기사의 **기준 문서**(SKILL 공용 개념 ①) — 💬 검사의 근거.
+
+    해외=확정 번역문 / 국내=보관 원문이 translations/YYYY-MM-DD/N-슬러그.md 에 있다.
+    2026-08-11 이전 회차에는 이 폴더가 없으므로 요약+본문으로 우아하게 강등한다.
+    """
+    base = article_text(a)
+    d = os.path.join(TRANS, date)
+    if os.path.isdir(d):
+        for f in os.listdir(d):
+            if f.startswith(f"{idx}-"):
+                base += " " + open(os.path.join(d, f), encoding="utf-8").read()
+    return base
+
+
+def check_talk(talk, ref, pub_year):
+    """💬의 숫자 검사 — 기간 표현은 차단, 나머지는 경고."""
+    blocks, warns = [], []
+    if not talk:
+        return blocks, warns
+    nref = norm(ref)
+    years = sorted({int(y[:-1]) for y in YEAR4.findall(ref)})
+    diffs = {abs(b - a) for a in years + [pub_year] for b in years + [pub_year]}
+    for num, unit in TALK_SPAN.findall(talk):
+        n = num.replace(",", "")
+        if n + "년" in nref:
+            continue                                   # 기준 문서에 직접 있음
+        if n.isdigit() and int(n) in diffs:
+            continue                                   # 기준 문서 연도 산술로 나옴
+        blocks.append(f"💬의 기간 '{num}년 {unit}' 이 기준 문서에 없고 연도 산술로도 안 나옴"
+                      f" (기준 문서 연도: {years or '없음'})")
+    span_toks = {m.group(0) for m in TALK_SPAN.finditer(talk)}
+    rest = TALK_SPAN.sub(" ", talk)
+    for tok in sorted(set(re.findall(r"\d[\d,\.]*", rest))):
+        if norm(tok) not in nref:
+            warns.append(f"💬의 숫자 '{tok}' 이 기준 문서에 없음 — 수업 활동 예시·산술이면 무해")
+    return blocks, warns
 
 
 def article_text(a):
@@ -131,9 +185,14 @@ def main():
             for p in sorted(glob.glob(os.path.join(DATA, "*.json")))}
     n_art, blocks, warns = 0, [], []
     for p, d in docs.items():
-        for a in d.get("articles", []):
+        date = os.path.basename(p)[:10]
+        pub_year = int(date[:4]) if date[:4].isdigit() else 2026
+        for idx, a in enumerate(d.get("articles", []), 1):
             n_art += 1
             b, w = check(a["title"], article_text(a))
+            tb, tw = check_talk(a.get("talk", ""), reference_doc(date, idx, a), pub_year)
+            b += tb
+            w += tw
             blocks += [f"{a['id']}\n        제목: {a['title']}\n        {x}" for x in b]
             warns += [f"{a['id']} — {x}\n        제목: {a['title']}" for x in w]
 
