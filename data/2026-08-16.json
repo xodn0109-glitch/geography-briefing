@@ -4,6 +4,7 @@
     {
       "id": "2026-08-16-uk-extreme-weather-workers",
       "region": "해외",
+      "target_country": "GB",
       "category": "경제지리학",
       "title": "폭염에 다친 노동자, 지켜 줄 온도 기준이 필요하다",
       "journal": "The Conversation · 2026-08-15",
@@ -58,6 +59,7 @@
     {
       "id": "2026-08-16-netherlands-drought-water-management",
       "region": "해외",
+      "target_country": "NL",
       "category": "기후학",
       "title": "홍수를 막던 네덜란드가 이제 물을 붙잡는다",
       "journal": "AFP · 2026-08-15",
@@ -112,6 +114,7 @@
     {
       "id": "2026-08-16-spain-total-solar-eclipse",
       "region": "해외",
+      "target_country": "ES",
       "category": "지도학",
       "title": "개기일식은 스페인에서 해 질 무렵 2분이었다",
       "journal": "NASA Earth Observatory · 2026-08-14",
@@ -165,7 +168,8 @@
     },
     {
       "id": "2026-08-16-china-historical-geography",
-      "region": "국내",
+      "region": "해외",
+      "target_country": "CN",
       "category": "역사지리학",
       "title": "경계선은 고정된 선이 아니라 이동의 결과였다",
       "journal": "뉴스N연합 · 2026-08-15",
@@ -207,6 +211,7 @@
     {
       "id": "2026-08-16-imsil-population-plan",
       "region": "국내",
+      "target_country": "KR",
       "category": "인구지리학",
       "title": "임실은 인구 수보다 ‘삶과 소득의 순환’을 택했다",
       "journal": "노컷뉴스 · 2026-08-14",
@@ -249,6 +254,7 @@
     {
       "id": "2026-08-16-gwangpo-wetland-management",
       "region": "국내",
+      "target_country": "KR",
       "category": "지역지리학",
       "title": "광포만을 지킨 뒤엔 10년짜리 관리가 필요하다",
       "journal": "뉴스사천 · 2026-08-13",
@@ -299,6 +305,7 @@
     {
       "id": "2026-08-16-pyeongtaek-30-minute-transit",
       "region": "국내",
+      "target_country": "KR",
       "category": "도시지리학",
       "title": "평택은 버스·택시를 묶어 30분 생활권을 만든다",
       "journal": "데일리한국 · 2026-08-14",
