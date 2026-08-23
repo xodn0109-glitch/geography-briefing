@@ -12,19 +12,108 @@ site/data/*.json (하루 한 파일)을 모두 읽어 자기완결형 index.html
 import json
 import os
 import glob
+import html
 import re
+import argparse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "data")
 OUT = os.path.join(HERE, "index.html")
+WORLD_PATH_SAFE = re.compile(r"[MmZzLlHhVvCcSsQqTtAaEe0-9+.,\- \t\r\n]+\Z")
+WORLD_PATH_MAX_BYTES = 2_000_000
 
-def load_days():
+PUBLIC_SCALAR_FIELDS = (
+    "id", "region", "target_country", "category", "title", "journal",
+    "researchers", "summary", "talk",
+)
+
+
+def strict_object(pairs):
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError("duplicate JSON object key")
+        result[key] = value
+    return result
+
+
+def load_json_strict(handle):
+    return json.load(handle, object_pairs_hook=strict_object)
+
+
+def safe_world_path(raw):
+    """Return an attribute-safe SVG path or fail closed on mutable markup."""
+
+    if not isinstance(raw, str):
+        raise ValueError("world land path must be text")
+    value = raw.strip()
+    if not value:
+        return ""
+    if len(value.encode("utf-8")) > WORLD_PATH_MAX_BYTES:
+        raise ValueError("world land path is too large")
+    if WORLD_PATH_SAFE.fullmatch(value) is None:
+        raise ValueError("world land path contains unsafe characters")
+    return html.escape(value, quote=True)
+
+
+def public_article(article):
+    """Copy only the documented public schema, including nested allowlists."""
+
+    if not isinstance(article, dict):
+        return None
+    result = {
+        field: article[field]
+        for field in PUBLIC_SCALAR_FIELDS
+        if field in article
+    }
+    source = article.get("source")
+    result["source"] = (
+        {
+            field: source[field]
+            for field in (
+                "name", "url", "date", "language", "doi", "canonical_kind"
+            )
+            if field in source
+        }
+        if isinstance(source, dict)
+        else None
+    )
+    body = article.get("body")
+    result["body"] = [
+        {field: section[field] for field in ("h", "p") if field in section}
+        for section in body
+        if isinstance(section, dict)
+    ] if isinstance(body, list) else []
+    tags = article.get("tags")
+    result["tags"] = [tag for tag in tags if isinstance(tag, str)] if isinstance(tags, list) else []
+    curriculum = article.get("curriculum")
+    result["curriculum"] = [
+        {field: link[field] for field in ("code", "gloss") if field in link}
+        for link in curriculum
+        if isinstance(link, dict)
+    ] if isinstance(curriculum, list) else []
+    geo = article.get("geo")
+    result["geo"] = (
+        {field: geo[field] for field in ("lat", "lon", "label") if field in geo}
+        if isinstance(geo, dict)
+        else None
+    )
+    return result
+
+def load_days(data_dir=DATA_DIR):
     days = []
-    for path in sorted(glob.glob(os.path.join(DATA_DIR, "*.json"))):
+    for path in sorted(glob.glob(os.path.join(os.fspath(data_dir), "*.json"))):
         with open(path, encoding="utf-8") as f:
-            day = json.load(f)
-        # 렌더에 쓰는 필드만 담는다 — 봇이 남긴 잔여 필드(intro·weekday 등)가 payload에 실리지 않게.
-        days.append({"date": day.get("date", ""), "articles": day.get("articles", [])})
+            day = load_json_strict(f)
+        # 검증 우회나 과거 파일의 잔여 메모가 있어도 공개 payload에는 명시된
+        # 필드만 넣는다. 중첩 객체도 동일한 allowlist로 다시 만든다.
+        raw_articles = day.get("articles", [])
+        articles = [
+            cleaned
+            for cleaned in (public_article(article) for article in raw_articles)
+            if cleaned is not None
+        ] if isinstance(raw_articles, list) else []
+        days.append({"date": day.get("date", ""), "articles": articles})
     # 날짜 내림차순 — 지도 내비게이터의 idx=0=최신 가정이 이 정렬에 의존한다.
     days.sort(key=lambda d: d["date"], reverse=True)
     return days
@@ -35,8 +124,23 @@ def fmt_date(iso):
     return f"{y}. {int(m)}. {int(d)}."
 
 
-def build():
-    days = load_days()
+def build(
+    *,
+    data_dir=DATA_DIR,
+    out=OUT,
+    world_path_file=None,
+    curriculum_ref_file=None,
+    quiet=False,
+):
+    data_dir = os.fspath(data_dir)
+    out = os.fspath(out)
+    world_path_file = os.fspath(
+        world_path_file or os.path.join(HERE, "world_land_path.txt")
+    )
+    curriculum_ref_file = os.fspath(
+        curriculum_ref_file or os.path.join(HERE, "..", "curriculum_ref.json")
+    )
+    days = load_days(data_dir)
 
     # 통계
     total_articles = sum(len(d["articles"]) for d in days)
@@ -52,20 +156,18 @@ def build():
     tpl = tpl.replace("__LATEST__", fmt_date(days[0]["date"]) if days else "")
 
     # 세계지도 내비게이터 육지 윤곽 (Natural Earth 110m, 퍼블릭 도메인 → SVG path 사전 변환본)
-    wp_file = os.path.join(HERE, "world_land_path.txt")
     world_path = ""
-    if os.path.exists(wp_file):
-        with open(wp_file, encoding="utf-8") as f:
-            world_path = f.read().strip()
+    if os.path.exists(world_path_file):
+        with open(world_path_file, encoding="utf-8") as f:
+            world_path = safe_world_path(f.read())
     tpl = tpl.replace("__WORLDPATH__", world_path)
 
     # 교육과정 성취기준 전문(빌드 시 ../curriculum_ref.json 참조 — 실제 사용된 코드만 심어 클릭 시 노출).
     # 참조 파일이 없으면 빈 객체 → 배지는 그대로 보이되 펼침만 비활성(우아한 강등).
     curr = {}
-    ref_file = os.path.join(HERE, "..", "curriculum_ref.json")
-    if os.path.exists(ref_file):
-        with open(ref_file, encoding="utf-8") as f:
-            ref = json.load(f)
+    if os.path.exists(curriculum_ref_file):
+        with open(curriculum_ref_file, encoding="utf-8") as f:
+            ref = load_json_strict(f)
         flat = {}
         for stds in ref.get("subjects", {}).values():
             for s in stds:
@@ -75,7 +177,8 @@ def build():
             for a in d["articles"]:
                 for c in (a.get("curriculum") or []):
                     used.add(c["code"])
-        for code in used:
+        # 출력 바이트가 PYTHONHASHSEED와 무관하도록 교육과정 삽입 순서를 고정한다.
+        for code in sorted(used):
             s = flat.get(code)
             if not s:
                 continue
@@ -87,11 +190,12 @@ def build():
     tpl = tpl.replace("__DATA__", payload)
 
     # 임시 파일에 쓴 뒤 원자 교체 — 부분 쓰기 상태의 index.html이 남지 않게.
-    tmp_out = OUT + ".tmp"
+    tmp_out = out + ".tmp"
     with open(tmp_out, "w", encoding="utf-8") as f:
         f.write(tpl)
-    os.replace(tmp_out, OUT)
-    print(f"built {OUT}  ({len(days)} days, {total_articles} articles)")
+    os.replace(tmp_out, out)
+    if not quiet:
+        print(f"built {out}  ({len(days)} days, {total_articles} articles)")
 
 
 HTML_TEMPLATE = r"""<!doctype html>
@@ -662,4 +766,19 @@ function goToArticle(id){
 """
 
 if __name__ == "__main__":
-    build()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--data-dir", default=DATA_DIR)
+    parser.add_argument("--output", default=OUT)
+    parser.add_argument(
+        "--world-path", default=os.path.join(HERE, "world_land_path.txt")
+    )
+    parser.add_argument(
+        "--curriculum-ref", default=os.path.join(HERE, "..", "curriculum_ref.json")
+    )
+    args = parser.parse_args()
+    build(
+        data_dir=args.data_dir,
+        out=args.output,
+        world_path_file=args.world_path,
+        curriculum_ref_file=args.curriculum_ref,
+    )

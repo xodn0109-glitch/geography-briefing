@@ -45,15 +45,15 @@
     python3 check_titles.py            # 검사 (차단 사유 있으면 exit 1)
     python3 check_titles.py --strict   # 경고까지 차단으로 취급 (규칙 손볼 때만)
 """
+import argparse
+import datetime as dt
 import glob
 import json
 import os
 import re
-import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
-STRICT = "--strict" in sys.argv
 
 # ── 제목: 존재·완전 부정 ────────────────────────────────────────────────
 NEG_TITLE = re.compile(r"없다|없었다|없는|사라졌|사라진|말랐|말라붙|바닥났|고갈|"
@@ -83,22 +83,32 @@ CLUNKY = (re.compile(r"기로 한|라고 밝힌|하겠다는|한다는"),
           re.compile(r"없다|말랐다|멈췄다|끊겼다|사라졌다"))
 
 
+def strict_object(pairs):
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError("duplicate JSON object key")
+        result[key] = value
+    return result
+
+
 def norm(s):
     return s.replace(",", "").replace(" ", "")
 
 
-def reference_doc(date, idx, a):
+def reference_doc(date, idx, a, translations_dir=TRANS):
     """그 기사의 **기준 문서**(SKILL 공용 개념 ①) — 💬 검사의 근거.
 
     해외=확정 번역문 / 국내=보관 원문이 translations/YYYY-MM-DD/N-슬러그.md 에 있다.
     2026-08-11 이전 회차에는 이 폴더가 없으므로 요약+본문으로 우아하게 강등한다.
     """
     base = article_text(a)
-    d = os.path.join(TRANS, date)
+    d = os.path.join(str(translations_dir), date)
     if os.path.isdir(d):
-        for f in os.listdir(d):
+        for f in sorted(os.listdir(d)):
             if f.startswith(f"{idx}-"):
-                base += " " + open(os.path.join(d, f), encoding="utf-8").read()
+                with open(os.path.join(d, f), encoding="utf-8") as handle:
+                    base += " " + handle.read()
     return base
 
 
@@ -134,8 +144,14 @@ def article_text(a):
     2026-08-02 제목 '40년치'가 본문 근거 없이 통과했는데, 유일한 '40년'이
     talk("위성 기록이 40년 뒤 타임머신이 됐습니다")에 있었기 때문이다.
     """
-    body = " ".join(s.get("p", "") for s in (a.get("body") or []))
-    return f"{a.get('summary', '')} {body}"
+    body_items = a.get("body") if isinstance(a.get("body"), list) else []
+    body = " ".join(
+        section.get("p", "")
+        for section in body_items
+        if isinstance(section, dict) and isinstance(section.get("p", ""), str)
+    )
+    summary = a.get("summary", "")
+    return f"{summary if isinstance(summary, str) else ''} {body}"
 
 
 def check(title, text):
@@ -180,37 +196,80 @@ def check(title, text):
     return blocks, warns
 
 
+def check_document(date, document, translations_dir=TRANS):
+    """Apply the exact publication BLOCK/WARN rules to one site JSON document."""
+
+    pub_year = int(date[:4]) if date[:4].isdigit() else 2026
+    blocks, warns = [], []
+    articles = document.get("articles", []) if isinstance(document, dict) else []
+    for idx, article in enumerate(articles, 1):
+        if not isinstance(article, dict):
+            blocks.append(f"{date} {idx}번 기사가 객체가 아님")
+            continue
+        article_id = article.get("id", f"{date}-{idx}")
+        title = article.get("title", "")
+        title = title if isinstance(title, str) else ""
+        talk = article.get("talk", "")
+        talk = talk if isinstance(talk, str) else ""
+        b, w = check(title, article_text(article))
+        tb, tw = check_talk(
+            talk,
+            reference_doc(date, idx, article, translations_dir),
+            pub_year,
+        )
+        blocks.extend(f"{article_id}: {message}" for message in b + tb)
+        warns.extend(f"{article_id}: {message}" for message in w + tw)
+    return {"articles": len(articles), "blocks": blocks, "warnings": warns}
+
+
 def main():
-    docs = {p: json.load(open(p, encoding="utf-8"))
-            for p in sorted(glob.glob(os.path.join(DATA, "*.json")))}
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--strict", action="store_true")
+    parser.add_argument("--exclude-date", help="exclude one YYYY-MM-DD recovery target")
+    args = parser.parse_args()
+    if args.exclude_date is not None:
+        try:
+            excluded_date = dt.date.fromisoformat(args.exclude_date).isoformat()
+        except ValueError:
+            parser.error("--exclude-date must be YYYY-MM-DD")
+        if excluded_date != args.exclude_date:
+            parser.error("--exclude-date must be YYYY-MM-DD")
+    else:
+        excluded_date = None
+    docs = {}
+    try:
+        for path in sorted(glob.glob(os.path.join(DATA, "*.json"))):
+            if excluded_date is not None and os.path.basename(path) == f"{excluded_date}.json":
+                continue
+            with open(path, encoding="utf-8") as handle:
+                docs[path] = json.load(handle, object_pairs_hook=strict_object)
+    except (OSError, json.JSONDecodeError, ValueError) as exc:
+        print(f"제목 게이트 — 사이트 JSON을 읽을 수 없음({type(exc).__name__})")
+        return 1
     n_art, blocks, warns = 0, [], []
     for p, d in docs.items():
         date = os.path.basename(p)[:10]
-        pub_year = int(date[:4]) if date[:4].isdigit() else 2026
-        for idx, a in enumerate(d.get("articles", []), 1):
-            n_art += 1
-            b, w = check(a["title"], article_text(a))
-            tb, tw = check_talk(a.get("talk", ""), reference_doc(date, idx, a), pub_year)
-            b += tb
-            w += tw
-            blocks += [f"{a['id']}\n        제목: {a['title']}\n        {x}" for x in b]
-            warns += [f"{a['id']} — {x}\n        제목: {a['title']}" for x in w]
+        result = check_document(date, d, TRANS)
+        n_art += result["articles"]
+        blocks.extend(result["blocks"])
+        warns.extend(result["warnings"])
 
     print(f"제목 게이트 — 기사 {n_art}건 검사")
     if warns:
         print(f"  [경고] {len(warns)}건 (차단 아님 — 오탐률 실측 후 경고로 둔 항목)")
         for w in warns:
             print("    ⚠ " + w)
-    if STRICT:
+    if args.strict:
         blocks += warns
 
     if blocks:
         print(f"  [차단] {len(blocks)}건 — 발행할 수 없다")
         for b in blocks:
             print("    ✗ " + b)
-        sys.exit(1)
+        return 1
     print("  통과 ✅ (자기 요약과 모순 없음 · 제목의 연도·비율·온도가 본문에 실재)")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
