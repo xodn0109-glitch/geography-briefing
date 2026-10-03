@@ -2,38 +2,38 @@
   "date": "2026-10-03",
   "articles": [
     {
-      "id": "2026-10-03-natural-warming-feedback",
+      "id": "2026-10-03-malawi-refugee-lifelines",
       "region": "해외",
-      "target_country": "GLOBAL",
-      "category": "기후학",
-      "title": "녹는 동토와 따뜻해진 습지, 온난화를 더 키울 수 있다",
-      "journal": "Mongabay · 2026-10-02",
-      "researchers": "Sam Abernethy 연구팀·Spark Climate Solutions",
+      "target_country": "MW",
+      "category": "인구지리학",
+      "title": "말라위 난민의 지원금 감소, 캠프 생계와 해외 취업 통로가 함께 좁아졌다",
+      "journal": "The New Humanitarian · 2026-09-30",
+      "researchers": "Ndizeye Innocent·세계식량계획(WFP)·UNHCR",
       "source": {
-        "name": "Mongabay",
-        "url": "https://news.mongabay.com/2026/10/permafrost-wetland-wildfire-and-freshwater-emissions-could-amplify-climate-change-by-up-to-30-study-finds/",
-        "date": "2026-10-02",
+        "name": "The New Humanitarian",
+        "url": "https://www.thenewhumanitarian.org/first-person/2026/09/30/ration-cuts-bite-malawis-refugees-lose-vital-lifelines",
+        "date": "2026-09-30",
         "language": "en",
         "doi": null,
         "canonical_kind": "sourced_summary"
       },
-      "summary": "기후를 예측할 때 사람이 배출하는 온실가스만 고려해서는 자연계의 반응을 놓칠 수 있다. 새 연구는 영구동토·습지·담수·산불의 추가 배출이 2100년까지 0.2~0.4℃의 추가 온난화를 일으킬 수 있다고 추정했다. 북극 동토가 녹으면 오래 얼어 있던 유기물이 분해되고, 더워진 습지와 호수에서는 메탄을 만드는 미생물의 활동이 빨라진다. 배출된 가스가 다시 온난화를 키우는 순환이다. 연구진은 식생 회복 등 상쇄 작용을 충분히 반영하지 못해 실제 영향은 추정치보다 크거나 작을 수 있다고 밝혔다.",
+      "summary": "말라위 잘레카 캠프에 사는 부룬디 출신 난민이 식량 지원과 일자리 기회의 축소를 기고했다. 필자는 9월 초 받은 한 달 지원금이 1인당 약 8달러였다고 전했다. 지원금은 식량뿐 아니라 비누·학용품과 빚 상환에도 쓰여, 감액은 생활 전반에 영향을 준다. 기술을 갖춘 난민을 캐나다 취업 이주로 연결하던 프로그램도 예산 삭감으로 중단됐다고 설명했다. 북부의 새 정착지로 옮길 가능성에는 가족·사업·이웃 관계가 이어질지 걱정이 따른다. 캠프 안 생활 기반과 국경을 넘는 기회를 함께 보여주는 당사자의 기록이다.",
       "body": [
         {
           "h": "변화와 한계",
-          "p": "연구진은 북극 동토와 열대 습지에서 관측 장비를 설치하기 어려워 자료가 부족하다고 설명했다. 자연계 배출을 줄일 새 방법은 아직 연구 단계이며, 인간 활동에서 나오는 배출을 줄이는 노력은 여전히 필요하다."
+          "p": "필자는 지원 대상을 일부 취약 집단으로 좁히자는 안에 공동체 대표들이 반대했다고 전했다. 캠프 인구는 본문 첫머리와 뒤의 설명이 서로 맞지 않아 수치와 파생 비율을 싣지 않았다. 새 정착지로의 이주 대상·일정은 불확실하며, 법률 개정에 관한 기대를 시행 결과로 다루지 않는다. 기고의 경험을 모든 난민의 상황으로 일반화할 수 없다."
         }
       ],
       "talk": "",
       "tags": [
-        "영구동토",
-        "습지",
-        "메탄"
+        "말라위",
+        "난민",
+        "생계"
       ],
       "curriculum": [
         {
-          "code": "12기지01-02",
-          "gloss": "기후변화의 인위적 요인과 탄소중립"
+          "code": "9사(지리)04-03",
+          "gloss": "아프리카의 지속가능발전 노력"
         }
       ],
       "geo": null
@@ -80,33 +80,33 @@
       }
     },
     {
-      "id": "2026-10-03-red-sea-coral-trial",
+      "id": "2026-10-03-florida-coral-shading",
       "region": "해외",
-      "target_country": "SA",
+      "target_country": "US",
       "category": "기후학",
-      "title": "홍해 산호에 유익균 처리, 해양 열파 중 백화 줄인 현장 실험",
-      "journal": "Mongabay · 2026-10-02",
-      "researchers": "Raquel Peixoto·Erika Santoro·KAUST",
+      "title": "플로리다 산호에 수중 그늘막, 열파 속 색 회복 확인한 현장 연구",
+      "journal": "Eos · 2026-10-02 · DOI: 10.1029/2026EO260316",
+      "researchers": "Karen Neely 연구팀·Mark Warner",
       "source": {
-        "name": "Mongabay",
-        "url": "https://news.mongabay.com/2026/10/probiotics-prevented-coral-bleaching-during-a-red-sea-heat-wave-study/",
+        "name": "Eos",
+        "url": "https://eos.org/articles/underwater-umbrellas-reduce-and-reverse-coral-bleaching-in-the-caribbean",
         "date": "2026-10-02",
         "language": "en",
-        "doi": null,
+        "doi": "10.1029/2026EO260316",
         "canonical_kind": "sourced_summary"
       },
-      "summary": "새로 보도된 연구는 사우디아라비아 연안 홍해의 실제 산호초에서 유익한 세균 처리의 효과를 확인했다. 실험은 2022년 열파 때 진행됐으며, 수온이 평소 여름 수준을 웃돌 때 산호 주변에 처리제를 투여했다. 처리한 산호는 색과 공생 조류의 광합성 능력을 유지했지만, 비교 대상은 상태가 나빠졌다. 일부 가열해 죽인 세균 처리에서도 효과가 나타났다. 그러나 대상은 한 종에 한정됐다. 장기 성장과 생존, 넓은 산호초에 적용할 비용과 노동의 문제는 아직 해결되지 않았다.",
+      "summary": "새로 보도된 연구는 플로리다 키스의 뉴파운드 하버에서 수중 그늘막이 산호에 미친 영향을 비교했다. 연구진은 2024년 여름부터 가을까지 두 종의 산호 위에 그늘막을 설치하고, 주변의 그늘 없는 산호와 색 및 공생 조류를 대조했다. 그늘 아래 산호는 색이 덜 옅어졌으며 일부는 색을 회복했다. 그러나 두 집단의 조류 밀도와 종류 변화는 비슷했다. 연구에 참여하지 않은 과학자는 색소 변화일 가능성을 제기했다. 대서양 산호에 현장 적용 가능성을 보여주지만, 모든 산호초의 백화를 해결하거나 장기 생존을 보장한 결과는 아니다.",
       "body": [
         {
           "h": "변화와 한계",
-          "p": "백화는 높은 수온 등으로 산호와 조류의 공생 관계가 무너지는 현상이다. 연구에 참여하지 않은 과학자는 이번 결과를 긍정적으로 보면서도 생존 개선을 확인할 장기 연구가 필요하다고 말했다. 연구팀 역시 세균 처리가 모든 산호초를 지킬 단일 해법이라고 보지 않는다."
+          "p": "공생 조류는 산호에 영양분을 공급한다. 이번에는 산호 가장자리에서만 조류를 채취할 수 있어 햇빛을 직접 받은 윗부분을 충분히 조사하지 못했다. 연구진은 그늘막을 크거나 희귀한 산호 등 우선 보호 대상에 쓰는 작은 규모의 방법으로 설명했고, 장기 건강·번식 효과는 후속 연구 과제로 남겼다."
         }
       ],
       "talk": "",
       "tags": [
-        "홍해",
-        "산호백화",
-        "현장실험"
+        "플로리다",
+        "산호",
+        "그늘막"
       ],
       "curriculum": [
         {
