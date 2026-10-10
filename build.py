@@ -25,6 +25,7 @@ WORLD_PATH_MAX_BYTES = 2_000_000
 PUBLIC_SCALAR_FIELDS = (
     "id", "region", "target_country", "category", "title", "journal",
     "researchers", "summary", "talk",
+    "topic_key",
 )
 
 
@@ -98,6 +99,12 @@ def public_article(article):
         if isinstance(geo, dict)
         else None
     )
+    references = article.get('references')
+    if isinstance(references, list):
+        result['references'] = [
+            {field: ref[field] for field in
+             ('id','author','date','title','url','kind','short_label','apa') if field in ref}
+            for ref in references if isinstance(ref, dict)]
     return result
 
 def load_days(data_dir=DATA_DIR):
@@ -544,9 +551,13 @@ function cardHtml(a, tokens) {
   const summary = a.summary ? `<p class="summary">${hl(a.summary, tokens)}</p>` : "";
   const sections = (a.body||[]).map(s =>
     `<div class="sec"><div class="sec-h">${esc(s.h)}</div><p class="sec-p">${esc(s.p)}</p></div>`).join("");
+  const references = (a.references||[]).length
+    ? `<div class="sec"><div class="sec-h">참고문헌</div><ol>` +
+      a.references.map(r => `<li>${esc(r.apa||"")} ${safeUrl(r.url) ? `<a href="${esc(safeUrl(r.url))}" target="_blank" rel="noopener">${esc(r.url)}</a>` : ""}</li>`).join("") + `</ol></div>`
+    : "";
   const deep = sections
     ? `<button class="deep-toggle" type="button" aria-expanded="false">본문 자세히 ⌄</button>` +
-      `<div class="deep" hidden>${sections}</div>`
+      `<div class="deep" hidden>${sections}${references}</div>`
     : "";
   const talk = a.talk
     ? `<div class="talk"><div class="talk-label">이야깃거리</div><div class="talk-body">${esc(a.talk)}</div></div>`
