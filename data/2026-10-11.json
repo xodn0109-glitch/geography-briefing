@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-11",
+  "format": "daily_deep",
+  "articles": [
+    {
+      "id": "2026-10-11-roads-local-mobility",
+      "region": "국내",
+      "target_country": "KR",
+      "category": "도시지리학",
+      "title": "고속도로가 늘어도, 마을의 이동은 왜 어려울까",
+      "journal": "한겨레 · 2026-10-10",
+      "researchers": "강윤희",
+      "source": {
+        "name": "한겨레",
+        "url": "https://www.hani.co.kr/arti/society/environment/1281623.html",
+        "date": "2026-10-10",
+        "language": "ko",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "제천~영월 도로는 장거리 연결을 넓히려는 사업이다. 마을의 생활 이동에는 버스의 공급과 환승 연결이 따로 필요하다. 공공교통 전환 기획과 착공 취재, 농촌 교통 실증 계획을 통해 두 공간 규모의 편익을 비교한다. (강윤희, 2026) (이재현, 2026) (홍국기, 2026)",
+      "body": [
+        {
+          "h": "명절 정체에서 마을의 이동까지",
+          "p": "10월 10일 수정된 한겨레 공동기획은 추석 고속도로 정체를 계기로 도로 위주 교통투자를 돌아본다. 질문을 주민의 일상으로 옮기면 다른 문제가 보인다. 도시와 도시 사이가 빨리 이어져도 집에서 역이나 버스 정류장까지 갈 수 있어야 한다. 철도·버스·보행·자전거의 연결을 강조하는 이 기획은 이동수단을 바꾸자는 관점에서 쓴 글이다. 그 관점과 도로 건설을 지지하는 지역의 이유를 함께 살펴볼 필요가 있다. (강윤희, 2026)"
+        },
+        {
+          "h": "강원 남부가 동서 도로를 원하는 이유",
+          "p": "제천~영월 고속도로는 7월 21일 착공했다. 제천 금성면과 영월 남면을 잇는 29.9㎞ 구간으로, 개통 목표는 2032년이다. 기존 평택~제천 노선과 후속 영월~삼척 구간까지 연결되면 경기 남부와 강원 남부를 가로지르는 축이 된다. 지역 관계자들은 물류·관광 접근성과 균형발전을 기대한다. 나들목 주변 연계 교통망을 확충하겠다는 발언도 나왔다. 이는 새 도로가 지역 연결의 기회가 될 수 있다는 논리이며, 이미 관광소득이나 주민 편익이 증가했다는 결과는 아니다. (이재현, 2026)"
+        },
+        {
+          "h": "요금보다 먼저 필요한 ‘탈 수 있는 차’",
+          "p": "박송이의 4월 취재에서 전문가들은 수도권의 촘촘한 노선과 지방의 부족한 운행 공급을 구분했다. 요금을 깎아도 버스가 닿지 않거나 오래 기다려야 하면 혜택을 쓰기 어렵다. 농촌에서는 은행·시장 같은 시설이 읍면 소재지에 모이므로 마을과 중심지를 잇는 운행이 중요하다. 이 때문에 장거리 도로의 연결성과 생활권의 접근성은 따로 평가해야 한다. 도로에 접근하기 쉬워지는 것과 차를 운전하지 않는 사람이 목적지에 도달하는 것은 같은 변화가 아니다. (박송이, 2026)"
+        },
+        {
+          "h": "산간·관광·생활권은 같은 배차로 풀기 어렵다",
+          "p": "농식품부는 7월 인제 상남면·진천 백곡면·봉화 소천면·의령 부림면·하동 화개면에서 수요 맞춤형 교통 실증을 추진한다고 밝혔다. 산간형·관광형·생활 서비스 연계형의 다른 조건에서 버스·택시·호출형 차량을 연결하려는 계획이다. 고정 노선이 수요 변화에 대응하기 어렵다는 문제를 데이터로 보완하려 한다. 다만 11월은 발표 당시 서비스 운영 예정 시점이다. 기술 도입이 배차 불안정이나 교통 공백을 해결했다고 판단할 단계는 아니다. (홍국기, 2026)"
+        },
+        {
+          "h": "도로 길이와 함께 확인할 생활 지표",
+          "p": "호출형 교통은 필요한 때 차량을 배차할 수 있지만, 전문가들은 기존 노선버스를 줄이는 방식으로 운영하면 전체 서비스가 늘지 않을 수 있다고 지적했다. 따라서 지역을 비교할 때는 도로 연장뿐 아니라 마을별 운행 횟수, 대기시간, 목적지까지의 환승, 서비스가 닿지 않는 곳을 봐야 한다. 최소 운행 수준과 안정적인 공급이 함께 마련되는지도 중요하다. 고속도로의 장거리 연결 편익을 인정하면서도 주민의 생활 이동이 실제로 개선되는지는 별도로 확인해야 한다. (박송이, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "교통 접근성",
+        "생활권",
+        "강원 남부"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "korea-interregional-roads-local-mobility",
+      "references": [
+        {
+          "id": "kr-hani",
+          "author": "강윤희",
+          "date": "2026-10-10",
+          "title": "올해도 꽉 막힌 고속도로…해답은 ‘더 많은 도로’ 아니다",
+          "url": "https://www.hani.co.kr/arti/society/environment/1281623.html",
+          "kind": "news",
+          "short_label": "강윤희, 2026",
+          "apa": "강윤희. (2026년 10월 10일 수정). 올해도 꽉 막힌 고속도로…해답은 ‘더 많은 도로’ 아니다. 한겨레."
+        },
+        {
+          "id": "kr-build-ref",
+          "author": "이재현",
+          "date": "2026-07-21",
+          "title": "제천∼영월 고속도로 첫 삽…1조9천975억 투입해 2032년 개통(종합)",
+          "url": "https://www.yna.co.kr/amp/view/AKR20260721091151062",
+          "kind": "news",
+          "short_label": "이재현, 2026",
+          "apa": "이재현. (2026년 7월 21일). 제천∼영월 고속도로 첫 삽…1조9천975억 투입해 2032년 개통(종합). 연합뉴스."
+        },
+        {
+          "id": "kr-khan",
+          "author": "박송이",
+          "date": "2026-04-25",
+          "title": "“버스가 없는데 요금 무료가 무슨 소용”… 접근성 빠진 교통 공약",
+          "url": "https://www.khan.co.kr/article/202604250900031",
+          "kind": "news",
+          "short_label": "박송이, 2026",
+          "apa": "박송이. (2026년 4월 25일). “버스가 없는데 요금 무료가 무슨 소용”… 접근성 빠진 교통 공약. 주간경향·경향신문."
+        },
+        {
+          "id": "kr-rural-ref",
+          "author": "홍국기",
+          "date": "2026-07-26",
+          "title": "농촌 교통도 AI로…농식품부, 수요 맞춤형 교통모델 실증 착수",
+          "url": "https://www.yna.co.kr/amp/view/AKR20260725045200030",
+          "kind": "news",
+          "short_label": "홍국기, 2026",
+          "apa": "홍국기. (2026년 7월 26일). 농촌 교통도 AI로…농식품부, 수요 맞춤형 교통모델 실증 착수. 연합뉴스."
+        }
+      ]
+    },
+    {
+      "id": "2026-10-11-senegal-fishmeal",
+      "region": "해외",
+      "target_country": "SN",
+      "category": "경제지리학",
+      "title": "세네갈의 생선, 식탁과 수출용 사료 사이의 경쟁",
+      "journal": "Mongabay · 2026-10-09",
+      "researchers": "Ian Urbina",
+      "source": {
+        "name": "Mongabay",
+        "url": "https://news.mongabay.com/2026/10/fishmeal-factories-take-senegals-fish-from-the-dinner-table/",
+        "date": "2026-10-09",
+        "language": "en",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "세네갈 연안의 현장조사는 생선의 사료 가공과 주민 식량·생계의 경쟁을 다룬다. FAO의 산업 메커니즘 설명과 과거 수출 목적지 자료를 연결해, 바깥의 수요와 현지 부담이 갈리는 이유를 살핀다. 자료 시점과 산업의 편익도 함께 구분한다. (Urbina, 2026) (FAO, 2020) (Philippe, 2024)",
+      "body": [
+        {
+          "h": "새 현장조사가 드러낸 식탁과 공장의 경쟁",
+          "p": "10월 9일 Mongabay가 공개한 Outlaw Ocean Project 조사는 세네갈의 생선이 식탁과 사료공장 사이에서 경쟁하는 모습을 보여준다. 기자들은 2024년 7월부터 2025년 3월까지 세 공장을 찾아 주민·관리자·노동자를 인터뷰했다. 보도에 따르면 2024년 가동 공장은 적어도 여섯 곳으로 생루이·카야르·다카르·조알·산디아라 연안에 모여 있었다. 공장 인근의 악취·오염 호소도 조사했다. 기사 공개일은 최근이지만 이 방문과 공장 집계는 과거 시점의 자료다. (Urbina, 2026)"
+        },
+        {
+          "h": "남은 생선 처리에서 식용 생선 조달로",
+          "p": "어분은 생선을 가공한 분말로 양식업과 가축 사료에 쓰인다. FAO는 2020년 설명에서 잉여 어획물과 부산물을 활용하는 산업이 수익성 높은 시장을 만나 사람이 먹는 어종까지 조달하게 된다고 짚었다. 서아프리카에서는 사르디넬라와 봉가 같은 작은 부어류가 값싼 단백질원이면서 사료 원료이기도 하다. 같은 생선을 두 용도가 함께 찾는 구조다. 공장의 고용과 소득 창출이라는 편익도 있으므로, 자원의 용도와 배분을 함께 따져야 한다. (FAO, 2020)"
+        },
+        {
+          "h": "수출 목적지와 생계를 잃는 곳의 거리",
+          "p": "CFFA의 2024년 분석은 세네갈의 2022년 수출자료를 소개하며 어분의 주요 수입국으로 스페인·튀르키예, 어유에서는 스페인·덴마크를 들었다. 이 목록은 2026년 순위가 아니다. 멀리 있는 사료 수요가 연안의 조달에 연결되면서 부담은 현지에 남는다. 아비장의 한 생선 가공업자는 세네갈·모리타니에서 들여오던 생선을 구하기 어려워졌다고 말했다. 영향이 세네갈 공장 주변을 넘어 지역 식품 유통에도 이어질 수 있음을 보여주는 사례다. (Philippe, 2024)"
+        },
+        {
+          "h": "같은 해안에서도 이해가 갈린다",
+          "p": "FAO는 공장과의 조달 경쟁이 현지 가공업자·상인, 특히 여성의 생계를 위협할 수 있다고 설명한다. 생선을 사서 가공·판매하는 사람에게는 원료 부족이 일거리 부족이 된다. 반면 산업 지지자들은 버려지는 자원의 활용과 일자리·소득을 강조한다. 이 두 설명은 서로 다른 조건을 가리킨다. 부산물을 활용하는 경우와 주민의 식용 원료를 사들이는 경우를 구분해야 하며, 공장의 생산량 증가만으로 지역 식량안보의 개선을 판단하기 어렵다. (FAO, 2020)"
+        },
+        {
+          "h": "수출액과 함께 볼 식량 접근",
+          "p": "CFFA가 소개한 소규모 어업단체들은 주민이 먹을 생선의 공급을 우선할 것을 요구했다. 이 요구를 평가하려면 수출액뿐 아니라 현지 시장에 남는 물량·가격, 가공업자의 원료 접근, 공장 주변의 환경 상태를 함께 봐야 한다. 새 현장조사는 공장 조달·주민 부담의 연결을 제시하지만 세네갈의 자원 감소나 해외 이주를 어분산업 하나만의 결과로 확정하지는 못한다. 서로 다른 시점의 자료도 2026년 현재 상태를 모두 설명하는 것은 아니다. (Philippe, 2024) (Urbina, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "세네갈",
+        "식량안보",
+        "사료 공급망"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "senegal-fishmeal-local-food-competition",
+      "references": [
+        {
+          "id": "world-news",
+          "author": "Ian Urbina",
+          "date": "2026-10-09",
+          "title": "Fishmeal factories take Senegal’s fish from the dinner table",
+          "url": "https://news.mongabay.com/2026/10/fishmeal-factories-take-senegals-fish-from-the-dinner-table/",
+          "kind": "news",
+          "short_label": "Urbina, 2026",
+          "apa": "Urbina, I. (2026, October 9). Fishmeal factories take Senegal’s fish from the dinner table. Mongabay; The Outlaw Ocean Project."
+        },
+        {
+          "id": "world-fao-ref",
+          "author": "Food and Agriculture Organization of the United Nations",
+          "date": "2020-12-18",
+          "title": "Studying the impacts of fishmeal production in Africa",
+          "url": "https://www.fao.org/in-action/eaf-nansen/news/news-archive/detail/news_1365773/en",
+          "kind": "institutional",
+          "short_label": "FAO, 2020",
+          "apa": "Food and Agriculture Organization of the United Nations. (2020, December 18). Studying the impacts of fishmeal production in Africa. EAF-Nansen Programme."
+        },
+        {
+          "id": "world-cffa-ref",
+          "author": "Joelle Philippe",
+          "date": "2024-06-13",
+          "title": "Senegal's exports of fishmeal and fish oil \"explode\"",
+          "url": "https://www.cffacape.org/news-blog/senegals-exports-of-fishmeal-and-fish-oil-explode",
+          "kind": "institutional",
+          "short_label": "Philippe, 2024",
+          "apa": "Philippe, J. (2024, June 13). Senegal’s exports of fishmeal and fish oil “explode”. Coalition for Fair Fisheries Arrangements."
+        }
+      ]
+    }
+  ]
+}
