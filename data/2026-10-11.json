@@ -91,7 +91,12 @@
           "short_label": "홍국기, 2026",
           "apa": "홍국기. (2026년 7월 26일). 농촌 교통도 AI로…농식품부, 수요 맞춤형 교통모델 실증 착수. 연합뉴스."
         }
-      ]
+      ],
+      "starting_article": {
+        "title": "올해도 꽉 막힌 고속도로…해답은 ‘더 많은 도로’ 아니다",
+        "author": "강윤희",
+        "date_kind": "updated"
+      }
     },
     {
       "id": "2026-10-11-senegal-fishmeal",
@@ -172,7 +177,12 @@
           "short_label": "Philippe, 2024",
           "apa": "Philippe, J. (2024, June 13). Senegal’s exports of fishmeal and fish oil “explode”. Coalition for Fair Fisheries Arrangements."
         }
-      ]
+      ],
+      "starting_article": {
+        "title": "Fishmeal factories take Senegal’s fish from the dinner table",
+        "author": "Ian Urbina",
+        "date_kind": "published"
+      }
     }
   ]
 }
