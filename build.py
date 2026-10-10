@@ -463,6 +463,11 @@ HTML_TEMPLATE = r"""<!doctype html>
 </nav>
 
 <main>
+  <section class="wrap" aria-labelledby="deep-briefings-title" style="padding-top:24px;padding-bottom:24px">
+    <h2 id="deep-briefings-title" style="font-size:18px;margin:0 0 12px">심층 브리핑</h2>
+    <p style="margin:0;font-size:17px;line-height:1.6"><a href="deep/nepal-flood-2026.html">네팔 홍수 참사: 발생 배경과 피해, 남겨진 과제</a></p>
+    <p style="font-size:14px;color:var(--ink-soft);margin:8px 0 0">2026. 10. 10. 게시 · 8월 26일 발생한 홍수의 원인과 이후 구호 상황</p>
+  </section>
   <div class="wrap" id="feed"></div>
 </main>
 

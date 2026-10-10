@@ -41,7 +41,7 @@ validate_public_path() {
     return 0
   fi
   case "$changed_path" in
-    .gitignore|README.md|build.py|check_curriculum.py|check_titles.py|index.html|publish.sh|world_land_path.txt)
+    .gitignore|README.md|build.py|check_curriculum.py|check_titles.py|index.html|publish.sh|world_land_path.txt|deep/nepal-flood-2026.html)
       return 0
       ;;
     *)
@@ -308,6 +308,9 @@ stage_public_site() {
     .gitignore README.md build.py check_curriculum.py check_titles.py
     index.html publish.sh world_land_path.txt
   )
+  if [[ -f deep/nepal-flood-2026.html ]]; then
+    public_paths+=(deep/nepal-flood-2026.html)
+  fi
   while IFS= read -r tracked_path; do
     [[ -n "$tracked_path" ]] && public_paths+=("$tracked_path")
   done < <(git ls-files -- 'data/*.json')
