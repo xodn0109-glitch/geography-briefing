@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-12",
+  "format": "daily_deep",
+  "articles": [
+    {
+      "id": "2026-10-12-marine-tourism",
+      "region": "국내",
+      "target_country": "KR",
+      "category": "지역지리학",
+      "title": "바다를 가까이 만나는 여행, 보호지역은 어떻게 지킬까요?",
+      "journal": "경향신문 · 2026-10-09",
+      "researchers": "김민수 · 양가희 · 오충현·박홍철",
+      "source": {
+        "name": "경향신문",
+        "url": "https://www.khan.co.kr/article/202610090600005",
+        "date": "2026-10-09",
+        "language": "ko",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "해상 조망과 수중 드론을 활용한 시범 투어를 계기로, 보호지역 이용을 장기 조사와 수용력 관리에 어떻게 연결할지 살펴봅니다. 지역 소비의 가능성과 실제 성과도 구분합니다. (김민수, 2026) (양가희, 2025) (오충현·박홍철, 2014)",
+      "body": [
+        {
+          "h": "섬을 더 가까이, 발자국은 더 적게",
+          "p": "이 기사는 한려해상·다도해해상국립공원의 시범 투어를 통해 보호지역을 만나는 방법을 보여줍니다. 윤돌섬에서는 카약으로 바다에서 조망하고, 백도에서는 수중 드론 화면으로 해중 생태계를 관찰합니다. 섬에 직접 발을 들이는 방식과 떨어져서 관찰하는 방식은 자연에 접근하는 경로부터 다릅니다. 여기서 질문은 얼마나 많은 사람을 데려올지가 아니라, 어떤 방식으로 경험하게 할지로 넓어집니다. (김민수, 2026)"
+        },
+        {
+          "h": "관광 뒤에 있어야 할 조사와 관리",
+          "p": "이 구상은 바다를 관광지로 소개하는 일만으로 완성되지 않습니다. 2025년 뉴스핌 인터뷰에서 해양생태보전원장은 육상·기수역·바다를 함께 관리하고 일정한 지점을 장기간 조사하는 역할을 강조했습니다. 해저 지형·지질·생물 정보를 모으는 해양생태지도는 이러한 관찰의 기반입니다. 당시 제시한 방향을 오늘의 투어와 연결하면, 해설과 체험은 조사·관리·복원으로 이어지는 체계 안에서 설계해야 한다는 뜻입니다. (양가희, 2025)"
+        },
+        {
+          "h": "정원보다 먼저 정해야 할 관리목표",
+          "p": "오충현·박홍철의 연구는 생태관광에서 이용과 보전의 충돌을 줄이기 위해 수용력 파악과 탐방객 수 조절이 필요하다고 설명합니다. 기존 관리모델을 비교해 수용력과 관리목표의 연결, 관광기회의 분포, 단계적 관리체계의 개선을 제안했습니다. 따라서 한곳에서 정한 입장 정원을 다른 섬에 그대로 옮기기보다 무엇을 보호하고 어떤 경험을 허용할지 함께 정해야 합니다. 이 연구가 블루아일랜드의 적정 인원이나 보전 효과를 측정한 것은 아닙니다. (오충현·박홍철, 2014)"
+        },
+        {
+          "h": "바다의 체험과 마을의 생계는 어떻게 만날까",
+          "p": "시범 투어는 보호지역 관찰에 그치지 않고 여수 연도 마을의 식사와도 이어졌습니다. 관광 소비가 지역 주민에게 닿을 접점이 있다는 뜻이지만, 이 한 사례만으로 주민 소득이 얼마나 늘었는지는 알 수 없습니다. 한편 보전원 인터뷰는 해양쓰레기 관리에 주민과 자원봉사자가 참여해 온 과정을 설명합니다. 여행의 편익과 관리의 부담을 함께 보면 방문객이 보는 바다와 주민이 돌보는 생활공간을 연결해 살펴볼 수 있습니다. (김민수, 2026) (양가희, 2025)"
+        },
+        {
+          "h": "방문 이후의 변화를 확인하기",
+          "p": "앞으로의 평가는 예약 인원만으로 끝내기 어렵습니다. 수용력과 관리목표를 연계하자는 연구의 관점에서, 관찰한 생태 상태에 맞춰 이용 방식과 관리 단계를 조정할 수 있는지가 중요합니다. 정기 조사와 주민 참여가 유지되는지도 함께 봐야 합니다. 시범 체험은 가능성을 보여주는 출발점이며, 환경 개선과 지역 편익은 이후의 관찰과 평가로 확인할 과제입니다. (오충현·박홍철, 2014) (양가희, 2025)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "생태관광",
+        "보호지역",
+        "수용력"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "marine-protected-area-visitor-management",
+      "references": [
+        {
+          "id": "kr-main",
+          "author": "김민수",
+          "date": "2026-10-09",
+          "title": "보다 은밀한 바다…숨겨진 해양보호구역 관광 ‘블루아일랜드’",
+          "url": "https://www.khan.co.kr/article/202610090600005",
+          "kind": "news",
+          "short_label": "김민수, 2026",
+          "apa": "김민수. (2026년 10월 9일). 보다 은밀한 바다…숨겨진 해양보호구역 관광 ‘블루아일랜드’. 경향신문."
+        },
+        {
+          "id": "kr-bg",
+          "author": "양가희",
+          "date": "2025-12-02",
+          "title": "[인터뷰] 정장방 국립공원 해양생태보전원장 \"바다의 무한한 가치 온전히 물려줘야\"",
+          "url": "https://member.newspim.com/news/view/20251201001298",
+          "kind": "news",
+          "short_label": "양가희, 2025",
+          "apa": "양가희. (2025년 12월 2일). [인터뷰] 정장방 국립공원 해양생태보전원장 \"바다의 무한한 가치 온전히 물려줘야\". 뉴스핌."
+        },
+        {
+          "id": "kr-study",
+          "author": "오충현·박홍철",
+          "date": "n.d.",
+          "title": "생태관광지역 자연자원 관리를 위한 수용력 기반 관리모델 개선방향 : Getz, LAC, VIM, VERP 관리모델을 중심으로",
+          "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART001952934",
+          "kind": "research",
+          "short_label": "오충현·박홍철, 2014",
+          "apa": "오충현, 박홍철. (2014). 생태관광지역 자연자원 관리를 위한 수용력 기반 관리모델 개선방향: Getz, LAC, VIM, VERP 관리모델을 중심으로. 환경정책연구, 13(4), 107–133. doi:10.17330/joep.13.4.201412.107."
+        }
+      ],
+      "starting_article": {
+        "title": "보다 은밀한 바다…숨겨진 해양보호구역 관광 ‘블루아일랜드’",
+        "author": "김민수",
+        "date_kind": "published"
+      }
+    },
+    {
+      "id": "2026-10-12-amazon-rap",
+      "region": "해외",
+      "target_country": "EC",
+      "category": "문화지리학",
+      "title": "아마존의 랩, 고향의 언어가 도시와 세계를 만나는 길",
+      "journal": "Mongabay · 2026-10-09",
+      "researchers": "Isabel Alarcón · UNESCO · UNESCO",
+      "source": {
+        "name": "Mongabay",
+        "url": "https://news.mongabay.com/2026/10/in-ecuador-indigenous-youth-turn-to-rap-music-to-defend-the-amazon/",
+        "date": "2026-10-09",
+        "language": "en",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "에콰도르 원주민 청년들의 랩을 통해 언어와 환경 지식, 도시 제작시설과 온라인 유통의 연결을 살펴봅니다. 표현의 확산과 언어 전승·환경 보전의 성과는 구분합니다. (Alarcón, 2026) (UNESCO, 2022) (UNESCO, 2026)",
+      "body": [
+        {
+          "h": "새로운 무대로 옮겨간 지역의 목소리",
+          "p": "이 기사는 에콰도르 아마존의 원주민 청년들이 자기 언어로 랩을 하며 고향의 환경 문제를 알리는 모습을 다룹니다. 키치와·아잉가에 등 토착 언어에 스페인어 구절이나 자막을 더해 외부 청중과 연결합니다. 사라야쿠 출신 음악가의 무대가 푸요로 넓어지는 장면은 마을의 경험이 도시의 청중에게 전달되는 경로를 보여줍니다. 영어판은 10월 9일 공개됐지만 원보도는 9월 3일로, 새로 발생한 사건을 뜻하지는 않습니다. (Alarcón, 2026)"
+        },
+        {
+          "h": "언어를 지키는 일이 환경과 연결되는 이유",
+          "p": "UNESCO는 토착민과 지역 주민이 생태계를 관찰하고 이해하는 데 중요한 지식을 지니지만, 그 지식이 생물다양성 관리의 자료로 충분히 인정되지 않는다고 설명합니다. 과학 지식과 지역 지식은 서로 보완할 수 있습니다. 이 관점에서 자기 언어로 숲과 강을 이야기하는 활동은 문화 표현과 지역 환경의 기억이 만나는 통로로 읽을 수 있습니다. 다만 노래의 메시지와 생태계의 상태를 측정하는 일은 구분해야 합니다. (UNESCO, 2026)"
+        },
+        {
+          "h": "온라인에 등장하는 것과 계속 쓰는 것",
+          "p": "UNESCO가 2022년에 소개한 토착 언어 국제 10년 계획은 새 언어 사용자를 늘리고 유창성과 공적 영역의 사용을 넓히는 데 초점을 둡니다. 교육과 디지털 참여도 함께 다룹니다. 음악 영상의 확산이 관심을 끌어도, 그것이 곧 일상적인 언어 사용의 회복을 뜻하지는 않습니다. 청년이 자기 언어로 표현할 기회를 얻는 과정과 다음 세대가 그 언어를 배우고 쓰는 과정이 연결되는지가 중요합니다. (UNESCO, 2022)"
+        },
+        {
+          "h": "멀리 퍼지는 노래, 도시에 모인 제작시설",
+          "p": "청년들의 메시지는 국경을 넘어가지만 제작에는 장소의 제약이 있습니다. 보도는 녹음시설과 장비가 부족해 푸요나 라고아그리오로 이동해야 하는 어려움을 전합니다. 온라인 유통이 가능해도 제작비와 이동 부담은 남아 있는 셈입니다. 공동체 가까이에 녹음 공간을 마련하려는 바람은 문화 활동을 지속할 기반의 문제입니다. 이는 UNESCO가 강조하는 디지털 참여 확대와도 연결해서 생각할 수 있습니다. (Alarcón, 2026) (UNESCO, 2022)"
+        },
+        {
+          "h": "조회수 다음에 확인할 것",
+          "p": "앞으로는 음악의 노출뿐 아니라 언어를 새로 배우는 사람, 일상과 공적 공간에서의 사용 기회, 지역 지식이 환경 논의에 반영되는 경로를 살펴볼 필요가 있습니다. 이는 언어 활성화 계획과 지역 지식 활용 원칙을 연결한 평가 관점입니다. 기사에 등장한 음악가들의 활동이 언어 소멸을 막거나 환경 훼손을 줄였다는 효과가 검증된 것은 아닙니다. 문화적 표현의 가능성과 실제 변화를 나눠 보는 것이 중요합니다. (UNESCO, 2022) (UNESCO, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "문화지리",
+        "토착 언어",
+        "아마존"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "ecuador-indigenous-language-music-geography",
+      "references": [
+        {
+          "id": "world-main",
+          "author": "Isabel Alarcón",
+          "date": "2026-10-09",
+          "title": "In Ecuador, Indigenous youth turn to rap music to defend the Amazon",
+          "url": "https://news.mongabay.com/2026/10/in-ecuador-indigenous-youth-turn-to-rap-music-to-defend-the-amazon/",
+          "kind": "news",
+          "short_label": "Alarcón, 2026",
+          "apa": "Alarcón, I. (2026, October 9). In Ecuador, Indigenous youth turn to rap music to defend the Amazon. Mongabay. (Spanish original published September 3, 2026)."
+        },
+        {
+          "id": "world-language",
+          "author": "UNESCO",
+          "date": "2022-12-09",
+          "title": "UNESCO celebrates the International Decade of Indigenous Languages",
+          "url": "https://www.unesco.org/en/articles/unesco-celebrates-international-decade-indigenous-languages",
+          "kind": "official",
+          "short_label": "UNESCO, 2022",
+          "apa": "UNESCO. (2022, December 9). UNESCO celebrates the International Decade of Indigenous Languages. (Updated April 20, 2023)."
+        },
+        {
+          "id": "world-knowledge",
+          "author": "UNESCO",
+          "date": "2026-01-19",
+          "title": "Local, indigenous and scientific knowledge",
+          "url": "https://www.unesco.org/en/biodiversity/knowledge",
+          "kind": "official",
+          "short_label": "UNESCO, 2026",
+          "apa": "UNESCO. (2026, January 19). Local, indigenous and scientific knowledge. (Updated page)."
+        }
+      ],
+      "starting_article": {
+        "title": "In Ecuador, Indigenous youth turn to rap music to defend the Amazon",
+        "author": "Isabel Alarcón",
+        "date_kind": "published"
+      }
+    }
+  ]
+}
