@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-13",
+  "format": "daily_deep",
+  "articles": [
+    {
+      "id": "2026-10-13-sinjeong-gimpo-rail-access",
+      "region": "국내",
+      "target_country": "KR",
+      "category": "도시지리학",
+      "title": "김포와 양천의 철도 구상, 연결하려는 이동은 무엇일까요?",
+      "journal": "경향신문 · 2026-10-12",
+      "researchers": "노도현",
+      "source": {
+        "name": "경향신문",
+        "url": "https://www.khan.co.kr/article/202610121411011",
+        "date": "2026-10-12",
+        "language": "ko",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "김포와 양천은 신정지선 연장을 함께 건의했지만 필요한 편익은 서로 다릅니다. 역 접근성과 도시 사이 통근, 차량기지의 공간을 함께 보되 현재 요청을 개통 확정으로 읽지 않아야 합니다. (노도현, 2026)",
+      "body": [
+        {
+          "h": "같은 노선, 서로 다른 이동 문제",
+          "p": "이 기사는 김포와 양천구가 철도 연장을 함께 요구한 이유를 보여줍니다. 신월동에는 가까이 이용할 지하철이 필요하고, 김포는 서울과 생활권을 공유하는 주민의 대중교통 혼잡을 줄이려 합니다. 까치산에서 신월사거리를 거쳐 김포로 이어지는 구상은 역 주변 접근성과 도시 사이 이동을 한 노선에 묶습니다. 다만 공동 건의는 사업 승인이나 개통을 뜻하지 않습니다. (노도현, 2026)"
+        },
+        {
+          "h": "2024년 협약에서 이어진 구상",
+          "p": "이 연결은 이번에 처음 등장하지 않았습니다. 2024년 보도는 신도림에서 까치산까지 이어지는 신정지선을 김포로 늘리고, 사전타당성 조사를 함께 하기로 한 협약을 전했습니다. 당시 양천구는 아파트 사이 신정차량기지를 옮기고 기존 부지를 활용하는 구상을 설명했습니다. 이동 경로와 차량을 정비하는 공간, 그 자리에 남는 토지의 쓰임이 함께 논의된 것입니다. 당시 거론된 이전 후보를 지금 확정된 부지로 이해해서는 안 됩니다. (박재홍, 2024)"
+        },
+        {
+          "h": "건의와 실제 철도 사이의 단계",
+          "p": "김포시의 2025년 수정 공식 설명은 상위계획 반영 신청과 예비타당성 조사, 기본계획·설계, 공사·시운전을 서로 다른 단계로 제시합니다. 현재 요청이 받아들여졌다는 뜻으로 이 과거 안내를 읽을 수는 없습니다. 단계도를 통해 알 수 있는 것은 노선의 필요성을 주장하는 일과 실제 공사에 들어가는 일이 다르다는 점입니다. 구상이 생활 속 교통 서비스가 되려면 그 사이의 판단과 설계가 이어져야 합니다. (김포시, 2025)"
+        },
+        {
+          "h": "역의 접근성과 차량기지의 위치",
+          "p": "김포와 양천은 같은 사업에서도 강조점이 다릅니다. 2024년 보도에서 양천은 교통 기반과 기존 차량기지 부지 활용을, 김포는 골드라인 혼잡 완화를 기대했습니다. 김포 쪽은 당시 활용 제약이 있는 부지를 이전 후보로 검토할 수 있다고 설명했습니다. 이는 수혜와 공간 제공이 서로 다른 지역에 놓이는 협력 구상입니다. 실제 이용 편익은 역 위치와 연결 방식이 정해진 뒤 확인해야 하며, 당시 기대만으로 혼잡 감소나 개발 성과를 수치화할 수는 없습니다. (박재홍, 2024)"
+        },
+        {
+          "h": "앞으로는 어떤 변화를 확인할까요?",
+          "p": "10월12일 보도에 따르면 두 지자체는 공동건의문을 대광위에 제출할 계획입니다. 광역교통계획에 반영되면 예비타당성 조사 등 후속 절차를 밟게 됩니다. 따라서 앞으로는 계획 반영 여부, 실제 조사 착수, 역과 차량기지의 위치가 어떻게 구체화되는지를 구분해 살펴볼 필요가 있습니다. 이번 보도에는 확정 개통일이나 이용시간 단축 효과가 제시되지 않았습니다. 주민의 이동이 나아지는 결과와 이를 요구하는 현재 단계 사이에는 아직 거리가 있습니다. (노도현, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "심층해설"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "sinjeong-gimpo-rail-access",
+      "references": [
+        {
+          "id": "k1",
+          "author": "노도현",
+          "date": "2026-10-12",
+          "title": "양천구, 김포시와 ‘2호선 신정지선 김포 연장’ 공동 건의",
+          "url": "https://www.khan.co.kr/article/202610121411011",
+          "kind": "news",
+          "short_label": "노도현, 2026",
+          "apa": "노도현. (2026-10-12). 양천구, 김포시와 ‘2호선 신정지선 김포 연장’ 공동 건의. 경향신문."
+        },
+        {
+          "id": "k2",
+          "author": "박재홍",
+          "date": "2024-03-22",
+          "title": "“2호선 신정지선 김포까지 연장해야”",
+          "url": "https://go.seoul.co.kr/news/newsView.php?id=20240322010002",
+          "kind": "news",
+          "short_label": "박재홍, 2024",
+          "apa": "박재홍. (2024-03-22). “2호선 신정지선 김포까지 연장해야”. 서울신문."
+        },
+        {
+          "id": "k3",
+          "author": "김포시",
+          "date": "2025-06-19",
+          "title": "서울2‧9호선 연장",
+          "url": "https://m.gimpo.go.kr/portal/contents.do?key=11404",
+          "kind": "official",
+          "short_label": "김포시, 2025",
+          "apa": "김포시. (2025-06-19). 서울2‧9호선 연장. 김포시."
+        }
+      ],
+      "starting_article": {
+        "title": "양천구, 김포시와 ‘2호선 신정지선 김포 연장’ 공동 건의",
+        "author": "노도현",
+        "date_kind": "published"
+      }
+    },
+    {
+      "id": "2026-10-13-gwydir-water-refuge-management",
+      "region": "해외",
+      "target_country": "AU",
+      "category": "지역지리학",
+      "title": "거북이 돌아온 귀디르 습지, 물길은 어떻게 지킬까요?",
+      "journal": "ABC News · 2026-10-09",
+      "researchers": "Zaarkacha Marlan",
+      "source": {
+        "name": "ABC News",
+        "url": "https://www.abc.net.au/news/2026-10-09/turtles-return-to-gwydir-wetlands-after-rehab-at-dubbo-zoo/107191652",
+        "date": "2026-10-09",
+        "language": "en",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "귀디르 습지의 거북 복귀는 구조의 성과이면서 지속적인 물 관리의 출발점입니다. 종착형 범람원의 피난처를 유지하고 주변 침수를 조정하는 과정과 방사 이후 관측 한계를 함께 살펴봅니다. (Marlan, 2026) (DCCEEW, 2026)",
+      "body": [
+        {
+          "h": "복귀 소식이 던지는 질문",
+          "p": "이 기사는 호주 북서부 뉴사우스웨일스의 귀디르 습지에서 구조된 거북이 돌아온 과정을 전합니다. 4월 말라버린 물웅덩이에서 구조된 39마리 가운데 13마리가 9월 깅엄 물웅덩이에 방사됐습니다. 복귀는 구조 성과이지만 습지 전체의 장기 회복이 끝났다는 뜻은 아닙니다. 돌아온 동물이 머물 물과 서식지를 어떻게 유지할지가 다음 질문입니다. (Marlan, 2026)"
+        },
+        {
+          "h": "물이 모이는 범람원의 피난처",
+          "p": "연방 환경부는 귀디르를 자연·인공 물길과 늪이 이어지는 종착형 범람원 습지로 설명합니다. 다른 큰 습지가 말랐을 때 습지 의존 생물이 머물 서식지가 될 수 있고, 물새의 번식과 이동에도 중요합니다. 그 역할은 지도상의 지정 면적만으로 설명되지 않습니다. 물이 어느 길을 통해 얼마나 오래 머무는지가 피난처의 상태를 바꿉니다. 이 지역은 고메로이·카밀라로이 전통 소유자들의 문화적 공간이기도 합니다. (DCCEEW, 2026)"
+        },
+        {
+          "h": "목표 유량은 현장에 맞춰 바뀝니다",
+          "p": "주 정부의 8월 기록을 보면 5월 말 시작한 공급과 강우로 6월4일 물이 깅엄에 도달했고, 6월 말에는 물웅덩이가 찼습니다. 그러나 동쪽 습지의 침수가 기대보다 높아지자 관측 지점의 목표 유량을 하루 100메가리터에서 60메가리터로 줄였습니다. 여기서 숫자는 물웅덩이의 총저수량이 아니라 특정 지점의 하루 유량입니다. 물을 더 보내는 것만이 아니라 주변 침수와 피난처 확보를 함께 살피는 조정이 필요했던 것입니다. (NSW Environment and Heritage, 2026)"
+        },
+        {
+          "h": "복귀한 거북과 주변 토지의 다른 조건",
+          "p": "보도는 주변 사유지 침수 우려 속에 환경용수 공급이 중단됐던 경과와 토지 소유자·자문 그룹과의 협의를 전합니다. 거북은 물이 있는 피난처가 필요하지만 주변 토지에는 침수 관리가 필요합니다. 방사한 개체를 하나씩 추적하지 않는다는 점도 남습니다. 생태계 관측은 계속하겠다는 계획이므로, 방사 숫자를 장기 생존율로 읽을 수는 없습니다. 복귀 소식과 향후 관측의 한계를 함께 봐야 합니다. (Marlan, 2026)"
+        },
+        {
+          "h": "한 번 채운 뒤에도 이어져야 할 물길",
+          "p": "2026~27년 연방 관리 계획은 건조 조건에 대비해 핵심 습지와 물고기 서식지를 유지하고, 물길의 연결과 장기간 흐름 중단 방지를 목표로 합니다. 상황이 더 습해지면 자연적으로 시작된 물새 번식과 더 큰 흐름을 지원하는 방향으로 달라집니다. 이는 조건에 따른 계획이며 모두 실행됐다는 보고가 아닙니다. 앞으로는 핵심 물웅덩이의 상태, 물길 단절 기간, 생물 관측 결과를 함께 보며 구조 이후의 서식지가 유지되는지를 확인해야 합니다. (DCCEEW, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "심층해설"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "gwydir-water-refuge-management",
+      "references": [
+        {
+          "id": "w1",
+          "author": "Zaarkacha Marlan",
+          "date": "2026-10-09",
+          "title": "Rescued turtles return home as hundreds of eggs incubate at Dubbo zoo",
+          "url": "https://www.abc.net.au/news/2026-10-09/turtles-return-to-gwydir-wetlands-after-rehab-at-dubbo-zoo/107191652",
+          "kind": "news",
+          "short_label": "Marlan, 2026",
+          "apa": "Zaarkacha Marlan. (2026-10-09). Rescued turtles return home as hundreds of eggs incubate at Dubbo zoo. ABC News."
+        },
+        {
+          "id": "w2",
+          "author": "NSW Environment and Heritage",
+          "date": "2026-08-13",
+          "title": "Wildlife responds as Gingham Waterhole fills",
+          "url": "https://www.environment.nsw.gov.au/news/wildlife-responds-gingham-waterhole-fills",
+          "kind": "official",
+          "short_label": "NSW Environment and Heritage, 2026",
+          "apa": "NSW Environment and Heritage. (2026-08-13). Wildlife responds as Gingham Waterhole fills. NSW Environment and Heritage."
+        },
+        {
+          "id": "w3",
+          "author": "DCCEEW",
+          "date": "2026-09-23",
+          "title": "Gwydir Wetlands: Gingham and Lower Gwydir (Big Leather) Watercourses",
+          "url": "https://www.dcceew.gov.au/water/wetlands/australian-ramsar-wetlands/gwydir-wetlands",
+          "kind": "official",
+          "short_label": "DCCEEW, 2026",
+          "apa": "DCCEEW. (2026-09-23). Gwydir Wetlands: Gingham and Lower Gwydir (Big Leather) Watercourses. DCCEEW."
+        },
+        {
+          "id": "w4",
+          "author": "DCCEEW",
+          "date": "2026-08-12",
+          "title": "Gwydir Valley",
+          "url": "https://www.dcceew.gov.au/cewh/manage-water/planning/water-management-plan-26-27/gwydir-valley",
+          "kind": "official",
+          "short_label": "DCCEEW, 2026",
+          "apa": "DCCEEW. (2026-08-12). Gwydir Valley. DCCEEW."
+        }
+      ],
+      "starting_article": {
+        "title": "Rescued turtles return home as hundreds of eggs incubate at Dubbo zoo",
+        "author": "Zaarkacha Marlan",
+        "date_kind": "published"
+      }
+    }
+  ]
+}
