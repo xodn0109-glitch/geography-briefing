@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-15",
+  "format": "daily_deep",
+  "articles": [
+    {
+      "id": "2026-10-15-sunchang",
+      "region": "국내",
+      "target_country": "KR",
+      "category": "경제지리학",
+      "title": "빈 경로당의 새 일터, 그릇이 돌아오는 지역을 만들려면",
+      "journal": "경향신문 · 2026-10-13",
+      "researchers": "김창효",
+      "source": {
+        "name": "경향신문",
+        "url": "https://www.khan.co.kr/article/202610130600061/amp",
+        "date": "2026-10-13",
+        "language": "ko",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "순창의 세척장은 빈 건물을 재사용해 지역의 식기 수요와 노인 일자리를 잇습니다. 지속적인 일감과 작업 공간이 운영의 조건입니다. (김창효, 2026)",
+      "body": [
+        {
+          "h": "빈 건물에서 순환 거점으로",
+          "p": "이 기사는 이용자가 줄어 방치된 순창의 경로당이 다회용기 세척장으로 바뀐 현장을 보여줍니다. 9월 22일 문을 연 이곳에는 노인 참여자 10명과 직원 1명이 일합니다. 이 일터는 주변의 식기 수요와 연결돼야 합니다. (김창효, 2026)"
+        },
+        {
+          "h": "시설보다 먼저 살펴볼 연결",
+          "p": "6월 보도 당시 군은 3억8000만원을 들여 옛 건물을 고치고, 7~8월 시범운영 뒤 9월 정식 운영을 계획했습니다. 행사장·장례식장 수요와 세척 서비스를 묶는 구상이었습니다. 이 계획을 보면 설비 설치와 이용처 확보가 함께 추진된 사업임을 이해할 수 있습니다. 당시의 개장 일정과 위생 관리 방안은 계획으로 읽어야 합니다. (이백수, 2026)"
+        },
+        {
+          "h": "그릇이 돌아와야 유지되는 일자리",
+          "p": "현재는 식기를 회수해 애벌세척·불림·자동세척·살균·건조·검사를 거쳐 다시 공급합니다. 일평균 약 8000개, 많은 날 약 2만7000개를 처리한다는 현장 보도는 최대치가 매일의 물량과 다름을 보여줍니다. 일감이 끊기면 일자리도 불안정해집니다. 일회용품을 다회용품으로 바꾸는 선택은 지역의 회수·세척·재공급 서비스를 유지하는 문제와 연결됩니다. (김창효, 2026)"
+        },
+        {
+          "h": "빈 공간과 좁은 작업장 사이",
+          "p": "빈 경로당은 새 일터가 됐지만, 작업자는 건조기를 더 놓을 자리와 보관창고가 필요하다고 말합니다. 행사가 몰리는 날의 처리 능력과 고령 작업자의 일터 조건을 함께 살펴야 하는 이유입니다. 건물 확보 뒤에도 작업 공간의 개선이 필요합니다. (김창효, 2026)"
+        },
+        {
+          "h": "운영 성과를 확인할 다음 질문",
+          "p": "6월에는 저렴한 세척 서비스와 위생 점검 방안이 제시됐습니다. 앞으로는 이용처가 꾸준히 참여하는지, 점검이 어떻게 시행되는지 확인할 필요가 있습니다. 설치 예산이나 계획된 공정만으로 사업의 환경 성과를 계산할 수는 없습니다. 재사용이 얼마나 반복되는지와 실제 운영에 드는 자원을 함께 기록해야 순환이 유지되는 조건을 평가할 수 있습니다. (이백수, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "순창",
+        "자원순환",
+        "노인일자리"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "sunchang-reusable-washing-local-work",
+      "references": [
+        {
+          "id": "sunchang-field",
+          "author": "김창효",
+          "date": "2026-10-13",
+          "title": "달그락달그락···방치된 경로당, 자원순환 일터로 변신",
+          "url": "https://www.khan.co.kr/article/202610130600061/amp",
+          "kind": "news",
+          "short_label": "김창효, 2026",
+          "apa": "김창효. (2026년 10월 13일). 달그락달그락···방치된 경로당, 자원순환 일터로 변신. 경향신문."
+        },
+        {
+          "id": "sunchang-plan",
+          "author": "이백수",
+          "date": "2026-06-11",
+          "title": "순창군, 다회용기 세척장 구축…자원순환·친환경 소비문화 확산",
+          "url": "https://www.newspim.com/news/view/20260611000576",
+          "kind": "news",
+          "short_label": "이백수, 2026",
+          "apa": "이백수. (2026년 6월 11일). 순창군, 다회용기 세척장 구축…자원순환·친환경 소비문화 확산. 뉴스핌."
+        }
+      ],
+      "starting_article": {
+        "title": "달그락달그락···방치된 경로당, 자원순환 일터로 변신",
+        "author": "김창효",
+        "date_kind": "published"
+      }
+    },
+    {
+      "id": "2026-10-15-shenkeng",
+      "region": "해외",
+      "target_country": "TW",
+      "category": "문화지리학",
+      "title": "선컹의 차밭 복원, 물과 품질을 함께 살펴야 하는 이유",
+      "journal": "Mongabay · 2026-10-13",
+      "researchers": "Michael O. Snyder",
+      "source": {
+        "name": "Mongabay",
+        "url": "https://news.mongabay.com/2026/10/photos-taiwans-tea-revival-blends-ancient-terraces-with-new-climate-adaptations/",
+        "date": "2026-10-13",
+        "language": "en",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "선컹은 옛 차밭 복원과 수분 관리를 결합해 달라진 강수 조건에 적응하려 합니다. (Snyder, 2026)",
+      "body": [
+        {
+          "h": "도시 옆 차밭을 다시 잇는 이유",
+          "p": "이 기사는 타이베이에서 동쪽으로 약 10㎞ 떨어진 선컹의 옛 차밭 복원을 보여줍니다. 1970년대 산업화·도시화로 쇠퇴한 재배지에 차 생산과 문화유산을 되살리려는 시도입니다. 하지만 예전의 돌계단식 밭을 되찾아도 기후 조건까지 과거로 돌아가지는 않습니다. (Snyder, 2026)"
+        },
+        {
+          "h": "돌담과 센서를 함께 쓰는 비탈",
+          "p": "현장에서는 안개가 일찍 걷혀 흙이 마르고, 비가 짧고 강하게 쏟아지는 문제가 보고됩니다. 복원팀은 물을 빼고 흙을 잡는 옛 돌담을 고치면서 토양 수분 센서와 점적관개, 품종 시험을 결합합니다. 전통과 신기술의 양자택일보다는 같은 비탈에서 건조와 강한 비에 함께 대응하는 과정입니다. 아직 장기 효과가 입증된 완성품으로 볼 수는 없습니다. (Snyder, 2026)"
+        },
+        {
+          "h": "잎이 커지는 것과 품질의 차이",
+          "p": "이를 살펴볼 단서는 중국 윈난의 차 연구입니다. 연구진은 2012년 5월 가뭄기부터 우기까지 같은 산비탈의 차를 채취했습니다. 강수가 늘면서 잎의 길이·무게는 증가했지만 주요 개별 폴리페놀 성분의 농도는 낮아졌습니다. 반면 총 페놀 농도와 항산화 활성은 높아졌습니다. 생장량과 성분 지표가 모두 같은 방향으로 바뀌지는 않았으므로, 물을 더 주면 품질도 한결같이 좋아진다고 단정할 수 없습니다. (Ahmed 외, 2014)"
+        },
+        {
+          "h": "윈난의 결과를 선컹에 옮길 때",
+          "p": "윈난 연구는 특정 고산 지역의 계절별 관측입니다. 선컹의 품종·고도·가공 조건을 그대로 실험한 결과가 아니며, 태풍 때 비탈의 안전성을 검증한 연구도 아닙니다. 연구가 선컹에 주는 시사점은 정해진 관개량이 아니라 수확량과 품질을 따로 관찰하라는 점입니다. 연구진 역시 다양한 지역과 재배 방식에서 추가 연구가 필요하다고 설명합니다. (Ahmed 외, 2014)"
+        },
+        {
+          "h": "복원의 속도와 평가 지표",
+          "p": "재배자와 연구자는 돌담 복구와 비탈 위험 감시를 함께 시험합니다. 복원 면적뿐 아니라 비 뒤 토양 상태와 작물 생존, 생산·품질도 확인해야 합니다. 기술 도입을 소득 증가나 재해 감소의 확정 성과로 읽지 않아야 합니다. (Snyder, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "대만",
+        "차문화",
+        "기후적응"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "shenkeng-tea-terraces-climate-quality",
+      "references": [
+        {
+          "id": "shenkeng-field",
+          "author": "Michael O. Snyder",
+          "date": "2026-10-13",
+          "title": "Photos: Taiwan’s tea revival blends ancient terraces with new climate adaptations",
+          "url": "https://news.mongabay.com/2026/10/photos-taiwans-tea-revival-blends-ancient-terraces-with-new-climate-adaptations/",
+          "kind": "news",
+          "short_label": "Snyder, 2026",
+          "apa": "Snyder, M. O. (2026, October 13). Photos: Taiwan’s tea revival blends ancient terraces with new climate adaptations. Mongabay."
+        },
+        {
+          "id": "tea-rain-study",
+          "author": "Selena Ahmed 외",
+          "date": "2014-10-06",
+          "title": "Effects of Extreme Climate Events on Tea (Camellia sinensis) Functional Quality Validate Indigenous Farmer Knowledge and Sensory Preferences in Tropical China",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0109126",
+          "kind": "research",
+          "short_label": "Ahmed 외, 2014",
+          "apa": "Ahmed, S., Stepp, J. R., Orians, C., Griffin, T., Matyas, C., Robbat, A., Cash, S., Xue, D., Long, C., Unachukwu, U., Buckley, S., Small, D., & Kennelly, E. (2014). Effects of Extreme Climate Events on Tea (Camellia sinensis) Functional Quality Validate Indigenous Farmer Knowledge and Sensory Preferences in Tropical China. PLoS ONE, 9(10), e109126. DOI: 10.1371/journal.pone.0109126."
+        }
+      ],
+      "starting_article": {
+        "title": "Photos: Taiwan’s tea revival blends ancient terraces with new climate adaptations",
+        "author": "Michael O. Snyder",
+        "date_kind": "published"
+      }
+    }
+  ]
+}
