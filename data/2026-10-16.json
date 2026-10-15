@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-16",
+  "format": "daily_deep",
+  "articles": [
+    {
+      "id": "2026-10-16-line9",
+      "region": "국내",
+      "target_country": "KR",
+      "category": "도시지리학",
+      "title": "급행이 늘어나는 출근길, 누구의 시간을 줄일까요?",
+      "journal": "경향신문 · 2026-10-14",
+      "researchers": "노도현",
+      "source": {
+        "name": "경향신문",
+        "url": "https://www.khan.co.kr/article/202610142122035",
+        "date": "2026-10-14",
+        "language": "ko",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "9호선은 차량 도입 지연 속 운행을 재배분할 계획입니다. 시간·방향에 따른 조정을 구분해 살펴봅니다. (노도현, 2026)",
+      "body": [
+        {
+          "h": "급행을 늘리는 범위",
+          "p": "이 기사는 새 전동차 도입이 늦어지는 가운데 기존 열차의 운행을 바꾸려는 계획을 다룹니다. 11월 16일부터 오전 5시40분~7시 상선에서 급행과 일반의 비율을 1대1에서 2대1로 조정합니다. 모든 시간·방향의 급행을 같은 비율로 늘리는 계획은 아닙니다. (노도현, 2026)"
+        },
+        {
+          "h": "차량보다 운행 순서를 바꾸는 이유",
+          "p": "서울시는 집중 투입 시작을 오전 6시30분에서 5시40분으로 당겨 오전 운행을 8회 늘릴 계획입니다. 기존 인프라를 활용해 수요가 몰리는 시간에 대응하는 방식입니다. 따라서 효과를 볼 때는 차량 보유량뿐 아니라 어느 방향에 언제 열차를 배치하는지 살펴야 합니다. (내 손안에 서울, 2026)"
+        },
+        {
+          "h": "시간 절감과 편익의 분포",
+          "p": "서울의 네 철도 노선을 사례로 삼은 연구는 교통카드 자료를 활용해 정차 계획과 시간표를 함께 최적화했습니다. 정차역을 건너뛰면 총 통행시간을 줄일 수 있지만 출발지·목적지 조합 사이의 시간 차이가 커질 수 있다고 설명합니다. 연구에서는 총시간만 줄이는 목표와 형평성을 고려하는 목표에 따라 정차·환승 설계가 달라졌습니다. 평균적인 절감과 이용자 사이의 차이는 별개로 살펴야 합니다. (Han 외, 2021)"
+        },
+        {
+          "h": "외곽의 장거리와 중간 정류장의 이동",
+          "p": "함께 도입할 간선 급행버스는 외곽에서 승객을 태우고 중간 정류소를 건너뛰어 도심 주요 정류소에 섭니다. 중간 정류소나 짧은 구간 이용자는 일반버스를 이용하도록 설계했습니다. 같은 길 위에서도 통행의 출발지·목적지에 따라 필요한 서비스가 다르므로, 급행 소요시간만으로 전체 이용 편의를 평가하기는 어렵습니다. (내 손안에 서울, 2026)"
+        },
+        {
+          "h": "전망을 실제 성과와 나눠 보기",
+          "p": "서울시가 제시한 출근 하선 급행 혼잡도 192.5%에서 172.1%로의 변화는 시행 뒤 기대치입니다. 차이는 20.4%가 아니라 20.4%포인트이며 표의 최고 혼잡도는 혼잡시간의 30분 평균 기준입니다. 개편 뒤 시간대·방향별 혼잡과 실제 대기시간을 확인해야 하며, 예측치를 이미 달성한 성과로 읽지 않아야 합니다. (내 손안에 서울, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "서울",
+        "급행",
+        "통근"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "seoul-line9-express-service-allocation",
+      "references": [
+        {
+          "id": "line9-report",
+          "author": "노도현",
+          "date": "2026-10-14",
+          "title": "‘지옥철’ 서울 지하철 9호선, ‘급행’ 늘린다",
+          "url": "https://www.khan.co.kr/article/202610142122035",
+          "kind": "news",
+          "short_label": "노도현, 2026",
+          "apa": "노도현. (2026년 10월 14일). ‘지옥철’ 서울 지하철 9호선, ‘급행’ 늘린다. 경향신문."
+        },
+        {
+          "id": "seoul-operation",
+          "author": "내 손안에 서울",
+          "date": "2026-10-14",
+          "title": "출퇴근길 더 빠르게! 9호선 급행 확대·급행버스 도입",
+          "url": "https://mediahub.seoul.go.kr/archives/2019693",
+          "kind": "official",
+          "short_label": "내 손안에 서울, 2026",
+          "apa": "내 손안에 서울. (2026년 10월 14일). 출퇴근길 더 빠르게! 9호선 급행 확대·급행버스 도입. 서울특별시."
+        },
+        {
+          "id": "skip-stop-equity",
+          "author": "Sang-Wook Han, Eun Hak Lee, Dong-Kyu Kim",
+          "date": "2021-06-01",
+          "title": "Multi-Objective Optimization for Skip-Stop Strategy Based on Smartcard Data Considering Total Travel Time and Equity",
+          "url": "https://journals.sagepub.com/doi/10.1177/03611981211013044",
+          "kind": "research",
+          "short_label": "Han 외, 2021",
+          "apa": "Han, S.-W., Lee, E. H., & Kim, D.-K. (2021). Multi-Objective Optimization for Skip-Stop Strategy Based on Smartcard Data Considering Total Travel Time and Equity. Transportation Research Record, 2675(10), 841–852. DOI: 10.1177/03611981211013044."
+        }
+      ],
+      "starting_article": {
+        "title": "‘지옥철’ 서울 지하철 9호선, ‘급행’ 늘린다",
+        "author": "노도현",
+        "date_kind": "published"
+      }
+    },
+    {
+      "id": "2026-10-16-limpopo",
+      "region": "해외",
+      "target_country": "ZA",
+      "category": "지역지리학",
+      "title": "림포포의 홍수 경보, 물길 개선과 어떻게 이어질까요?",
+      "journal": "Mongabay · 2026-10-14",
+      "researchers": "Bernard Chiguvare",
+      "source": {
+        "name": "Mongabay",
+        "url": "https://news.mongabay.com/2026/10/residents-of-south-africas-limpopo-province-hold-breath-amid-fears-of-repeat-floods/",
+        "date": "2026-10-14",
+        "language": "en",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "Tshakhuma의 주민 경보와 시설 개선 요구는 위험을 아는 것과 대응 자원을 갖추는 것의 차이를 보여줍니다. (Chiguvare, 2026)",
+      "body": [
+        {
+          "h": "경보가 있어도 남는 위험",
+          "p": "이 기사는 남아프리카 림포포의 Tshakhuma 주민들이 다음 홍수를 걱정하는 현장을 보여줍니다. 1월 피해 뒤 9월 취재에서도 주민들은 하천·교량·배수로의 문제를 지적했습니다. 위험을 안다는 것과 그 위험을 줄일 수 있다는 것은 어떻게 다를까요? (Chiguvare, 2026)"
+        },
+        {
+          "h": "과거 두 마을에서 찾는 단서",
+          "p": "림포포의 다른 두 마을인 Maniini와 Tshilungwi를 조사한 연구는 2010~2011년 홍수 경험을 다룹니다. 2012년 6~8월 피해 가구 중 60가구를 설문하고 관계자 면담·현장 관찰을 결합했습니다. 연구에서는 도로·교량 피해가 일터·학교·생활 서비스 접근까지 막는 양상이 드러났습니다. 물에 잠긴 집의 수만으로 생활의 피해 범위를 설명하기 어려운 이유입니다. (Musyoki 외, 2016)"
+        },
+        {
+          "h": "알림과 시설 개선의 차이",
+          "p": "현재 Tshakhuma 주민들은 WhatsApp으로 수위·위험한 길을 공유하며, 당국도 취약 지역에 예보 정보를 전달한다고 설명합니다. 하지만 주민들은 배수와 교량의 물리적 문제를 해결할 자원이 부족하다고 말합니다. 연구자 역시 주민이 아는 위험 지점을 공식 평가와 정비에 연결해야 한다고 지적합니다. 경보를 전달하는 일과 물길을 개선하는 일은 서로 보완해야 합니다. (Chiguvare, 2026)"
+        },
+        {
+          "h": "같은 대책이 모든 마을에 맞을까요?",
+          "p": "과거 조사에서 완만한 강변의 Maniini 주민들은 집을 보호하는 방안을, 산지 사이 Tshilungwi 주민들은 안전한 곳으로 대피하는 방안을 우선했습니다. 이 차이는 지형뿐 아니라 주민이 지키려는 생활 기반과 대응 여건을 함께 보게 합니다. 현재 Tshakhuma에도 같은 선호를 가정해서는 안 되며, 오래된 두 마을 조사로 오늘의 전체 주민을 대표할 수도 없습니다. (Musyoki 외, 2016)"
+        },
+        {
+          "h": "비가 오기 전에 물어야 할 질문",
+          "p": "Tshakhuma의 현장 연구자는 비가 시작된 뒤에는 긴급 대응에 선택이 제한된다고 설명합니다. 다음 확인점은 경보의 발송 여부를 넘어 강변 가구에 정보가 닿는지, 위험 지점이 실제 평가·보수로 이어지는지입니다. 주민이 제안한 하천 정비 방안도 효과가 검증된 공학적 처방과 구분해 읽어야 합니다. (Chiguvare, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "림포포",
+        "홍수",
+        "재난대비"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "tshakhuma-flood-warning-drainage",
+      "references": [
+        {
+          "id": "tshakhuma-report",
+          "author": "Bernard Chiguvare",
+          "date": "2026-10-14",
+          "title": "Residents of South Africa’s Limpopo province hold breath amid fears of repeat floods",
+          "url": "https://news.mongabay.com/2026/10/residents-of-south-africas-limpopo-province-hold-breath-amid-fears-of-repeat-floods/",
+          "kind": "news",
+          "short_label": "Chiguvare, 2026",
+          "apa": "Chiguvare, B. (2026, October 14). Residents of South Africa’s Limpopo province hold breath amid fears of repeat floods. Mongabay."
+        },
+        {
+          "id": "thulamela-study",
+          "author": "Agnes Musyoki, Reuben Thifhulufhelwi, Florence M. Murungweni",
+          "date": "2016-01-13",
+          "title": "The impact of and responses to flooding in Thulamela Municipality, Limpopo Province, South Africa",
+          "url": "https://jamba.org.za/index.php/jamba/article/view/166/434",
+          "kind": "research",
+          "short_label": "Musyoki 외, 2016",
+          "apa": "Musyoki, A., Thifhulufhelwi, R., & Murungweni, F. M. (2016). The impact of and responses to flooding in Thulamela Municipality, Limpopo Province, South Africa. Jàmbá: Journal of Disaster Risk Studies, 8(2), Article 166. DOI: 10.4102/jamba.v8i2.166."
+        }
+      ],
+      "starting_article": {
+        "title": "Residents of South Africa’s Limpopo province hold breath amid fears of repeat floods",
+        "author": "Bernard Chiguvare",
+        "date_kind": "published"
+      }
+    }
+  ]
+}
