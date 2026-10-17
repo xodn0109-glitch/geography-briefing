@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-17",
+  "format": "daily_deep",
+  "articles": [
+    {
+      "id": "2026-10-17-busan-food",
+      "region": "국내",
+      "target_country": "KR",
+      "category": "문화지리학",
+      "title": "부산 돼지국밥, 동네의 한 끼는 어떻게 도시의 대표가 될까요?",
+      "journal": "경향신문 · 2026-10-17",
+      "researchers": "김준용",
+      "source": {
+        "name": "경향신문",
+        "url": "https://www.khan.co.kr/article/202610170600101",
+        "date": "2026-10-17",
+        "language": "ko",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "부산의 돼지국밥 투표와 팝업은 동네의 경험을 도시 관광 안내로 모읍니다. 참여자의 선택과 전체 시민의 선호는 구분해야 합니다. (김준용, 2026)",
+      "body": [
+        {
+          "h": "동네 음식이 도시의 안내가 될 때",
+          "p": "이 기사는 부산시가 돼지국밥을 관광 콘텐츠로 키우려는 현장을 보여줍니다. 시민 등이 추천한 20개 가게를 대상으로 3만8194명이 투표했고 시는 등급별 가게를 발표했습니다. 동네 음식이 도시의 대표로 소개되는 과정입니다. (김준용, 2026)"
+        },
+        {
+          "h": "동네의 맛과 관광의 지도",
+          "p": "남구의 팝업을 찾은 주민들은 평소 동래·금정의 가게를 다니거나 고향 사하의 가게를 응원한다고 말합니다. 한 장소에 여러 동네의 음식이 모이면서 생활권마다 쌓인 경험이 도시 전체의 안내로 바뀝니다. 맛의 차이뿐 아니라 어디서 자주 먹었고 누구와 기억을 공유하는지도 지역음식의 의미를 구성합니다. (김준용, 2026)"
+        },
+        {
+          "h": "인기와 지역의 연결은 다른 지표",
+          "p": "한국 음식축제 277개를 분석한 연구는 음식 재료와 지역 농업의 특화 정도를 연결하는 입지계수 지표를 제안했습니다. 연구에서는 예산·인프라를 통제한 뒤 농업과의 연결 정도가 방문객 수와 유의하게 연결되지 않았습니다. 사람이 많이 찾는지와 생산 기반이 지역에 얼마나 연결됐는지는 같은 질문이 아니라는 뜻입니다. (Yoo, 2026)"
+        },
+        {
+          "h": "농산물 지표로 도시 음식문화를 판정하지 않기",
+          "p": "이 연구는 생산 측면의 지역 연결을 살피는 틀입니다. 이를 도시 음식의 역사·주민 기억·조리 문화 전체를 재는 잣대로 삼을 수는 없습니다. 또한 연구의 축제 포트폴리오 분석은 이번 부산 행사의 성과 평가가 아닙니다. 방문객 수나 홍보 효과만으로 지역다움을 증명하지 말되, 재료 생산지만으로 도시 음식의 가치를 낮춰서도 안 됩니다. (Yoo, 2026)"
+        },
+        {
+          "h": "투표 이후에 확인할 것",
+          "p": "부산시는 가게별 득표수를 공개하지 않았고 맛의 주관성 때문에 구체적인 순위를 정하지 않았다고 설명합니다. 이번 결과는 추천된 가게와 참여자들의 선택으로 읽어야 합니다. 관광 안내가 다양한 동네의 경험도 담는지 살펴야 합니다. 참여 인원만으로 모든 시민의 선호를 대표한다고 단정해서는 안 됩니다. (김준용, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "부산",
+        "지역음식",
+        "도시브랜드"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "busan-pork-soup-city-branding",
+      "references": [
+        {
+          "id": "busan-report",
+          "author": "김준용",
+          "date": "2026-10-17",
+          "title": "부산시가 만든 ‘돼지국밥 미슐랭 가이드’··· ‘수변최고’ ‘영진’ ‘합천’ 탑 3 올랐다",
+          "url": "https://www.khan.co.kr/article/202610170600101",
+          "kind": "news",
+          "short_label": "김준용, 2026",
+          "apa": "김준용. (2026년 10월 17일). 부산시가 만든 ‘돼지국밥 미슐랭 가이드’··· ‘수변최고’ ‘영진’ ‘합천’ 탑 3 올랐다. 경향신문."
+        },
+        {
+          "id": "food-festivals",
+          "author": "Seung Chul Yoo",
+          "date": "n.d.",
+          "title": "Objective Material Authenticity in Food Tourism: Location Quotient Evidence from South Korean Regional Food Festivals",
+          "url": "https://pure.ewha.ac.kr/en/publications/objective-material-authenticity-in-food-tourism-location-quotient/",
+          "kind": "research",
+          "short_label": "Yoo, 2026",
+          "apa": "Yoo, S. C. (2026, July). Objective Material Authenticity in Food Tourism: Location Quotient Evidence from South Korean Regional Food Festivals. Tourism and Hospitality, 7(7), Article 202. DOI: 10.3390/tourhosp7070202."
+        }
+      ],
+      "starting_article": {
+        "title": "부산시가 만든 ‘돼지국밥 미슐랭 가이드’··· ‘수변최고’ ‘영진’ ‘합천’ 탑 3 올랐다",
+        "author": "김준용",
+        "date_kind": "published"
+      }
+    },
+    {
+      "id": "2026-10-17-india-forest",
+      "region": "해외",
+      "target_country": "IN",
+      "category": "경제지리학",
+      "title": "인도의 숲에서 시장까지, 채집자의 몫은 어떻게 달라질까요?",
+      "journal": "Mongabay · 2026-10-15",
+      "researchers": "Stephin Thomas",
+      "source": {
+        "name": "Mongabay",
+        "url": "https://news.mongabay.com/2026/10/how-indian-communities-earn-a-living-from-more-than-forest-timber/",
+        "date": "2026-10-15",
+        "language": "en",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "인도 임산물 채집자의 생계는 생산량뿐 아니라 보관·가공·유통과 연결됩니다. 현장에서는 여성 집단의 시장 연결을 시도합니다. (Thomas, 2026)",
+      "body": [
+        {
+          "h": "채집량만으로 설명되지 않는 생계",
+          "p": "이 기사는 자르칸드의 Mamta Tigga가 마후아 꽃 등을 채집해 가계를 보태는 경험에서 출발합니다. 날씨에 따라 채집량이 달라지고 판매 수입이 생활을 지탱합니다. 하지만 생산물이 시장에 팔린다고 노동의 대가가 고르게 돌아오는 것은 아닙니다. 숲에서 소비자까지 어떤 연결이 필요한지 살펴볼 문제입니다. (Thomas, 2026)"
+        },
+        {
+          "h": "수확 뒤의 기반시설과 가격",
+          "p": "인도 임산물 문헌 리뷰는 채집 뒤의 건조·보관·운송 부족이 손실과 낮은 가격의 급매로 이어지는 과정을 설명합니다. 저장과 운송 수단을 가진 중개인에게 가격 결정력이 기울 수 있다는 것입니다. 판매 창구를 늘리는 것과 함께 품질을 유지하고 판매 시점을 선택할 여건을 갖추는 일이 중요합니다. 이는 여러 기존 사례의 종합이며 한 마을의 개입 효과를 측정한 실험은 아닙니다. (Chakrabarti·Dutta, 2026)"
+        },
+        {
+          "h": "채집에서 가공과 협상으로",
+          "p": "현장 단체는 여성들을 집단으로 조직해 가공·포장과 도시 구매자 연결을 돕는다고 설명합니다. 잎을 모으는 일에서 운송을 협의하고 비용을 계산하는 일까지 이어집니다. 이런 연결은 채집자를 단순한 원료 공급자로만 보지 않게 합니다. 다만 관계자의 성과 설명을 모든 생산자에게 같은 소득 증가가 보장된다는 뜻으로 읽어서는 안 됩니다. (Thomas, 2026)"
+        },
+        {
+          "h": "품목과 사람에 따라 달라지는 조건",
+          "p": "리뷰는 중부 인도의 꽃·잎과 순다르반의 꿀처럼 서로 다른 생산 환경과 기술을 함께 다룹니다. 여성의 채집·건조·선별 노동이 가계 수입 계산에서 충분히 드러나지 않는 문제도 지적합니다. 품목별 보관 조건과 여성의 노동·결정 참여를 함께 봐야 합니다. (Chakrabarti·Dutta, 2026)"
+        },
+        {
+          "h": "소득과 숲의 회복을 함께 확인하기",
+          "p": "리뷰는 종의 풍부도·재생·채집 강도 같은 생태 지표와 가계 소득·여성 참여를 함께 살피도록 제안합니다. 판매가 늘어도 재생보다 빠르게 채집하면 생계 기반이 약해질 수 있기 때문입니다. 이는 권고이며, 생산자의 몫과 숲의 상태가 함께 나아지는지 확인해야 합니다. (Chakrabarti·Dutta, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "인도",
+        "임산물",
+        "여성노동"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "india-nontimber-forest-products-livelihood",
+      "references": [
+        {
+          "id": "india-report",
+          "author": "Stephin Thomas",
+          "date": "2026-10-15",
+          "title": "How Indian communities earn a living from more than forest timber",
+          "url": "https://news.mongabay.com/2026/10/how-indian-communities-earn-a-living-from-more-than-forest-timber/",
+          "kind": "news",
+          "short_label": "Thomas, 2026",
+          "apa": "Thomas, S. (2026, October 15). How Indian communities earn a living from more than forest timber. Mongabay."
+        },
+        {
+          "id": "ntfp-review",
+          "author": "Preyoshi Chakrabarti, Arkajyoti Dutta",
+          "date": "2026-04-28",
+          "title": "Beyond timber: a review on the role of non-timber forest products for ecological sustainability and rural empowerment in India",
+          "url": "https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2026.1792816/full",
+          "kind": "research",
+          "short_label": "Chakrabarti·Dutta, 2026",
+          "apa": "Chakrabarti, P., & Dutta, A. (2026). Beyond timber: a review on the role of non-timber forest products for ecological sustainability and rural empowerment in India. Frontiers in Sustainable Food Systems, 10, Article 1792816. DOI: 10.3389/fsufs.2026.1792816."
+        }
+      ],
+      "starting_article": {
+        "title": "How Indian communities earn a living from more than forest timber",
+        "author": "Stephin Thomas",
+        "date_kind": "published"
+      }
+    }
+  ]
+}
