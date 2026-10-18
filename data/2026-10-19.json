@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-19",
+  "format": "daily_deep",
+  "articles": [
+    {
+      "id": "2026-10-19-plastic-material-flows",
+      "region": "해외",
+      "target_country": "US",
+      "category": "경제지리학",
+      "title": "폐플라스틱은 어디로 돌아갈까요? 연료와 재활용 표시의 차이",
+      "journal": "Mongabay · 2026-10-16",
+      "researchers": "Claire Asher",
+      "source": {
+        "name": "Mongabay",
+        "url": "https://news.mongabay.com/2026/10/plastic-industry-bookkeeping-plans-hide-chemical-recycling-harms-critics-say/",
+        "date": "2026-10-16",
+        "language": "en",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "폐기물 처리와 새 플라스틱 생산을 구분하고, 재활용 표시가 실제 물질 흐름을 어떻게 설명하는지 살펴봅니다. (Asher, 2026)",
+      "body": [
+        {
+          "h": "기름을 만드는 단계와 플라스틱으로 돌아가는 단계",
+          "p": "이 기사는 폐플라스틱 처리량과 제품의 재활용 표시가 같은 물질 흐름을 뜻하는지 묻습니다. 열분해는 우선 기름을 만들며 새 플라스틱이 되려면 추가 공정이 필요합니다. 폐기물·연료·제품의 양을 구분해야 합니다. (Asher, 2026)"
+        },
+        {
+          "h": "표시를 둘러싼 실제 쟁점",
+          "p": "질량수지는 일정 기간의 투입·산출을 장부로 연결하는 방식입니다. 비판자들은 연료 몫까지 제품의 재활용 실적으로 돌리는 비례하지 않는 배분에 문제를 제기합니다. 미국화학협회는 독립 인증·투명한 표시를 갖춘 질량수지가 기존 설비를 활용하는 현실적 경로라고 답합니다. 배분 대상을 확인해야 합니다. (Asher, 2026)"
+        },
+        {
+          "h": "볼리비아 농촌에서는 연료 자체가 목적입니다",
+          "p": "Reuters의 볼리비아 라하 현장 보도에서는 주민이 폐기물로 만든 연료를 농기계에만 쓴다고 설명합니다. 파종에 필요한 연료 확보와 포장재의 재생 원료 함량은 다른 문제입니다. 배출 저감이나 다른 지역의 사업성을 입증하는 사례는 아닙니다. (Limachi, 2026)"
+        },
+        {
+          "h": "비교 연구도 평가 범위를 정해야 합니다",
+          "p": "Uekert 등의 연구는 수거 후 선별시설의 플라스틱 묶음부터 재생 수지까지를 비교하며 원제품의 생산·사용·수거는 포함하지 않습니다. 기계적 재활용과 일부 PET 분해 방식 등을 같은 틀에서 비교하지만 열분해는 연구 범위 밖입니다. 재생 재료의 품질과 비용·환경 부담에서 유리한 방식도 같지 않았습니다. 따라서 이 논문을 모든 열분해 시설의 배출량이나 볼리비아 농가의 성과를 입증하는 자료로 쓸 수 없습니다. (Uekert 외, 2023)"
+        },
+        {
+          "h": "다음에는 장부와 현장의 양을 함께 살펴야 합니다",
+          "p": "앞으로 볼 지표는 실제 투입 폐기물과 새 수지·연료로 나뉜 산출량, 배분 방식, 공정에 쓰인 에너지입니다. 이는 자료들을 연결한 점검 관점이며, 표시의 변화 자체를 물질 순환의 개선으로 단정하지 않기 위한 구분입니다. (Asher, 2026) (Limachi, 2026) (Uekert 외, 2023)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "플라스틱",
+        "물질흐름",
+        "재활용표시"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "plastic-pyrolysis-mass-balance-material-flow",
+      "starting_article": {
+        "title": "Plastic industry bookkeeping plans hide chemical recycling harms, critics say",
+        "author": "Claire Asher",
+        "date_kind": "published"
+      },
+      "references": [
+        {
+          "id": "w-main",
+          "author": "Claire Asher",
+          "date": "2026-10-16",
+          "title": "Plastic industry bookkeeping plans hide chemical recycling harms, critics say",
+          "url": "https://news.mongabay.com/2026/10/plastic-industry-bookkeeping-plans-hide-chemical-recycling-harms-critics-say/",
+          "kind": "news",
+          "short_label": "Asher, 2026",
+          "apa": "Asher, C. (2026, October 16). Plastic industry bookkeeping plans hide chemical recycling harms, critics say. Mongabay."
+        },
+        {
+          "id": "w-field",
+          "author": "Sergio Limachi",
+          "date": "2026-10-13",
+          "title": "As diesel prices soar, Bolivian farmer turns trash into tractor fuel",
+          "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/10/13/as-diesel-prices-soar-bolivian-farmer-turns-trash-into-tractor-fuel",
+          "kind": "news",
+          "short_label": "Limachi, 2026",
+          "apa": "Limachi, S. (2026, October 13). As diesel prices soar, Bolivian farmer turns trash into tractor fuel. Reuters. Republished by Internazionale."
+        },
+        {
+          "id": "w-study",
+          "author": "Taylor Uekert, Avantika Singh, Jason S. DesVeaux, Tapajyoti Ghosh, Arpit Bhatt, Geetanjali Yadav, Shaik Afzal, Julien Walzberg, Katrina M. Knauer, Scott R. Nicholson, Gregg T. Beckham, & Alberta C. Carpenter",
+          "date": "2023-01-12",
+          "title": "Technical, Economic, and Environmental Comparison of Closed-Loop Recycling Technologies for Common Plastics",
+          "url": "https://www.nlr.gov/docs/fy23osti/83212.pdf",
+          "kind": "research",
+          "short_label": "Uekert 외, 2023",
+          "apa": "Uekert, T., Singh, A., DesVeaux, J. S., Ghosh, T., Bhatt, A., Yadav, G., Afzal, S., Walzberg, J., Knauer, K. M., Nicholson, S. R., Beckham, G. T., & Carpenter, A. C. (2023). Technical, Economic, and Environmental Comparison of Closed-Loop Recycling Technologies for Common Plastics. ACS Sustainable Chemistry & Engineering, 11(3), 965–978. https://doi.org/10.1021/acssuschemeng.2c05497"
+        }
+      ]
+    }
+  ]
+}
