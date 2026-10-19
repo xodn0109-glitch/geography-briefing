@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-20",
+  "format": "daily_deep",
+  "articles": [
+    {
+      "id": "2026-10-20-gangneung-everyday-mobility",
+      "region": "국내",
+      "target_country": "KR",
+      "category": "도시지리학",
+      "title": "강릉의 교통 전시, 매일의 이동으로 어떻게 이어질까요?",
+      "journal": "경향신문 · 2026-10-15",
+      "researchers": "최승현",
+      "source": {
+        "name": "경향신문",
+        "url": "https://www.khan.co.kr/article/202610151113001",
+        "date": "2026-10-15",
+        "language": "ko",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "강릉 총회 계획과 과거 승강장 보도에서 일상 이동의 조건을 살펴봅니다. 행사 규모와 주민의 이용 개선을 구분합니다. (최승현, 2026)",
+      "body": [
+        {
+          "h": "전시장의 이동과 도시의 이동",
+          "p": "이 기사는 19~23일 강릉 ITS 세계총회의 기술 시연과 숙소·도심·관광지를 잇는 순환 셔틀 계획을 소개합니다. 자율주행차를 체험하는 일과 주민이 날마다 버스를 타기 편해지는 일은 어떻게 이어질까요? 행사 방문객의 집중 이동과 일상의 분산된 이동을 나눠 살펴야 합니다. (최승현, 2026)"
+        },
+        {
+          "h": "차량을 기다리는 공간도 교통입니다",
+          "p": "강릉에서는 이미 2025년 노인종합복지관 등 네 곳의 스마트 승강장 운영이 보도됐습니다. 냉난방·온열 의자와 버스 도착 정보는 기다리는 동안의 불편을 줄이려는 장치입니다. 당시 이용자 호응을 전한 보도이므로, 이를 도시 전체의 배차 개선이나 2026년 현재 이용 성과로 확대할 수는 없습니다. (이형섭, 2025)"
+        },
+        {
+          "h": "어느 정류장부터 바꿀까요?",
+          "p": "광명의 2024년 보도는 전체 정류장의 대기시간·유동 인구·고령자 이용 등을 분석하고, 긴 배차간격 관련 민원과 개발지역 수요를 함께 고려한 설치 계획을 전합니다. 강릉의 복지관 주변 승강장과 비교하면 장비의 기능만큼 설치 위치와 이용 목적이 중요합니다. 이는 다른 도시의 당시 계획이며 현재 완공 여부를 뜻하지 않습니다. (신동원, 2024) (이형섭, 2025)"
+        },
+        {
+          "h": "정류장까지 걸어가는 사람의 경험",
+          "p": "고령 보행자 연구는 수도권 심층 면담과 전국 60대 이상 222명의 설문을 연결했습니다. 의자·그늘 같은 쉼터를 찾으며 불편에 대응하지만, 쉼터 부족 등으로 걷기를 줄이는 경험이 나타났습니다. 편의성과 쾌적성은 중점 개선 영역이었습니다. 정류장 안이 좋아져도 그곳까지 가는 길을 함께 봐야 한다는 점검 관점을 줍니다. 다만 이 연구가 강릉 ITS 사업의 효과를 평가한 것은 아닙니다. (조선경 외, 2023)"
+        },
+        {
+          "h": "총회 뒤에 확인할 변화",
+          "p": "앞으로는 체험 인원과 상시 이용자를 구분하고, 정류장까지 걷는 길·대기환경·실제 환승 경험을 함께 살필 필요가 있습니다. 행사 계획, 승강장 운영 보도, 고령자의 보행 경험을 연결한 점검 관점입니다. 전시 장비 수나 도시 홍보만으로 일상 이동의 개선을 판단하지 않아야 합니다. (최승현, 2026) (이형섭, 2025) (조선경 외, 2023)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "교통",
+        "장소별이용"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "gangneung-its-event-everyday-accessibility",
+      "starting_article": {
+        "title": "“첨단 지능형 교통체계 접목한 미래 도시 엿본다”···‘2026 강릉 ITS 세계총회’ 19일 개막",
+        "author": "최승현",
+        "date_kind": "published"
+      },
+      "references": [
+        {
+          "id": "k-main",
+          "author": "최승현",
+          "date": "2026-10-15",
+          "title": "“첨단 지능형 교통체계 접목한 미래 도시 엿본다”···‘2026 강릉 ITS 세계총회’ 19일 개막",
+          "url": "https://www.khan.co.kr/article/202610151113001",
+          "kind": "news",
+          "short_label": "최승현, 2026",
+          "apa": "최승현. (2026년 10월 15일). “첨단 지능형 교통체계 접목한 미래 도시 엿본다”···‘2026 강릉 ITS 세계총회’ 19일 개막. 경향신문."
+        },
+        {
+          "id": "k-stop",
+          "author": "이형섭",
+          "date": "2025-11-26",
+          "title": "강릉시, 스마트 버스 승강장 4곳 정식 운영",
+          "url": "https://www.newspim.com/news/view/20251126001299",
+          "kind": "news",
+          "short_label": "이형섭, 2025",
+          "apa": "이형섭. (2025년 11월 26일). 강릉시, 스마트 버스 승강장 4곳 정식 운영. 뉴스핌."
+        },
+        {
+          "id": "k-compare",
+          "author": "신동원",
+          "date": "2024-08-05",
+          "title": "광명시, 쾌적하고 똑똑한 스마트 버스정류장 26개 추가 설치",
+          "url": "https://go.seoul.co.kr/news/newsView.php?id=20240805500061",
+          "kind": "news",
+          "short_label": "신동원, 2024",
+          "apa": "신동원. (2024년 8월 5일). 광명시, 쾌적하고 똑똑한 스마트 버스정류장 26개 추가 설치. 서울신문."
+        },
+        {
+          "id": "k-study",
+          "author": "조선경, 남종근, 이동하, 한태경, 하정원, 이수기",
+          "date": "2023-06-30",
+          "title": "근거이론과 IPA 방법론을 활용한 고령자 인식 기반 보행환경 영향 요인 분석",
+          "url": "https://www.kpaj.or.kr/_common/do.php?a=full&aidx=37099&b=12&bidx=3348",
+          "kind": "research",
+          "short_label": "조선경 외, 2023",
+          "apa": "조선경, 남종근, 이동하, 한태경, 하정원, 이수기. (2023). 근거이론과 IPA 방법론을 활용한 고령자 인식 기반 보행환경 영향 요인 분석. Journal of Korea Planning Association, 58(3), 35–53. https://doi.org/10.17208/jkpa.2023.06.58.3.35"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-20-tasmania-urchin-harvest-space",
+      "region": "해외",
+      "target_country": "AU",
+      "category": "경제지리학",
+      "title": "성게가 잘 잡히는 바다와 해조숲을 지킬 바다는 같을까요?",
+      "journal": "Mongabay · 2026-10-19",
+      "researchers": "Amina McCauley",
+      "source": {
+        "name": "Mongabay",
+        "url": "https://news.mongabay.com/2026/10/funding-uncertainty-threatens-tasmanias-gains-against-kelp-grazing-sea-urchins/",
+        "date": "2026-10-19",
+        "language": "en",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "태즈메이니아의 해역별 채취 수익과 생태적 우선순위가 다른 이유를 살펴봅니다. 단기 지원의 불확실성을 지원 중단과 구분합니다. (McCauley, 2026)",
+      "body": [
+        {
+          "h": "많이 잡히는 바다와 먼저 지킬 바다",
+          "p": "이 기사는 성게 채취로 해조숲을 지키는 지원을 다룹니다. 해조숲이 남고 성게 밀도가 낮은 곳은 보호 가치가 있어도 채취 수익을 내기 어렵습니다. 반대로 성게가 많은 세인트헬렌스로 옮겨 가공업을 시작한 잠수부의 경험은 생태적 우선순위와 사업상 선택이 다를 수 있음을 보여줍니다. (McCauley, 2026)"
+        },
+        {
+          "h": "지원의 유무보다 예측 가능성이 쟁점입니다",
+          "p": "연구자들은 지원이 일 년 단위로 결정돼 가공업의 투자·운영을 예측하기 어렵다고 설명합니다. 주정부는 향후 지원을 통상적인 예산 과정에서 검토하겠다고 답했습니다. 지원이 전면 중단됐다고 읽기보다, 꾸준한 채취·가공 기반이 쟁점입니다. (McCauley, 2026)"
+        },
+        {
+          "h": "다른 해안에서는 누가 참여하는지도 중요합니다",
+          "p": "뉴사우스웨일스 남해안의 ABC 현장 보도는 원주민 청년의 잠수 훈련을 가공·상품 개발과 연결하려는 지원 계획을 다룹니다. 지역의 기존 채취 경험을 전문적인 일자리로 이어가려는 시도입니다. 같은 성게 관리라도 태즈메이니아의 해역별 채취 유인과는 질문이 다릅니다. 보도된 계획을 이미 실현된 소득이나 광역 복원 성과로 바꿔 말해서는 안 됩니다. (Milton·Hemmings, 2026)"
+        },
+        {
+          "h": "모형이 보여주는 지역 차이와 한계",
+          "p": "Cresswell 등의 연구는 태즈메이니아 동해안의 해역별 성게 밀도를 어획이 있었던 경우와 없었을 모형 상황으로 비교합니다. 채취 노력의 변화가 관리 목표 달성에 기여할 여지는 해역마다 달랐습니다. 연구는 가입량·성장 등의 불확실성과 모형에 포함하지 못한 변동성을 밝힙니다. 특정 해역의 예측을 모든 해안에 적용하거나, 이미 관찰된 해조숲 회복률로 읽을 수는 없습니다. (Cresswell 외, 2025)"
+        },
+        {
+          "h": "어획량과 함께 살펴야 할 것",
+          "p": "앞으로는 어느 해역에서 성게를 줄였는지, 그곳의 해조류가 어떻게 변하는지, 채취·가공이 계속될 여건이 있는지를 함께 봐야 합니다. 이는 현장 보도와 지역별 모형을 연결한 점검 관점입니다. 성게를 많이 판매했다는 사실만으로 보호가 필요한 해역까지 회복됐다고 판단할 수는 없습니다. (McCauley, 2026) (Cresswell 외, 2025)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "태즈메이니아",
+        "성게",
+        "해조숲"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "tasmania-urchin-harvest-conservation-incentives",
+      "starting_article": {
+        "title": "Funding uncertainty threatens Tasmania’s gains against kelp-grazing sea urchins",
+        "author": "Amina McCauley",
+        "date_kind": "published"
+      },
+      "references": [
+        {
+          "id": "w-main",
+          "author": "Amina McCauley",
+          "date": "2026-10-19",
+          "title": "Funding uncertainty threatens Tasmania’s gains against kelp-grazing sea urchins",
+          "url": "https://news.mongabay.com/2026/10/funding-uncertainty-threatens-tasmanias-gains-against-kelp-grazing-sea-urchins/",
+          "kind": "news",
+          "short_label": "McCauley, 2026",
+          "apa": "McCauley, A. (2026, October 19). Funding uncertainty threatens Tasmania’s gains against kelp-grazing sea urchins. Mongabay."
+        },
+        {
+          "id": "w-field",
+          "author": "Vanessa Milton & Toby Hemmings",
+          "date": "2026-05-17",
+          "title": "NSW government funds Aboriginal-led south coast sea urchin enterprise with $1.48m grant",
+          "url": "https://www.abc.net.au/news/2026-05-17/nsw-government-grant-aboriginal-led-sea-urchin-enterprise/106627704",
+          "kind": "news",
+          "short_label": "Milton·Hemmings, 2026",
+          "apa": "Milton, V., & Hemmings, T. (2026, May 17). NSW government funds Aboriginal-led south coast sea urchin enterprise with $1.48m grant. ABC News."
+        },
+        {
+          "id": "w-study",
+          "author": "Katherine A. Cresswell, L. Richard Little, Klaas Hartmann, Caleb Gardner, John P. Keane, Scott D. Ling, & Stephen C. Bradshaw",
+          "date": "n.d.",
+          "title": "When overfishing is the sustainable option",
+          "url": "https://www.researchgate.net/publication/389823517_When_overfishing_is_the_sustainable_option",
+          "kind": "research",
+          "short_label": "Cresswell 외, 2025",
+          "apa": "Cresswell, K. A., Little, L. R., Hartmann, K., Gardner, C., Keane, J. P., Ling, S. D., & Bradshaw, S. C. (2025). When overfishing is the sustainable option. Nature Sustainability, 8(5), 498–507. https://doi.org/10.1038/s41893-025-01526-8"
+        }
+      ]
+    }
+  ]
+}
