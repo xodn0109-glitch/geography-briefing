@@ -1,0 +1,166 @@
+{
+  "date": "2026-10-21",
+  "format": "daily_deep",
+  "articles": [
+    {
+      "id": "2026-10-21-jeju-habitat-map",
+      "region": "국내",
+      "target_country": "KR",
+      "category": "GIS",
+      "title": "제주의 멧돼지 지도, 색칠된 땅은 무엇을 말할까요?",
+      "journal": "경향신문 · 2026-10-19",
+      "researchers": "박미라",
+      "source": {
+        "name": "경향신문",
+        "url": "https://www.khan.co.kr/article/202610191632011",
+        "date": "2026-10-19",
+        "language": "ko",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "제주의 잠재 서식지 연구를 실제 출몰 기록과 구분해 읽습니다. 적합성 지도는 개체 수 조사나 실제 이동 궤적이 아닙니다. (박미라, 2026)",
+      "body": [
+        {
+          "h": "지도의 색은 개체 수가 아닙니다",
+          "p": "이 기사는 멧돼지의 잠재 서식지 연구를 전합니다. 살기 좋은 곳과 실제 사는 곳은 어떻게 다를까요? 출현 94지점과 환경 변수 10개로 분석한 결과, 제주 전체의 14.49%는 매우 적합, 21.64%는 적합으로 추정했습니다. 두 비율은 실제 점유 면적이나 개체 수가 아닙니다. (박미라, 2026) (Kunwar 외, 2026)"
+        },
+        {
+          "h": "성읍리 골프장에서 생긴 만남",
+          "p": "지난 8월에는 서귀포시 표선면 성읍리의 골프장에 멧돼지가 나타나 이용객이 대피했습니다. 코스에 머물며 먹이를 먹는다는 신고가 전해졌습니다. 산속 서식 가능성만이 아니라 사람이 사용하는 공간에서의 실제 만남을 보여주는 사건입니다. 다만 이 한 건으로 제주 전역의 개체 증가를 말할 수는 없습니다. 이 출몰 지점이 연구의 표본에 포함됐는지, 어떤 길로 왔는지도 확인되지 않았습니다. (강동삼, 2026)"
+        },
+        {
+          "h": "선을 그은 뒤에는 현장 확인이 남습니다",
+          "p": "연구는 핵심 서식지 여섯 곳과 잠재 경로 여덟 개를 제시하며 한라산·금악서길을 연결의 중심으로 꼽습니다. 농경지·시가지·수원 거리와 고도에 따라 조건이 달라집니다. 이 선들은 실제 이동 궤적이나 통행 빈도가 아닙니다. 감시할 곳을 정하는 가설로 삼아 실제 출현과 대조해야 합니다. (Kunwar 외, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "제주",
+        "서식적합성",
+        "이동경로"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "jeju-wildboar-potential-habitat-observed-occurrence",
+      "starting_article": {
+        "title": "제주 면적 36%가 멧돼지 잠재 서식지··· 한라산·만장굴 이동 경로 확인",
+        "author": "박미라",
+        "date_kind": "updated"
+      },
+      "references": [
+        {
+          "id": "k-main",
+          "author": "박미라",
+          "date": "2026-10-19",
+          "title": "제주 면적 36%가 멧돼지 잠재 서식지··· 한라산·만장굴 이동 경로 확인",
+          "url": "https://www.khan.co.kr/article/202610191632011",
+          "kind": "news",
+          "short_label": "박미라, 2026",
+          "apa": "박미라. (2026년 10월 19일). 제주 면적 36%가 멧돼지 잠재 서식지··· 한라산·만장굴 이동 경로 확인. 경향신문."
+        },
+        {
+          "id": "k-field",
+          "author": "강동삼",
+          "date": "2026-08-10",
+          "title": "제주 골프장에 100㎏ 멧돼지 출몰 소동… 엽사 출동 사살",
+          "url": "https://www.seoul.co.kr/news/society/accident/2026/08/10/20260810500194",
+          "kind": "news",
+          "short_label": "강동삼, 2026",
+          "apa": "강동삼. (2026년 8월 10일). 제주 골프장에 100㎏ 멧돼지 출몰 소동… 엽사 출동 사살. 서울신문."
+        },
+        {
+          "id": "k-study",
+          "author": "Binod Kunwar, Suraj Baral, Young-Hun Jeong, Hong-Shik Oh",
+          "date": "2026-09-30",
+          "title": "Modeling the Invasion: Habitat Suitability and Landscape Connectivity of Wild Boar (Sus scrofa) on Jeju Island, South Korea",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42824447/",
+          "kind": "research",
+          "short_label": "Kunwar 외, 2026",
+          "apa": "Kunwar, B., Baral, S., Jeong, Y.-H., & Oh, H.-S. (2026). Modeling the Invasion: Habitat Suitability and Landscape Connectivity of Wild Boar (Sus scrofa) on Jeju Island, South Korea. Ecology and Evolution, 16(10), e74398. https://doi.org/10.1002/ece3.74398"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-21-bangladesh-credit-geography",
+      "region": "해외",
+      "target_country": "BD",
+      "category": "경제지리학",
+      "title": "재해에 대비할 돈, 필요한 곳에 왜 닿기 어려울까요?",
+      "journal": "Mongabay · 2026-10-20",
+      "researchers": "Sajibur Rahman",
+      "source": {
+        "name": "Mongabay",
+        "url": "https://news.mongabay.com/2026/10/bank-credit-remains-scarce-in-bangladesh-where-climate-risks-are-highest/",
+        "date": "2026-10-20",
+        "language": "en",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "방글라데시의 대출 경험과 은행의 사업 판단을 통해 재해 위험과 금융 접근의 간극을 살펴봅니다. (Rahman, 2026)",
+      "body": [
+        {
+          "h": "사업을 키우려다 다른 돈을 빌린 사람",
+          "p": "이 기사는 재해 위험이 큰 방글라데시에서 은행 대출을 받기 어려운 문제를 다룹니다. 샤므나가르의 수산업 종사자 사이풀 가지는 담보와 서류 부족으로 은행 대출을 거절당한 뒤, 사업을 유지하려고 고금리 NGO 대출을 이용했다고 말합니다. 재해에 대비할 자금의 필요와 은행이 대출할 수 있다고 판단하는 조건 사이에 간극이 있습니다. 이 개인 사례가 전국의 거절 비율을 뜻하지는 않습니다. (Rahman, 2026)"
+        },
+        {
+          "h": "위험 지도와 은행의 사업 지도가 겹치지 않습니다",
+          "p": "중앙은행 대변인은 상업적으로 실행 가능한 사업과 차주가 있어야 대출이 이뤄진다고 설명합니다. 다른 은행 관계자도 산업과 대출 수요의 집중을 지적합니다. 다카·차토그람의 산업 기반과 재해 취약 지역의 자금 필요를 같은 기준으로 읽기 어려운 이유입니다. 취약 지역의 필요를 강조하는 견해와 은행의 수익성 판단이 맞부딪치지만, 어느 쪽의 설명만으로 지역 격차의 원인을 모두 확정할 수는 없습니다. (Rahman, 2026)"
+        },
+        {
+          "h": "같은 해안에 살아도 자금에 닿는 길은 다릅니다",
+          "p": "과거 보도는 지역 안의 차이도 보여줍니다. Dhaka Tribune이 전한 2021년 원탁토론에서는 여성의 금융 자원 접근뿐 아니라 생산물을 팔 지역 시장, 정보와 사회적 제약이 함께 거론됐습니다. 토론의 바탕에는 암판과 코로나19가 겹친 시기의 경험이 있었습니다. 돈을 빌릴 창구만 있어도 생업의 연결이 모두 회복되는 것은 아니라는 문제 제기입니다. 당시 토론 참가자들의 설명을 현재 여성 전체의 조사 결과로 읽어서는 안 됩니다. (Dhaka Tribune, 2021)"
+        },
+        {
+          "h": "빌릴 의도, 실제 이용, 적응의 성과",
+          "p": "해안 소농의 소액대출 연구는 태도·주변의 기대·행동 통제에 대한 인식과 대출 이용 의도를 한 시점의 설문으로 분석했습니다. 연구가 설명하는 의도는 실제 대출 승인이나 장기간의 상환·재해 대응 성과와 다릅니다. 연구 자체도 횡단면 설계의 인과 추론 한계를 밝힙니다. 자금이 도착했는지, 어떤 조건으로 무엇에 쓰였는지, 생활의 위험이 줄었는지는 각각 확인할 질문입니다. 이용자의 태도로 구조적인 접근 제약을 대신 설명하지 않아야 합니다. (Mahedi 외, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "방글라데시",
+        "금융접근",
+        "재해취약성"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "bangladesh-climate-risk-bank-credit-access",
+      "starting_article": {
+        "title": "Bank credit remains scarce in Bangladesh where climate risks are highest",
+        "author": "Sajibur Rahman",
+        "date_kind": "published"
+      },
+      "references": [
+        {
+          "id": "w-main",
+          "author": "Sajibur Rahman",
+          "date": "2026-10-20",
+          "title": "Bank credit remains scarce in Bangladesh where climate risks are highest",
+          "url": "https://news.mongabay.com/2026/10/bank-credit-remains-scarce-in-bangladesh-where-climate-risks-are-highest/",
+          "kind": "news",
+          "short_label": "Rahman, 2026",
+          "apa": "Rahman, S. (2026, October 20). Bank credit remains scarce in Bangladesh where climate risks are highest. Mongabay."
+        },
+        {
+          "id": "w-related",
+          "author": "Dhaka Tribune",
+          "date": "2021-09-22",
+          "title": "Hopes and hurdles for women in climate vulnerable areas",
+          "url": "https://www.dhakatribune.com/bangladesh/259242/hopes-and-hurdles-for-women-in-climate-vulnerable",
+          "kind": "news",
+          "short_label": "Dhaka Tribune, 2021",
+          "apa": "Dhaka Tribune. (2021, September 22). Hopes and hurdles for women in climate vulnerable areas. Dhaka Tribune."
+        },
+        {
+          "id": "w-study",
+          "author": "Md Mahedi, A K M Kanak Pervez, Silabat Enyew, Shabrin Jahan Shaili, Bantayehu Tamrie, Wubalem Gobie",
+          "date": "2026-03-04",
+          "title": "Microcredit as an adaptation strategy to climate change in coastal Bangladesh based on the theory of planned behavior",
+          "url": "https://link.springer.com/article/10.1007/s43621-026-02930-6",
+          "kind": "research",
+          "short_label": "Mahedi 외, 2026",
+          "apa": "Mahedi, M., Pervez, A. K. M. K., Enyew, S., Shaili, S. J., Tamrie, B., & Gobie, W. (2026). Microcredit as an adaptation strategy to climate change in coastal Bangladesh based on the theory of planned behavior. Discover Sustainability, 7, 533. https://doi.org/10.1007/s43621-026-02930-6"
+        }
+      ]
+    }
+  ]
+}
