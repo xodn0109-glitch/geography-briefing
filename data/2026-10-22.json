@@ -1,0 +1,166 @@
+{
+  "date": "2026-10-22",
+  "format": "daily_deep",
+  "articles": [
+    {
+      "id": "2026-10-22-seongbuk-gardens-everyday-use",
+      "region": "국내",
+      "target_country": "KR",
+      "category": "도시지리학",
+      "title": "정원을 가꾸는 사람, 잠시 머무는 사람",
+      "journal": "경향신문 · 2026-10-21",
+      "researchers": "임주영",
+      "source": {
+        "name": "경향신문",
+        "url": "https://www.khan.co.kr/article/202610211619011",
+        "date": "2026-10-21",
+        "language": "ko",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "성북구의 정원 계획을 일상 이용 경험과 연결합니다. 관리에 참여하는 사람과 이웃 이용자의 요구를 함께 살펴봅니다. (임주영, 2026)",
+      "body": [
+        {
+          "h": "걷던 길에서 잠시 머무는 곳으로",
+          "p": "이 기사는 성북구가 정원을 만들고 감상하는 데서 주민이 돌보고 활용하는 ‘정원 2기’로 나아가겠다는 계획을 전합니다. 무엇을 심을지뿐 아니라 누가 어떤 일을 하며 머물지 묻는 전환입니다. 오동물빛정원에서는 기존 수로와 사면을 활용했고, 마을정원사들은 정원의 계획·식재·관리와 체험 활동에 참여해 왔습니다. 다만 새 계획의 발표를 모든 주민의 참여나 이용 개선이 입증된 결과로 볼 수는 없습니다. (임주영, 2026)"
+        },
+        {
+          "h": "숲속도서관을 찾아간 기자가 본 일상",
+          "p": "그 가능성을 생활 장면으로 읽을 자료가 있습니다. 김정선 기자의 2025년 현장 보도는 오동숲속도서관을 여러 차례 방문하며 골목과 산책로에서 건물로 이어지는 길, 오래 앉아 있는 사람과 물 한 잔 마시러 들른 사람을 기록했습니다. 주말에는 아이와 온 가족, 창가와 회랑에서 쉬는 이용객도 보였습니다. 목재 파쇄장 부지가 독서·휴식 공간으로 바뀌었다는 설명에 실제 이용 장면이 더해집니다. 이는 정원 이용자 전체의 조사 결과는 아니지만, 가꾸기 활동에 참여하지 않는 사람도 지나가다 머무를 수 있는 장소의 의미를 보여줍니다. (김정선, 2025)"
+        },
+        {
+          "h": "돌보는 사람의 만족이 이웃의 만족과 같을까요?",
+          "p": "해방촌 도시정원 연구는 주민과 시민정원사의 평가가 같지 않음을 보여줍니다. 주민 쪽의 평균 만족도가 더 낮았고, 쉬거나 운동하고 활동할 수 있는 실용적인 공간 요구가 나타났습니다. 연구는 정원 현황과 2023년 온라인 설문 91건을 함께 살폈습니다. 성북구 사업의 효과를 측정한 것은 아니므로 그대로 일반화할 수는 없습니다. 그래도 관리자의 성취감만으로 일상 이용자의 요구를 대신 판단하지 말아야 할 이유가 됩니다. 정원을 돌볼 사람의 지속적인 참여와, 돌보지 않아도 편히 이용할 사람의 경험을 함께 확인해야 합니다. (Kang·Jang, 2025)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "성북구",
+        "생활공간",
+        "정원관리"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "seongbuk-garden-stewardship-everyday-use",
+      "starting_article": {
+        "title": "정원 조성 넘어 돌보고 즐기기까지···성북구, 꽃과 나무로 주민 경험 넓힌다",
+        "author": "임주영",
+        "date_kind": "published"
+      },
+      "references": [
+        {
+          "id": "k-main",
+          "author": "임주영",
+          "date": "2026-10-21",
+          "title": "정원 조성 넘어 돌보고 즐기기까지···성북구, 꽃과 나무로 주민 경험 넓힌다",
+          "url": "https://www.khan.co.kr/article/202610211619011",
+          "kind": "news",
+          "short_label": "임주영, 2026",
+          "apa": "임주영. (2026년 10월 21일). 정원 조성 넘어 돌보고 즐기기까지···성북구, 꽃과 나무로 주민 경험 넓힌다. 경향신문."
+        },
+        {
+          "id": "k-field",
+          "author": "김정선",
+          "date": "2025-11-05",
+          "title": "[여행honey] 목조 공공건축…성북구 오동숲속도서관",
+          "url": "https://www.fnnews.com/news/202511050805029537",
+          "kind": "news",
+          "short_label": "김정선, 2025",
+          "apa": "김정선. (2025년 11월 5일). [여행honey] 목조 공공건축…성북구 오동숲속도서관. 연합뉴스. 파이낸셜뉴스 전재."
+        },
+        {
+          "id": "k-study",
+          "author": "Hyun-Kyung Kang & You-Na Jang",
+          "date": "n.d.",
+          "title": "A Study on Perceptions of the Role of Urban Gardens in Revitalizing Local Communities in Old Downtown Areas: Focused on Haebangchaon Urban Gardens, Created for the Seoul International Garden Show",
+          "url": "https://jppe.ppe.or.kr/upload/pdf/ksppe-2025-28-1-81.pdf",
+          "kind": "research",
+          "short_label": "Kang·Jang, 2025",
+          "apa": "Kang, H.-K., & Jang, Y.-N. (2025). A Study on Perceptions of the Role of Urban Gardens in Revitalizing Local Communities in Old Downtown Areas: Focused on Haebangchaon Urban Gardens, Created for the Seoul International Garden Show. Journal of People, Plants, and Environment, 28(1), 81–96. https://doi.org/10.11628/ksppe.2025.28.1.81"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-22-vermont-silvopasture-management",
+      "region": "해외",
+      "target_country": "US",
+      "category": "경제지리학",
+      "title": "나무 아래 양을 기르는 농장, 식재 다음에는 무엇이 필요할까요?",
+      "journal": "Mongabay · 2026-10-21",
+      "researchers": "Erik Hoffner",
+      "source": {
+        "name": "Mongabay",
+        "url": "https://news.mongabay.com/2026/10/sustainable-silvopasture-is-popular-with-u-s-farmers-despite-waning-financial-supports/",
+        "date": "2026-10-21",
+        "language": "en",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "버몬트 농가의 나무·가축 결합에서 관리 방식과 여러 수입 경로를 살펴봅니다. (Hoffner, 2026)",
+      "body": [
+        {
+          "h": "오래된 사과나무 아래에서 시작한 선택",
+          "p": "이 기사는 버몬트의 나무·풀·가축 결합 농법을 다룹니다. 플래그힐 농장에서는 사과나무 아래 풀과 그늘을 찾는 양을 관찰했습니다. 기존 과수원과 새 식재 농가의 시작 조건은 다릅니다. 나무를 늘리는 것만으로 지속 가능한 농장이 될까요? 실제 관리 과정을 살펴야 합니다. (Hoffner, 2026)"
+        },
+        {
+          "h": "어린 나무 사이, 소가 어디로 다니는가",
+          "p": "뉴햄프셔대가 전한 버몬트 하이게이트의 낙농가 사례는 그 과정을 구체적으로 보여줍니다. 어린 나무가 길게 줄지은 구획에서 소들이 앞부분을 먼저 집중적으로 뜯자, 농가는 임시 이동 통로를 사용하며 동선을 조정했습니다. 나무 보호관과 잡초 방지재 설치에는 자원봉사 노동도 썼습니다. 식재 면적을 넓히는 일과 방목 압력을 고르게 배분하는 일은 다른 작업입니다. 이 사례는 농가의 경험을 소개한 기관 보도이며 모든 농장의 효과를 검증한 실험은 아닙니다. (University of New Hampshire, 2026)"
+        },
+        {
+          "h": "전국 조사도 ‘지금 얼마나 늘었나’와는 다릅니다",
+          "p": "전국 생산자 조사 연구는 가축·나무·먹이풀을 의도적으로 결합해 관리하는 경우를 실보패스처로 구분했습니다. 단순히 숲에서 가축을 방목하는 경우와 섞지 않으려는 기준입니다. 논문은 2026년에 나왔지만 설문은 2021년 말부터 2022년 봄까지 실시했습니다. 기존 혼농임업 농가를 대상으로 했으므로 응답을 미국 전체 농가의 보급률이나 현재의 증가 속도로 읽을 수는 없습니다. 나무가 보이는 풍경보다 관리 방식과 조사 대상·시점을 확인해야 합니다. (Smith 외, 2026)"
+        },
+        {
+          "h": "나무가 자라는 동안 농가는 무엇으로 살아갈까요?",
+          "p": "보도의 농가들은 양모·사과 가공품 판매, 농장 밖의 일, 숙박 등으로 수입을 나눴습니다. 나무를 키우는 시간과 매년의 지출을 감당하는 시간이 겹치기 때문입니다. 지원받은 농가의 선택을 어디서나 같은 수익을 내는 모형으로 읽을 수는 없습니다. 식재 면적과 함께 노동·수입의 지속 조건도 봐야 합니다. (Hoffner, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "버몬트",
+        "혼농임업",
+        "농가경영"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "vermont-silvopasture-management-business",
+      "starting_article": {
+        "title": "Sustainable silvopasture is popular with US farmers despite waning financial supports",
+        "author": "Erik Hoffner",
+        "date_kind": "published"
+      },
+      "references": [
+        {
+          "id": "w-main",
+          "author": "Erik Hoffner",
+          "date": "2026-10-21",
+          "title": "Sustainable silvopasture is popular with US farmers despite waning financial supports",
+          "url": "https://news.mongabay.com/2026/10/sustainable-silvopasture-is-popular-with-u-s-farmers-despite-waning-financial-supports/",
+          "kind": "news",
+          "short_label": "Hoffner, 2026",
+          "apa": "Hoffner, E. (2026, October 21). Sustainable silvopasture is popular with US farmers despite waning financial supports. Mongabay."
+        },
+        {
+          "id": "w-case",
+          "author": "University of New Hampshire",
+          "date": "2026-03-18",
+          "title": "Growing Shade, Resilience, and New Revenue: Matt Choiniere’s Silvopasture Journey",
+          "url": "https://www.unh.edu/announcements/growing-shade-resilience-new-revenue-matt-choinieres-silvopasture-journey",
+          "kind": "news",
+          "short_label": "University of New Hampshire, 2026",
+          "apa": "University of New Hampshire. (2026, March 18). Growing shade, resilience, and new revenue: Matt Choiniere’s silvopasture journey. The New England Agroforester, Spring Equinox 2026."
+        },
+        {
+          "id": "w-study",
+          "author": "Matthew M. Smith, Kristin Floress, Mark Batcheler, Gary Bentrup, Katherine MacFarland, Todd Kellerman, Lord Ameyaw",
+          "date": "2026-05-26",
+          "title": "Silvopasture in the United States: Results from the National Agroforestry Producer Survey",
+          "url": "https://link.springer.com/article/10.1007/s10457-026-01514-7",
+          "kind": "research",
+          "short_label": "Smith 외, 2026",
+          "apa": "Smith, M. M., Floress, K., Batcheler, M., Bentrup, G., MacFarland, K., Kellerman, T., & Ameyaw, L. (2026). Silvopasture in the United States: Results from the National Agroforestry Producer Survey. Agroforestry Systems, 100, 142. https://doi.org/10.1007/s10457-026-01514-7"
+        }
+      ]
+    }
+  ]
+}
