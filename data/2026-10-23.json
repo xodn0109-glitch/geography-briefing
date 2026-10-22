@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-23",
+  "format": "daily_deep",
+  "articles": [
+    {
+      "id": "2026-10-23-daejeon-station-project-boundaries",
+      "region": "국내",
+      "target_country": "KR",
+      "category": "도시지리학",
+      "title": "대전역세권 개발, ‘한 사업’으로 보면 놓치는 것",
+      "journal": "경향신문 · 2026-10-21",
+      "researchers": "이종섭",
+      "source": {
+        "name": "경향신문",
+        "url": "https://www.khan.co.kr/article/202610211555001",
+        "date": "2026-10-21",
+        "language": "ko",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "대전역 복합개발의 지연에서 계획과 실제 투자의 간극을 살펴봅니다. 재공모 예고를 착공 확정으로 읽지 않습니다. (이종섭, 2026)",
+      "body": [
+        {
+          "h": "6년과 18년, 서로 다른 출발점",
+          "p": "이 기사는 대전역 동광장 복합개발이 다시 출발점을 찾게 됐다고 전합니다. 2020년 민간사업자 선정부터는 6년, 2008년 기본구상부터는 18년의 시간입니다. ‘오래 지연됐다’는 말 안에도 계획 수립과 실제 투자 결정의 시계가 다릅니다. 대전시는 건설비·금리 상승과 부동산 경기 침체 속에서 기존 규모와 도입 시설을 재검토하고 새 사업자를 찾겠다는 계획을 내놓았습니다. 재공모 계획은 새 투자자의 확보나 착공 확정과 다릅니다. (이종섭, 2026)"
+        },
+        {
+          "h": "작년 설명회의 조감도와 오늘의 빈자리",
+          "p": "2025년 주민설명회 보도에서는 주상복합·판매·업무·컨벤션 등 복합2구역 계획을 소개하며 이듬해 착공을 전망했습니다. 이미 그때도 공사비와 금융 여건 때문에 어려움을 겪었고, 수익성을 높이려 주거 비중과 층수를 조정했다고 전했습니다. 역 주변의 접근성이 높아도 모든 시설이 동시에 투자할 만한 수요를 갖는다는 뜻은 아닙니다. 당시 조감도와 일정은 실현된 건물·준공 실적이 아니라 그 시점의 계획으로 읽어야 합니다. (박주영, 2025)"
+        },
+        {
+          "h": "한꺼번에 바꿀지, 먼저 가능한 것부터 할지",
+          "p": "지역 방송은 재출발 방식에 대한 서로 다른 강조점을 전합니다. 시는 공공기관 이전과 연결한 새로운 수요를 검토하겠다고 했고, 동구는 사업성이 있는 시설부터 단계적으로 추진하는 방안을 제안했습니다. 미래의 수요를 묶어 큰 거점을 만들려는 구상과, 당장 가능한 부분의 투자부터 유도하려는 구상입니다. 어느 쪽도 실제 투자자나 입주 수요가 확보됐다는 결과는 아닙니다. 시설을 한꺼번에 묶을 때와 나눌 때 무엇이 먼저 가능해지는지가 다음 계획의 구체적인 쟁점입니다. (TJB, 2026)"
+        },
+        {
+          "h": "‘역세권 전체’라는 말의 경계",
+          "p": "정동의 쪽방촌 공공주택은 또 다른 사업입니다. 한국일보의 2025년 보도는 기존 거주자의 주거 지원을 목표로 하는 공공주택 계획과, 주민 갈등으로 멈췄던 현장 조사의 재개를 전했습니다. 동광장의 민간 복합개발과는 대상 공간·목적·추진 과정이 다릅니다. 그 과거 일정을 현재의 공사 진척으로 확정할 수는 없지만, 큰 복합개발의 지연을 역 주변 모든 사업의 동일한 상태로 읽어서도 안 됩니다. 앞으로는 ‘역세권 활성화’라는 이름보다 개별 사업의 장소·목적·진행 단계를 구분해 확인해야 합니다. (한국일보, 2025)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "대전역",
+        "원도심",
+        "개발단계"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "daejeon-station-complex-project-phasing",
+      "starting_article": {
+        "title": "대전 역세권 개발사업 장기 지연 끝 무산···6년만에 원점으로, 대전시 “내년 재추진”",
+        "author": "이종섭",
+        "date_kind": "published"
+      },
+      "references": [
+        {
+          "id": "k-main",
+          "author": "이종섭",
+          "date": "2026-10-21",
+          "title": "대전 역세권 개발사업 장기 지연 끝 무산···6년만에 원점으로, 대전시 “내년 재추진”",
+          "url": "https://www.khan.co.kr/article/202610211555001",
+          "kind": "news",
+          "short_label": "이종섭, 2026",
+          "apa": "이종섭. (2026년 10월 21일). 대전 역세권 개발사업 장기 지연 끝 무산···6년만에 원점으로, 대전시 “내년 재추진”. 경향신문."
+        },
+        {
+          "id": "k-context",
+          "author": "박주영",
+          "date": "2025-11-19",
+          "title": "원도심 재생의 신호탄 될까…대전역세권 개발사업 주민설명회",
+          "url": "https://www.yna.co.kr/view/AKR20251119148200063",
+          "kind": "news",
+          "short_label": "박주영, 2025",
+          "apa": "박주영. (2025년 11월 19일). 원도심 재생의 신호탄 될까…대전역세권 개발사업 주민설명회. 연합뉴스."
+        },
+        {
+          "id": "k-field",
+          "author": "TJB",
+          "date": "2026-10-21",
+          "title": "\"72층 랜드마크 물거품\"..대전역세권 개발 18년째 '제자리'",
+          "url": "https://www.tjb.co.kr/news05/bodo/view/id/105156/version/1",
+          "kind": "news",
+          "short_label": "TJB, 2026",
+          "apa": "TJB. (2026년 10월 21일). \"72층 랜드마크 물거품\"..대전역세권 개발 18년째 '제자리'. 박범식 보도, 전유진 등록."
+        },
+        {
+          "id": "k-housing",
+          "author": "한국일보",
+          "date": "2025-09-25",
+          "title": "5년간 지지부진 대전역 쪽방촌 공공주택사업 '속도'",
+          "url": "https://www.hankookilbo.com/news/article/A2025092508470000848",
+          "kind": "news",
+          "short_label": "한국일보, 2025",
+          "apa": "한국일보. (2025년 9월 25일). 5년간 지지부진 대전역 쪽방촌 공공주택사업 '속도'. 한국일보."
+        }
+      ]
+    },
+    {
+      "id": "2026-10-23-cocoa-rainfall-timing",
+      "region": "해외",
+      "target_country": "GH",
+      "category": "기후학",
+      "title": "카카오 꽃이 필 때, 쏟아지는 비는 왜 위험할까요?",
+      "journal": "Mongabay · 2026-10-21",
+      "researchers": "Victoria Schneider",
+      "source": {
+        "name": "Mongabay",
+        "url": "https://news.mongabay.com/2026/10/heavy-rains-during-critical-period-of-cacao-cultivation-hit-ghanas-yields/",
+        "date": "2026-10-21",
+        "language": "en",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "가나의 새 연구는 카카오 생육 단계별 강우 위험을 살펴보게 합니다. 한 해의 총강수량과 비가 내린 시점을 구분합니다. (Schneider, 2026)",
+      "body": [
+        {
+          "h": "카카오에 비가 많다는 말만으로는 부족합니다",
+          "p": "이 기사는 가나의 카카오 수확을 흔드는 비의 시점에 주목합니다. 개화와 어린 열매가 만들어지는 때의 강한 비는 꽃·열매를 손상시키거나 수분 활동에 영향을 줄 수 있다고 연구자는 설명합니다. 건조기에 필요한 물과 꽃이 피는 때 쏟아지는 비는 같은 ‘강수량’이어도 작용이 다릅니다. 한 해가 평년보다 습했는지만으로 작물이 겪은 위험을 충분히 설명하기 어려운 이유입니다. (Schneider, 2026)"
+        },
+        {
+          "h": "가나 농민들이 먼저 전했던 어려움",
+          "p": "2025년 Reuters 보도에서는 가나 농민 단체가 과도한 비와 일조 부족으로 수확이 줄고 곰팡이 피해 위험이 커졌다고 호소했습니다. 당국도 우려에 대응했지만 당시 최종 생산량을 확정하기에는 이르다고 밝혔습니다. 이는 이번 연구보다 앞선 특정 작기의 현장 경고이며, 이후 모든 손실의 규모나 원인이 확정됐다는 뜻은 아닙니다. (Bruce, 2025)"
+        },
+        {
+          "h": "이웃 나라에서는 적은 비가 반가웠습니다",
+          "p": "2024년 코트디부아르 농민들은 평년보다 적은 비에도 토양 수분과 이슬이 꽃·작은 열매의 발달을 돕고 있다고 전했습니다. 그 시기에 과한 습기는 오히려 꽃과 열매를 떨어뜨릴 수 있다는 설명도 있었습니다. ‘비가 적으면 언제나 흉작’이라는 단순한 해석과 다른 경험입니다. 특정 지역·시기의 발언을 모든 재배지의 적정 강수 기준으로 일반화할 수는 없습니다. (Coulibaly, 2024)"
+        },
+        {
+          "h": "68%는 잃어버린 수확량이 아닙니다",
+          "p": "연구는 가나의 장기 생산 추세를 제거한 연도별 변동을 수확량 변화의 대리 지표로 삼았습니다. 강한 우기 강우와 건기 강우를 넣은 모형이 설명한 변동의 비율이 68%이며, 수확의 68%가 사라졌다는 뜻은 아닙니다. 북쪽 전이지대에서는 건기 수분, 남쪽에서는 강한 우기 비와의 관계가 더 뚜렷했습니다. 일부 지역에서는 두 변수 모두 설명력이 낮았고, 모형은 극단적인 변동을 작게 추정하는 한계도 보였습니다. 전국 평균의 관계를 개별 농장의 확정 원인이나 장기 기후변화의 귀속 결과로 읽지 않아야 합니다. (Albright 외, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "카카오",
+        "강우시점",
+        "가나"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "ghana-cocoa-rainfall-phenology-yield-variability",
+      "starting_article": {
+        "title": "Heavy rains during critical period of cacao cultivation hit Ghana’s yields",
+        "author": "Victoria Schneider",
+        "date_kind": "published"
+      },
+      "references": [
+        {
+          "id": "w-main",
+          "author": "Victoria Schneider",
+          "date": "2026-10-21",
+          "title": "Heavy rains during critical period of cacao cultivation hit Ghana’s yields",
+          "url": "https://news.mongabay.com/2026/10/heavy-rains-during-critical-period-of-cacao-cultivation-hit-ghanas-yields/",
+          "kind": "news",
+          "short_label": "Schneider, 2026",
+          "apa": "Schneider, V. (2026, October 21). Heavy rains during critical period of cacao cultivation hit Ghana’s yields. Mongabay."
+        },
+        {
+          "id": "w-ghana",
+          "author": "Emmanuel Bruce",
+          "date": "2025-07-15",
+          "title": "Ghana's cocoa regulator warns of production drop amid heavy rains",
+          "url": "https://www.reuters.com/sustainability/climate-energy/ghanas-cocoa-regulator-warns-production-drop-amid-heavy-rains-2025-07-15/",
+          "kind": "news",
+          "short_label": "Bruce, 2025",
+          "apa": "Bruce, E. (2025, July 15). Ghana's cocoa regulator warns of production drop amid heavy rains. Reuters."
+        },
+        {
+          "id": "w-ivory",
+          "author": "Loucoumane Coulibaly",
+          "date": "2024-07-08",
+          "title": "Soil moisture helps Ivory Coast's cocoa main crop grow",
+          "url": "https://www.reuters.com/markets/commodities/soil-moisture-helps-ivory-coasts-cocoa-main-crop-grow-2024-07-08/",
+          "kind": "news",
+          "short_label": "Coulibaly, 2024",
+          "apa": "Coulibaly, L. (2024, July 8). Soil moisture helps Ivory Coast's cocoa main crop grow. Reuters."
+        },
+        {
+          "id": "w-study",
+          "author": "Anna Lea Albright, Rebecca Berkoh-Oforiwaa, Peter Huybers",
+          "date": "2026-09-14",
+          "title": "Rainfall extremes drive cocoa yield losses across the tropics",
+          "url": "https://www.pnas.org/doi/10.1073/pnas.2606123123",
+          "kind": "research",
+          "short_label": "Albright 외, 2026",
+          "apa": "Albright, A. L., Berkoh-Oforiwaa, R., & Huybers, P. (2026). Rainfall extremes drive cocoa yield losses across the tropics. Proceedings of the National Academy of Sciences, 123(39), e2606123123. https://doi.org/10.1073/pnas.2606123123"
+        }
+      ]
+    }
+  ]
+}
