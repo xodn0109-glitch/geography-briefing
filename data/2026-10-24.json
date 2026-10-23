@@ -1,0 +1,176 @@
+{
+  "date": "2026-10-24",
+  "format": "daily_deep",
+  "articles": [
+    {
+      "id": "2026-10-24-muan-octopus-habitat",
+      "region": "국내",
+      "target_country": "KR",
+      "category": "경제지리학",
+      "title": "무안 낙지축제가 멈춘 자리, 갯벌의 공급을 생각합니다",
+      "journal": "경향신문 · 2026-10-22",
+      "researchers": "고귀한",
+      "source": {
+        "name": "경향신문",
+        "url": "https://www.khan.co.kr/article/202610221445021",
+        "date": "2026-10-22",
+        "language": "ko",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "무안 낙지의 공급 부족이 축제와 생업에 어떻게 이어지는지 살펴봅니다. 행사 전환과 자원 회복은 서로 다른 과제입니다. (고귀한, 2026)",
+      "body": [
+        {
+          "h": "먹거리 축제의 바닥에는 갯벌의 공급이 있습니다",
+          "p": "이 기사는 낙지 공급 부족으로 무안갯벌낙지축제가 취소됐다고 전합니다. 지역의 이름을 알리는 행사가 잡히는 수산물의 양과 맞물려 있다는 사실이 드러납니다. 군은 다른 수산물을 포함하는 행사로의 전환도 검토하고 있습니다. 하지만 행사 소재를 바꾸는 일과 낙지 자원을 회복하는 일은 서로 다른 과제입니다. 취소가 갯벌 전체에서 낙지가 사라졌다는 뜻도 아닙니다. (고귀한, 2026)"
+        },
+        {
+          "h": "갯벌에서의 시간과 식당에서의 가격",
+          "p": "앞선 지역 방송은 낙지 숨구멍을 찾아 여러 번 헛손질하는 어민의 모습을 담았습니다. 어민은 같은 시간 일해도 예전만큼 잡기 어렵다고 말했고, 식당 운영자는 손님들의 비싸다는 반응을 전했습니다. 공급의 문제가 채취 노동과 식당의 판매 경험으로 이어지는 장면입니다. 다만 어민이 느낀 고수온의 영향을 이번 감소의 유일한 원인으로 확정할 수는 없습니다. 각자의 경험은 중요하지만, 원인별 기여도를 나눈 조사는 아니기 때문입니다. (허재희, 2026)"
+        },
+        {
+          "h": "방류한 수와 살아남을 조건은 다릅니다",
+          "p": "자원 회복 시도는 이번 취소 이전부터 있었습니다. 2025년 탄도만 사업 보도는 어미낙지뿐 아니라 먹이생물 방류, 산란·서식장 유지보수와 효과 조사를 함께 다뤘습니다. 낙지를 넣는 데서 끝나는 사업이 아니라 번식하고 먹을 수 있는 환경을 함께 다루려는 구상입니다. 당시 방류 실적과 향후 계획을 오늘의 자원 회복 성과로 바꿔 읽지는 않아야 합니다. (고익수, 2025)"
+        },
+        {
+          "h": "어느 갯벌에, 어떤 시기에 조성할까요?",
+          "p": "무안 탄도만을 조사한 과거 연구는 수온·염분·산소, 먹이생물, 퇴적물과 물 밖에 드러나는 시간을 산란장 적지 조건으로 살폈습니다. 같은 갯벌이라도 물이 드나드는 높이와 바닥·먹이 조건이 다르므로, 행정구역 전체를 하나의 서식환경으로 볼 수는 없습니다. 조성지와 비조성지의 비교도 제시했지만, 그 과거 결과가 현재 무안 전역의 회복이나 올해 감소 원인을 증명하지는 않습니다. 자원 조성 뒤의 정착·번식과 현장 조건을 계속 대조해야 할 이유입니다. (곽석남 외, 2021)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "무안",
+        "갯벌",
+        "낙지자원"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "muan-octopus-supply-spawning-habitat",
+      "starting_article": {
+        "title": "‘낙지의 고장’ 무안에 정작 낙지가 없다···축제마저 취소, 이를 어쩌나",
+        "author": "고귀한",
+        "date_kind": "updated"
+      },
+      "references": [
+        {
+          "id": "k-main",
+          "author": "고귀한",
+          "date": "2026-10-22",
+          "title": "‘낙지의 고장’ 무안에 정작 낙지가 없다···축제마저 취소, 이를 어쩌나",
+          "url": "https://www.khan.co.kr/article/202610221445021",
+          "kind": "news",
+          "short_label": "고귀한, 2026",
+          "apa": "고귀한. (2026년 10월 22일). ‘낙지의 고장’ 무안에 정작 낙지가 없다···축제마저 취소, 이를 어쩌나. 경향신문."
+        },
+        {
+          "id": "k-field",
+          "author": "허재희",
+          "date": "2026-10-15",
+          "title": "낙지 어획량 감소에 축제도 취소...어민도 상인도 '울상'",
+          "url": "https://news.ikbc.co.kr/%EC%A0%80%EB%85%81%EB%89%B4%EC%8A%A4%28%EC%82%AC%ED%9A%8C%29/article/view/kbc202610150082",
+          "kind": "news",
+          "short_label": "허재희, 2026",
+          "apa": "허재희. (2026년 10월 15일). 낙지 어획량 감소에 축제도 취소...어민도 상인도 '울상'. KBC 광주방송."
+        },
+        {
+          "id": "k-background",
+          "author": "고익수",
+          "date": "2025-03-21",
+          "title": "무안군, 탄도만 일대에 낙지 뿌려 자원조성 나선다",
+          "url": "https://news.ikbc.co.kr/%EC%82%AC%ED%9A%8C/article/view/kbc202503210027",
+          "kind": "news",
+          "short_label": "고익수, 2025",
+          "apa": "고익수. (2025년 3월 21일). 무안군, 탄도만 일대에 낙지 뿌려 자원조성 나선다. KBC 광주방송."
+        },
+        {
+          "id": "k-study",
+          "author": "곽석남, 김성수, 강진묵, 최옥인, 진지웅, 김기동",
+          "date": "2021-06-30",
+          "title": "전남 갯벌 해역 낙지 인공 산란장 조성 및 적지 기준에 관한 연구",
+          "url": "https://english.ksfme.or.kr/_PR/view/?aidx=29488&bidx=2595",
+          "kind": "research",
+          "short_label": "곽석남 외, 2021",
+          "apa": "곽석남, 김성수, 강진묵, 최옥인, 진지웅, 김기동. (2021). 전남 갯벌 해역 낙지 인공 산란장 조성 및 적지 기준에 관한 연구. The Journal of the Korean Society for Fisheries and Marine Sciences Education, 33(3), 561–568. https://doi.org/10.13000/JFMSE.2021.6.33.3.561"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-24-bangladesh-migrant-arrival",
+      "region": "해외",
+      "target_country": "BD",
+      "category": "도시지리학",
+      "title": "위험한 고향을 떠나면, 도시는 안전해질까요?",
+      "journal": "Mongabay · 2026-10-23",
+      "researchers": "Usraat Fahmidah",
+      "source": {
+        "name": "Mongabay",
+        "url": "https://news.mongabay.com/2026/10/bangladeshs-climate-migrants-are-arriving-in-cities-unprepared-to-protect-them/",
+        "date": "2026-10-23",
+        "language": "en",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "방글라데시 이주민의 도착 이후 생활을 살펴봅니다. 고향의 재해를 피하는 이동과 도시 정착의 안정은 같지 않습니다. (Fahmidah, 2026)",
+      "body": [
+        {
+          "h": "고향의 재해를 피한 뒤 만나는 도시의 위험",
+          "p": "이 기사는 방글라데시의 기후 이주가 도착 이후에도 안전을 보장하지 않는다고 묻습니다. 조사된 남서부 비공식 주거지에서는 배수 부족에 따른 침수, 불안정한 주거와 생활 서비스, 일정하지 않은 일자리가 함께 나타났습니다. 농촌에서 피한 재해와 도시에서 새로 겪는 위험은 다른 조합입니다. 이동한 사람 수만으로 적응의 성공을 판단하기 어려운 이유입니다. (Fahmidah, 2026)"
+        },
+        {
+          "h": "몽글라의 공장 일자리와 임시 거처가 함께 보입니다",
+          "p": "과거 몽글라 현장 보도에서는 강 침식으로 집을 잃은 레슈마 베굼이 공장에 취직해 가족을 부양하는 경험을 전했습니다. 동시에 다른 사람의 땅에서 임시로 지내며, 저축해 새집을 짓기를 바란다고 말했습니다. 일자리를 얻었다는 변화와 안정적인 집을 확보했다는 결과는 같지 않았습니다. 항구·수출가공구의 고용과 제방·배수·급수 시설은 이주를 받아들일 조건으로 소개됐지만, 당시 기대를 현재 모든 도시의 성공으로 일반화할 수는 없습니다. (AP, 2022)"
+        },
+        {
+          "h": "이사할 수 있는가, 도착한 뒤 선택할 수 있는가",
+          "p": "질적·참여형 연구는 남서부 정착지의 가구들이 이주 뒤에도 불안정성을 겪고, 다시 이동하거나 사회경제적으로 나아갈 여지가 제한될 수 있다고 설명합니다. 위험에 노출되는 장소를 바꿔도 생활의 취약 조건이 남을 수 있다는 뜻입니다. 이는 전국 이주민 모두의 비율을 추정하거나 모든 이주의 결과가 실패라고 판정한 연구가 아닙니다. 재해를 얼마나 피했는지와, 도착지에서 주거·생업의 선택지를 얼마나 갖게 됐는지를 함께 물어야 합니다. (Smith 외, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "방글라데시",
+        "이주",
+        "도시정착"
+      ],
+      "curriculum": [],
+      "geo": null,
+      "topic_key": "bangladesh-climate-migrant-postarrival-vulnerability",
+      "starting_article": {
+        "title": "Bangladesh’s climate migrants are arriving in cities unprepared to protect them",
+        "author": "Usraat Fahmidah",
+        "date_kind": "published"
+      },
+      "references": [
+        {
+          "id": "w-main",
+          "author": "Usraat Fahmidah",
+          "date": "2026-10-23",
+          "title": "Bangladesh’s climate migrants are arriving in cities unprepared to protect them",
+          "url": "https://news.mongabay.com/2026/10/bangladeshs-climate-migrants-are-arriving-in-cities-unprepared-to-protect-them/",
+          "kind": "news",
+          "short_label": "Fahmidah, 2026",
+          "apa": "Fahmidah, U. (2026, October 23). Bangladesh’s climate migrants are arriving in cities unprepared to protect them. Mongabay."
+        },
+        {
+          "id": "w-field",
+          "author": "AP",
+          "date": "2022-07-30",
+          "title": "How 'transformative adaptation' in the Bangladesh coastal town of Mongla became a 'safe home for climate refugees'",
+          "url": "https://www.abc.net.au/news/2022-07-30/climate-migrants-in-mongla-bangladesh-have-chance-at-better-life/101275746",
+          "kind": "news",
+          "short_label": "AP, 2022",
+          "apa": "AP. (2022, July 30). How 'transformative adaptation' in the Bangladesh coastal town of Mongla became a 'safe home for climate refugees'. ABC News."
+        },
+        {
+          "id": "w-study",
+          "author": "Roland Smith, Robert Nicholls, Mark Tebboth, Avidan Kent",
+          "date": "n.d.",
+          "title": "Persistent vulnerability and precarious futures: the limits of adaptation in ‘climate migrant’ informal settlements of coastal Bangladesh",
+          "url": "https://ueaeprints.uea.ac.uk/id/eprint/101978/",
+          "kind": "research",
+          "short_label": "Smith 외, 2026",
+          "apa": "Smith, R., Nicholls, R., Tebboth, M., & Kent, A. (2026). Persistent vulnerability and precarious futures: the limits of adaptation in ‘climate migrant’ informal settlements of coastal Bangladesh. Climate and Development. https://doi.org/10.1080/17565529.2026.2619446"
+        }
+      ]
+    }
+  ]
+}
