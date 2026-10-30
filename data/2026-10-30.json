@@ -1,0 +1,198 @@
+{
+ "date": "2026-10-30",
+ "format": "daily_deep",
+ "articles": [
+  {
+   "id": "2026-10-30-local-preference-index-distance",
+   "region": "국내",
+   "target_country": "KR",
+   "category": "지역지리학",
+   "title": "서울에서 먼 거리만으로 지역의 어려움을 잴 수 있을까요?",
+   "journal": "경향신문 · 2026-10-28",
+   "researchers": "안광호",
+   "source": {
+    "name": "경향신문",
+    "url": "https://www.khan.co.kr/article/202610281450011/",
+    "date": "2026-10-28",
+    "language": "ko",
+    "doi": null,
+    "canonical_kind": "sourced_summary"
+   },
+   "summary": "지방우대지수를 둘러싼 재지정 요구를 살펴봅니다. 서울과의 거리와 지역의 실제 제약은 늘 같은 방향을 가리키지 않습니다. (안광호, 2026)",
+   "body": [
+    {
+     "h": "서울과 가깝다는 이유로 낮게 매겨진 우대",
+     "p": "이 기사는 행정안전부가 발표한 지방우대지수 분류에 일부 지방정부가 재지정을 요구하고 있다고 전합니다. 이들은 규제와 인구 감소로 어려움을 겪는데도 서울과의 근접성 등을 이유로 우대 수준이 낮게 판정됐다고 반발합니다. 지수는 서울에서 멀수록, 지역이 낙후할수록 더 큰 혜택을 주자는 취지입니다. 그렇다면 거리와 낙후도라는 두 기준은 같은 지역을 언제나 같은 방향으로 가리킬까요? (안광호, 2026)"
+    },
+    {
+     "h": "지수는 무엇을 합쳐 네 권역을 만들었나",
+     "p": "정부 설명에 따르면 지방우대지수는 서울과의 공간적 거리를 반영하고, 지방시대위원회의 44개 균형발전 지표로 지역의 사회·경제적 발전 수준을 함께 따집니다. 인구감소지역에는 추가 우대가 붙습니다. 이렇게 229개 시군구를 4개 권역으로 나누고, 중앙부처가 각 사업의 우대 수준을 정하는 기준으로 삼게 됩니다. 수도권과의 거리를 지역 격차의 중요한 원인으로 본 설계입니다. (행정안전부, 2026)"
+    },
+    {
+     "h": "같은 거리, 다른 땅의 조건",
+     "p": "그런데 서울과의 거리가 비슷해도 땅을 쓸 수 있는 조건은 다릅니다. 파주시는 수도권이라 가장 낮은 1권역이 됐지만, 전체 면적의 87%가 군사시설보호구역이고 상수원보호구역 같은 규제도 겹친다고 말합니다. 인제군은 군인과 그 가족이 포함된 인구통계 때문에 실제로 줄어드는 청년과 아이들이 가려진다고 주장합니다. 거리와 통계가 접경지역의 개발 제약이나 인구 구성을 충분히 담지 못할 수 있다는 지적입니다. 다만 이는 해당 지자체의 주장이며, 권역 조정이 맞는지는 지표 자료로 따로 확인해야 합니다. (안광호, 2026) (최승현, 2026)"
+    },
+    {
+     "h": "낙후도를 재는 일에는 선택이 들어갑니다",
+     "p": "지역낙후도 지표를 다룬 연구는 경상북도 23개 시군을 대상으로, 선행연구와 전문가 면담으로 지표를 고르고 AHP라는 방법으로 각 지표의 가중치를 정했습니다. 인구증감률, 노령화지수, 재정력지수 등을 표준화해 낙후도 순위를 냈습니다. 어떤 지표를 넣고 얼마나 무겁게 볼지가 연구 설계의 일부라는 뜻입니다. 이 연구는 한 도의 시군을 대상으로 한 과거 측정이어서, 이번 정부 지수의 산식이나 결과를 평가한 것은 아닙니다. (안성조 외, 2015)"
+    },
+    {
+     "h": "확정 전 의견 수렴과 매년의 재측정",
+     "p": "행정안전부는 지역 여건 변화에 따라 가중치를 매겨 지수를 매년 재측정하고, 고시 제정안 행정예고 기간에 지방정부의 의견을 듣고 반영 여부를 검토하겠다고 밝혔습니다. 앞으로는 접경지역의 규제나 주민등록 인구와 실제 생활 인구의 차이 같은 조건이 어떤 방식으로 검토되는지 지켜볼 필요가 있습니다. 권역이 바뀌는지보다, 어떤 근거로 판단했는지가 공개되는지도 중요합니다. (안광호, 2026)"
+    }
+   ],
+   "talk": "",
+   "tags": [
+    "지방우대지수",
+    "균형발전",
+    "접경지역"
+   ],
+   "curriculum": [],
+   "geo": null,
+   "topic_key": "korea-local-preference-index-distance-criteria",
+   "starting_article": {
+    "title": "“지방우대지수에 우리 지역 사정 반영해달라” 지방정부 불만·건의 잇따라",
+    "author": "안광호",
+    "date_kind": "published"
+   },
+   "references": [
+    {
+     "id": "k-main",
+     "author": "안광호",
+     "date": "2026-10-28",
+     "title": "“지방우대지수에 우리 지역 사정 반영해달라” 지방정부 불만·건의 잇따라",
+     "url": "https://www.khan.co.kr/article/202610281450011/",
+     "kind": "news",
+     "short_label": "안광호, 2026",
+     "apa": "안광호. (2026, 10월 28일). “지방우대지수에 우리 지역 사정 반영해달라” 지방정부 불만·건의 잇따라. 경향신문."
+    },
+    {
+     "id": "k-gov",
+     "author": "행정안전부",
+     "date": "2026-10-20",
+     "title": "지방우대지수 최초 마련…서울에서 멀수록 더 지원",
+     "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973950",
+     "kind": "official",
+     "short_label": "행정안전부, 2026",
+     "apa": "행정안전부. (2026, 10월 20일). 지방우대지수 최초 마련…서울에서 멀수록 더 지원. 대한민국 정책브리핑."
+    },
+    {
+     "id": "k-inje",
+     "author": "최승현",
+     "date": "2026-10-22",
+     "title": "인제군 “인구감소지역 지정·지방우대지수 산정, 현실 반영 못해 불이익”",
+     "url": "https://www.khan.co.kr/article/202610222116005/",
+     "kind": "news",
+     "short_label": "최승현, 2026",
+     "apa": "최승현. (2026, 10월 22일). 인제군 “인구감소지역 지정·지방우대지수 산정, 현실 반영 못해 불이익”. 경향신문."
+    },
+    {
+     "id": "k-study",
+     "author": "안성조, 김중표, 고수정",
+     "date": "n.d.",
+     "title": "지역낙후도 지표의 선정과 측정에 관한 연구 : 경상북도 23개 시군을 대상으로",
+     "url": "https://www.earticle.net/Article/A254435",
+     "kind": "research",
+     "short_label": "안성조 외, 2015",
+     "apa": "안성조, 김중표, 고수정. (2015). 지역낙후도 지표의 선정과 측정에 관한 연구: 경상북도 23개 시군을 대상으로. 한국자치행정학보, 29(3), 125-147."
+    }
+   ]
+  },
+  {
+   "id": "2026-10-30-cyclone-arnab-data-center-coast",
+   "region": "해외",
+   "target_country": "IN",
+   "category": "경제지리학",
+   "title": "사이클론이 지나간 해안, 데이터센터는 어디에 지어야 할까요?",
+   "journal": "AP News · 2026-10-28",
+   "researchers": "Sibi Arasu",
+   "source": {
+    "name": "AP News",
+    "url": "https://apnews.com/article/cyclone-arnab-climate-dhange-india-andhra-pradesh-04ffc941aa559a55d1774795cd63017d",
+    "date": "2026-10-28",
+    "language": "en",
+    "doi": null,
+    "canonical_kind": "sourced_summary"
+   },
+   "summary": "사이클론 아르납과 인도 해안의 데이터센터 투자를 함께 살펴봅니다. 시설의 안전은 주변 연결망의 안전과 떼어 볼 수 없습니다. (Arasu, 2026)",
+   "body": [
+    {
+     "h": "사이클론이 지나간 데이터센터 투자 해안",
+     "p": "이 기사는 사이클론 아르납이 인도 동부 안드라프라데시 해안을 덮쳐 3명이 숨지고 농경지가 물에 잠겼다고 전합니다. 이 해안은 데이터센터 투자가 몰리는 곳이기도 합니다. 폭우 경로에 있던 비사카파트남에는 구글·아다니·에어텔이 150억 달러 규모의 대형 데이터센터를 계획하고 있습니다. 극한 기상이 오늘의 생계뿐 아니라 앞으로의 성장을 맡길 시설까지 위협한다는 점이 드러납니다. 정확한 피해 규모는 아직 집계 중입니다. (Arasu, 2026)"
+    },
+    {
+     "h": "왜 하필 이 해안일까요",
+     "p": "구글은 입지를 고를 때 이용자와의 거리, 인재, 새 청정에너지, 지역과의 협력 가능성을 본다고 설명합니다. 비사카파트남의 해안선은 해저 케이블로 남아프리카와 오스트레일리아를 잇는 관문이 될 수 있습니다. 바다에 닿는 위치가 연결의 이점이 되는 셈입니다. 구글은 물 평가에서 지역 유역의 압박이 확인돼 수냉 대신 공랭 방식을 택했다고 밝혔고, 활동가들은 영향이 더 밝혀질 때까지 새 데이터센터를 멈추자고 요구합니다. (AFP, 2026)"
+    },
+    {
+     "h": "시설 하나가 아니라 연결망의 위험",
+     "p": "AP 기사에서 전문가는 가장 큰 사각지대가 연쇄적인 마비라고 말합니다. 물에 잠긴 도로나 망가진 변전소가 재해 지역 밖의 공장과 공급망까지 멈출 수 있기 때문입니다. 데이터센터도 홍수, 더위, 불안정한 전력, 물 부족이 겹치는 위협을 받습니다. 기후 위험 분석 기업 XDI는 같은 나라, 같은 지역 안에서도 데이터센터마다 기후 위험이 크게 다르며, 아무리 튼튼한 시설도 그것이 기대는 도로·물·통신만큼만 안전하다고 설명합니다. 위험을 건물 단위가 아니라 주변 기반시설과 함께 봐야 하는 이유입니다. (Arasu, 2026) (XDI, 2025)"
+    },
+    {
+     "h": "미국 연구가 보여 주는 입지와 재해의 겹침",
+     "p": "미국 전역의 데이터센터를 공간 분석한 연구는 상당수가 재해 위험이 낮은 지역에 있지만, 눈에 띄는 비율은 재해가 잦은 곳에 있다고 밝혔습니다. 살펴본 재해 가운데 지진·허리케인·토네이도에 취약한 지역에 데이터센터가 가장 많았고, 정전이 잦고 오래가는 지역에 자리한 시설도 있었습니다. 시설을 어디에 두느냐가 곧 어떤 재해와 정전을 함께 떠안느냐의 문제라는 뜻입니다. 다만 이는 미국 자료로 한 분석이어서 인도 해안의 위험을 직접 계산한 것은 아닙니다. (Esparza 외, 2025)"
+    },
+    {
+     "h": "과거 날씨로 짜는 계획의 한계",
+     "p": "기사 속 전문가들은 과거 날씨를 기준으로 한 계획이 기후 변화로 늘어나는 극한 기상을 과소평가할 수 있다고 지적합니다. 큰 기상 시스템의 예보는 나아졌지만, 국지적인 뇌우와 돌발 홍수는 여전히 예측하기 어렵습니다. 그래서 전력망 보강, 도로의 침수 대비, 사이클론 뒤 정전과 교통 마비가 함께 오는 상황을 가정한 대비가 거론됩니다. 공사 초기인 해안 투자에 이런 기준이 어떻게 반영되는지 지켜볼 필요가 있습니다. (Arasu, 2026)"
+    }
+   ],
+   "talk": "",
+   "tags": [
+    "인도",
+    "데이터센터",
+    "사이클론"
+   ],
+   "curriculum": [],
+   "geo": null,
+   "topic_key": "india-cyclone-coastal-data-center-siting-risk",
+   "starting_article": {
+    "title": "The path of Cyclone Arnab went through India’s plans for data centers and future growth",
+    "author": "Sibi Arasu",
+    "date_kind": "updated"
+   },
+   "references": [
+    {
+     "id": "o-main",
+     "author": "Sibi Arasu",
+     "date": "2026-10-28",
+     "title": "The path of Cyclone Arnab went through India’s plans for data centers and future growth",
+     "url": "https://apnews.com/article/cyclone-arnab-climate-dhange-india-andhra-pradesh-04ffc941aa559a55d1774795cd63017d",
+     "kind": "news",
+     "short_label": "Arasu, 2026",
+     "apa": "Arasu, S. (2026, October 28). The path of Cyclone Arnab went through India’s plans for data centers and future growth. AP News."
+    },
+    {
+     "id": "o-afp",
+     "author": "AFP",
+     "date": "2026-10-11",
+     "title": "Power, water, jobs: Google’s India AI mega‑centre ignites debate over costs, benefits and community impact",
+     "url": "https://www.malaymail.com/news/world/2026/10/11/power-water-jobs-googles-india-ai-megacentre-ignites-debate-over-costs-benefits-and-community-impact/238656",
+     "kind": "news",
+     "short_label": "AFP, 2026",
+     "apa": "AFP. (2026, October 11). Power, water, jobs: Google’s India AI mega‑centre ignites debate over costs, benefits and community impact. Malay Mail."
+    },
+    {
+     "id": "o-xdi",
+     "author": "XDI",
+     "date": "2025-07-09",
+     "title": "Global data centres face rising climate risks, XDI report warns",
+     "url": "https://xdi.systems/news/global-data-centres-face-rising-climate-risks-xdi-report-warns-landmark-analysis-of-nearly-9000-sites-reveals-escalating-threat-to-digital-infrastructure",
+     "kind": "report",
+     "short_label": "XDI, 2025",
+     "apa": "XDI (Cross Dependency Initiative). (2025, July 9). Global data centres face rising climate risks, XDI report warns. XDI."
+    },
+    {
+     "id": "o-study",
+     "author": "Miguel Esparza, Bo Li, Junwei Ma, Ali Mostafavi",
+     "date": "n.d.",
+     "title": "AI meets natural hazard risk: A nationwide vulnerability assessment of data centers to natural hazards and power outages",
+     "url": "https://www.sciencedirect.com/science/article/abs/pii/S2212420925004078",
+     "kind": "research",
+     "short_label": "Esparza 외, 2025",
+     "apa": "Esparza, M., Li, B., Ma, J., & Mostafavi, A. (2025). AI meets natural hazard risk: A nationwide vulnerability assessment of data centers to natural hazards and power outages. International Journal of Disaster Risk Reduction, 126, 105583. https://doi.org/10.1016/j.ijdrr.2025.105583"
+    }
+   ]
+  }
+ ]
+}
