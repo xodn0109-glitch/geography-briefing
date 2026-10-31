@@ -1,236 +1,236 @@
 {
- "date": "2026-10-31",
- "format": "daily_deep",
- "articles": [
-  {
-   "id": "2026-10-31-sept-migration-lowest-net-flows",
-   "region": "국내",
-   "target_country": "KR",
-   "category": "인구지리학",
-   "title": "이사가 53년 만에 가장 적었던 9월, 사람들은 어디로 옮겨 갔을까요?",
-   "journal": "연합뉴스 · 2026-10-28",
-   "researchers": "송정은",
-   "source": {
-    "name": "연합뉴스",
-    "url": "https://www.yna.co.kr/view/AKR20261028083400002",
-    "date": "2026-10-28",
-    "language": "ko",
-    "doi": null,
-    "canonical_kind": "sourced_summary"
-   },
-   "summary": "9월 국내 이동자는 44만 4천 명으로 9월 기준 53년 만에 가장 적었지만 인천·충남·충북은 순유입, 서울·세종 등은 순유출이었습니다. 추석 연휴와 7월부터의 감소 흐름, 지역별 주택 공급이 이동을 어떻게 갈랐는지 여러 보도와 연구 초록으로 맞대어 봅니다. (송정은, 2026)",
-   "body": [
+  "date": "2026-10-31",
+  "format": "daily_deep",
+  "articles": [
     {
-     "h": "9월 이동자 44만 4천 명, 시도 간 이동이 더 크게 줄었습니다",
-     "p": "이 기사는 9월에 읍면동 경계를 넘어 이사한 사람이 44만 4천 명으로 1년 전보다 5만 명(10.1%) 줄었고, 9월 기준으로 1973년 이후 가장 적었다고 전합니다. 인구 100명당 이동자 수인 인구이동률은 10.6%로 2000년 통계 집계 이래 가장 낮았습니다. 뉴스1이 같은 통계에서 짚은 대목을 보면 시도 안에서 이사한 사람은 8.9%, 시도를 넘어 이사한 사람은 12.4% 줄어 시도 간 이동이 더 크게 감소했습니다. 이사가 줄어든 이유와 이사한 사람들이 향한 곳은 어떻게 맞물릴까요? (송정은, 2026) (이강, 2026)"
+      "id": "2026-10-31-sept-migration-lowest-net-flows",
+      "region": "국내",
+      "target_country": "KR",
+      "category": "인구지리학",
+      "title": "이사가 53년 만에 가장 적었던 9월, 사람들은 어디로 옮겨 갔을까요?",
+      "journal": "연합뉴스 · 2026-10-28",
+      "researchers": "송정은",
+      "source": {
+        "name": "연합뉴스",
+        "url": "https://www.yna.co.kr/view/AKR20261028083400002",
+        "date": "2026-10-28",
+        "language": "ko",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "9월 국내 이동자는 44만 4천 명으로 9월 기준 53년 만에 가장 적었지만 인천·충남·충북은 순유입, 서울·세종 등은 순유출이었습니다. 추석 연휴와 7월부터의 감소 흐름, 지역별 주택 공급이 이동을 어떻게 갈랐는지 살펴봅니다. (송정은, 2026)",
+      "body": [
+        {
+          "h": "9월 이동자 44만 4천 명, 시도 간 이동이 더 크게 줄었습니다",
+          "p": "이 기사는 9월에 읍면동 경계를 넘어 이사한 사람이 44만 4천 명으로 1년 전보다 5만 명(10.1%) 줄었고, 9월 기준으로 1973년 이후 가장 적었다고 전합니다. 인구 100명당 이동자 수인 인구이동률은 10.6%로 2000년 통계 집계 이래 가장 낮았습니다. 뉴스1이 같은 통계에서 짚은 대목을 보면 시도 안에서 이사한 사람은 8.9%, 시도를 넘어 이사한 사람은 12.4% 줄어 시도 간 이동이 더 크게 감소했습니다. 이사가 줄어든 이유와 이사한 사람들이 향한 곳은 어떻게 맞물릴까요? (송정은, 2026) (이강, 2026)"
+        },
+        {
+          "h": "추석 연휴가 낀 달이지만, 줄어든 것은 7월부터입니다",
+          "p": "연합뉴스는 이동자 수가 길게는 고령화와 인구 감소로 줄고 짧게는 주택 거래량과 입주 예정 아파트 물량의 영향을 받으며, 올해 9월에는 작년과 달리 추석 연휴가 끼어 이사가 줄었다고 전합니다. 뉴스1과 중도일보가 정리한 월별 증감률은 7월 -15.5%, 8월 -4.5%, 9월 -10.1%입니다. 올해 1분기와 2분기에는 이동자가 작년 같은 기간보다 각각 2.3%, 1.8% 늘었다가 3분기에 감소로 돌아섰습니다. 3분기 이동자는 138만 3천 명으로 1973년 이후 가장 적었고 모든 연령대에서 이동자 수와 이동률이 줄었습니다. 연합뉴스는 7~8월 감소의 배경으로 주택 거래 둔화와 아파트 준공 실적 감소를 들었습니다. (송정은, 2026) (이강, 2026) (송익준, 2026)"
+        },
+        {
+          "h": "인천·충남·충북으로 들어오고 서울·부산에서 빠져나갔습니다",
+          "p": "시도별 순이동은 인천 1,956명, 충남 1,032명, 충북 830명 등 6개 시도가 순유입이었고, 서울 -2,359명, 전남광주 -531명, 부산 -401명 등 10개 시도가 순유출이었습니다. 연합뉴스는 반도체 산업이 밀집한 충청권으로 사람이 들어왔다고 쓰고 주택 공급과 일자리가 영향을 미친 것으로 보인다고 하면서, 구체적인 전입 사유는 연간 통계에서 확인할 수 있다고 덧붙였습니다. 세종의 이동 사유를 분석한 2018년 연구는 세종으로 전입하는 사유가 전국 평균으로는 직업이 가장 중요했지만 인접 충청권 대부분에서는 주택이 가장 중요했다고 정리합니다. 이 연구는 2018년에 세종과 인접 충청권을 다룬 것이어서, 올해 9월 충청권 유입의 사유를 직접 설명하지는 않습니다. (송정은, 2026) (이강, 2026) (류주현·장동호, 2018)"
+        },
+        {
+          "h": "세종은 10개월째 순유출입니다",
+          "p": "뉴스1에 따르면 세종은 9월에 3,236명이 전입하고 3,511명이 전출해 275명이 순유출됐고, 순이동률 -0.9%는 전국에서 가장 낮았습니다. 지난해 12월부터 10개월 연속입니다. 국가데이터처 관계자는 주택 공급 물량 감소를 주요 원인으로 보고 세종에서 대전이나 청주 쪽으로 빠져나가는 영향도 있다고 설명했는데, 같은 날 중도일보는 대전이 250명 순유입이었다고 전합니다. 중도일보 기사의 세종 전출자 3,611명과 순유출 시작 시점 2015년 12월은 뉴스1의 3,511명, 지난해 12월과 다르며, 전입 3,236명과 순유출 275명이 맞아떨어지는 쪽은 3,511명입니다. 세종을 떠나는 사유는 전국 평균으로는 주택이 가장 많았고 인접 충청권 대부분에서는 가족이 가장 많았다고 2018년 연구는 밝힙니다. (이강, 2026) (송익준, 2026) (류주현·장동호, 2018)"
+        },
+        {
+          "h": "서울 순유출 2,359명의 이유는 이번 통계에 없습니다",
+          "p": "서울은 순유출 2,359명으로 뉴스1이 꼽은 순유출 시도 가운데 가장 많았습니다. 2015년부터 2023년까지 서울 대도시권의 이동을 분석한 2025년 연구는 전출지의 아파트 매매가격과 전세가율이 서울 인구이동에 영향을 주었고, 전세가율이 오르는 시기에는 다른 지역으로 이동하는 경향이 나타나 급증하는 전세가격이 서울 인구 유출의 주된 원인으로 파악됐다고 밝힙니다. 같은 연구에서 전출지의 아파트 매매가격이 높아질수록 대부분의 가구는 서울 안의 다른 자치구로 옮겼고 다른 시도로 옮길 확률은 줄었습니다. 이 연구는 2015~2023년의 이동 가구를 대상으로 해서, 올해 9월 서울에서 나간 사람들의 행선지나 사유를 알려 주지는 않습니다. (이강, 2026) (권수현 외, 2025)"
+        },
+        {
+          "h": "연간 통계가 나오면 확인할 수 있는 것",
+          "p": "연합뉴스는 구체적인 전입 사유를 연간 통계에서 확인할 수 있다고 했습니다. 연간 통계의 전입 사유 항목이 나오면 충청권 유입이 직업 때문인지 주택 때문인지, 서울과 세종의 순유출이 어떤 사유의 이동에서 커졌는지를 비교할 수 있습니다. 이번 월간 통계와 보도만으로는 추석 연휴의 효과와 7월부터 이어진 주택 거래 둔화의 몫을 나눌 수 없습니다. 올해 1·2분기에 늘었던 이동자가 3분기에 줄어든 흐름이 이어지는지는 4분기 통계가 나와야 볼 수 있습니다. (송정은, 2026) (송익준, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "인구이동",
+        "순유입",
+        "세종",
+        "주택"
+      ],
+      "curriculum": [],
+      "geo": {
+        "lat": 36.48,
+        "lon": 127.29,
+        "label": "세종·충청권"
+      },
+      "topic_key": "korea-sept-2026-internal-migration-lowest-net-flows",
+      "references": [
+        {
+          "id": "k-main",
+          "author": "송정은",
+          "date": "2026-10-28",
+          "title": "추석 낀 9월 국내이동 53년 만에 최소…인천·충청은 '유입'",
+          "url": "https://www.yna.co.kr/view/AKR20261028083400002",
+          "kind": "news",
+          "short_label": "송정은, 2026",
+          "apa": "송정은. (2026, 10월 28일). 추석 낀 9월 국내이동 53년 만에 최소…인천·충청은 '유입'. 연합뉴스."
+        },
+        {
+          "id": "k-news1",
+          "author": "이강",
+          "date": "2026-10-28",
+          "title": "9월 이동인구 44.4만명, 53년 만에 최소…세종 10개월째 순유출",
+          "url": "https://www.news1.kr/economy/trend/6334428",
+          "kind": "news",
+          "short_label": "이강, 2026",
+          "apa": "이강. (2026, 10월 28일). 9월 이동인구 44.4만명, 53년 만에 최소…세종 10개월째 순유출. 뉴스1."
+        },
+        {
+          "id": "k-joongdo",
+          "author": "송익준",
+          "date": "2026-10-28",
+          "title": "9월 전국 이동인구 44만명… 충남·충북 '유입'",
+          "url": "https://www.joongdo.co.kr/web/view.php?key=20261028010008422",
+          "kind": "news",
+          "short_label": "송익준, 2026",
+          "apa": "송익준. (2026, 10월 28일). 9월 전국 이동인구 44만명… 충남·충북 '유입'. 중도일보."
+        },
+        {
+          "id": "k-sejong",
+          "author": "류주현, 장동호",
+          "date": "n.d.",
+          "title": "세종시 전출입이동과 이동 이유",
+          "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002394221",
+          "kind": "research",
+          "short_label": "류주현·장동호, 2018",
+          "apa": "류주현, 장동호. (2018). 세종시 전출입이동과 이동 이유. 경관과 지리, 28(3), 149-165."
+        },
+        {
+          "id": "k-price",
+          "author": "권수현, 성현곤, 김민규",
+          "date": "n.d.",
+          "title": "전출입지역의 부동산가격 차이가 인구이동에 미치는 영향 : 서울시 대도시권이동 패턴을 중심으로",
+          "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003270124",
+          "kind": "research",
+          "short_label": "권수현 외, 2025",
+          "apa": "권수현, 성현곤, 김민규. (2025). 전출입지역의 부동산가격 차이가 인구이동에 미치는 영향: 서울시 대도시권이동 패턴을 중심으로. GRI연구논총, 27(4), 465-498."
+        }
+      ],
+      "starting_article": {
+        "title": "추석 낀 9월 국내이동 53년 만에 최소…인천·충청은 '유입'",
+        "author": "송정은",
+        "date_kind": "published"
+      }
     },
     {
-     "h": "추석 연휴가 낀 달이지만, 줄어든 것은 7월부터입니다",
-     "p": "연합뉴스는 이동자 수가 길게는 고령화와 인구 감소로 줄고 짧게는 주택 거래량과 입주 예정 아파트 물량의 영향을 받으며, 올해 9월에는 작년과 달리 추석 연휴가 끼어 이사가 줄었다고 전합니다. 뉴스1과 중도일보가 정리한 월별 증감률은 7월 -15.5%, 8월 -4.5%, 9월 -10.1%입니다. 올해 1분기와 2분기에는 이동자가 작년 같은 기간보다 각각 2.3%, 1.8% 늘었다가 3분기에 감소로 돌아섰습니다. 3분기 이동자는 138만 3천 명으로 1973년 이후 가장 적었고 모든 연령대에서 이동자 수와 이동률이 줄었습니다. 연합뉴스는 7~8월 감소의 배경으로 주택 거래 둔화와 아파트 준공 실적 감소를 들었습니다. (송정은, 2026) (이강, 2026) (송익준, 2026)"
-    },
-    {
-     "h": "인천·충남·충북으로 들어오고 서울·부산에서 빠져나갔습니다",
-     "p": "시도별 순이동은 인천 1,956명, 충남 1,032명, 충북 830명 등 6개 시도가 순유입이었고, 서울 -2,359명, 전남광주 -531명, 부산 -401명 등 10개 시도가 순유출이었습니다. 연합뉴스는 반도체 산업이 밀집한 충청권으로 사람이 들어왔다고 쓰고 주택 공급과 일자리가 영향을 미친 것으로 보인다고 하면서, 구체적인 전입 사유는 연간 통계에서 확인할 수 있다고 덧붙였습니다. 세종의 이동 사유를 분석한 2018년 연구의 초록은 세종으로 전입하는 사유가 전국 평균으로는 직업이 가장 중요했지만 인접 충청권 대부분에서는 주택이 가장 중요했다고 정리합니다. 이 연구는 세종과 인접 충청권을 대상으로 했고 조사 기간이 초록에 표시되지 않아, 올해 9월 충청권 유입의 사유를 직접 설명하지는 않습니다. (송정은, 2026) (이강, 2026) (류주현·장동호, 2018)"
-    },
-    {
-     "h": "세종은 10개월째 순유출입니다",
-     "p": "뉴스1에 따르면 세종은 9월에 3,236명이 전입하고 3,511명이 전출해 275명이 순유출됐고, 순이동률 -0.9%는 전국에서 가장 낮았습니다. 지난해 12월부터 10개월 연속입니다. 국가데이터처 관계자는 주택 공급 물량 감소를 주요 원인으로 보고 세종에서 대전이나 청주 쪽으로 빠져나가는 영향도 있다고 설명했는데, 같은 날 중도일보는 대전이 250명 순유입이었다고 전합니다. 중도일보 기사의 세종 전출자 3,611명과 순유출 시작 시점 2015년 12월은 뉴스1의 3,511명, 지난해 12월과 다르며, 전입 3,236명과 순유출 275명이 맞아떨어지는 쪽은 3,511명입니다. 세종을 떠나는 사유는 전국 평균으로는 주택이 가장 많았고 인접 충청권 대부분에서는 가족이 가장 많았다고 2018년 연구의 초록은 밝힙니다. (이강, 2026) (송익준, 2026) (류주현·장동호, 2018)"
-    },
-    {
-     "h": "서울 순유출 2,359명의 이유는 이번 통계에 없습니다",
-     "p": "서울은 순유출 2,359명으로 뉴스1이 꼽은 순유출 시도 가운데 가장 많았습니다. 2015년부터 2023년까지 서울 대도시권의 이동을 분석한 2025년 연구의 초록은 전출지의 아파트 매매가격과 전세가율이 서울 인구이동에 영향을 주었고, 전세가율이 오르는 시기에는 다른 지역으로 이동하는 경향이 나타나 급증하는 전세가격이 서울 인구 유출의 주된 원인으로 파악됐다고 밝힙니다. 같은 초록에서 전출지의 아파트 매매가격이 높아질수록 대부분의 가구는 서울 안의 다른 자치구로 옮겼고 다른 시도로 옮길 확률은 줄었습니다. 이 연구는 2015~2023년의 이동 가구를 대상으로 해서, 올해 9월 서울에서 나간 사람들의 행선지나 사유를 알려 주지는 않습니다. (이강, 2026) (권수현 외, 2025)"
-    },
-    {
-     "h": "연간 통계가 나오면 확인할 수 있는 것",
-     "p": "연합뉴스는 구체적인 전입 사유를 연간 통계에서 확인할 수 있다고 했습니다. 연간 통계의 전입 사유 항목이 나오면 충청권 유입이 직업 때문인지 주택 때문인지, 서울과 세종의 순유출이 어떤 사유의 이동에서 커졌는지를 비교할 수 있습니다. 이번 월간 통계와 보도만으로는 추석 연휴의 효과와 7월부터 이어진 주택 거래 둔화의 몫을 나눌 수 없습니다. 올해 1·2분기에 늘었던 이동자가 3분기에 줄어든 흐름이 이어지는지는 4분기 통계가 나와야 볼 수 있습니다. (송정은, 2026) (송익준, 2026)"
+      "id": "2026-10-31-singapore-haze-act-enforcement-gap",
+      "region": "해외",
+      "target_country": "MULTI",
+      "category": "지정학·국제",
+      "title": "싱가포르 연무법은 불이 난 인도네시아 땅까지 닿을 수 있을까요?",
+      "journal": "Mongabay · 2026-10-27",
+      "researchers": "Gabrielle See",
+      "source": {
+        "name": "Mongabay",
+        "url": "https://news.mongabay.com/2026/10/influence-without-enforcement-indonesias-fires-test-singapores-anti-haze-law/",
+        "date": "2026-10-27",
+        "language": "en",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "싱가포르가 연무를 일으킨 인도네시아 농장 회사와 싱가포르에 등록된 회사에 통지를 보냈지만, 2014년 제정된 법으로 기소한 사례는 아직 없습니다. 불이 난 땅과 연기가 닿은 곳, 회사의 소유 구조를 차례로 살펴봅니다. (See, 2026)",
+      "body": [
+        {
+          "h": "통지는 20건, 기소는 아직 0건입니다",
+          "p": "이 기사는 싱가포르가 2015년 이후 가장 긴 대기오염 기간을 지나면서 인도네시아의 불과 관련된 20개 회사에 통지를 보냈지만 더 이상의 법적 조치는 하지 않았다고 전합니다. 절반은 불이 시작된 수마트라와 칼리만탄의 사업권자에게, 나머지 절반은 이들과 연결된 싱가포르 기반 회사에게 보냈습니다. 2014년 제정된 초국경 연무오염법은 하루 최대 10만 싱가포르달러, 총 200만 싱가포르달러까지 벌금을 물릴 수 있지만, 2015년 이후 여러 차례 연무가 도시를 덮치는 동안 기소나 처벌은 한 건도 없었다고 이 기사는 적습니다. 통지 다음 단계는 왜 아직 나오지 않았을까요? (See, 2026)"
+        },
+        {
+          "h": "불이 난 곳은 남수마트라와 칼리만탄입니다",
+          "p": "싱가포르 신문 스트레이츠 타임스는 통지를 받은 인도네시아 회사 10곳의 농장이 연무를 일으킨 열점이 대부분 몰린 남수마트라와 칼리만탄에 있다고 전합니다. 싱가포르 환경청은 사업권 지도와 위성 영상, 공개 정보를 합쳐 연기의 출처를 추적했다고 합니다. 그 연기가 가장 큰 피해를 준 곳은 싱가포르가 아닙니다. 에너지·청정대기연구센터(CREA)는 9월 인도네시아에서 산불 연기로 숨진 사람을 3,560명으로 추산했고, 칼리만탄에서는 대기오염 사망의 94~99%, 수마트라에서는 80% 넘게가 산불 연기 때문이었다고 밝혔습니다. 자바의 사망은 대체로 도시와 산업 오염에서 나왔습니다. (Hamzah, 2026) (Al Jazeera, 2026)"
+        },
+        {
+          "h": "회사들은 불이 사업권 밖에서 번졌다고 답했습니다",
+          "p": "싱가포르에 등록된 10개 회사는 모두 통지를 받았다고 확인했고 대부분 당국에 협조하겠다고 밝혔습니다. CNA에 따르면 여러 회사가 사업권 경계 안에서 불이나 열점이 있었다고 보고하면서도 자신들의 활동이 연무의 원인은 아니라고 주장합니다. 부미타마는 일부 불이 직접 관리하는 구역 밖에서 번졌다고 했고, 윌마는 불이 사업권 밖이나 사업권 안의 주민 경작지에서 시작해 번졌다고 했으며, TSH는 사업 경계 안에서 잡힌 열점 274곳이 사업 구역 밖의 주민 거주 구역(community enclave)에 있다고 밝혔습니다. 인도네시아 그린피스의 활동가는 인도네시아 환경법의 엄격책임 원칙상 사업권이 불타면 회사가 책임을 져야 한다고 말했고, 트렌드 아시아는 열점의 80%가량이 농업·채굴 산업과 관련된 10개 주에 몰려 있다고 분석했습니다. CNA는 통지를 받았다는 사실만으로 회사의 책임이 확인된 것은 아니라고 덧붙입니다. (Yow, 2026) (Hamzah, 2026) (See, 2026)"
+        },
+        {
+          "h": "통지 대상의 소유 구조를 따라가면",
+          "p": "스트레이츠 타임스가 기업 등기와 과거 보도를 확인해 보니 통지를 받은 인도네시아 회사 10곳 가운데 세 곳은 2015년에도 같은 법에 따라 통지를 받은 반복 대상이었고, 네 곳은 아시아 펄프 앤드 페이퍼(APP)와 공식적으로 이어져 있었습니다. 싱가포르 경영대학의 홀리 양 교수는 최근 3년 사이 주인이 바뀐 사업권이 여럿이고 어떤 곳은 소유주가 공개되지 않는 관할권에서 끝나는 지주회사 층 아래에 있다고 말합니다. 그는 책임이 소유주가 아니라 움직이지 않는 것에 붙어야 한다고 보고, 인도네시아가 올해 봉인과 허가 동결을 주주가 아니라 사업권 토지에 붙인 것을 예로 듭니다. 싱가포르의 샨무가탐 선임장관은 통지 대상 사업권자의 소유주·구매자·금융기관을 싱가포르에 거점이 있든 없든 조사하겠다고 밝혔습니다. (Hamzah, 2026) (See, 2026)"
+        },
+        {
+          "h": "국경을 넘는 법과 불간섭 원칙",
+          "p": "말레이시아대학의 헬레나 바르키 교수는 싱가포르 법의 집행이 어려운 것을 두고 불간섭을 우선하는 동남아국가연합 안에서 역외 적용을 시도하는 한계가 드러난 것이라고 말하며 집행 없는 영향력이라고 표현했습니다. 지역 협정에 대한 평가도 비슷합니다. 2015년 인도네시아의 비준 직후 나온 한 논문은 ASEAN 연무오염협정이 주권과 불간섭 원칙에 바탕을 둔 구속력 없는 방식이어서 연무를 줄일 장치가 약하다고 주장합니다. 이 논문이 다룬 것은 국가 간 협정이지 싱가포르의 2014년 국내법이 아니고, 올해의 불은 평가 대상이 아닙니다. 인도네시아 환경법센터의 아담 푸트라 피르다우스는 통지 이후 인도네시아 쪽 집행 기관의 후속 조치가 부족해 단속이 예방 통지에서 멈춰 있다고 설명합니다. (See, 2026) (Heilmann, 2015)"
+        },
+        {
+          "h": "아직 공개되지 않은 것: 회사들이 낸 자료와 개정안",
+          "p": "지금까지 확인된 것은 통지 발송과 회사들의 답변입니다. 싱가포르 환경청이 요구한 사업권 위치와 계열사 관계, 소방 활동 자료는 공개되지 않았고, 환경청은 진행 중인 조사의 세부를 밝힐 수 없다고 말했습니다. 시민단체 PM.Haze와 SG 기후 집회는 200만 싱가포르달러 상한을 없애거나 크게 올리고, 이탄지 배수처럼 불이 나기 쉬운 건조한 조건을 만든 행위까지 법이 다루게 하라는 청원을 냈습니다. 샨무가탐 장관은 필요하면 법을 고치거나 새 법을 만들겠다고 했지만 일정은 밝히지 않았습니다. 회사들이 낸 자료로 소유 관계가 드러나는지, 그 뒤에 첫 기소나 법 개정이 나오는지는 지금의 보도로는 알 수 없습니다. (See, 2026) (Yow, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "연무",
+        "싱가포르",
+        "인도네시아",
+        "초국경 오염"
+      ],
+      "curriculum": [],
+      "geo": {
+        "lat": 1.3521,
+        "lon": 103.8198,
+        "label": "싱가포르"
+      },
+      "topic_key": "singapore-transboundary-haze-act-enforcement-gap",
+      "references": [
+        {
+          "id": "o-main",
+          "author": "Gabrielle See",
+          "date": "2026-10-27",
+          "title": "‘Influence without enforcement’: Indonesia’s fires test Singapore’s anti-haze law",
+          "url": "https://news.mongabay.com/2026/10/influence-without-enforcement-indonesias-fires-test-singapores-anti-haze-law/",
+          "kind": "news",
+          "short_label": "See, 2026",
+          "apa": "See, G. (2026, October 27). ‘Influence without enforcement’: Indonesia’s fires test Singapore’s anti-haze law. Mongabay."
+        },
+        {
+          "id": "o-st",
+          "author": "Aqil Hamzah",
+          "date": "2026-10-20",
+          "title": "4 of 10 firms issued notices under S'pore haze law linked to APP",
+          "url": "https://www.straitstimes.com/singapore/behind-the-blazes-st-looks-at-10-firms-issued-notices-under-spore-haze-law",
+          "kind": "news",
+          "short_label": "Hamzah, 2026",
+          "apa": "Hamzah, A. (2026, October 20). 4 of 10 firms issued notices under S'pore haze law linked to APP. The Straits Times."
+        },
+        {
+          "id": "o-cna",
+          "author": "Daphne Yow",
+          "date": "2026-10-26",
+          "title": "What to know about the 10 Singapore-based companies issued notices over transboundary haze",
+          "url": "https://www.channelnewsasia.com/singapore/10-singapore-companies-transboundary-haze-pollution-act-nea-6492316",
+          "kind": "news",
+          "short_label": "Yow, 2026",
+          "apa": "Yow, D. (2026, October 26). What to know about the 10 Singapore-based companies issued notices over transboundary haze. CNA."
+        },
+        {
+          "id": "o-aj",
+          "author": "Al Jazeera Staff",
+          "date": "2026-10-30",
+          "title": "Smoke from wildfires killed 3,500 people in Indonesia in September: Report",
+          "url": "https://www.aljazeera.com/news/2026/10/30/smoke-from-wildfires-killed-3500-people-in-indonesia-in-september-report",
+          "kind": "news",
+          "short_label": "Al Jazeera, 2026",
+          "apa": "Al Jazeera Staff & AFP. (2026, October 30). Smoke from wildfires killed 3,500 people in Indonesia in September: Report. Al Jazeera."
+        },
+        {
+          "id": "o-paper",
+          "author": "Daniel Heilmann",
+          "date": "n.d.",
+          "title": "After Indonesia's Ratification: The ASEAN Agreement on Transboundary Haze Pollution and its Effectiveness as a Regional Environmental Governance Tool",
+          "url": "https://journals.sagepub.com/doi/10.1177/186810341503400304",
+          "kind": "research",
+          "short_label": "Heilmann, 2015",
+          "apa": "Heilmann, D. (2015). After Indonesia's Ratification: The ASEAN Agreement on Transboundary Haze Pollution and its Effectiveness as a Regional Environmental Governance Tool. Journal of Current Southeast Asian Affairs."
+        }
+      ],
+      "starting_article": {
+        "title": "‘Influence without enforcement’: Indonesia’s fires test Singapore’s anti-haze law",
+        "author": "Gabrielle See",
+        "date_kind": "published"
+      }
     }
-   ],
-   "talk": "",
-   "tags": [
-    "인구이동",
-    "순유입",
-    "세종",
-    "주택"
-   ],
-   "curriculum": [],
-   "geo": {
-    "lat": 36.48,
-    "lon": 127.29,
-    "label": "세종·충청권"
-   },
-   "topic_key": "korea-sept-2026-internal-migration-lowest-net-flows",
-   "references": [
-    {
-     "id": "k-main",
-     "author": "송정은",
-     "date": "2026-10-28",
-     "title": "추석 낀 9월 국내이동 53년 만에 최소…인천·충청은 '유입'",
-     "url": "https://www.yna.co.kr/view/AKR20261028083400002",
-     "kind": "news",
-     "short_label": "송정은, 2026",
-     "apa": "송정은. (2026, 10월 28일). 추석 낀 9월 국내이동 53년 만에 최소…인천·충청은 '유입'. 연합뉴스."
-    },
-    {
-     "id": "k-news1",
-     "author": "이강",
-     "date": "2026-10-28",
-     "title": "9월 이동인구 44.4만명, 53년 만에 최소…세종 10개월째 순유출",
-     "url": "https://www.news1.kr/economy/trend/6334428",
-     "kind": "news",
-     "short_label": "이강, 2026",
-     "apa": "이강. (2026, 10월 28일). 9월 이동인구 44.4만명, 53년 만에 최소…세종 10개월째 순유출. 뉴스1."
-    },
-    {
-     "id": "k-joongdo",
-     "author": "송익준",
-     "date": "2026-10-28",
-     "title": "9월 전국 이동인구 44만명… 충남·충북 '유입'",
-     "url": "https://www.joongdo.co.kr/web/view.php?key=20261028010008422",
-     "kind": "news",
-     "short_label": "송익준, 2026",
-     "apa": "송익준. (2026, 10월 28일). 9월 전국 이동인구 44만명… 충남·충북 '유입'. 중도일보."
-    },
-    {
-     "id": "k-sejong",
-     "author": "류주현, 장동호",
-     "date": "n.d.",
-     "title": "세종시 전출입이동과 이동 이유",
-     "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002394221",
-     "kind": "research",
-     "short_label": "류주현·장동호, 2018",
-     "apa": "류주현, 장동호. (2018). 세종시 전출입이동과 이동 이유. 경관과 지리, 28(3), 149-165."
-    },
-    {
-     "id": "k-price",
-     "author": "권수현, 성현곤, 김민규",
-     "date": "n.d.",
-     "title": "전출입지역의 부동산가격 차이가 인구이동에 미치는 영향 : 서울시 대도시권이동 패턴을 중심으로",
-     "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003270124",
-     "kind": "research",
-     "short_label": "권수현 외, 2025",
-     "apa": "권수현, 성현곤, 김민규. (2025). 전출입지역의 부동산가격 차이가 인구이동에 미치는 영향: 서울시 대도시권이동 패턴을 중심으로. GRI연구논총, 27(4), 465-498."
-    }
-   ],
-   "starting_article": {
-    "title": "추석 낀 9월 국내이동 53년 만에 최소…인천·충청은 '유입'",
-    "author": "송정은",
-    "date_kind": "published"
-   }
-  },
-  {
-   "id": "2026-10-31-singapore-haze-act-enforcement-gap",
-   "region": "해외",
-   "target_country": "MULTI",
-   "category": "지정학·국제",
-   "title": "싱가포르 연무법은 불이 난 인도네시아 땅까지 닿을 수 있을까요?",
-   "journal": "Mongabay · 2026-10-27",
-   "researchers": "Gabrielle See",
-   "source": {
-    "name": "Mongabay",
-    "url": "https://news.mongabay.com/2026/10/influence-without-enforcement-indonesias-fires-test-singapores-anti-haze-law/",
-    "date": "2026-10-27",
-    "language": "en",
-    "doi": null,
-    "canonical_kind": "sourced_summary"
-   },
-   "summary": "싱가포르가 연무를 일으킨 인도네시아 농장 회사와 싱가포르에 등록된 회사에 통지를 보냈지만, 2014년 제정된 법으로 기소한 사례는 아직 없습니다. 불이 난 땅, 연기가 닿은 곳, 소유 구조를 여러 보도와 연구 초록으로 맞대어 봅니다. (See, 2026)",
-   "body": [
-    {
-     "h": "통지는 20건, 기소는 아직 0건입니다",
-     "p": "이 기사는 싱가포르가 2015년 이후 가장 긴 대기오염 기간을 지나면서 인도네시아의 불과 관련된 20개 회사에 통지를 보냈지만 더 이상의 법적 조치는 하지 않았다고 전합니다. 절반은 불이 시작된 수마트라와 칼리만탄의 사업권자에게, 나머지 절반은 이들과 연결된 싱가포르 기반 회사에게 보냈습니다. 2014년 제정된 초국경 연무오염법은 하루 최대 10만 싱가포르달러, 총 200만 싱가포르달러까지 벌금을 물릴 수 있지만, 2015년 이후 여러 차례 연무가 도시를 덮치는 동안 기소나 처벌은 한 건도 없었다고 이 기사는 적습니다. 통지 다음 단계는 왜 아직 나오지 않았을까요? (See, 2026)"
-    },
-    {
-     "h": "불이 난 곳은 남수마트라와 칼리만탄입니다",
-     "p": "싱가포르 신문 스트레이츠 타임스는 통지를 받은 인도네시아 회사 10곳의 농장이 연무를 일으킨 열점이 대부분 몰린 남수마트라와 칼리만탄에 있다고 전합니다. 싱가포르 환경청은 사업권 지도와 위성 영상, 공개 정보를 합쳐 연기의 출처를 추적했다고 합니다. 그 연기가 가장 큰 피해를 준 곳은 싱가포르가 아닙니다. 에너지·청정대기연구센터(CREA)는 9월 인도네시아에서 산불 연기로 숨진 사람을 3,560명으로 추산했고, 칼리만탄에서는 대기오염 사망의 94~99%, 수마트라에서는 80% 넘게가 산불 연기 때문이었다고 밝혔습니다. 자바의 사망은 대체로 도시와 산업 오염에서 나왔습니다. (Hamzah, 2026) (Al Jazeera, 2026)"
-    },
-    {
-     "h": "회사들은 불이 사업권 밖에서 번졌다고 답했습니다",
-     "p": "싱가포르에 등록된 10개 회사는 모두 통지를 받았다고 확인했고 대부분 당국에 협조하겠다고 밝혔습니다. CNA에 따르면 여러 회사가 사업권 경계 안에서 불이나 열점이 있었다고 보고하면서도 자신들의 활동이 연무의 원인은 아니라고 주장합니다. 부미타마는 일부 불이 직접 관리하는 구역 밖에서 번졌다고 했고, 윌마는 불이 사업권 밖이나 사업권 안의 주민 경작지에서 시작해 번졌다고 했으며, TSH는 사업 경계 안에서 잡힌 열점 274곳이 사업 구역 밖의 주민 거주 구역(community enclave)에 있다고 밝혔습니다. 인도네시아 그린피스의 활동가는 인도네시아 환경법의 엄격책임 원칙상 사업권이 불타면 회사가 책임을 져야 한다고 말했고, 트렌드 아시아는 열점의 80%가량이 농업·채굴 산업과 관련된 10개 주에 몰려 있다고 분석했습니다. CNA는 통지를 받았다는 사실만으로 회사의 책임이 확인된 것은 아니라고 덧붙입니다. (Yow, 2026) (Hamzah, 2026) (See, 2026)"
-    },
-    {
-     "h": "통지 대상의 소유 구조를 따라가면",
-     "p": "스트레이츠 타임스가 기업 등기와 과거 보도를 확인해 보니 통지를 받은 인도네시아 회사 10곳 가운데 세 곳은 2015년에도 같은 법에 따라 통지를 받은 반복 대상이었고, 네 곳은 아시아 펄프 앤드 페이퍼(APP)와 공식적으로 이어져 있었습니다. 싱가포르 경영대학의 홀리 양 교수는 최근 3년 사이 주인이 바뀐 사업권이 여럿이고 어떤 곳은 소유주가 공개되지 않는 관할권에서 끝나는 지주회사 층 아래에 있다고 말합니다. 그는 책임이 소유주가 아니라 움직이지 않는 것에 붙어야 한다고 보고, 인도네시아가 올해 봉인과 허가 동결을 주주가 아니라 사업권 토지에 붙인 것을 예로 듭니다. 싱가포르의 샨무가탐 선임장관은 통지 대상 사업권자의 소유주·구매자·금융기관을 싱가포르에 거점이 있든 없든 조사하겠다고 밝혔습니다. (Hamzah, 2026) (See, 2026)"
-    },
-    {
-     "h": "국경을 넘는 법과 불간섭 원칙",
-     "p": "말레이시아대학의 헬레나 바르키 교수는 싱가포르 법의 집행이 어려운 것을 두고 불간섭을 우선하는 동남아국가연합 안에서 역외 적용을 시도하는 한계가 드러난 것이라고 말하며 집행 없는 영향력이라고 표현했습니다. 지역 협정에 대한 평가도 비슷합니다. 2015년 인도네시아의 비준 직후 쓴 한 논문의 초록은 ASEAN 연무오염협정이 주권과 불간섭 원칙에 바탕을 둔 구속력 없는 방식이어서 연무를 줄일 장치가 약하다고 주장합니다. 이 초록이 다룬 것은 국가 간 협정이지 싱가포르의 2014년 국내법이 아니고, 올해의 불은 평가 대상이 아닙니다. 인도네시아 환경법센터의 아담 푸트라 피르다우스는 통지 이후 인도네시아 쪽 집행 기관의 후속 조치가 부족해 단속이 예방 통지에서 멈춰 있다고 설명합니다. (See, 2026) (Heilmann, 2015)"
-    },
-    {
-     "h": "아직 공개되지 않은 것: 회사들이 낸 자료와 개정안",
-     "p": "지금까지 확인된 것은 통지 발송과 회사들의 답변입니다. 싱가포르 환경청이 요구한 사업권 위치와 계열사 관계, 소방 활동 자료는 공개되지 않았고, 환경청은 진행 중인 조사의 세부를 밝힐 수 없다고 말했습니다. 시민단체 PM.Haze와 SG 기후 집회는 200만 싱가포르달러 상한을 없애거나 크게 올리고, 이탄지 배수처럼 불이 나기 쉬운 건조한 조건을 만든 행위까지 법이 다루게 하라는 청원을 냈습니다. 샨무가탐 장관은 필요하면 법을 고치거나 새 법을 만들겠다고 했지만 일정은 밝히지 않았습니다. 회사들이 낸 자료로 소유 관계가 드러나는지, 그 뒤에 첫 기소나 법 개정이 나오는지는 지금의 보도로는 알 수 없습니다. (See, 2026) (Yow, 2026)"
-    }
-   ],
-   "talk": "",
-   "tags": [
-    "연무",
-    "싱가포르",
-    "인도네시아",
-    "초국경 오염"
-   ],
-   "curriculum": [],
-   "geo": {
-    "lat": 1.3521,
-    "lon": 103.8198,
-    "label": "싱가포르"
-   },
-   "topic_key": "singapore-transboundary-haze-act-enforcement-gap",
-   "references": [
-    {
-     "id": "o-main",
-     "author": "Gabrielle See",
-     "date": "2026-10-27",
-     "title": "‘Influence without enforcement’: Indonesia’s fires test Singapore’s anti-haze law",
-     "url": "https://news.mongabay.com/2026/10/influence-without-enforcement-indonesias-fires-test-singapores-anti-haze-law/",
-     "kind": "news",
-     "short_label": "See, 2026",
-     "apa": "See, G. (2026, October 27). ‘Influence without enforcement’: Indonesia’s fires test Singapore’s anti-haze law. Mongabay."
-    },
-    {
-     "id": "o-st",
-     "author": "Aqil Hamzah",
-     "date": "2026-10-20",
-     "title": "4 of 10 firms issued notices under S'pore haze law linked to APP",
-     "url": "https://www.straitstimes.com/singapore/behind-the-blazes-st-looks-at-10-firms-issued-notices-under-spore-haze-law",
-     "kind": "news",
-     "short_label": "Hamzah, 2026",
-     "apa": "Hamzah, A. (2026, October 20). 4 of 10 firms issued notices under S'pore haze law linked to APP. The Straits Times."
-    },
-    {
-     "id": "o-cna",
-     "author": "Daphne Yow",
-     "date": "2026-10-26",
-     "title": "What to know about the 10 Singapore-based companies issued notices over transboundary haze",
-     "url": "https://www.channelnewsasia.com/singapore/10-singapore-companies-transboundary-haze-pollution-act-nea-6492316",
-     "kind": "news",
-     "short_label": "Yow, 2026",
-     "apa": "Yow, D. (2026, October 26). What to know about the 10 Singapore-based companies issued notices over transboundary haze. CNA."
-    },
-    {
-     "id": "o-aj",
-     "author": "Al Jazeera Staff",
-     "date": "2026-10-30",
-     "title": "Smoke from wildfires killed 3,500 people in Indonesia in September: Report",
-     "url": "https://www.aljazeera.com/news/2026/10/30/smoke-from-wildfires-killed-3500-people-in-indonesia-in-september-report",
-     "kind": "news",
-     "short_label": "Al Jazeera, 2026",
-     "apa": "Al Jazeera Staff & AFP. (2026, October 30). Smoke from wildfires killed 3,500 people in Indonesia in September: Report. Al Jazeera."
-    },
-    {
-     "id": "o-paper",
-     "author": "Daniel Heilmann",
-     "date": "n.d.",
-     "title": "After Indonesia's Ratification: The ASEAN Agreement on Transboundary Haze Pollution and its Effectiveness as a Regional Environmental Governance Tool",
-     "url": "https://journals.sagepub.com/doi/10.1177/186810341503400304",
-     "kind": "research",
-     "short_label": "Heilmann, 2015",
-     "apa": "Heilmann, D. (2015). After Indonesia's Ratification: The ASEAN Agreement on Transboundary Haze Pollution and its Effectiveness as a Regional Environmental Governance Tool. Journal of Current Southeast Asian Affairs."
-    }
-   ],
-   "starting_article": {
-    "title": "‘Influence without enforcement’: Indonesia’s fires test Singapore’s anti-haze law",
-    "author": "Gabrielle See",
-    "date_kind": "published"
-   }
-  }
- ]
+  ]
 }
