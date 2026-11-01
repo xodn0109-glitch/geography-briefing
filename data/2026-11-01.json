@@ -1,252 +1,232 @@
 {
- "date": "2026-11-01",
- "format": "daily_deep",
- "articles": [
-  {
-   "id": "2026-11-01-moyale-flag-dispute-border-displacement",
-   "region": "해외",
-   "target_country": "MULTI",
-   "category": "지정학·국제",
-   "title": "모얄레의 깃발 분쟁은 어떻게 국경 건너 케냐의 마을로 번졌을까요?",
-   "journal": "AP News · 2026-10-30",
-   "researchers": "Andrew Kasuku, Khaled Kazziha",
-   "source": {
-    "name": "AP News",
-    "url": "https://apnews.com/article/ethiopia-kenya-moyale-border-conflict-refugees-gunfire-e0a1189e426f109136738c84653248ca",
-    "date": "2026-10-30",
-    "language": "en",
-    "doi": null,
-    "canonical_kind": "sourced_summary"
-   },
-   "summary": "에티오피아 국경 도시 모얄레에서 소말리 지역 깃발을 둘러싼 대치가 충돌로 번져 최대 5만 명이 케냐로 넘어왔고, 화물 트럭은 국경 양쪽에서 멈춰 섰습니다. 한 도시에 행정부가 둘인 사정과 국경 상점이 받은 충격, 보도에서 비어 있는 부분을 차례로 살펴봅니다. (Kasuku & Kazziha, 2026)",
-   "body": [
+  "date": "2026-11-01",
+  "format": "daily_deep",
+  "articles": [
     {
-     "h": "10월 18일 깃발 하나에서 시작해 50,000명이 국경을 넘었습니다",
-     "p": "이 기사는 에티오피아 국경 도시 모얄레에서 총성이 이어지고 국경 양쪽에서 화물 트럭이 발이 묶였다고 전합니다. 유엔난민기구는 현지 당국을 인용해 최대 50,000명이 케냐로 넘어왔다고 밝혔는데, 하루 전 보도된 36,000명보다 늘어난 수치입니다. 충돌 분석 기관 ACLED는 소말리 지역 행정 사무소를 열고 깃발을 올린 일을 둘러싼 10월 18일의 대치가 이번 싸움의 발단이라고 보았습니다. 알자지라는 22일 케냐 경찰의 말을 따라, 여성과 아이들이 세시, 코레, 비아샤라, 파운데이션, 미티 지역을 포함한 여러 입구로 넘어왔다고 보도했습니다. (Kasuku & Kazziha, 2026) (Al Jazeera, 2026)"
+      "id": "2026-11-01-moyale-flag-dispute-border-displacement",
+      "region": "해외",
+      "target_country": "MULTI",
+      "category": "지정학·국제",
+      "title": "모얄레의 깃발 분쟁은 어떻게 국경 건너 케냐의 마을로 번졌을까요?",
+      "journal": "AP News · 2026-10-30",
+      "researchers": "Andrew Kasuku, Khaled Kazziha",
+      "source": {
+        "name": "AP News",
+        "url": "https://apnews.com/article/ethiopia-kenya-moyale-border-conflict-refugees-gunfire-e0a1189e426f109136738c84653248ca",
+        "date": "2026-10-30",
+        "language": "en",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "에티오피아 국경 도시 모얄레에서 소말리 지역 깃발을 둘러싼 대치가 충돌로 번져 최대 5만 명이 케냐로 넘어왔고, 화물 트럭은 국경 양쪽에서 멈춰 섰습니다. 한 도시에 행정부가 둘인 사정과 국경 상점이 받은 충격, 케냐 쪽 피란민이 머무는 곳을 차례로 살펴봅니다. (Kasuku & Kazziha, 2026)",
+      "body": [
+        {
+          "h": "10월 18일 깃발 하나에서 시작해 50,000명이 국경을 넘었습니다",
+          "p": "이 기사는 에티오피아 국경 도시 모얄레에서 총성이 이어지고 국경 양쪽에서 화물 트럭이 발이 묶였다고 전합니다. 유엔난민기구는 현지 당국을 인용해 최대 50,000명이 케냐로 넘어왔다고 밝혔는데, 하루 전 보도된 36,000명보다 늘어난 수치입니다. 충돌 분석 기관 ACLED는 소말리 지역 행정 사무소를 열고 깃발을 올린 일을 둘러싼 10월 18일의 대치가 이번 싸움의 발단이라고 보았습니다. 알자지라는 22일 케냐 경찰의 말을 따라, 여성과 아이들이 세시, 코레, 비아샤라, 파운데이션, 미티 지역을 포함한 여러 입구로 넘어왔다고 보도했습니다. (Kasuku & Kazziha, 2026) (Al Jazeera, 2026)"
+        },
+        {
+          "h": "한 도시에 행정부 둘, 깃발 둘",
+          "p": "AP는 모얄레가 오로미아와 소말리 두 지역 행정부로 나뉘어 있고, 갈등의 뿌리가 오로모계 보라나와 소말리계 가레 사이의 오랜 경계 분쟁에 있다고 전합니다. 첫 충돌에서 13세 오로모 소녀가 숨졌지만 경위에 대한 설명은 엇갈린다고 ACLED 분석가는 말했습니다. 로이터는 23일 현지 병원 관계자의 말을 따라 며칠 사이 최소 아홉 명이 숨지고 약 30명이 다친 채 병원으로 옮겨졌다고 전했고, 주민들은 싸움이 수요일에 터졌다고 말했습니다. 2017~2018년 오로미아와 소말리 두 지역의 충돌을 연구한 와크지라(2025)는 분명한 지역 간 경계가 없는 점, 영토 주장과 맞주장, 부족한 자원과 교역로 통제를 둘러싼 경쟁, 2004년 주민투표 결과가 제대로 이행되지 않은 점을 원인으로 들었습니다. (Kasuku & Kazziha, 2026) (Reuters, 2026) (Wakjira, 2025)"
+        },
+        {
+          "h": "트럭이 멈추면 케냐 쪽 상점도 멈춥니다",
+          "p": "AP는 화물 트럭이 국경 양쪽에서 발이 묶였다고 썼습니다. 케냐 쪽 모얄레의 사업가 알리 무민은 데일리 네이션에 은행을 포함한 일부 사업장이 문을 닫았고, 이곳 상인 대부분이 에티오피아와의 교역에 기대고 있다고 말했습니다. 와크지라(2025)가 갈등 원인으로 든 항목에도 교역로 통제를 둘러싼 경쟁이 들어 있습니다. (Kasuku & Kazziha, 2026) (Muchui, 2026) (Wakjira, 2025)"
+        },
+        {
+          "h": "케냐 쪽에서는 친척 집과 길거리, 마드라사에서",
+          "p": "데일리 네이션이 23일 전화로 만난 주민들은 수천 명의 여성과 아이들이 친척 집에 머물거나 거리와 공공 공간에서 지내고 있다고 말했습니다. 마드라사 한 곳에만 수백 명이 수용됐습니다. AP는 모얄레 서브카운티의 부위원이 일부는 캠프가 아니라 마을 안에 머물러 정확한 집계가 어렵다고 말했다고 전했고, 알자지라는 케냐 적십자가 우선 1,000가구를 대상으로 임시 거처와 곡물·죽 가루를 나눠 주기 시작했다고 적었습니다. (Muchui, 2026) (Kasuku & Kazziha, 2026) (Al Jazeera, 2026)"
+        },
+        {
+          "h": "싸움이 가라앉았다는 평가와 30일에도 들린 총성",
+          "p": "ACLED는 수요일 싸움이 가라앉은 것으로 보인다고 평가했지만, AP 기자는 22일부터 매일 산발적인 총성을 들었고 30일에도 총성이 이어졌다고 썼습니다. 로이터가 23일 병원 관계자의 말로 전한 사망자는 최소 아홉 명입니다. 와크지라(2025)는 2017~2018년 충돌 뒤 열린 합동 평화회의와 양자 합의로도 갈등의 근본 원인은 거의 다뤄지지 않았다고 평가했습니다. (Kasuku & Kazziha, 2026) (Reuters, 2026) (Wakjira, 2025)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "모얄레",
+        "국경",
+        "경계 분쟁",
+        "피란"
+      ],
+      "curriculum": [],
+      "geo": {
+        "lat": 3.5167,
+        "lon": 39.05,
+        "label": "모얄레"
+      },
+      "topic_key": "ethiopia-kenya-moyale-flag-dispute-displacement",
+      "references": [
+        {
+          "id": "o-main",
+          "author": "Andrew Kasuku, Khaled Kazziha",
+          "date": "2026-10-30",
+          "title": "Sporadic gunfire sends Ethiopians fleeing into Kenya as trucks remain stuck at border",
+          "url": "https://apnews.com/article/ethiopia-kenya-moyale-border-conflict-refugees-gunfire-e0a1189e426f109136738c84653248ca",
+          "kind": "news",
+          "short_label": "Kasuku & Kazziha, 2026",
+          "apa": "Kasuku, A., & Kazziha, K. (2026, October 30). Sporadic gunfire sends Ethiopians fleeing into Kenya as trucks remain stuck at border. AP News."
+        },
+        {
+          "id": "o-aj",
+          "author": "Al Jazeera Staff, AP, Reuters",
+          "date": "2026-10-22",
+          "title": "Hundreds of Ethiopians cross into Kenya to flee regional fighting",
+          "url": "https://www.aljazeera.com/news/2026/10/22/hundreds-of-ethiopians-cross-into-kenya-to-flee-regional-fighting",
+          "kind": "news",
+          "short_label": "Al Jazeera, 2026",
+          "apa": "Al Jazeera Staff, AP, & Reuters. (2026, October 22). Hundreds of Ethiopians cross into Kenya to flee regional fighting. Al Jazeera."
+        },
+        {
+          "id": "o-nation",
+          "author": "David Muchui",
+          "date": "2026-10-23",
+          "title": "Moyale on edge: Thousands flee into Kenya as clashes in Ethiopia intensify",
+          "url": "https://nation.africa/kenya/counties/marsabit/moyale-on-edge-thousands-flee-into-kenya-as-clashes-in-ethiopia-intensify-5642820",
+          "kind": "news",
+          "short_label": "Muchui, 2026",
+          "apa": "Muchui, D. (2026, October 23). Moyale on edge: Thousands flee into Kenya as clashes in Ethiopia intensify. Daily Nation."
+        },
+        {
+          "id": "o-reuters",
+          "author": "Reuters",
+          "date": "2026-10-23",
+          "title": "Fighting in Ethiopia border town kills nine, thousands flee to Kenya",
+          "url": "https://www.reuters.com/world/africa/kenya-red-cross-rushes-aid-ethiopians-who-crossed-border-fleeing-violence-2026-10-23/",
+          "kind": "news",
+          "short_label": "Reuters, 2026",
+          "apa": "Reuters. (2026, October 23). Fighting in Ethiopia border town kills nine, thousands flee to Kenya. Reuters."
+        },
+        {
+          "id": "o-wakjira",
+          "author": "Ketema Wakjira",
+          "date": "2025-04-14",
+          "title": "Intergovernmental cooperation and conflict resolution in the federal system of Ethiopia: The case of Oromia and Somali regional states",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1111/pech.12728",
+          "kind": "research",
+          "short_label": "Wakjira, 2025",
+          "apa": "Wakjira, K. (2025). Intergovernmental cooperation and conflict resolution in the federal system of Ethiopia: The case of Oromia and Somali regional states. Peace & Change, 50(4), 335–357. https://doi.org/10.1111/pech.12728"
+        }
+      ],
+      "starting_article": {
+        "title": "Sporadic gunfire sends Ethiopians fleeing into Kenya as trucks remain stuck at border",
+        "author": "Andrew Kasuku, Khaled Kazziha",
+        "date_kind": "updated"
+      }
     },
     {
-     "h": "한 도시에 행정부 둘, 깃발 둘",
-     "p": "AP는 모얄레가 오로미아와 소말리 두 지역 행정부로 나뉘어 있고, 갈등의 뿌리가 오로모계 보라나와 소말리계 가레 사이의 오랜 경계 분쟁에 있다고 전합니다. 첫 충돌에서 13세 오로모 소녀가 숨졌지만 경위에 대한 설명은 엇갈린다고 ACLED 분석가는 말했습니다. 로이터는 23일 현지 병원 관계자의 말을 따라 며칠 사이 최소 아홉 명이 숨지고 약 30명이 다친 채 병원으로 옮겨졌다고 전했고, 주민들은 싸움이 수요일에 터졌다고 말했습니다. 2017~2018년 오로미아와 소말리 두 지역의 충돌을 연구한 와크지라(2025)는 분명한 지역 간 경계가 없는 점, 영토 주장과 맞주장, 부족한 자원과 교역로 통제를 둘러싼 경쟁, 2004년 주민투표 결과가 제대로 이행되지 않은 점을 원인으로 들었습니다. 이 연구는 2017~2018년 충돌을 다룬 것이어서 올해 모얄레 사태를 직접 조사한 결과는 아닙니다. (Kasuku & Kazziha, 2026) (Reuters, 2026) (Wakjira, 2025)"
-    },
-    {
-     "h": "트럭이 멈추면 케냐 쪽 상점도 멈춥니다",
-     "p": "AP는 화물 트럭이 국경 양쪽에서 발이 묶였다고 쓸 뿐 대수와 화물의 종류는 적지 않았습니다. 케냐 쪽 모얄레의 사업가 알리 무민은 데일리 네이션에 은행을 포함한 일부 사업장이 문을 닫았고, 이곳 상인 대부분이 에티오피아와의 교역에 기대고 있다고 말했습니다. 와크지라(2025)가 갈등 원인으로 든 항목에도 교역로 통제를 둘러싼 경쟁이 들어 있습니다. 케냐 쪽 피해를 매출이나 물동량으로 보여 주는 통계는 읽은 보도에 없습니다. (Kasuku & Kazziha, 2026) (Muchui, 2026) (Wakjira, 2025)"
-    },
-    {
-     "h": "케냐 쪽에서는 친척 집과 길거리, 마드라사에서",
-     "p": "데일리 네이션이 23일 전화로 만난 주민들은 수천 명의 여성과 아이들이 친척 집에 머물거나 거리와 공공 공간에서 지내고 있다고 말했습니다. 마드라사 한 곳에만 수백 명이 수용됐습니다. AP는 모얄레 서브카운티의 부위원이 일부는 캠프가 아니라 마을 안에 머물러 정확한 집계가 어렵다고 말했다고 전했고, 알자지라는 케냐 적십자가 우선 1,000가구를 대상으로 임시 거처와 곡물·죽 가루를 나눠 주기 시작했다고 적었습니다. 에티오피아-케냐 국경 지대의 환경 자원 관리를 연구한 데페레 외(2023)는 관습 제도가 오랫동안 방목지를 지켜 왔고 목축민이 국경을 넘나드는 이동의 이점을 누리게 해 주었지만, 국가의 인정 부족과 이용으로 그 역할이 줄고 있다고 밝혔습니다. 이 연구는 목축민의 이동과 자원 관리를 다룬 것이어서 이번 피란민의 이동을 조사한 결과는 아닙니다. (Muchui, 2026) (Kasuku & Kazziha, 2026) (Al Jazeera, 2026) (Defere et al., 2023)"
-    },
-    {
-     "h": "보도가 아직 채우지 못한 부분",
-     "p": "ACLED는 수요일 싸움이 가라앉은 것으로 보인다고 평가했지만, AP 기자는 22일부터 매일 산발적인 총성을 들었고 30일에도 총성이 이어졌다고 썼습니다. 오로미아와 소말리 지역 당국이 이번 사태에 어떻게 답했는지는 읽은 보도에 나와 있지 않습니다. 사망자는 로이터가 23일 병원 관계자 한 명의 말로 전한 최소 아홉 명이 가장 최근의 수치이고, 이후 집계는 읽은 자료에 없습니다. 와크지라(2025)는 2017~2018년 충돌 뒤 이어진 합동 평화회의와 양자 합의로도 근본 원인이 거의 다뤄지지 않았다고 평가했는데, 이것은 당시 조치에 대한 평가입니다. 국경 양쪽의 물동량과 피란민의 연령·출신지 통계, 지역 경계를 다시 정하는 절차가 공개되면 지금 비어 있는 이 부분을 비교할 수 있습니다. (Kasuku & Kazziha, 2026) (Reuters, 2026) (Wakjira, 2025)"
+      "id": "2026-11-01-rural-basic-income-population-claim",
+      "region": "국내",
+      "target_country": "KR",
+      "category": "인구지리학",
+      "title": "기본소득 지역에서 ‘인구가 늘었다’는 숫자에는 무엇이 담겨 있을까요?",
+      "journal": "연합뉴스 · 2026-10-31",
+      "researchers": "설승은",
+      "source": {
+        "name": "연합뉴스",
+        "url": "https://www.yna.co.kr/view/AKR20261031029651001",
+        "date": "2026-10-31",
+        "language": "ko",
+        "doi": null,
+        "canonical_kind": "sourced_summary"
+      },
+      "summary": "대통령이 청송과 영양을 찾아 기본소득 확대 의지를 밝힌 날, 영양군수는 인구가 반세기 만에 늘었다고 말했습니다. 이미 보도된 인구 수치와 늘어난 주민의 연령, 이웃 시군에서 옮겨 온 사람의 몫은 이렇습니다. (설승은, 2026)",
+      "body": [
+        {
+          "h": "영양군수가 말한 ‘반세기 만의 증가’",
+          "p": "이 기사는 이재명 대통령이 31일 청송과 영양을 잇따라 방문해 농어촌 기본소득 집행 실태를 점검하고 확대 의지를 강조했다고 전합니다. 오도창 영양군수는 현장에서 기본소득 지원 효과로 영양군 인구가 반세기 만에 늘었다고 말했습니다. 이 제도는 인구감소지역으로 지정된 69개 군 가운데 17개 군에서 시범 실시되고 있습니다. 한국일보는 영양군이 선정된 지난해 10월 말 인구가 한 달 새 806명 늘어 1만 5,991명이 됐다고 썼고, 경향신문은 선정 한 달 만에 325명이 늘어 33년 만에 가장 큰 증가 폭이라고 썼습니다. (설승은, 2026) (김정혜, 2026) (김현수 외, 2026)"
+        },
+        {
+          "h": "청송은 두 달 새 1,157명이 늘었고, 6월 증가분의 절반 넘게는 이웃 시군 출신입니다",
+          "p": "매일신문은 지난 6월 시범 지역으로 선정된 청송군의 인구가 5월 2만 3,280명에서 7월 2만 4,437명으로 1,157명, 5% 늘었다고 전했습니다. 이 신문은 기본소득만을 인구 증가의 직접 원인으로 단정할 수는 없다고 덧붙였습니다. 한국일보는 6월 말 청송군 인구가 2만 4,020명으로 전달보다 740명 늘었고, 그중 427명이 경북의 다른 시·군 출신이었다고 썼습니다. 안동시가 158명, 포항시가 70명, 영양군이 22명입니다. 5월의 2만 3,280명에 740명을 더하면 한국일보가 쓴 6월 말 인구와 같아지므로 두 신문의 숫자는 맞물립니다. (전종훈, 2026) (김정혜, 2026)"
+        },
+        {
+          "h": "목포에서 신안으로 2,032명, 영양 이웃 세 군에서 226명",
+          "p": "경향신문은 지난해 10월 선정된 시범 지역 10곳의 인구가 가파르게 늘었고 그 상당수가 인접 지역에서 옮겨 온 것으로 분석된다고 보도했습니다. 신안군은 선정 전 3만 8,770명에서 지난해 말 4만 1,858명으로 3,088명 늘었는데, 이웃 목포시에서만 2,032명이 전출해 신안 증가분의 약 66%에 해당했습니다. 정선군과 이웃한 태백·삼척·동해는 같은 기간 805명, 영양군 인근의 청송·영덕·울진은 226명 줄었습니다. 한국일보는 영양군의 배후 도시 안동시 인구가 6개월 새 15만 3,400여 명에서 15만 1,700여 명으로 줄었다고 썼습니다. 중소도시의 인구이동을 순이동과 전입으로 나눠 분석한 이민관·이주형(2010)은 1995~2005년 자료에서 수도권에 속하는지가 특히 전입이 많은 지역에 큰 영향을 미쳤고, 2005년에는 지자체 재정 같은 변수의 영향이 상대적으로 커졌다고 밝혔습니다. (김현수 외, 2026) (김정혜, 2026) (이민관·이주형, 2010)"
+        },
+        {
+          "h": "늘어난 영양 주민은 65세 이상이 185명, 19~49세는 3명입니다",
+          "p": "영양군 자료에 따르면 지난해 말 6,850명이던 65세 이상은 올해 6월 말 7,035명으로 185명 늘었습니다. 같은 기간 19~49세는 3,291명에서 3,294명으로 3명 늘었고, 6~21세는 1,284명에서 1,236명으로 48명 줄었습니다. 한국일보는 기본소득으로 늘어난 영양군 인구 대부분이 65세 이상 고령층이라고 썼습니다. 일각에서는 영양에 살면서도 주소를 옮기지 않았던 사람들이 기본소득을 받으려고 뒤늦게 주민등록을 옮긴 사례도 적지 않다고 본다는 보도도 있습니다. 매일신문은 다른 지역에 살면서 부모나 지인의 집, 폐가로 주소만 옮긴 부적격 사례가 나타났다고 전했고, 경향신문이 인용한 한 지자체 관계자는 면 단위는 이장 등을 통해 실거주를 비교적 파악할 수 있지만 읍 단위는 공동주택이 많아 확인에 한계가 있다고 말했습니다. (김정혜, 2026) (전종훈, 2026) (김현수 외, 2026)"
+        },
+        {
+          "h": "재원은 국비 40%, 인구감소지역 평균 재정자립도는 16%입니다",
+          "p": "경향신문에 따르면 시범 사업 예산은 국비 40%, 시·도비 30%, 군비 30%로 짜였고, 인구감소지역 89곳의 평균 재정자립도는 약 16%입니다. 청송군은 정부 지원금 15만 원에 군비 5만 원을 더해 월 20만 원을 지급한다고 매일신문이 전했습니다. 연합뉴스는 이 대통령이 지방 재정 부담을 완화해야 한다는 의견에 제도가 안정적으로 운영될 수 있도록 재정 부분에 더 관심을 갖겠다고 답했다고 전했습니다. 한국일보에 인용된 박진도 충남대 명예교수는 재정이 열악한 지자체가 재원을 마련하느라 지역 발전에 꼭 필요한 사업을 희생했는지도 살펴봐야 한다고 말했습니다. (김현수 외, 2026) (전종훈, 2026) (설승은, 2026) (김정혜, 2026)"
+        },
+        {
+          "h": "전문가들이 짚은 정주 인구와 이동 연령대",
+          "p": "한국일보는 전문가들이 먼저 선정된 10곳의 인구 동향 자료를 바탕으로 효과와 문제점을 분석해야 한다고 입을 모은다고 전했습니다. 허창덕 영남대 교수는 경향신문에 실제 정주 인구가 늘었는지, 어떤 연령대가 이동했는지, 지역에서 어떤 경제활동을 하는지를 살펴야 한다고 말했습니다. (김정혜, 2026) (김현수 외, 2026)"
+        }
+      ],
+      "talk": "",
+      "tags": [
+        "농어촌 기본소득",
+        "인구 이동",
+        "청송",
+        "영양"
+      ],
+      "curriculum": [],
+      "geo": {
+        "lat": 36.5,
+        "lon": 129.08,
+        "label": "청송·영양"
+      },
+      "topic_key": "rural-basic-income-population-claim-cheongsong-yeongyang",
+      "references": [
+        {
+          "id": "k-main",
+          "author": "설승은",
+          "date": "2026-10-31",
+          "title": "李대통령, 경북 찾아 \"농어촌 기본소득 더 많은 지역으로 확대\"(종합)",
+          "url": "https://www.yna.co.kr/view/AKR20261031029651001",
+          "kind": "news",
+          "short_label": "설승은, 2026",
+          "apa": "설승은. (2026, 10월 31일). 李대통령, 경북 찾아 \"농어촌 기본소득 더 많은 지역으로 확대\"(종합). 연합뉴스."
+        },
+        {
+          "id": "k-hk",
+          "author": "김정혜",
+          "date": "2026-07-08",
+          "title": "'매달 20만원' 기본소득 약발 끝났나...영양군 인구 증가 '주춤'",
+          "url": "https://www.hankookilbo.com/news/article/A2026070809370005438",
+          "kind": "news",
+          "short_label": "김정혜, 2026",
+          "apa": "김정혜. (2026, 7월 8일). '매달 20만원' 기본소득 약발 끝났나...영양군 인구 증가 '주춤'. 한국일보."
+        },
+        {
+          "id": "k-khan",
+          "author": "김현수, 최승현, 김정훈 외",
+          "date": "2026-01-08",
+          "title": "농어촌 기본소득, ‘인구 증가’ 효과 봤지만···인접 지역 흡수·재원 문제는 어떻게 푸나",
+          "url": "https://www.khan.co.kr/article/202601081544001",
+          "kind": "news",
+          "short_label": "김현수 외, 2026",
+          "apa": "김현수, 최승현, 김정훈 외. (2026, 1월 8일). 농어촌 기본소득, ‘인구 증가’ 효과 봤지만···인접 지역 흡수·재원 문제는 어떻게 푸나. 경향신문."
+        },
+        {
+          "id": "k-maeil",
+          "author": "전종훈",
+          "date": "2026-08-25",
+          "title": "월 20만원 지급!…청송·영양 인구 증가 비결?",
+          "url": "https://www.imaeil.com/page/view/2026082511373339814",
+          "kind": "news",
+          "short_label": "전종훈, 2026",
+          "apa": "전종훈. (2026, 8월 25일). 월 20만원 지급!…청송·영양 인구 증가 비결? 매일신문."
+        },
+        {
+          "id": "k-lee",
+          "author": "이민관, 이주형",
+          "date": "n.d.",
+          "title": "중소도시의 지역특성이 인구이동에 미치는 영향",
+          "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001496429",
+          "kind": "research",
+          "short_label": "이민관·이주형, 2010",
+          "apa": "이민관, 이주형. (2010). 중소도시의 지역특성이 인구이동에 미치는 영향. 한국지방자치연구, 12(3), 139–168."
+        }
+      ],
+      "starting_article": {
+        "title": "李대통령, 경북 찾아 \"농어촌 기본소득 더 많은 지역으로 확대\"(종합)",
+        "author": "설승은",
+        "date_kind": "published"
+      }
     }
-   ],
-   "talk": "",
-   "tags": [
-    "모얄레",
-    "국경",
-    "경계 분쟁",
-    "피란"
-   ],
-   "curriculum": [],
-   "geo": {
-    "lat": 3.5167,
-    "lon": 39.05,
-    "label": "모얄레"
-   },
-   "topic_key": "ethiopia-kenya-moyale-flag-dispute-displacement",
-   "references": [
-    {
-     "id": "o-main",
-     "author": "Andrew Kasuku, Khaled Kazziha",
-     "date": "2026-10-30",
-     "title": "Sporadic gunfire sends Ethiopians fleeing into Kenya as trucks remain stuck at border",
-     "url": "https://apnews.com/article/ethiopia-kenya-moyale-border-conflict-refugees-gunfire-e0a1189e426f109136738c84653248ca",
-     "kind": "news",
-     "short_label": "Kasuku & Kazziha, 2026",
-     "apa": "Kasuku, A., & Kazziha, K. (2026, October 30). Sporadic gunfire sends Ethiopians fleeing into Kenya as trucks remain stuck at border. AP News."
-    },
-    {
-     "id": "o-aj",
-     "author": "Al Jazeera Staff, AP, Reuters",
-     "date": "2026-10-22",
-     "title": "Hundreds of Ethiopians cross into Kenya to flee regional fighting",
-     "url": "https://www.aljazeera.com/news/2026/10/22/hundreds-of-ethiopians-cross-into-kenya-to-flee-regional-fighting",
-     "kind": "news",
-     "short_label": "Al Jazeera, 2026",
-     "apa": "Al Jazeera Staff, AP, & Reuters. (2026, October 22). Hundreds of Ethiopians cross into Kenya to flee regional fighting. Al Jazeera."
-    },
-    {
-     "id": "o-nation",
-     "author": "David Muchui",
-     "date": "2026-10-23",
-     "title": "Moyale on edge: Thousands flee into Kenya as clashes in Ethiopia intensify",
-     "url": "https://nation.africa/kenya/counties/marsabit/moyale-on-edge-thousands-flee-into-kenya-as-clashes-in-ethiopia-intensify-5642820",
-     "kind": "news",
-     "short_label": "Muchui, 2026",
-     "apa": "Muchui, D. (2026, October 23). Moyale on edge: Thousands flee into Kenya as clashes in Ethiopia intensify. Daily Nation."
-    },
-    {
-     "id": "o-reuters",
-     "author": "Reuters",
-     "date": "2026-10-23",
-     "title": "Fighting in Ethiopia border town kills nine, thousands flee to Kenya",
-     "url": "https://www.reuters.com/world/africa/kenya-red-cross-rushes-aid-ethiopians-who-crossed-border-fleeing-violence-2026-10-23/",
-     "kind": "news",
-     "short_label": "Reuters, 2026",
-     "apa": "Reuters. (2026, October 23). Fighting in Ethiopia border town kills nine, thousands flee to Kenya. Reuters."
-    },
-    {
-     "id": "o-wakjira",
-     "author": "Ketema Wakjira",
-     "date": "2025-04-14",
-     "title": "Intergovernmental cooperation and conflict resolution in the federal system of Ethiopia: The case of Oromia and Somali regional states",
-     "url": "https://onlinelibrary.wiley.com/doi/10.1111/pech.12728",
-     "kind": "research",
-     "short_label": "Wakjira, 2025",
-     "apa": "Wakjira, K. (2025). Intergovernmental cooperation and conflict resolution in the federal system of Ethiopia: The case of Oromia and Somali regional states. Peace & Change, 50(4), 335–357. https://doi.org/10.1111/pech.12728"
-    },
-    {
-     "id": "o-defere",
-     "author": "Girma Defere, Messay Mulugeta, Teferi Tolera",
-     "date": "2023-05-26",
-     "title": "Roles of Formal and Customary Institutions in Environmental Resource Governance and Sustainability along Ethiopia-Kenya Borderlands: Do they Complement or Compete Each Other?",
-     "url": "https://journals.sagepub.com/doi/abs/10.1177/00219096231176735",
-     "kind": "research",
-     "short_label": "Defere et al., 2023",
-     "apa": "Defere, G., Mulugeta, M., & Tolera, T. (2023). Roles of formal and customary institutions in environmental resource governance and sustainability along Ethiopia-Kenya borderlands: Do they complement or compete each other? Journal of Asian and African Studies, 60(2), 717–735. https://doi.org/10.1177/00219096231176735"
-    }
-   ],
-   "starting_article": {
-    "title": "Sporadic gunfire sends Ethiopians fleeing into Kenya as trucks remain stuck at border",
-    "author": "Andrew Kasuku, Khaled Kazziha",
-    "date_kind": "updated"
-   }
-  },
-  {
-   "id": "2026-11-01-rural-basic-income-population-claim",
-   "region": "국내",
-   "target_country": "KR",
-   "category": "인구지리학",
-   "title": "기본소득 지역에서 ‘인구가 늘었다’는 숫자에는 무엇이 담겨 있을까요?",
-   "journal": "연합뉴스 · 2026-10-31",
-   "researchers": "설승은",
-   "source": {
-    "name": "연합뉴스",
-    "url": "https://www.yna.co.kr/view/AKR20261031029651001",
-    "date": "2026-10-31",
-    "language": "ko",
-    "doi": null,
-    "canonical_kind": "sourced_summary"
-   },
-   "summary": "대통령이 청송과 영양을 찾아 기본소득 확대 의지를 밝힌 날, 영양군수는 인구가 반세기 만에 늘었다고 말했습니다. 이미 보도된 인구 수치와 늘어난 주민의 연령, 이웃 시군에서 옮겨 온 사람의 몫은 이렇습니다. (설승은, 2026)",
-   "body": [
-    {
-     "h": "‘반세기 만의 증가’는 군수의 말이고, 기사에 숫자는 없습니다",
-     "p": "이 기사는 이재명 대통령이 31일 청송과 영양을 잇따라 방문해 농어촌 기본소득 집행 실태를 점검하고 확대 의지를 강조했다고 전합니다. 오도창 영양군수는 현장에서 기본소득 지원 효과로 영양군 인구가 반세기 만에 늘었다고 말했지만, 기사에는 인구 수치가 실려 있지 않습니다. 이 제도는 인구감소지역으로 지정된 69개 군 가운데 17개 군에서 시범 실시되고 있습니다. 한국일보는 영양군이 선정된 지난해 10월 말 인구가 한 달 새 806명 늘어 1만 5,991명이 됐다고 썼고, 경향신문은 선정 한 달 만에 325명이 늘어 33년 만에 가장 큰 증가 폭이라고 썼습니다. 두 보도의 증가 폭은 서로 다르고 기준일이 함께 적혀 있지 않습니다. (설승은, 2026) (김정혜, 2026) (김현수 외, 2026)"
-    },
-    {
-     "h": "청송은 두 달 새 1,157명이 늘었고, 6월 증가분의 절반 넘게는 이웃 시군 출신입니다",
-     "p": "매일신문은 지난 6월 시범 지역으로 선정된 청송군의 인구가 5월 2만 3,280명에서 7월 2만 4,437명으로 1,157명, 5% 늘었다고 전했습니다. 이 신문은 기본소득만을 인구 증가의 직접 원인으로 단정할 수는 없다고 덧붙였습니다. 한국일보는 6월 말 청송군 인구가 2만 4,020명으로 전달보다 740명 늘었고, 그중 427명이 경북의 다른 시·군 출신이었다고 썼습니다. 안동시가 158명, 포항시가 70명, 영양군이 22명입니다. 5월의 2만 3,280명에 740명을 더하면 한국일보가 쓴 6월 말 인구와 같아지므로 두 신문의 숫자는 맞물립니다. (전종훈, 2026) (김정혜, 2026)"
-    },
-    {
-     "h": "목포에서 신안으로 2,032명, 영양 이웃 세 군에서 226명",
-     "p": "경향신문은 지난해 10월 선정된 시범 지역 10곳의 인구가 가파르게 늘었고 그 상당수가 인접 지역에서 옮겨 온 것으로 분석된다고 보도했습니다. 신안군은 선정 전 3만 8,770명에서 지난해 말 4만 1,858명으로 3,088명 늘었는데, 이웃 목포시에서만 2,032명이 전출해 신안 증가분의 약 66%에 해당했습니다. 정선군과 이웃한 태백·삼척·동해는 같은 기간 805명, 영양군 인근의 청송·영덕·울진은 226명 줄었습니다. 한국일보는 영양군의 배후 도시 안동시 인구가 6개월 새 15만 3,400여 명에서 15만 1,700여 명으로 줄었다고 썼습니다. 중소도시의 인구이동을 순이동과 전입으로 나눠 분석한 이민관·이주형(2010)은 1995~2005년 자료에서 수도권에 속하는지가 특히 전입이 많은 지역에 큰 영향을 미쳤고, 2005년에는 지자체 재정 같은 변수의 영향이 상대적으로 커졌다고 밝혔습니다. 이 연구는 기본소득이 아니라 1995~2005년 중소도시의 인구이동 요인을 다룹니다. (김현수 외, 2026) (김정혜, 2026) (이민관·이주형, 2010)"
-    },
-    {
-     "h": "늘어난 영양 주민은 65세 이상이 185명, 19~49세는 3명입니다",
-     "p": "영양군 자료에 따르면 지난해 말 6,850명이던 65세 이상은 올해 6월 말 7,035명으로 185명 늘었습니다. 같은 기간 19~49세는 3,291명에서 3,294명으로 3명 늘었고, 6~21세는 1,284명에서 1,236명으로 48명 줄었습니다. 한국일보는 기본소득으로 늘어난 영양군 인구 대부분이 65세 이상 고령층이라고 썼지만, 지난해 말 이후 전체 증가 폭은 기사에 적혀 있지 않습니다. 일각에서는 영양에 살면서도 주소를 옮기지 않았던 사람들이 기본소득을 받으려고 뒤늦게 주민등록을 옮긴 사례도 적지 않다고 본다는 보도도 있습니다. 매일신문은 다른 지역에 살면서 부모나 지인의 집, 폐가로 주소만 옮긴 부적격 사례가 나타났다고 전했고, 경향신문이 인용한 한 지자체 관계자는 면 단위는 이장 등을 통해 실거주를 비교적 파악할 수 있지만 읍 단위는 공동주택이 많아 확인에 한계가 있다고 말했습니다. 전국 229개 시·군·구를 분석한 서정석 외(2026)는 지자체 출산 지원금이 합계출산율에 미치는 효과가 다수 지역에서 양(+)이었지만 지역별 차이가 있었다고 밝혔습니다. 이 연구는 출산 지원금과 출산율을 다룬 것이어서 기본소득과 인구 이동에는 직접 적용되지 않습니다. (김정혜, 2026) (전종훈, 2026) (김현수 외, 2026) (서정석 외, 2026)"
-    },
-    {
-     "h": "재원은 국비 40%, 인구감소지역 평균 재정자립도는 16%입니다",
-     "p": "경향신문에 따르면 시범 사업 예산은 국비 40%, 시·도비 30%, 군비 30%로 짜였고, 인구감소지역 89곳의 평균 재정자립도는 약 16%입니다. 청송군은 정부 지원금 15만 원에 군비 5만 원을 더해 월 20만 원을 지급한다고 매일신문이 전했습니다. 연합뉴스는 이 대통령이 지방 재정 부담을 완화해야 한다는 의견에 제도가 안정적으로 운영될 수 있도록 재정 부분에 더 관심을 갖겠다고 답했다고 전했습니다. 한국일보에 인용된 박진도 충남대 명예교수는 재정이 열악한 지자체가 재원을 마련하느라 지역 발전에 꼭 필요한 사업을 희생했는지도 살펴봐야 한다고 말했습니다. (김현수 외, 2026) (전종훈, 2026) (설승은, 2026) (김정혜, 2026)"
-    },
-    {
-     "h": "아직 자료로 확인되지 않은 것",
-     "p": "이번 연합뉴스 기사에는 청송과 영양의 인구 수치도, 전입 주민의 출신지와 연령도 실려 있지 않습니다. 연령별 수치는 영양군의 올해 6월 말 자료뿐이고, 출신지별 수치는 청송군의 6월 한 달 자료뿐입니다. 전문가들이 먼저 선정된 10곳의 인구 동향 자료로 효과와 문제점을 분석해야 한다고 말했다는 한국일보 보도 이후, 그런 분석이 공개됐는지는 읽은 자료에서 확인되지 않습니다. 허창덕 영남대 교수가 경향신문에서 짚은 실제 정주 인구 증가 여부, 이동한 연령대, 지역 경제활동은 17개 군 모두에 대해 공개되면 이웃 시군에서 옮겨 온 몫과 새로 정착한 몫을 나눠 볼 수 있습니다. (설승은, 2026) (김정혜, 2026) (김현수 외, 2026)"
-    }
-   ],
-   "talk": "",
-   "tags": [
-    "농어촌 기본소득",
-    "인구 이동",
-    "청송",
-    "영양"
-   ],
-   "curriculum": [],
-   "geo": {
-    "lat": 36.5,
-    "lon": 129.08,
-    "label": "청송·영양"
-   },
-   "topic_key": "rural-basic-income-population-claim-cheongsong-yeongyang",
-   "references": [
-    {
-     "id": "k-main",
-     "author": "설승은",
-     "date": "2026-10-31",
-     "title": "李대통령, 경북 찾아 \"농어촌 기본소득 더 많은 지역으로 확대\"(종합)",
-     "url": "https://www.yna.co.kr/view/AKR20261031029651001",
-     "kind": "news",
-     "short_label": "설승은, 2026",
-     "apa": "설승은. (2026, 10월 31일). 李대통령, 경북 찾아 \"농어촌 기본소득 더 많은 지역으로 확대\"(종합). 연합뉴스."
-    },
-    {
-     "id": "k-hk",
-     "author": "김정혜",
-     "date": "2026-07-08",
-     "title": "'매달 20만원' 기본소득 약발 끝났나...영양군 인구 증가 '주춤'",
-     "url": "https://www.hankookilbo.com/news/article/A2026070809370005438",
-     "kind": "news",
-     "short_label": "김정혜, 2026",
-     "apa": "김정혜. (2026, 7월 8일). '매달 20만원' 기본소득 약발 끝났나...영양군 인구 증가 '주춤'. 한국일보."
-    },
-    {
-     "id": "k-khan",
-     "author": "김현수, 최승현, 김정훈 외",
-     "date": "2026-01-08",
-     "title": "농어촌 기본소득, ‘인구 증가’ 효과 봤지만···인접 지역 흡수·재원 문제는 어떻게 푸나",
-     "url": "https://www.khan.co.kr/article/202601081544001",
-     "kind": "news",
-     "short_label": "김현수 외, 2026",
-     "apa": "김현수, 최승현, 김정훈 외. (2026, 1월 8일). 농어촌 기본소득, ‘인구 증가’ 효과 봤지만···인접 지역 흡수·재원 문제는 어떻게 푸나. 경향신문."
-    },
-    {
-     "id": "k-maeil",
-     "author": "전종훈",
-     "date": "2026-08-25",
-     "title": "월 20만원 지급!…청송·영양 인구 증가 비결?",
-     "url": "https://www.imaeil.com/page/view/2026082511373339814",
-     "kind": "news",
-     "short_label": "전종훈, 2026",
-     "apa": "전종훈. (2026, 8월 25일). 월 20만원 지급!…청송·영양 인구 증가 비결? 매일신문."
-    },
-    {
-     "id": "k-lee",
-     "author": "이민관, 이주형",
-     "date": "n.d.",
-     "title": "중소도시의 지역특성이 인구이동에 미치는 영향",
-     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001496429",
-     "kind": "research",
-     "short_label": "이민관·이주형, 2010",
-     "apa": "이민관, 이주형. (2010). 중소도시의 지역특성이 인구이동에 미치는 영향. 한국지방자치연구, 12(3), 139–168."
-    },
-    {
-     "id": "k-seo",
-     "author": "서정석, 진영주, 박정호",
-     "date": "n.d.",
-     "title": "지방자치단체 출산지원금이 출산율에미치는 공간적 효과 분석",
-     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003322780",
-     "kind": "research",
-     "short_label": "서정석 외, 2026",
-     "apa": "서정석, 진영주, 박정호. (2026). 지방자치단체 출산지원금이 출산율에미치는 공간적 효과 분석: 지역 특성을 반영한 다중범위 지리가중회귀(MGWR) 모형 기반. 한국정책학회보, 35(1), 1–37. https://doi.org/10.33900/KAPS.2026.35.1.1"
-    }
-   ],
-   "starting_article": {
-    "title": "李대통령, 경북 찾아 \"농어촌 기본소득 더 많은 지역으로 확대\"(종합)",
-    "author": "설승은",
-    "date_kind": "published"
-   }
-  }
- ]
+  ]
 }
