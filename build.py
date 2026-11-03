@@ -131,6 +131,20 @@ def fmt_date(iso):
     return f"{y}. {int(m)}. {int(d)}."
 
 
+# 2026-11-04 사용자 요청: '성취기준별' 보기의 과목과 순서. (참조 파일의 과목명, 화면 표시명)
+# 중학교는 사회1·사회2를 나누지 않고 '중학교 사회' 하나로 보여준다.
+SUBJECT_ORDER = (
+    ("중학교 사회(지리 영역)", "중학교 사회"),
+    ("통합사회1", "통합사회1"),
+    ("통합사회2", "통합사회2"),
+    ("한국지리 탐구", "한국지리 탐구"),
+    ("세계시민과 지리", "세계시민과 지리"),
+    ("여행지리", "여행지리"),
+    ("기후변화와 지속가능한 세계", "기후변화와 지속가능한 세계"),
+    ("도시의 미래 탐구", "도시의 미래 탐구"),
+)
+
+
 def build(
     *,
     data_dir=DATA_DIR,
@@ -169,14 +183,22 @@ def build(
             world_path = safe_world_path(f.read())
     tpl = tpl.replace("__WORLDPATH__", world_path)
 
-    # 교육과정 성취기준 전문(빌드 시 ../curriculum_ref.json 참조 — 실제 사용된 코드만 심어 클릭 시 노출).
+    # 교육과정 성취기준 전문(빌드 시 ../curriculum_ref.json 참조). 2026-11-04부터 '성취기준별' 보기가
+    # 기사가 아직 없는 성취기준도 보여주므로 참조 파일의 모든 성취기준을 심는다.
     # 참조 파일이 없으면 빈 객체 → 배지는 그대로 보이되 펼침만 비활성(우아한 강등).
     curr = {}
+    subjects = []
     if os.path.exists(curriculum_ref_file):
         with open(curriculum_ref_file, encoding="utf-8") as f:
             ref = load_json_strict(f)
+        gloss_file = os.path.join(os.path.dirname(curriculum_ref_file), "curriculum_gloss.json")
+        gloss = {}
+        if os.path.exists(gloss_file):
+            with open(gloss_file, encoding="utf-8") as f:
+                gloss = load_json_strict(f)
+        ref_subjects = ref.get("subjects", {})
         flat = {}
-        for stds in ref.get("subjects", {}).values():
+        for stds in ref_subjects.values():
             for s in stds:
                 flat[s["code"]] = s
         used = set()
@@ -185,14 +207,28 @@ def build(
                 for c in (a.get("curriculum") or []):
                     used.add(c["code"])
         # 출력 바이트가 PYTHONHASHSEED와 무관하도록 교육과정 삽입 순서를 고정한다.
-        for code in sorted(used):
+        for code in sorted(set(flat) | used):
             s = flat.get(code)
             if not s:
                 continue
             # 해설은 원문에서 코드를 떼며 남은 선행 조사(에서는/은/는…)를 제거해 자연스럽게.
             ex = re.sub(r"^(에서는|에서|은|는|이|가|을|를|와|과)\s+", "", (s.get("explain") or "").strip())
-            curr[code] = {"text": s.get("text", ""), "explain": ex}
+            row = {"text": s.get("text", ""), "explain": ex}
+            if isinstance(gloss.get(code), str):
+                row["gloss"] = gloss[code]
+            curr[code] = row
+        # '성취기준별' 보기의 과목 순서(사용자 지정). 참조 파일에 없는 과목은 건너뛰고,
+        # 목록 밖의 새 과목은 뒤에 붙인다.
+        ordered = [name for name, _ in SUBJECT_ORDER if name in ref_subjects]
+        ordered += [name for name in ref_subjects if name not in dict(SUBJECT_ORDER)]
+        labels = dict(SUBJECT_ORDER)
+        for name in ordered:
+            subjects.append({
+                "name": labels.get(name, name),
+                "codes": [s["code"] for s in ref_subjects[name]],
+            })
     tpl = tpl.replace("__CURRICULUM__", json.dumps(curr, ensure_ascii=False).replace("<", "\\u003c"))
+    tpl = tpl.replace("__SUBJECTS__", json.dumps(subjects, ensure_ascii=False).replace("<", "\\u003c"))
     # 기사 본문(payload)은 자유 텍스트라 다른 플레이스홀더 토큰을 담을 수 있다 — 반드시 맨 마지막에 치환.
     tpl = tpl.replace("__DATA__", payload)
 
@@ -392,6 +428,36 @@ HTML_TEMPLATE = r"""<!doctype html>
   a.src:hover { background: var(--surface-2); text-decoration: none; }
   a.src:active { transform: scale(0.96); }
 
+  .cd-more { display: inline-block; margin-top: 12px; font-size: 14px; font-weight: 600; letter-spacing: -.01em; }
+
+  /* 보기 전환: 날짜·분야별 | 성취기준별 */
+  .viewtabs { display: inline-flex; align-self: flex-start; gap: 2px; padding: 3px;
+              background: #e8e8ed; border-radius: 980px; }
+  .viewtabs button { font: inherit; font-size: 14px; border: none; background: transparent; cursor: pointer;
+                     color: var(--ink-soft); padding: 7px 16px; border-radius: 980px; letter-spacing: -.01em;
+                     transition: background-color .15s var(--ease-out), transform .16s var(--ease-out); }
+  .viewtabs button:active { transform: scale(0.96); }
+  .viewtabs button.on { background: #fff; color: var(--ink); font-weight: 600; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+
+  /* 성취기준별 보기 */
+  .std-hint { margin: -10px 0 22px; font-size: 14px; line-height: 1.6; color: var(--ink-faint); letter-spacing: -.01em; }
+  .std { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; margin-bottom: 10px; }
+  .std-row { display: flex; align-items: baseline; gap: 12px; width: 100%; padding: 15px 20px; text-align: left;
+             font: inherit; background: none; border: none; cursor: pointer; color: var(--ink); }
+  .std-code { flex: none; min-width: 10.5ch; font-size: 13px; font-weight: 600; color: var(--accent);
+              font-variant-numeric: tabular-nums; letter-spacing: .01em; }
+  .std-gloss { flex: 1; min-width: 0; font-size: 16px; line-height: 1.45; letter-spacing: -.01em; word-break: keep-all; }
+  .std-n { flex: none; font-size: 13px; font-weight: 600; color: #fff; background: var(--accent);
+           border-radius: 980px; padding: 2px 10px; font-variant-numeric: tabular-nums; }
+  .std-row .chev { flex: none; color: var(--ink-faint); font-size: 13px; transition: transform .2s var(--ease-out); }
+  .std.open .std-row .chev { transform: rotate(180deg); }
+  .std.none .std-code, .std.none .std-gloss { color: var(--ink-faint); }
+  .std.none .std-n { background: var(--surface-2); color: var(--ink-faint); }
+  .std-body { padding: 0 20px 20px; }
+  .std-full { background: var(--surface-2); border-radius: 11px; padding: 15px 17px; margin-bottom: 18px; }
+  .std-body .card { padding: 22px 22px; border-radius: 14px; }
+  .std-empty { margin: 0; font-size: 14px; color: var(--ink-faint); letter-spacing: -.01em; }
+
   .empty { text-align: center; color: var(--ink-faint); padding: 80px 0; font-size: 15px; letter-spacing: -.01em; }
 
   footer.bot { background: var(--page); border-top: 1px solid var(--line); }
@@ -400,7 +466,8 @@ HTML_TEMPLATE = r"""<!doctype html>
 
   @media (prefers-reduced-motion: reduce) {
     .chip:active, a.src:active, .curric-item:active, .deep-toggle:active,
-    .subscribe:active, .map-datebar button:active:not(:disabled) { transform: none; }
+    .subscribe:active, .map-datebar button:active:not(:disabled), .viewtabs button:active { transform: none; }
+    .std-row .chev { transition: none; }
   }
 
   /* 모바일: 필터바를 붙박이로 두지 않고 본문과 함께 흘려보낸다.
@@ -415,6 +482,11 @@ HTML_TEMPLATE = r"""<!doctype html>
        폭 차이를 흡수할 여유분이다. 화면이 넓으면(약 432px↑) 원래 크기 34px을 그대로 쓴다.
        그래도 넘칠 경우엔 위 word-break:keep-all이 띄어쓰기에서 끊어 '브' 고아줄을 막는다. */
     h1 { font-size: min(34px, calc((100vw - 85px) / 10.2)); }
+    .std-row { flex-wrap: wrap; padding: 14px 16px; gap: 4px 10px; }
+    .std-gloss { flex-basis: 100%; order: 3; }
+    .std-n { margin-left: auto; }
+    .std-body { padding: 0 12px 14px; }
+    .std-body .card { padding: 18px 16px; }
   }
 </style>
 </head>
@@ -465,6 +537,10 @@ HTML_TEMPLATE = r"""<!doctype html>
       <input id="q" type="search" autocomplete="off" placeholder="키워드로 검색 — 화산, 도시, 인구, 기후…" aria-label="기사 키워드 검색">
       <button id="q-clear" class="s-clear" type="button" aria-label="검색어 지우기">×</button>
     </div>
+    <div class="viewtabs" id="viewtabs" role="tablist" aria-label="보기 방식">
+      <button type="button" role="tab" data-view="feed" class="on" aria-selected="true">날짜·분야별</button>
+      <button type="button" role="tab" data-view="curr" aria-selected="false">성취기준별</button>
+    </div>
     <div class="chips" id="chips"></div>
   </div>
 </nav>
@@ -484,13 +560,15 @@ HTML_TEMPLATE = r"""<!doctype html>
   <div class="wrap">
     <p>이 사이트는 매일 아침 브리핑 봇이 생성합니다. 본문의 사실 진술은 각 기사 원문에서 확인한 것이며, 이야깃거리는 편집자의 해석입니다.</p>
     <p>각 카드의 ‘본문 자세히’를 눌러 전체를 열고, ‘매체명 →’으로 원문을 확인하세요.</p>
+    <p>‘성취기준별’ 보기에서는 중학교 사회·통합사회·지리 선택 과목의 성취기준마다 연결된 기사와 해설을 모아 볼 수 있습니다.</p>
     <p class="foot-sub">매일 아침 짧은 요약으로 받아보시려면 → <a href="https://t.me/geo_news_brief" target="_blank" rel="noopener">텔레그램 채널 구독하기</a></p>
   </div>
 </footer>
 
 <script>
 const DATA = __DATA__;
-const CURR = __CURRICULUM__;   // {code: {text(본문), explain(해설)}} — 실제 사용된 성취기준만
+const CURR = __CURRICULUM__;   // {code: {text(본문), explain(해설), gloss?(짧은 이름)}} — 참조 파일의 모든 성취기준
+const SUBJECTS = __SUBJECTS__; // [{name, codes:[...]}] — '성취기준별' 보기의 과목 순서
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const safeUrl = u => /^https?:\/\//i.test(String(u)) ? String(u) : "";
 const fmtDate = iso => { const p = String(iso).split("-"); return `${p[0]}. ${+p[1]}. ${+p[2]}.`; };
@@ -506,11 +584,35 @@ const CAT_ORDER = ["지형학","기후학","도시지리학","경제지리학","
 const cats = CAT_ORDER.filter(c => c in catCount)
   .concat(Object.keys(catCount).filter(c => !CAT_ORDER.includes(c)));
 
+// 성취기준 → 연결된 기사(최신순). DATA.days가 이미 최신순이라 순서대로 넣으면 된다.
+const STD_ARTS = {};
+DATA.days.forEach(d => d.articles.forEach(a => (a.curriculum||[]).forEach(c => {
+  (STD_ARTS[c.code] = STD_ARTS[c.code] || []).push(Object.assign({_date: d.date}, a));
+})));
+// 카드에 실린 짧은 이름(gloss)을 우선, 없으면 참조 파일의 gloss, 그것도 없으면 본문 앞부분.
+const stdGloss = code => {
+  const fromArt = (STD_ARTS[code]||[]).map(a => (a.curriculum||[]).find(c => c.code === code)).find(c => c && c.gloss);
+  if (fromArt) return fromArt.gloss;
+  const info = CURR[code] || {};
+  if (info.gloss) return info.gloss;
+  const t = info.text || "";
+  return t.length > 48 ? t.slice(0, 46) + "…" : t;
+};
+const subjCount = s => s.codes.reduce((n, c) => n + (STD_ARTS[c]||[]).length, 0);
+let view = "feed";     // "feed"(날짜·분야별) | "curr"(성취기준별)
+let subj = 0;          // SUBJECTS 인덱스
+let openStd = null;    // 펼친 성취기준 코드(한 번에 하나)
+
 function chipsHtml() {
+  if (view === "curr") {
+    return SUBJECTS.map((s, i) =>
+      `<button class="chip${i===subj?" on":""}" data-subj="${i}">${esc(s.name)}<span class="n">${subjCount(s)}</span></button>`
+    ).join("");
+  }
   const total = Object.values(catCount).reduce((s,n)=>s+n,0);
-  const all = `<button class="chip on" data-cat="전체">전체<span class="n">${total}</span></button>`;
+  const all = `<button class="chip${active==="전체"?" on":""}" data-cat="전체">전체<span class="n">${total}</span></button>`;
   return all + cats.map(c =>
-    `<button class="chip" data-cat="${esc(c)}">${esc(c)}<span class="n">${catCount[c]}</span></button>`
+    `<button class="chip${active===c?" on":""}" data-cat="${esc(c)}">${esc(c)}<span class="n">${catCount[c]}</span></button>`
   ).join("");
 }
 
@@ -544,7 +646,7 @@ function hl(text, tokens){
   return out + esc(raw.slice(last));
 }
 
-function cardHtml(a, tokens) {
+function cardHtml(a, tokens, open) {
   const dp = (a._date||"").split("-");
   const dl = dp.length===3 ? `${+dp[1]}.${+dp[2]}` : "";
   const who = a.researchers ? `<p class="who">${esc(a.researchers)}</p>` : "";
@@ -556,8 +658,11 @@ function cardHtml(a, tokens) {
       a.references.map(r => `<li>${esc(r.apa||"")} ${safeUrl(r.url) ? `<a href="${esc(safeUrl(r.url))}" target="_blank" rel="noopener">${esc(r.url)}</a>` : ""}</li>`).join("") + `</ol></div>`
     : "";
   const deep = sections
-    ? `<button class="deep-toggle" type="button" aria-expanded="false">본문 자세히 ⌄</button>` +
-      `<div class="deep" hidden>${sections}${references}</div>`
+    ? (open
+      ? `<button class="deep-toggle" type="button" aria-expanded="true">접기 ⌃</button>` +
+        `<div class="deep">${sections}${references}</div>`
+      : `<button class="deep-toggle" type="button" aria-expanded="false">본문 자세히 ⌄</button>` +
+        `<div class="deep" hidden>${sections}${references}</div>`)
     : "";
   const talk = a.talk
     ? `<div class="talk"><div class="talk-label">이야깃거리</div><div class="talk-body">${esc(a.talk)}</div></div>`
@@ -571,7 +676,9 @@ function cardHtml(a, tokens) {
   const src = a.source && safeUrl(a.source.url)
     ? `<a class="src" href="${esc(safeUrl(a.source.url))}" target="_blank" rel="noopener">${esc(a.source.name)} →</a>`
     : "";
-  return `<article class="card" id="${esc(a.id||"")}" data-cat="${esc(a.category)}">
+  // 성취기준별 보기에서는 같은 기사가 여러 성취기준 아래 나올 수 있어 id를 붙이지 않는다(지도 이동은 날짜 보기 전용).
+  const idAttr = open ? "" : ` id="${esc(a.id||"")}"`;
+  return `<article class="card"${idAttr} data-cat="${esc(a.category)}">
     <div class="meta">
       <span class="m-date">${dl}</span>
       <span class="m-region">${esc(a.region)}</span>
@@ -587,6 +694,70 @@ function cardHtml(a, tokens) {
   </article>`;
 }
 
+function stdFullHtml(code) {
+  const info = CURR[code]; if (!info) return "";
+  return `<div class="cd-code">${esc(code)}</div><div class="cd-text">${esc(info.text)}</div>` +
+    (info.explain ? `<div class="cd-explain"><span class="cd-label">해설</span>${esc(info.explain)}</div>` : "");
+}
+// 성취기준별 보기: 과목 하나의 성취기준 목록. 펼친 성취기준은 본문·해설과 연결 기사(해설 펼침)를 보여준다.
+function currHtml() {
+  const s = SUBJECTS[subj];
+  if (!s) return `<p class="empty">교육과정 자료를 불러오지 못했습니다.</p>`;
+  const rows = s.codes.map(code => {
+    const arts = STD_ARTS[code] || [];
+    const isOpen = openStd === code;
+    const body = isOpen
+      ? `<div class="std-body"><div class="std-full">${stdFullHtml(code)}</div>` +
+        (arts.length ? arts.map(a => cardHtml(a, null, true)).join("")
+                     : `<p class="std-empty">아직 이 성취기준에 연결된 기사가 없습니다.</p>`) + `</div>`
+      : "";
+    return `<section class="std${arts.length ? "" : " none"}${isOpen ? " open" : ""}" id="std-${esc(code)}">
+      <button class="std-row" type="button" data-std="${esc(code)}" aria-expanded="${isOpen}">
+        <span class="std-code">${esc(code)}</span>
+        <span class="std-gloss">${esc(stdGloss(code))}</span>
+        <span class="std-n">${arts.length}건</span>
+        <span class="chev" aria-hidden="true">⌄</span>
+      </button>${body}
+    </section>`;
+  }).join("");
+  const linked = s.codes.filter(c => (STD_ARTS[c]||[]).length).length;
+  return `<section class="theme">
+    <h2 class="theme-head">${esc(s.name)}<span class="theme-n">성취기준 ${s.codes.length}개 · 기사 연결 ${linked}개</span></h2>
+    <p class="std-hint">성취기준을 누르면 성취기준 본문·해설과 연결된 기사의 해설을 바로 볼 수 있습니다. 기사가 없는 성취기준은 흐리게 표시됩니다.</p>
+    ${rows}
+  </section>`;
+}
+function setHash(code) {
+  const url = location.pathname + location.search + (code ? "#std=" + encodeURIComponent(code) : "");
+  try { history.replaceState(null, "", url); } catch (e) {}
+}
+function setView(v) {
+  view = v;
+  document.querySelectorAll("#viewtabs button").forEach(b => {
+    const on = b.dataset.view === v;
+    b.classList.toggle("on", on); b.setAttribute("aria-selected", String(on));
+  });
+  document.getElementById("chips").innerHTML = chipsHtml();
+}
+// 성취기준 하나로 바로 이동(카드의 '모두 보기' 링크, 공유된 #std= 주소).
+function openStandard(code, scroll) {
+  const i = SUBJECTS.findIndex(s => s.codes.includes(code));
+  if (i < 0) return false;
+  subj = i; openStd = code;
+  if (query) { query = ""; qInput.value = ""; qClear.classList.remove("show"); }
+  setView("curr"); render(); setHash(code);
+  if (scroll) {
+    const el = document.getElementById("std-" + code);
+    if (el) {
+      const bar = document.querySelector(".filters");
+      const barSticks = bar && getComputedStyle(bar).position === "sticky";
+      const y = el.getBoundingClientRect().top + window.scrollY - (44 + (barSticks ? bar.offsetHeight : 0) + 12);
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  }
+  return true;
+}
+
 let firstRender = true;  // 최초 로드는 페이드 없이, 이후 필터 전환만 페이드
 function render() {
   const feed = document.getElementById("feed");
@@ -596,12 +767,14 @@ function render() {
   if (tokens.length) {
     // 검색 모드: (활성 분야가 있으면 그 안에서) 모든 날짜의 매칭 기사를 최신순 평탄 리스트로.
     const arts = [];
+    // 성취기준별 보기에서는 분야 필터 없이 전체를 검색한다.
+    const cat = view === "feed" ? active : "전체";
     DATA.days.forEach(d => d.articles.forEach(a => {
-      if ((active === "전체" || a.category === active) && articleMatches(a, tokens))
+      if ((cat === "전체" || a.category === cat) && articleMatches(a, tokens))
         arts.push(Object.assign({_date: d.date}, a));
     }));
     arts.sort((x, y) => y._date.localeCompare(x._date));
-    const head = active === "전체" ? "검색 결과" : `검색 결과 · ${esc(active)}`;
+    const head = cat === "전체" ? "검색 결과" : `검색 결과 · ${esc(cat)}`;
     if (arts.length) {
       out = `<section class="theme">
         <h2 class="theme-head">${head}<span class="theme-n">${arts.length}건</span></h2>
@@ -609,6 +782,14 @@ function render() {
       </section>`;
     }
     feed.innerHTML = out || `<p class="empty">‘${esc(query.trim())}’에 대한 결과가 없습니다.</p>`;
+    if (!firstRender && feed.animate) {
+      feed.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 200, easing: "cubic-bezier(0.23, 1, 0.32, 1)" });
+    }
+    firstRender = false;
+    return;
+  }
+  if (view === "curr") {
+    feed.innerHTML = currHtml();
     if (!firstRender && feed.animate) {
       feed.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 200, easing: "cubic-bezier(0.23, 1, 0.32, 1)" });
     }
@@ -651,8 +832,15 @@ function render() {
 document.getElementById("chips").innerHTML = chipsHtml();
 document.getElementById("chips").addEventListener("click", e => {
   const b = e.target.closest(".chip"); if (!b) return;
-  active = b.dataset.cat;
+  if (b.dataset.subj !== undefined) { subj = +b.dataset.subj; openStd = null; setHash(null); }
+  else active = b.dataset.cat;
   document.querySelectorAll(".chip").forEach(c => c.classList.toggle("on", c===b));
+  render();
+});
+document.getElementById("viewtabs").addEventListener("click", e => {
+  const b = e.target.closest("button[data-view]"); if (!b || b.dataset.view === view) return;
+  setView(b.dataset.view);
+  if (view === "feed") { openStd = null; setHash(null); }
   render();
 });
 // 검색 입력
@@ -686,12 +874,36 @@ document.getElementById("feed").addEventListener("click", e => {
   row.querySelectorAll(".curric-item").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-expanded", "false"); });
   if (same) { detail.classList.remove("open"); detail.removeAttribute("data-code"); return; }
   detail.setAttribute("data-code", code);
-  detail.innerHTML = `<div class="cd-code">${esc(code)}</div><div class="cd-text">${esc(info.text)}</div>` +
-    (info.explain ? `<div class="cd-explain"><span class="cd-label">해설</span>${esc(info.explain)}</div>` : "");
+  const n = (STD_ARTS[code]||[]).length;
+  const more = SUBJECTS.some(s => s.codes.includes(code)) && !(view === "curr" && openStd === code)
+    ? `<a class="cd-more" href="#std=${encodeURIComponent(code)}" data-std-link="${esc(code)}">이 성취기준 기사 ${n}건 모두 보기 →</a>` : "";
+  detail.innerHTML = stdFullHtml(code) + more;
   detail.classList.add("open"); item.classList.add("active"); item.setAttribute("aria-expanded", "true");
   if (detail.animate) detail.animate([{opacity:0},{opacity:1}], {duration:180, easing:"cubic-bezier(0.23,1,0.32,1)"});
 });
-render();
+// 성취기준 행 펼치기/접기(한 번에 하나), 카드의 '모두 보기' 링크.
+document.getElementById("feed").addEventListener("click", e => {
+  const link = e.target.closest("[data-std-link]");
+  if (link) { e.preventDefault(); openStandard(link.getAttribute("data-std-link"), true); return; }
+  const row = e.target.closest(".std-row"); if (!row) return;
+  const code = row.getAttribute("data-std");
+  openStd = openStd === code ? null : code;
+  setHash(openStd);
+  render();
+  if (openStd) {
+    const el = document.getElementById("std-" + code);
+    if (el && el.getBoundingClientRect().top < 0) el.scrollIntoView({ block: "start" });
+  }
+});
+window.addEventListener("hashchange", () => {
+  const m = /^#std=(.+)$/.exec(location.hash);
+  if (m) openStandard(decodeURIComponent(m[1]), true);
+});
+(function(){
+  const m = /^#std=(.+)$/.exec(location.hash);
+  if (!(m && openStandard(decodeURIComponent(m[1]), false))) render();
+  else setTimeout(() => openStandard(decodeURIComponent(m[1]), true), 0);
+})();
 
 // --- 세계지도 내비게이터 ---
 // 기사 geo:{lat,lon,label}를 equirectangular 투영으로 점 찍기.
@@ -700,6 +912,7 @@ function goToArticle(id){
   // 지도에서 특정 기사로 갈 때는 검색·분야 필터를 풀어 대상 카드가 반드시 존재하게 한다.
   let needRender = false;
   if (query) { query = ""; qInput.value = ""; qClear.classList.remove("show"); needRender = true; }
+  if (view !== "feed") { setView("feed"); openStd = null; setHash(null); needRender = true; }
   if (active !== "전체") {
     active = "전체";
     document.querySelectorAll(".chip").forEach(c => c.classList.toggle("on", c.dataset.cat === "전체"));
