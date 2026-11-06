@@ -1,0 +1,226 @@
+{
+ "date": "2026-11-07",
+ "format": "daily_deep",
+ "articles": [
+  {
+   "id": "2026-11-07-bucheon-tertiary-hospital-transit-time-gap",
+   "region": "국내",
+   "target_country": "KR",
+   "category": "도시지리학",
+   "title": "부천의 상급병원까지 대중교통 시간이 동네마다 35분 벌어진다면, 그 차이는 누구에게 걸릴까요?",
+   "journal": "한겨레 · 2026-11-06",
+   "researchers": "이승욱",
+   "source": {
+    "name": "한겨레",
+    "url": "https://www.hani.co.kr/arti/area/capital/1286079.html",
+    "date": "2026-11-06",
+    "language": "ko",
+    "doi": null,
+    "canonical_kind": "sourced_summary"
+   },
+   "summary": "부천시정연구원 보고서에서 부천 36개 행정동 중 14곳은 대중교통으로 상급병원까지 30분이 넘고 고강1동은 42분, 상동은 7.6분입니다(이승욱, 2026). 승용차로는 모든 동이 30분 안이고, 30분 넘는 동에는 65살 이상 인구의 38.8%가 삽니다(이승욱, 2026). 부천시가 휴대전화 신호로 잰 대학병원 방문자 평균 이동 시간은 22~24분이었습니다(김동선, 2025).",
+   "body": [
+    {
+     "h": "상동 7.6분, 고강1동 42분",
+     "p": "부천시의 36개 행정동 가운데 14곳은 대중교통으로 상급병원까지 30분 넘게 걸리고, 비율로는 38.9%입니다(이승욱, 2026). 가장 오래 걸리는 곳은 고강1동 42분, 고강본동 41분, 옥길동과 범박동 각 40분이고, 가장 짧은 상동은 7.6분입니다(이승욱, 2026). 같은 시 안에서 동네 사이 차이가 35분까지 벌어집니다(이승욱, 2026). 부천의 유일한 상급종합병원은 순천향대 부천병원이며, 2개 행정동을 제외하면 이 병원이 가장 가깝습니다(이승욱, 2026)."
+    },
+    {
+     "h": "승용차로는 모든 동이 30분 안입니다",
+     "p": "승용차로 이동하면 부천의 모든 행정동에서 30분 이내에 상급병원에 닿습니다(이승욱, 2026). 대중교통으로 30분 넘게 걸리는 14개 동에는 부천시 전체 65살 이상 인구의 38.8%가 삽니다(이승욱, 2026). 승용차로는 모든 동이 30분 안이므로 40분 넘는 시간은 차를 쓰지 못하는 사람에게 걸리고, 그 동네에 고령 인구의 10명 중 4명 가까이가 살고 있습니다."
+    },
+    {
+     "h": "시가 잰 22~24분, 연구원이 잰 14개 동",
+     "p": "부천시는 2025년 4월 SK텔레콤 유동인구 데이터로 생활이동 패턴을 분석해, 부천성모병원과 순천향대 부천병원을 방문한 시민 25만 817명의 평균 이동 시간이 각각 24분과 22분이었다고 밝혔습니다(김동선, 2025). 부천시는 가까운 거리에 종합병원 6곳이 있어 의료 접근성이 높다고 설명했습니다(김동선, 2025). 부천시정연구원은 36개 동 가운데 대중교통으로 30분 넘게 걸리는 곳이 14곳이라고 분석했습니다(이승욱, 2026). 앞의 22~24분은 대학병원 두 곳을 실제로 찾은 방문자의 평균이고, 뒤의 30분 초과는 동별로 잰 대중교통 소요시간이어서 같은 시를 서로 다른 기준으로 본 숫자입니다."
+    },
+    {
+     "h": "경기 63분, 의료취약지 49%: 부천 밖의 격차",
+     "p": "2024년 서울시 분석에서 서울은 어디서든 40분 안에 병원에 도착했지만 경기는 63분, 인천은 64분이 걸렸습니다(김보미, 2024). 2026년 2월 의료혁신위원회 설문에서 중증 수술이 가능한 병원까지 1시간 이상 걸린다는 응답은 의료취약지 49.0%로, 수도권 미취약지 29.9%와 비수도권 미취약지 25.3%보다 20%포인트 이상 높았습니다(이현정, 2026). 경남 거창군 주민은 산부인과에 마취 전문의가 없어 1시간 이상 떨어진 병원에서 출산해야 한다고 했고, 전남 진도군 주민은 아이가 아파 목포까지 1시간을 달려 병원에 갔다고 했습니다(이현정, 2026). 2024년 상하이 쑹장구 노인의 공공병원 접근성을 분석하자 상급 병원 접근성은 중심에서 외곽으로 갈수록 낮아졌고, 승용차와 자전거가 대중교통과 도보보다 형평성이 높았습니다(Mahmut et al., 2024). 2015년 한국 노인을 대상으로 한 분석에서는 의료시설과 대중교통 접근성이 좋을수록 농촌 노인이 건강이 나쁘다고 답할 확률이 줄었고, 도시 노인에게는 통계적으로 유의한 영향이 없었습니다(이유진·김의준, 2015). 부천의 동별 차이도 병원에서 멀어질수록 시간이 늘고 승용차와 대중교통에서 갈린다는 같은 방향에 놓입니다."
+    },
+    {
+     "h": "연구원이 낸 의료교통 시범사업 제안",
+     "p": "부천시정연구원은 반복해서 통원하는 고령자의 규모와 이용 병원, 진료 시간대, 동행 필요 여부를 파악하는 수요 조사를 제안했습니다(이승욱, 2026). 이어 소사동 등 고령자 거주 비율이 높은 원도심과 옥길동 등 외곽 장거리 지역에서 같은 병원, 비슷한 시간대 이용자를 함께 수송하는 의료교통 시범사업을 검토하라고 했습니다(이승욱, 2026). 시범사업은 지역 내 운수사업자가 참여하는 협약택시 합승이나 실증 차량을 활용하는 방식입니다(이승욱, 2026). 박준태 부천시정연구원 연구위원은 “고령자가 진료 시간에 맞춰 병원을 편리하게 오갈 수 있도록 실제 이동 수요를 파악하는 것이 우선”이라고 말했습니다(이승욱, 2026)."
+    }
+   ],
+   "talk": "",
+   "tags": [
+    "부천",
+    "의료 접근성",
+    "대중교통",
+    "고령 인구",
+    "행정동"
+   ],
+   "curriculum": [
+    {
+     "code": "10통사2-02-03",
+     "gloss": "사회·공간 불평등과 정의로운 사회"
+    }
+   ],
+   "geo": {
+    "lat": 37.5,
+    "lon": 126.77,
+    "label": "부천시"
+   },
+   "topic_key": "bucheon-tertiary-hospital-transit-time-gap-elderly",
+   "references": [
+    {
+     "id": "d-hani",
+     "author": "이승욱",
+     "date": "2026-11-06",
+     "title": "부천 행정동 39%, 상급병원까지 대중교통으로 30분 넘게 걸려",
+     "url": "https://www.hani.co.kr/arti/area/capital/1286079.html",
+     "kind": "news",
+     "short_label": "이승욱, 2026",
+     "apa": "이승욱. (2026, 11월 6일). 부천 행정동 39%, 상급병원까지 대중교통으로 30분 넘게 걸려. 한겨레."
+    },
+    {
+     "id": "d-tf",
+     "author": "김동선",
+     "date": "2025-12-04",
+     "title": "부천시민들, '30분대 생활권' 산다…30분 내외로 출퇴근·쇼핑·의료·여행 등 가능",
+     "url": "https://news.tf.co.kr/read/ogmeta/2269197.htm",
+     "kind": "news",
+     "short_label": "김동선, 2025",
+     "apa": "김동선. (2025, 12월 4일). 부천시민들, '30분대 생활권' 산다…30분 내외로 출퇴근·쇼핑·의료·여행 등 가능. 더팩트."
+    },
+    {
+     "id": "d-khan",
+     "author": "김보미",
+     "date": "2024-05-28",
+     "title": "수도권은 ‘40분 도시’…출퇴근·쇼핑·병원 등 하루 7000만 건 생활이동 분석",
+     "url": "https://www.khan.co.kr/article/202405281330001",
+     "kind": "news",
+     "short_label": "김보미, 2024",
+     "apa": "김보미. (2024, 5월 28일). 수도권은 ‘40분 도시’…출퇴근·쇼핑·병원 등 하루 7000만 건 생활이동 분석. 경향신문."
+    },
+    {
+     "id": "d-seoul",
+     "author": "이현정",
+     "date": "2026-02-26",
+     "title": "의료취약지 2명 중 1명, 분만 병원까지 1시간",
+     "url": "https://m.seoul.co.kr/news/2026/02/26/20260226500261",
+     "kind": "news",
+     "short_label": "이현정, 2026",
+     "apa": "이현정. (2026, 2월 26일). 의료취약지 2명 중 1명, 분만 병원까지 1시간. 서울신문."
+    },
+    {
+     "id": "r-mah",
+     "author": "Mirkamiljan Mahmut",
+     "date": "2024-11-07",
+     "title": "Examining Spatial Accessibility and Equity of Public Hospitals for Older Adults in Songjiang District, Shanghai",
+     "url": "https://www.mdpi.com/2220-9964/13/11/403",
+     "kind": "research",
+     "short_label": "Mahmut et al., 2024",
+     "apa": "Mahmut, M., Yin, P., Peng, B., Wu, J., Wang, T., Yuan, S., & Zhang, Y. (2024). Examining spatial accessibility and equity of public hospitals for older adults in Songjiang District, Shanghai. ISPRS International Journal of Geo-Information, 13(11), 403."
+    },
+    {
+     "id": "r-lee",
+     "author": "이유진, 김의준",
+     "date": "2015-03-01",
+     "title": "의료시설 접근성과 대중교통 접근성이 농촌 및도시 지역 거주 노인의 주관적 건강상태에 미치는 영향 분석 - 일반화된 순서형 로짓 모형의 적용 -",
+     "url": "https://www.earticle.net/Article/A241737",
+     "kind": "research",
+     "short_label": "이유진·김의준, 2015",
+     "apa": "이유진, 김의준. (2015). 의료시설 접근성과 대중교통 접근성이 농촌 및도시 지역 거주 노인의 주관적 건강상태에 미치는 영향 분석: 일반화된 순서형 로짓 모형의 적용. 한국지역개발학회지, 27(1), 65–88."
+    }
+   ],
+   "starting_article": {
+    "title": "부천 행정동 39%, 상급병원까지 대중교통으로 30분 넘게 걸려",
+    "author": "이승욱",
+    "date_kind": "updated"
+   }
+  },
+  {
+   "id": "2026-11-07-india-panipat-textile-recycling-injuries",
+   "region": "해외",
+   "target_country": "IN",
+   "category": "경제지리학",
+   "title": "미국·유럽에서 버린 옷이 도착하는 인도 파니파트에서는 누가 그 비용을 치를까요?",
+   "journal": "The Guardian · 2026-11-06",
+   "researchers": "Anuj Behal",
+   "source": {
+    "name": "The Guardian",
+    "url": "https://www.theguardian.com/global-development/2026/nov/06/india-textile-recycling-industry-workers-factories-accidents-safety-amputations",
+    "date": "2026-11-06",
+    "language": "en",
+    "doi": null,
+    "canonical_kind": "sourced_summary"
+   },
+   "summary": "인도 하리아나주 파니파트에서는 미국·캐나다·유럽에서 버려진 옷을 해마다 100만 톤 넘게 처리하는 것으로 추정되며, 공장 2만 곳에서 약 30만 명이 일합니다(Behal, 2026). 환경 활동가 라메시 차우다리는 하루에 적어도 한 명이 팔다리를 잃는다고 추정했고(Behal, 2026), 노동자의 90% 넘게가 비공식 고용입니다(Behal, 2026). 2025년 미국의 인도산 섬유 50% 관세 뒤에는 주문이 거의 하룻밤에 끊겼습니다(Khan, 2025).",
+   "body": [
+    {
+     "h": "델리에서 53마일, 헌 옷이 실이 되는 도시",
+     "p": "하리아나주의 공업도시 파니파트는 델리에서 약 53마일 떨어져 있습니다(Khan, 2025). 미국·캐나다·유럽에서 버려진 옷은 이곳에서 다시 섬유로 찢겨 실이 됩니다(Behal, 2026). 압축한 옷 뭉치는 배로 칸들라와 문드라 항구를 지나 트럭에 실려 파니파트 창고로 들어옵니다(Khan, 2025). 처리량 추정은 출처마다 달라 가디언은 해마다 100만 톤이 넘는다고 썼고(Behal, 2026), 아틀모스는 50만 톤이 넘는다고 썼습니다(Khan, 2025). 공장 2만 곳에서 약 30만 명이 일한다는 것이 가디언의 추정이고(Behal, 2026), 아틀모스는 섬유 부문 종사자를 20만 명 넘게 잡았습니다(Khan, 2025). 이 실로 만든 홈 퍼니싱 제품은 H&M Home, 이케아, 프라이마크, 테스코, 월마트 같은 브랜드로 갑니다(Behal, 2026). 옷이 버려지는 곳은 미국·유럽이고 실이 되는 곳은 인도 북부이며, 완성품은 다시 서구 브랜드의 매장으로 돌아가는 길입니다."
+    },
+    {
+     "h": "하루 한 명꼴로 팔다리를 잃는 공장",
+     "p": "19살 수라지 쿠마르는 서벵골주에서 파니파트 공장으로 일하러 왔다가 8월 말 기계의 합선으로 파쇄 장치에 끌려 들어가 두 팔이 으스러졌습니다(Behal, 2026). 파니파트 노동부에서 일한 적 있는 환경 활동가 라메시 차우다리는 하루에 적어도 한 명이 팔다리를 잃고 많은 날에는 다섯 명까지 늘어난다고 추정합니다(Behal, 2026). 8월 17~24일 파니파트의 민간병원 11곳과 공공병원 2곳을 확인한 기간에는 팔다리를 크게 다친 섬유 노동자 6건이 보고됐습니다(Behal, 2026). 기계에 필요한 안전장치가 없는 경우가 많다고 차우다리는 말했습니다(Behal, 2026). 공장과 방적 작업장을 여러 차례 찾았을 때 안전장구를 쓴 사람은 한 명도 보이지 않았습니다(Behal, 2026). 파니파트 경찰서 12곳 가운데 한 곳의 담당 경찰관은 올해 산업재해 3건이 접수됐고 “산업재해 사건 가운데 경찰에 접수·등록되는 것은 1%도 안 된다”고 말했습니다(Behal, 2026). 인드라팔 싱은 2017년 팔을 잃고 6년을 법정에서 다퉜지만 보상은 받지 못하고 정부 연금 5700루피(45파운드)만 받았다고 말했습니다(Behal, 2026). 한 주 남짓한 병원 기록의 6건과 한 경찰서의 연간 3건은 집계 범위가 서로 다른 수치입니다."
+    },
+    {
+     "h": "파쇄 작업장의 먼지와 호흡",
+     "p": "파쇄 기계에 헌 옷을 넣는 23살 비카스는 “가끔 숨쉬기가 힘들다”고 말했습니다(Khan, 2025). 파니파트 의사들은 방직·방적 노동자에게서 30대에 이미 만성 폐질환을 흔히 본다고 말합니다(Khan, 2025). 작업장 공기에는 먼지와 섬유가 가득하고 노동자가 쓰는 얇은 마스크는 거의 막지 못합니다(Khan, 2025). 네팔 카트만두의 섬유 노동자 938명을 의류·카펫·직조·재활용 부문별로 조사하자 호흡기 증상은 재활용 부문에서 가장 흔했고, 교대 근무 중 FEV1이 줄어든 폭도 재활용 노동자가 143mL로 의류 노동자 38mL보다 컸습니다(Paudyal et al., 2015). 흡입 가능한 먼지 노출이 교대 중 FEV1 감소를 예측했습니다(Paudyal et al., 2015). 파니파트 의사들이 본 증상과 카트만두의 폐활량 측정은 같은 방향으로 놓입니다."
+    },
+    {
+     "h": "계약서도 보험도 없는 일자리",
+     "p": "파니파트 노동자의 90% 넘게가 비공식으로 고용돼 있습니다(Behal, 2026). 계약직·성과급으로 고용하는 이유를 묻자 공장주 여럿 중 대부분이 노동자의 계절 이주를 들었습니다(Behal, 2026). 비카스는 “우리는 계약도 보험도 없다”고 했고 주문이 줄면 근로 시간부터 깎인다고 말했습니다(Khan, 2025). 2025년 미국은 인도산 섬유 수출품에 50% 관세를 매겨 이전 관세를 두 배로 올렸고, 실과 담요 주문은 거의 하룻밤에 끊겼으며 관리자들은 초과근무를 줄였습니다(Khan, 2025). 어른이 해고되면 아이들이 대신 일에 나선다고 한 노동자는 말했습니다(Khan, 2025). 부상 뒤의 보상도, 관세로 주문이 끊긴 뒤의 소득도 계약이 없는 노동자 개인에게 돌아옵니다."
+    }
+   ],
+   "talk": "",
+   "tags": [
+    "파니파트",
+    "헌 옷 재활용",
+    "비공식 고용",
+    "산업재해",
+    "국제 분업"
+   ],
+   "curriculum": [
+    {
+     "code": "10통사2-03-04",
+     "gloss": "자원 분포와 지속가능한 국제무역"
+    }
+   ],
+   "geo": {
+    "lat": 29.39,
+    "lon": 76.97,
+    "label": "파니파트"
+   },
+   "topic_key": "panipat-textile-recycling-worker-injury-cost",
+   "references": [
+    {
+     "id": "o-gd",
+     "author": "Anuj Behal",
+     "date": "2026-11-06",
+     "title": "‘Every day, someone loses a hand or a leg’: the brutal reality of India’s textile recycling industry",
+     "url": "https://www.theguardian.com/global-development/2026/nov/06/india-textile-recycling-industry-workers-factories-accidents-safety-amputations",
+     "kind": "news",
+     "short_label": "Behal, 2026",
+     "apa": "Behal, A. (2026, November 6). ‘Every day, someone loses a hand or a leg’: The brutal reality of India’s textile recycling industry. The Guardian."
+    },
+    {
+     "id": "o-atmos",
+     "author": "Mohammad Asif Khan",
+     "date": "n.d.",
+     "title": "The High Price Of Circular Fashion In India’s Recycling Capital",
+     "url": "https://atmos.earth/fashion-and-design/the-high-price-of-circular-fashion-in-indias-recycling-capital/",
+     "kind": "news",
+     "short_label": "Khan, 2025",
+     "apa": "Khan, M. A. (2025). The high price of circular fashion in India’s recycling capital. Atmos."
+    },
+    {
+     "id": "o-paud",
+     "author": "Priyamvada Paudyal",
+     "date": "2015-12-01",
+     "title": "Respiratory symptoms and cross-shift lung function in relation to cotton dust and endotoxin exposure in textile workers in Nepal: a cross-sectional study",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/26468495/",
+     "kind": "research",
+     "short_label": "Paudyal et al., 2015",
+     "apa": "Paudyal, P., Semple, S., Gairhe, S., Steiner, M. F. C., Niven, R., & Ayres, J. G. (2015). Respiratory symptoms and cross-shift lung function in relation to cotton dust and endotoxin exposure in textile workers in Nepal: A cross-sectional study. Occupational and Environmental Medicine, 72(12), 870–876."
+    }
+   ],
+   "starting_article": {
+    "title": "‘Every day, someone loses a hand or a leg’: the brutal reality of India’s textile recycling industry",
+    "author": "Anuj Behal",
+    "date_kind": "published"
+   }
+  }
+ ]
+}
