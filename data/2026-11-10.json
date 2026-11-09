@@ -1,0 +1,214 @@
+{
+ "date": "2026-11-10",
+ "format": "daily_deep",
+ "articles": [
+  {
+   "id": "2026-11-10-jeju-yongcheon-cave-geoheritage",
+   "region": "국내",
+   "target_country": "KR",
+   "category": "지형학",
+   "title": "용암이 만든 제주 용천동굴에는 왜 석회동굴의 종유석이 자랄까요?",
+   "journal": "경향신문 · 2026-11-09",
+   "researchers": "박미라",
+   "source": {
+    "name": "경향신문",
+    "url": "https://www.khan.co.kr/article/202611091106001",
+    "date": "2026-11-09",
+    "language": "ko",
+    "doi": null,
+    "canonical_kind": "sourced_summary"
+   },
+   "summary": "제주 용천동굴이 국제지질과학연맹의 ‘제3차 세계 100대 지질유산’에 선정됐습니다(박미라, 2026). 용암이 만든 길이 약 3360m의 굴 안에 종유석·석순 같은 석회 생성물이 자라는데, 그 탄산염은 동굴 위를 덮은 조개껍데기 모래언덕에서 왔고 생성물은 약 4700~6000년 전 모래가 쌓인 뒤 자라기 시작했습니다(Woo et al., 2018). 이웃 김녕굴에서는 김녕해수욕장 모래가 북서풍을 타고 날아와 비나 눈에 녹아 동굴로 흘러든다는 현장 설명이 나왔습니다(이수지, 2025). 동굴 속 호수에서는 눈이 퇴화한 물고기가 발견되기도 했습니다(황경근, 2010).",
+   "body": [
+    {
+     "h": "용암동굴 속 종유석·석순·동굴산호",
+     "p": "제주 용천동굴이 국제지질과학연맹(IUGS)의 ‘제3차 세계 100대 지질유산’에 선정됐다고 제주도가 9일 밝혔습니다. 국내에서는 2024년 ‘한국의 갯벌’에 이어 두 번째입니다. 용천동굴은 용암동굴의 전형적인 구조에 석회동굴에서 주로 보이는 탄산염 동굴생성물이 함께 발달했고, 동굴이 생긴 뒤 지표에서 들어온 탄산염 성분이 침전되면서 종유석과 석순·석주·동굴산호가 자랐습니다(박미라, 2026). 동굴은 후기 제4기에 여러 차례 흐른 용암으로 만들어졌고, 길이는 주 통로 2590m와 가지 통로를 합쳐 약 3360m입니다. 하류 끝에 아직 탐사하지 못한 통로가 있어 실제 길이는 적어도 400m가량 더 길 것으로 추정됩니다(Woo et al., 2018). 용암이 비워 둔 굴에 석회동굴의 생성물이 들어찬 점이 선정 사유의 중심에 있고, 그렇다면 석회 성분이 현무암 굴 안으로 어떻게 들어왔는지가 이 동굴을 설명하는 열쇠가 됩니다."
+    },
+    {
+     "h": "김녕 해변 모래가 바람을 타고 동굴 위로",
+     "p": "석회 성분은 동굴 위를 덮은 모래언덕에서 옵니다. 용천동굴 통로 두 구간 위에는 가까운 해변 모래가 바람에 실려 골짜기를 따라 올라와 쌓인 탄산염 모래언덕이 있고, 모래의 60~70%까지가 연체동물 껍데기와 석회조류 조각입니다. 이 모래는 마지막 빙기 이후 얕은 바다에서 약 4700~6000년 전 쌓였고, 동굴생성물은 모래언덕이 쌓인 뒤에야 자라기 시작했습니다(Woo et al., 2018). 이웃한 김녕굴 입구 바닥에도 해안에서 날려 온 모래가 덮여 있습니다. 탐방을 이끈 해설 단장은 조개나 전복 껍데기로 된 모래라서 제주 모래로는 집을 못 짓는다고 말하고, 김녕해수욕장 모래가 북서풍을 타고 날아와 쌓였다가 비나 눈에 녹아 동굴로 흘러든다고 설명했습니다(이수지, 2025). 해안의 조개껍데기와 용암동굴을 잇는 길은 바람과 빗물이고, 모래언덕이 덮은 두 구간과 석회 생성물이 자라는 구간이 겹친다는 점이 그 연결의 근거입니다."
+    },
+    {
+     "h": "식물 뿌리를 따라 자란 생성물과 격리된 호수",
+     "p": "용천동굴에는 종유관·종유석·석순·석주·휴석·동굴산호·동굴진주가 고루 있지만, 상당수는 다른 석회동굴에서 볼 수 없는 불규칙한 모양입니다. 이런 생성물은 빗물을 동굴 안으로 실어 나르고 방해석을 가라앉힌 식물 뿌리의 분포에 직접 영향을 받아 자랐습니다(Woo et al., 2018). 2010년 여름 동굴 안 호수를 수중 촬영하다가 눈이 퇴화해 피부 속에 묻히고 몸이 투명한 길이 4~7㎝의 망둥어과 물고기가 국내 처음으로 발견됐습니다. 당시 세계자연유산관리본부 관계자는 호수가 오랜 시간 외부와 격리돼 동굴 안에서 퇴행성 진화가 진행된 신종일 가능성이 높다고 말했습니다(황경근, 2010). 벵뒤굴·만장굴·김녕굴·용천동굴·당처물동굴은 동굴생성물 보호를 위해 공개 제한 지역으로 지정돼 있고, 김녕굴처럼 세계유산축전 때만 열리는 곳도 있습니다(이수지, 2025). 제주도는 이번 선정을 계기로 형성 과정 연구를 이어 가고 보존·관리에 힘쓰겠다고 밝혔습니다(박미라, 2026). 굴 속 생성물을 키운 모래와 뿌리, 빗물은 모두 동굴 위 땅에서 오고, 굴 속 호수는 바깥과 떨어져 있었기에 독특한 생물을 품었습니다. 용천동굴의 가치는 지표와 이어진 통로와 바깥과 끊긴 공간이 한 동굴 안에 함께 있다는 데서 나옵니다."
+    }
+   ],
+   "talk": "",
+   "tags": [
+    "용천동굴",
+    "용암동굴",
+    "동굴생성물",
+    "세계 100대 지질유산",
+    "제주"
+   ],
+   "curriculum": [
+    {
+     "code": "12한탐04-01",
+     "gloss": "세계유산 한반도 자연경관의 가치"
+    }
+   ],
+   "geo": {
+    "lat": 33.5539,
+    "lon": 126.7798,
+    "label": "제주시 구좌읍 용천동굴"
+   },
+   "topic_key": "jeju-yongcheon-cave-geoheritage",
+   "references": [
+    {
+     "author": "박미라",
+     "date": "2026-11-09",
+     "title": "국내 두 번째 ‘세계 100대 지질 유산’ 나왔다···제주 용천동굴 선정",
+     "url": "https://www.khan.co.kr/article/202611091106001",
+     "kind": "news",
+     "short_label": "박미라, 2026",
+     "apa": "박미라. (2026, 11월 9일). 국내 두 번째 ‘세계 100대 지질 유산’ 나왔다···제주 용천동굴 선정. 경향신문.",
+     "id": "d-khan"
+    },
+    {
+     "author": "이수지",
+     "date": "2025-06-22",
+     "title": "1만년 제주 화산섬 용암동굴, 비밀의 문 열린다…미로형·S자형·다층형 동굴 신비의 퍼레이드",
+     "url": "https://www.newsis.com/view/NISX20250622_0003222361",
+     "kind": "news",
+     "short_label": "이수지, 2025",
+     "apa": "이수지. (2025, 6월 22일). 1만년 제주 화산섬 용암동굴, 비밀의 문 열린다…미로형·S자형·다층형 동굴 신비의 퍼레이드. 뉴시스.",
+     "id": "d-newsis"
+    },
+    {
+     "author": "황경근",
+     "date": "2010-09-09",
+     "title": "동굴서식 물고기 국내 첫 확인",
+     "url": "https://m.go.seoul.co.kr/news/2010/09/09/20100909016006",
+     "kind": "news",
+     "short_label": "황경근, 2010",
+     "apa": "황경근. (2010, 9월 9일). 동굴서식 물고기 국내 첫 확인. 서울신문.",
+     "id": "d-seoul"
+    },
+    {
+     "author": "K. S. Woo, L. Kim, Hyoseon Ji, Yongmun Jeon, Chun Gil Ryu, C. Wood",
+     "date": "2018-06-25",
+     "title": "Geological Heritage Values of the Yongcheon Cave (Lava Tube Cave), Jeju Island, Korea",
+     "url": "https://link.springer.com/article/10.1007/s12371-018-0315-y",
+     "kind": "research",
+     "short_label": "Woo et al., 2018",
+     "apa": "Woo, K. S., Kim, L., Ji, H., Jeon, Y., Ryu, C. G., & Wood, C. (2019). Geological heritage values of the Yongcheon Cave (lava tube cave), Jeju Island, Korea. Geoheritage, 11, 615–628. https://doi.org/10.1007/s12371-018-0315-y",
+     "id": "r-woo"
+    }
+   ],
+   "starting_article": {
+    "title": "국내 두 번째 ‘세계 100대 지질 유산’ 나왔다···제주 용천동굴 선정",
+    "author": "박미라",
+    "date_kind": "published"
+   }
+  },
+  {
+   "id": "2026-11-10-gurez-potato-pits-kashmir",
+   "region": "해외",
+   "target_country": "IN",
+   "category": "문화지리학",
+   "title": "히말라야 구레즈 계곡의 감자 저장 구덩이는 왜 사라지고, 무엇이 함께 사라질까요?",
+   "journal": "The Guardian · 2026-11-04",
+   "researchers": "Ishtayaq Rasool",
+   "source": {
+    "name": "The Guardian",
+    "url": "https://www.theguardian.com/environment/2026/nov/04/kashmir-potato-pits-vanishing-indigenous-knowledge-buried-aoe",
+    "date": "2026-11-04",
+    "language": "en",
+    "doi": null,
+    "canonical_kind": "sourced_summary"
+   },
+   "summary": "인도령 카슈미르 구레즈 계곡은 겨울마다 고개가 눈에 막혀 고립되고, 주민들은 감자를 짚을 깐 땅속 구덩이 ‘크라우’에 저장해 왔습니다. 도로가 좋아지고 젊은이들이 떠나면서 구덩이를 관리하는 집이 줄었고, 감자 품종의 다양성도 기록되기 전에 사라지고 있습니다(Rasool, 2026). 판로가 없던 감자를 펩시코가 사들이겠다고 나서자 전통 저장은 줄어들 것으로 예상됐습니다(Malik, 2023). 2015·2017년 계곡 조사에서는 한때 흔했던 기장을 나이 든 농부 한 명만 기르고 있었습니다(Sultan et al., 2019).",
+   "body": [
+    {
+     "h": "영하 20도 아래 겨울을 나는 땅속 구덩이 크라우",
+     "p": "인도령 카슈미르 구레즈 계곡의 초르완 마을에서 하즈라 베굼은 감자를 골라 짚을 깐 땅속 구덩이 ‘크라우’에 넣습니다. 일부는 겨울 식량이고 나머지는 봄에 심을 씨감자입니다. 구레즈는 인도령과 파키스탄령을 가르는 통제선 가까이에 있고 스리나가르에서 약 125㎞ 떨어져 있으며, 해발 약 3600m의 라즈단 고개가 눈으로 막히면 겨울마다 고립됩니다. 기온이 영하 20도 아래로 떨어지는 이 시기에 크라우는 감자·순무·양배추를 지켜 왔습니다(Rasool, 2026). 같은 저장 구덩이는 툴라일 일대에서 ‘주스’ 또는 ‘크라우’로 불리며, 언 땅 아래 묻은 감자가 몇 달 동안 신선하게 남습니다. 짧은 재배 기간과 혹독한 겨울 때문에 이곳 농사는 봄에 심고 늦여름에 거두며, 겨울 동안 먹거리를 보관하는 일이 중요했습니다(Mir, 2026). 고개가 닫히는 계곡에서 구덩이는 겨울 식량 창고이면서 이듬해 농사를 이어 줄 씨감자 보관소였습니다."
+    },
+    {
+     "h": "도로가 나고 시장이 열리자 줄어든 구덩이",
+     "p": "베굼은 어릴 때 거의 모든 집에 구덩이가 서너 개 있었지만, 지금은 아래쪽 큰 계곡에서는 아예 쓰지 않고 나머지 집은 시장이나 정부 보조 감자를 산다고 말합니다. 도로가 좋아지고 젊은이들이 일과 교육을 위해 떠나면서 구덩이를 관리하는 집이 줄었습니다(Rasool, 2026). 구덩이는 판로를 기다리는 수단이기도 했습니다. 시장이 없어 수확의 상당 부분이 버려질 위험이 있던 구레즈에서 펩시코가 감자를 직접 사들이겠다는 뜻을 밝히자, 전통 저장은 줄어들 것으로 예상됐습니다(Malik, 2023). 중국 윈난성 카와커보 일대 티베트 마을을 비교한 연구에서는 해발 3000m가 넘는 높은 마을일수록 주요 작물이 다양하고 전통 작물 비중이 높으며 환금작물이 적었고, 도로가 난 마을은 환금작물을 훨씬 많이 길렀습니다(Salick et al., 2005). 구레즈의 구덩이를 지탱한 것은 고립과 판로 부족이었고, 도로와 시장이 닿으면서 저장하고 자급할 이유가 함께 약해졌습니다. 높은 곳의 외딴 마을에 전통 작물이 남는다는 카와커보의 비교는 구레즈 감자 품종이 같은 압력을 받는 구조라는 점을 비춥니다."
+    },
+    {
+     "h": "경작지 45%의 감자, 기록되기 전에 사라지는 품종",
+     "p": "감자는 구레즈 경작지의 약 45%를 차지하지만 계곡 감자의 유전적 다양성은 체계적으로 기록된 적이 없습니다. ICAR-NBPGR의 셰이크 술탄 박사는 처음 갔을 때 본 품종 일부를 나중에는 표본 하나 찾기 어려웠다며 이주와 도로 개선, 생활 변화를 원인으로 꼽았습니다(Rasool, 2026). 술탄 박사 팀이 2015년과 2017년 툴라일 차크발리까지 거의 모든 마을을 조사한 결과 해발 2403~3491m에서 28종 68점의 유전자원을 모았고, 한때 흔했던 기장은 계곡 전체에서 나이 든 농부 한 명만 기르고 있었습니다(Sultan et al., 2019). 경작지가 부족한 계곡에서 키샨강가 수력발전 사업은 토지 수용과 수몰로 감자로 이름난 바드완 마을 등에 영향을 줬습니다(Rasool, 2026). 관광지로 바뀌는 구레즈에서 농경지를 콘크리트 호텔과 카페로 바꾸는 일이 늘고 있다고 필자 수헬 라술 미르는 썼습니다(Mir, 2026). 기장이 농부 한 명에게만 남았던 것처럼, 감자 품종도 씨를 받아 다시 심는 집이 줄면 특징이 밝혀지기 전에 밭에서 사라질 수 있습니다. 그 품종을 기를 땅도 댐과 호텔로 줄어들고 있습니다."
+    }
+   ],
+   "talk": "",
+   "tags": [
+    "구레즈",
+    "카슈미르",
+    "감자",
+    "전통 저장",
+    "작물 다양성"
+   ],
+   "curriculum": [
+    {
+     "code": "10통사1-03-01",
+     "gloss": "자연환경이 인간 생활에 미치는 영향"
+    }
+   ],
+   "geo": {
+    "lat": 34.6333,
+    "lon": 74.8333,
+    "label": "인도령 카슈미르 구레즈 계곡"
+   },
+   "topic_key": "gurez-potato-storage-pits-crop-diversity",
+   "references": [
+    {
+     "author": "Ishtayaq Rasool",
+     "date": "2026-11-04",
+     "title": "Kashmir’s potato pits are vanishing – and generations of knowledge could be buried for ever",
+     "url": "https://www.theguardian.com/environment/2026/nov/04/kashmir-potato-pits-vanishing-indigenous-knowledge-buried-aoe",
+     "kind": "news",
+     "short_label": "Rasool, 2026",
+     "apa": "Rasool, I. (2026, November 4). Kashmir’s potato pits are vanishing – and generations of knowledge could be buried for ever. The Guardian.",
+     "id": "o-gd"
+    },
+    {
+     "author": "Shafat Malik",
+     "date": "2023-10-06",
+     "title": "With arrival of global chips giant, Gurez’s old potato preservation to decline",
+     "url": "https://risingkashmir.com/with-arrival-of-global-chips-giant-gurezs-old-potato-preservation-to-decline",
+     "kind": "news",
+     "short_label": "Malik, 2023",
+     "apa": "Malik, S. (2023, October 6). With arrival of global chips giant, Gurez’s old potato preservation to decline. Rising Kashmir.",
+     "id": "o-rk"
+    },
+    {
+     "author": "Suheel Rasool Mir",
+     "date": "2026-06-26",
+     "title": "Can Gurez Preserve Its Pastoral Economy and Agrarian Heritage Amid Rapid Change?",
+     "url": "https://kashmirlife.net/can-gurez-preserve-its-pastoral-economy-and-agrarian-heritage-amid-rapid-change-440876/",
+     "kind": "news",
+     "short_label": "Mir, 2026",
+     "apa": "Mir, S. R. (2026, June 26). Can Gurez preserve its pastoral economy and agrarian heritage amid rapid change? Kashmir Life.",
+     "id": "o-kl"
+    },
+    {
+     "author": "Sheikh M Sultan, K Pradheep, Susheel Kumar Raina, Sudhir Pal Ahlawat",
+     "date": "2019-09-17",
+     "title": "Collecting Plant Genetic Resources from Gurez, An Underexplored Remote Valley of Jammu & Kashmir State of India",
+     "url": "https://indianjournals.com/article/ijpgr-32-2-007",
+     "kind": "research",
+     "short_label": "Sultan et al., 2019",
+     "apa": "Sultan, S. M., Pradheep, K., Raina, S. K., & Ahlawat, S. P. (2019). Collecting plant genetic resources from Gurez, an underexplored remote valley of Jammu & Kashmir State of India. Indian Journal of Plant Genetic Resources, 32(2), 174–180. https://doi.org/10.5958/0976-1926.2019.00022.6",
+     "id": "r-sultan"
+    },
+    {
+     "author": "Jan Salick, Yang Yongping, Anthony Amend",
+     "date": "n.d.",
+     "title": "Tibetan land use and change near khawa karpo, Eastern Himalayas",
+     "url": "https://link.springer.com/article/10.1663/0013-0001(2005)059%5B0312:TLUACN%5D2.0.CO;2",
+     "kind": "research",
+     "short_label": "Salick et al., 2005",
+     "apa": "Salick, J., Yang, Y., & Amend, A. (2005). Tibetan land use and change near Khawa Karpo, Eastern Himalayas. Economic Botany, 59(4), 312–325. https://doi.org/10.1663/0013-0001(2005)059[0312:TLUACN]2.0.CO;2",
+     "id": "r-salick"
+    }
+   ],
+   "starting_article": {
+    "title": "Kashmir’s potato pits are vanishing – and generations of knowledge could be buried for ever",
+    "author": "Ishtayaq Rasool",
+    "date_kind": "published"
+   }
+  }
+ ]
+}
