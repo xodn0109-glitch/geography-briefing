@@ -1,0 +1,222 @@
+{
+ "date": "2026-11-11",
+ "format": "daily_deep",
+ "articles": [
+  {
+   "id": "2026-11-11-seogwipo-citrus-rot-autumn-rain-insurance",
+   "region": "국내",
+   "target_country": "KR",
+   "category": "기후학",
+   "title": "서귀포의 귤은 왜 나무에 매달린 채 썩고, 그 손실은 왜 보험으로 메워지지 않을까요?",
+   "journal": "한겨레 · 2026-11-09",
+   "researchers": "서보미",
+   "source": {
+    "name": "한겨레",
+    "url": "https://www.hani.co.kr/arti/area/jeju/1286484.html",
+    "date": "2026-11-09",
+    "language": "ko",
+    "doi": null,
+    "canonical_kind": "sourced_summary"
+   },
+   "summary": "감귤 주산지 서귀포에는 10월 18일부터 11월 9일까지 23일 가운데 15일 동안 비가 내렸습니다. 지난여름 마른 장마로 약해진 귤 껍질이 오래 젖으면서 열매가 나무에 달린 채 썩는 수부증이 번졌지만, 이 피해는 병충해로 분류돼 농작물재해보험 보상을 받지 못합니다(서보미, 2026). 미국 캘리포니아의 온주밀감에서도 껍질 장해는 가을, 특히 비가 온 뒤에 시작됐습니다(Rezk et al., 2024). 10월 하순 썩은 과실이 나오며 노지감귤 평균 거래가격은 지난해보다 5% 낮았습니다(정용복, 2026). 보험이 인정하는 피해의 범위는 바뀌어 왔고, 레드향 열과 피해는 2026년부터 손해평가에 들어갔습니다(진은정, 2026).",
+   "body": [
+    {
+     "h": "23일 중 15일 비가 온 서귀포의 수부증",
+     "p": "6일 서귀포시 회수동의 감귤밭에서는 곶감처럼 말라비틀어지거나 푸른 곰팡이가 슨 노지감귤이 나무에 달린 채 썩어 가고 있었습니다. 과실이 나무에 달린 상태에서 썩는 수부증은 껍질이 녹색에서 노랑·주황으로 바뀌는 무렵 생긴 작은 균열이 오래 물에 젖을 때 녹색곰팡이균이나 백색곰팡이균이 들어가며 시작됩니다. 감귤 주산지 서귀포에는 10월 18일부터 11월 9일까지 23일 가운데 15일 동안 비가 내렸고, 지난여름 ‘마른 장마’로 수분이 부족해 껍질이 약해진 뒤였습니다. 4500평 밭에서 30년 동안 귤 농사를 지어 온 송명섭 씨는 썩어서 떨어지거나 싱싱한 채 떨어진 귤이 최소 15%는 된다며 “이렇게 많이 떨어진 건 올해가 처음”이라고 말했습니다(서보미, 2026). 미국 캘리포니아에서 기르는 온주밀감 ‘오와리’ 품종에서도 껍질 장해는 가을, 특히 비가 온 뒤에 시작되고 상대습도와 껍질의 수분 상태가 바뀌면 심해지며, 나무 바깥쪽에 달린 과실이 안쪽 과실보다 피해를 더 입었습니다(Rezk et al., 2024). 두 곳 모두 껍질 색이 바뀌는 가을에 비를 맞은 껍질에서 피해가 시작됐고, 서귀포에서는 여름 가뭄에 약해진 껍질 위로 3주 넘게 비가 이어졌습니다."
+    },
+    {
+     "h": "유통센터에서 이틀 만에 30%, 거래가격은 5% 낮아",
+     "p": "수확한 귤도 물기를 머금고 있으면 유통 중에 썩기 쉽습니다. 농협 유통센터에 들어온 극조생 감귤 일부는 입고 이틀 만에 약 30%가 상했고, 선별 뒤 육지로 가는 과정에서 4~5%가 더 썩었다고 서귀포농업기술센터는 밝혔습니다. 센터는 비가 내리지 않을 때 저장병 약제를 뿌리고 5~7일을 기다렸다 수확하라고 권하지만, 이번 주말에도 비 예보가 있었습니다(서보미, 2026). 극조생 감귤은 일반 조생보다 일찍 익어 가을에 가장 먼저 출하되는 품종입니다. 10월 초 극조생 값은 지난해보다 높았지만 하순에는 잦은 비와 높은 기온으로 썩은 과실이 나오면서 거래가격이 낮아졌다고 가락시장 유통 관계자들은 설명했습니다. 10월 29일 기준 노지감귤 평균 누계 거래가격은 5㎏당 9778원으로 지난해 같은 기간 1만 297원보다 5% 낮았고, 올해 노지감귤 생산 예상량은 지난해보다 7.8% 많은 44만 3300t입니다. 제주도는 극조생 부패에 대응해 품종갱신을 추진하고 내년부터 묘목 보급을 늘릴 방침입니다(정용복, 2026). 비가 잦던 10월 하순은 가장 먼저 익는 극조생이 시장에 나가던 때였고, 썩은 과실이 섞인 첫 출하와 늘어난 생산량이 같은 가을에 겹쳤습니다."
+    },
+    {
+     "h": "병충해로 분류되는 부패와 24시간 80㎜ 기준",
+     "p": "수부증 피해는 농작물재해보험의 보상을 받지 못합니다. 이 정책보험은 자연재해와 야생동물 피해, 화재로 인한 손실은 보상하지만 병충해로 인한 손실은 대상에서 빼고, 비 피해를 자연재해로 보상받으려면 24시간 누적강수량 80㎜ 이상의 집중호우여야 합니다. 송 씨는 1천 평 정도 짓는 농가는 수확량이 15% 줄면 비룟값과 인건비를 빼고 적자를 볼 수밖에 없다며, 보험사 쪽에서 오긴 왔지만 지급 대상이 아니라고 했다고 전했습니다(서보미, 2026). 보험이 무엇을 피해로 인정하는지는 바뀌어 왔습니다. 2026년부터 농업정책보험의 손해평가에 레드향 열과 피해가 적용됐는데, 제주도가 농림축산식품부에 꾸준히 요청해 온 사안이었습니다. 제주도는 보험료의 20~46%를 더 지원해 농가가 내는 몫은 15~21% 수준이고, 2025년 2만 2310농가에 608억 원의 보험료를 지원했으며 자연재해 등으로 피해를 본 9775농가에 530억 원의 보험금이 지급됐습니다. 보험 토론회에서는 감귤처럼 가입률이 낮은 품목을 두고 보장방식 변경과 손해평가 기준 명확화 같은 제도 보완 필요성도 나왔습니다(진은정, 2026). 이번 피해를 키운 것은 23일 중 15일이라는 비의 잦음이었고, 그 비가 남긴 부패는 병충해로 분류돼 보상 밖에 놓였습니다. 레드향 열과는 지자체의 요청 끝에 손해평가에 들어갔고, 수부증은 병충해 쪽에 남아 있습니다."
+    }
+   ],
+   "talk": "",
+   "tags": [
+    "서귀포",
+    "감귤",
+    "수부증",
+    "가을비",
+    "농작물재해보험"
+   ],
+   "curriculum": [
+    {
+     "code": "10통사1-03-01",
+     "gloss": "자연환경이 인간 생활에 미치는 영향"
+    }
+   ],
+   "geo": {
+    "lat": 33.2686,
+    "lon": 126.4636,
+    "label": "제주 서귀포시 회수동 감귤밭"
+   },
+   "topic_key": "seogwipo-citrus-rot-autumn-rain-insurance",
+   "references": [
+    {
+     "author": "서보미",
+     "date": "2026-11-09",
+     "title": "잦은 가을비에 매달린 채 썩는 제주 귤…“이렇게 많이 떨어지는 건 처음”",
+     "url": "https://www.hani.co.kr/arti/area/jeju/1286484.html",
+     "kind": "news",
+     "short_label": "서보미, 2026",
+     "apa": "서보미. (2026, 11월 9일). 잦은 가을비에 매달린 채 썩는 제주 귤…“이렇게 많이 떨어지는 건 처음”. 한겨레.",
+     "id": "d-hani"
+    },
+    {
+     "author": "정용복",
+     "date": "2026-11-07",
+     "title": "제주감귤값 출하 초반 5% 약세… 생산량은 7.8% 증가 전망",
+     "url": "https://www.fnnews.com/news/202611071216562734",
+     "kind": "news",
+     "short_label": "정용복, 2026",
+     "apa": "정용복. (2026, 11월 7일). 제주감귤값 출하 초반 5% 약세… 생산량은 7.8% 증가 전망. 파이낸셜뉴스.",
+     "id": "d-fn"
+    },
+    {
+     "author": "진은정",
+     "date": "2026-04-29",
+     "title": "제주도, 감귤 농가 소득 안정 강화, 레드향 열과 피해도 보상 반영",
+     "url": "https://newsseoul.co.kr/news/view/1065609653431855",
+     "kind": "news",
+     "short_label": "진은정, 2026",
+     "apa": "진은정. (2026, 4월 29일). 제주도, 감귤 농가 소득 안정 강화, 레드향 열과 피해도 보상 반영. 뉴스서울.",
+     "id": "d-ns"
+    },
+    {
+     "author": "Alaaeldin Rezk, Tariq Pervaiz, Greg Douhan, David Obenland, Mary Lu Arpaia, Ashraf El-kereamy",
+     "date": "2024-04-09",
+     "title": "Preharvest Mandarin Rind Disorder: Insights into Varietal Differences and Preharvest Treatments Effects on Postharvest Quality",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11053722/",
+     "kind": "research",
+     "short_label": "Rezk et al., 2024",
+     "apa": "Rezk, A., Pervaiz, T., Douhan, G., Obenland, D., Arpaia, M. L., & El-kereamy, A. (2024). Preharvest mandarin rind disorder: Insights into varietal differences and preharvest treatments effects on postharvest quality. Plants, 13(8), 1040. https://doi.org/10.3390/plants13081040",
+     "id": "r-rezk"
+    }
+   ],
+   "starting_article": {
+    "title": "잦은 가을비에 매달린 채 썩는 제주 귤…“이렇게 많이 떨어지는 건 처음”",
+    "author": "서보미",
+    "date_kind": "updated"
+   }
+  },
+  {
+   "id": "2026-11-11-skagway-cruise-tourism-housing",
+   "region": "해외",
+   "target_country": "US",
+   "category": "경제지리학",
+   "title": "크루즈 승객 135만 명이 오가는 알래스카 스캐그웨이에서 주민의 집과 겨울 일상은 왜 줄어들까요?",
+   "journal": "The Guardian · 2026-11-10",
+   "researchers": "Molly McCluskey",
+   "source": {
+    "name": "The Guardian",
+    "url": "https://www.theguardian.com/environment/2026/nov/10/alaska-skagway-community-cruise-ship-tourism-housing",
+    "date": "2026-11-10",
+    "language": "en",
+    "doi": null,
+    "canonical_kind": "sourced_summary"
+   },
+   "summary": "알래스카 스캐그웨이는 상주 인구가 약 1100명이지만 2025년 크루즈선으로 135만 명이 넘는 관광객이 들어왔습니다. 넓힐 땅이 없는 골짜기에서 시즌 내내 캠핑하는 것이 금지되자 계절 노동자들이 주민이 살던 집으로 옮겨 갔고, 고용주들이 건물을 사들이면서 연중 주택과 호텔이 직원 숙소로 바뀌었습니다(McCluskey, 2026). 주노가 2026년 하루 승객 상한을 처음 적용하자 취소된 기항 일부는 케치칸으로 옮겨 갔습니다(Dauphinais, 2026).",
+   "body": [
+    {
+     "h": "인구 1100명 마을에 내린 크루즈 승객 135만 명",
+     "p": "10월이 되면 알래스카 남동부 해안 마을 스캐그웨이의 가게들은 영업시간을 줄이거나 문을 닫고, 붐비는 숙소에서 지내던 계절 노동자들도 떠납니다. 남는 사람은 서류상 약 1100명의 상주 인구입니다. 2025년 이 마을에는 크루즈선으로 135만 명이 넘는 관광객과 50만 명이 넘는 승무원이 들어왔고, 2013년의 82만 명에서 늘어난 숫자입니다. 클론다이크 골드러시 때 인구 약 1만 명으로 알래스카에서 가장 큰 도시였던 이곳은 1910년 약 600명으로 줄었는데, 10년에 걸친 그 변화가 지금은 배가 들어오고 떠나는 하루 사이에 일어납니다(McCluskey, 2026). 남쪽 항구 케치칸에서는 들르는 배의 수가 크게 늘지 않았지만 배 한 척이 싣는 승객 수가 꾸준히 늘었고, 2026년 들를 가장 큰 배는 4000명 넘게 태웁니다(Dauphinais, 2026). 스캐그웨이의 여름 하루와 겨울 사이 인구 차이는 골드러시 10년 동안의 오르내림보다 빠르게 오가고, 이 뱃길의 배는 한 척씩 더 커지고 있습니다."
+    },
+    {
+     "h": "좁은 골짜기의 주택 644채와 닫힌 캠핑장",
+     "p": "스캐그웨이는 알래스카와 브리티시컬럼비아 해안을 따라 이어지는 500마일 길이의 뱃길 인사이드 패시지의 북쪽 끝, 좁은 골짜기에 끼어 있습니다. 통근할 만한 이웃 마을도 넓힐 땅도 없고, 유일한 도로는 캐나다로 이어집니다. 2023년 보고서가 센 마을의 주택은 644채였고, 그 뒤 늘어난 집으로도 늦겨울에 와서 초가을까지 머무는 수천 명의 노동자를 감당하지 못해 창고와 단독주택, 텐트와 캠핑카가 숙소로 쓰입니다. 예전에는 계절 노동자 상당수가 캠핑장에서 지냈지만, 시즌 내내 캠핑하는 것을 금지하도록 마을 법이 바뀌자 이들은 원래 주민이 살던 일반 주택으로 옮겨 갔습니다(McCluskey, 2026). 2021년 5월 마을은 계절 숙소로 쓰이던 가든시티 캠핑카 공원을 계절 거주자에게 닫았고, 개인 주거지의 캠핑카 임대를 허용하던 예외 조치도 끝나 캠핑카에 사는 사람들은 2주마다 캠핑장을 옮겨 다녀야 했습니다(Swasey, 2021). 고용주들이 건물을 사들이며 연중 주택을 밀어냈다고 주민 재닐린 헤거는 말합니다. 직원 숙소를 지을 땅을 찾지 못한 사업가 마이크 힐리는 마을에 하나뿐인 연중 영업 호텔을 사서 계절 숙소로 바꿨고, 마을 의원 조너선 힐리스는 독립 여행자가 묵을 곳이 거의 남지 않아 크루즈 관광객만 늘어나는 순환이 생긴다고 말합니다(McCluskey, 2026). 캠핑장이라는 완충 공간이 닫히자 계절 노동자의 수요가 상주민의 집과 호텔로 넘어왔고, 넓힐 수 없는 골짜기에서 그만큼 연중 주민과 독립 여행자의 자리가 줄었습니다."
+    },
+    {
+     "h": "주노의 하루 1만 6000명 상한과 케치칸으로 옮겨 간 배",
+     "p": "스캐그웨이에서 100마일 남쪽에 있는 주도 주노는 2024년 ‘배 없는 토요일’ 주민투표안이 부결된 뒤 하루에 정박할 수 있는 배의 수를 자율적으로 제한했습니다(McCluskey, 2026). 2026년에는 크루즈 회사들과 협상한 하루 승객 상한이 처음 적용돼 대부분의 날은 1만 6000명, 토요일은 1만 2000명으로 묶였고, 이전 시즌에는 가장 붐비는 날 2만 1000명까지 들어왔습니다. 그래도 이 시즌 주노에는 약 169만 명이 올 것으로 예상됐습니다(Larson, 2026). 상한을 맞추려고 주노가 취소한 로열캐리비안 기항 일부는 케치칸의 워드코브로 옮겨 갔고, 케치칸은 2026년 여름 지난해보다 10만 명 넘게 많은 160만 명 이상의 크루즈 승객을 맞을 것으로 전망됐습니다(Dauphinais, 2026). 시트카도 방문객 증가를 앞두고 업계와 맺은 협약을 다시 검토하고 있습니다(McCluskey, 2026). 인사이드 패시지의 항구들은 하나의 뱃길에 놓여 있어서, 한 항구가 하루 승객을 묶자 배가 다음 항구로 옮겨 갔습니다."
+    },
+    {
+     "h": "승객 250명 이하의 배만 받는 피터즈버그",
+     "p": "같은 남동 알래스카의 피터즈버그는 다른 길을 택했습니다. 승객 250명 이하의 작은 배가 오는 틈새 크루즈 관광에는 참여하고 대형 크루즈 산업은 적극적으로 거부한 이 마을에서는, 주민들이 아끼는 공동체의 제도와 유산을 지키는 적응 능력이 커진 것으로 나타났습니다(Naylor et al., 2021). 한 산업에 생계를 기대는 작은 마을에서는 선택지가 제한돼 있고, 스캐그웨이의 오리온 핸슨 시장은 “원한다 해도 우리가 할 수 있는 일은 그리 많지 않다”고 말했습니다(McCluskey, 2026). 두 마을은 같은 뱃길에 있지만, 피터즈버그는 받을 배의 크기를 스스로 골랐고 스캐그웨이는 이미 크루즈 한 업종에 수입을 기대고 있어 배의 수를 두고 할 수 있는 일이 적다고 시장이 말합니다."
+    },
+    {
+     "h": "주민 40%는 이익이 크다고, 25%는 비용이 크다고 답했습니다",
+     "p": "오리건주립대 조사에서 스캐그웨이 응답자의 40%가 조금 넘게 관광의 이익이 비용보다 크다고 답했고, 25%는 반대로, 33%는 둘이 비슷하다고 봤습니다. 시즌이 끝나도 문을 여는 식당은 두 곳이고 그마저 시간을 줄이며, 오래된 연중 식당 스위트투스 카페 자리는 크루즈 회사와 손잡고 시즌에만 문을 여는 면세 보석점이 됐습니다. 핸슨 시장은 크루즈와 직접 관련되지 않은 수입이 많지 않아 팬데믹 때처럼 위험하다고 말하면서도 “풍파를 일으키지 않도록 매우 조심해야 한다”고 말했습니다(McCluskey, 2026). 주노에서 20년 가까이 관광 일을 해 온 연중 주민 조 울펜스타인은 돈을 조금 덜 벌어도 상한제의 타협을 지지한다고 말했고, 일부 주민은 상한제가 보여주기에 그친다고 봤습니다(Larson, 2026). 여름 수입이 크루즈 한 업종에 몰린 스캐그웨이에서는 겨울의 식당과 연중 주택이 그 업종의 매장과 숙소로 바뀌었고, 배의 수를 두고 시장이 꺼낼 수 있는 말도 그만큼 조심스럽습니다."
+    }
+   ],
+   "talk": "",
+   "tags": [
+    "스캐그웨이",
+    "알래스카",
+    "크루즈 관광",
+    "계절 노동자",
+    "주택"
+   ],
+   "curriculum": [
+    {
+     "code": "12여지03-04",
+     "gloss": "공정여행과 여행지 주민과의 공존"
+    }
+   ],
+   "geo": {
+    "lat": 59.4583,
+    "lon": -135.3139,
+    "label": "미국 알래스카주 스캐그웨이"
+   },
+   "topic_key": "skagway-cruise-tourism-housing",
+   "references": [
+    {
+     "author": "Molly McCluskey",
+     "date": "2026-11-10",
+     "title": "This small Alaska town is swamped by cruise ship visitors every summer. But what happens when they all go home?",
+     "url": "https://www.theguardian.com/environment/2026/nov/10/alaska-skagway-community-cruise-ship-tourism-housing",
+     "kind": "news",
+     "short_label": "McCluskey, 2026",
+     "apa": "McCluskey, M. (2026, November 10). This small Alaska town is swamped by cruise ship visitors every summer. But what happens when they all go home? The Guardian.",
+     "id": "o-gd"
+    },
+    {
+     "author": "Mike Swasey",
+     "date": "2021-09-02",
+     "title": "Local officials look for housing solutions while seasonal workers do the Skagway shuffle",
+     "url": "https://www.ktoo.org/2021/09/02/local-officials-look-for-housing-solutions-while-seasonal-workers-do-the-skagway-shuffle/",
+     "kind": "news",
+     "short_label": "Swasey, 2021",
+     "apa": "Swasey, M. (2021, September 2). Local officials look for housing solutions while seasonal workers do the Skagway shuffle. KHNS via KTOO.",
+     "id": "o-khns"
+    },
+    {
+     "author": "Clarise Larson",
+     "date": "2026-04-27",
+     "title": "Juneau’s first cruise ship of 2026 kicks off first year of daily passenger limits",
+     "url": "https://www.ktoo.org/2026/04/27/juneaus-first-cruise-ship-of-2026-kicks-off-first-year-of-daily-passenger-limits/",
+     "kind": "news",
+     "short_label": "Larson, 2026",
+     "apa": "Larson, C. (2026, April 27). Juneau’s first cruise ship of 2026 kicks off first year of daily passenger limits. KTOO.",
+     "id": "o-ktoo"
+    },
+    {
+     "author": "Sydney Dauphinais",
+     "date": "2026-03-27",
+     "title": "Ketchikan expected to see record number of cruise ship passengers",
+     "url": "https://www.krbd.org/2026/03/27/ketchikan-expected-to-see-record-number-of-cruise-ship-passengers/",
+     "kind": "news",
+     "short_label": "Dauphinais, 2026",
+     "apa": "Dauphinais, S. (2026, March 27). Ketchikan expected to see record number of cruise ship passengers. KRBD.",
+     "id": "o-krbd"
+    },
+    {
+     "author": "Ryan S. Naylor, Carter A. Hunt, Karl S. Zimmerer, B. Derrick Taff",
+     "date": "2021-08-10",
+     "title": "Emic Views of Community Resilience and Coastal Tourism Development",
+     "url": "https://www.mdpi.com/2075-4698/11/3/94",
+     "kind": "research",
+     "short_label": "Naylor et al., 2021",
+     "apa": "Naylor, R. S., Hunt, C. A., Zimmerer, K. S., & Taff, B. D. (2021). Emic views of community resilience and coastal tourism development. Societies, 11(3), 94. https://doi.org/10.3390/soc11030094",
+     "id": "r-naylor"
+    }
+   ],
+   "starting_article": {
+    "title": "This small Alaska town is swamped by cruise ship visitors every summer. But what happens when they all go home?",
+    "author": "Molly McCluskey",
+    "date_kind": "published"
+   }
+  }
+ ]
+}
